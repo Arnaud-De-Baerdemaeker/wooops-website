@@ -1,37 +1,40 @@
 <?php
 
+// Add custom tags in <head>
+function add_tags() {
+	?>
+	<meta charset="<?php bloginfo("charset"); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title><?php the_title(); ?></title>
+	<?php
+}
+add_action("wp_head", "add_tags");
+
 // Link a custom stylesheet to the theme
 function add_stylesheet() {
 	wp_enqueue_style(
 		"style",
-		get_stylesheet_directory_uri()."/style.css"
+		get_stylesheet_directory_uri()."/style.css",
+		null,
+		null,
+		"all"
 	);
 }
 add_action("wp_enqueue_scripts", "add_stylesheet");
 
 // Link a Google font to the theme
 function add_fonts() {
-	?>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<?php
-}
-add_action("wp_head", "add_fonts");
-
-// Register a primary menu to the theme
-function register_menus() {
-	register_nav_menus(
-		array(
-			"primary_menu" => __("Menu principal")
-		)
+	wp_enqueue_style(
+		"google-fonts",
+		"https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap",
+		array(),
+		null
 	);
 }
-add_action("init", "register_menus");
+add_action("wp_enqueue_scripts", "add_fonts");
 
-// Display the menu in the theme
-wp_nav_menu(
-	array(
-		"theme_location" => "primary_menu"
-	)
-);
+// Register a primary menu to the theme
+function register_menu() {
+	register_nav_menu("primary_menu", __("Menu principal"));
+}
+add_action("init", "register_menu");
