@@ -6,6 +6,7 @@
 			include("sections/services.php");
 			include("sections/contact.php");
 			get_footer();
+			wp_footer();
 		?>
 	</body>
 </html>
