@@ -2,8 +2,6 @@
 
 <html <?php language_attributes(); ?>>
 	<head>
-		<meta charset="<?php bloginfo("charset"); ?>">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<?php wp_head(); ?>
 	</head>
 	
@@ -17,4 +15,6 @@
 						<img src="<?php echo esc_url($logo["url"]); ?>" alt="<?php echo esc_attr($logo["alt"]); ?>" class="header__logo-image" />
 					<?php endif; ?>
 				</h1>
+
+				<?php wp_nav_menu(); ?>
 			</header>
