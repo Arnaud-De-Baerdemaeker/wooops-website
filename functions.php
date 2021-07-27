@@ -23,8 +23,15 @@ add_action("wp_head", "add_fonts");
 function register_menus() {
 	register_nav_menus(
 		array(
-			"primary-menu" => __("Primary Menu")
+			"primary_menu" => __("Menu principal")
 		)
 	);
 }
 add_action("init", "register_menus");
+
+// Display the menu in the theme
+wp_nav_menu(
+	array(
+		"theme_location" => "primary_menu"
+	)
+);
