@@ -1,0 +1,6 @@
+.services { // <div>
+    @include container;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+}

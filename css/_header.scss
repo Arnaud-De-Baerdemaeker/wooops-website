@@ -1,0 +1,73 @@
+.hero { // <div>
+	background-image: url("images/sand.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	
+	.header { // <header>
+		position: absolute;
+		left: 10%;
+		@include container;
+
+		&__logo-container { // <h1>
+			background-color: $white;
+			width: 28.125rem;
+			height: 18.75rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: {
+				top: 0;
+				bottom: 0;
+			}
+		}
+
+		&__logo-image { // <img>
+			vertical-align: middle;
+		}
+	}
+
+	.introduction { // <section>
+		@include container;
+		height: inherit;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		
+		&__title { // <h2>
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			width: 40%;
+		}
+	
+		&__image { // <img
+			margin-right: 2rem;
+			align-self: center;
+		}
+	
+		&__text { // <p>
+			margin: 0;
+			text-transform: uppercase;
+			color: $white;
+			font: {
+				size: 3.125rem;
+				weight: 100;
+			}
+			word-spacing: 0.25rem;
+			letter-spacing: 0.125rem;
+	
+			&:last-of-type {
+				margin: {
+					top: 2.5rem;
+					left: 6.125rem;
+				}
+			}
+		}
+	
+		&__keyword { // <span>
+			font-weight: 700;
+			color: $black;
+		}
+	}
+}
