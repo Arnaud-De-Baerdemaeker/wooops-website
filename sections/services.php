@@ -1,4 +1,4 @@
-<div id="services" class="services">
+<div id="our_services" class="services">
 	<section class="half-part">
 		<h3 class="half-part__title"><?php the_field("services_title"); ?></h3>
 		<p class="half-part__text"><?php the_field("services_text"); ?></p>
