@@ -26,6 +26,8 @@
 
 		<?php include("sections/services.php"); ?>
 
-		<?php wp_footer(); ?>
+		<?php include("sections/contact.php"); ?>
+
+		<?php get_footer(); ?>
 	</body>
 </html>
