@@ -14,11 +14,12 @@ body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .half-part {
   width: 50%;
-  margin-top: 5rem;
 }
 
 .half-part__title {
@@ -196,4 +197,99 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact .wpcf7 {
+  width: 50%;
+}
+
+.contact .wpcf7 .wpcf7-form.init {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.contact .wpcf7 .wpcf7-form.init label, .contact .wpcf7 .wpcf7-form.init span {
+  display: block;
+}
+
+.contact .wpcf7 .wpcf7-form.init input[type="text"], .contact .wpcf7 .wpcf7-form.init input[type="tel"], .contact .wpcf7 .wpcf7-form.init input[type="email"], .contact .wpcf7 .wpcf7-form.init textarea {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-bottom-style: solid;
+  border-bottom-width: 0.063rem;
+  border-left: none;
+  border-radius: 0.125rem;
+  font-family: inherit;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.contact .wpcf7 .wpcf7-form.init .form__part-1, .contact .wpcf7 .wpcf7-form.init .form__part-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.contact .wpcf7 .wpcf7-form.init .form__top-part, .contact .wpcf7 .wpcf7-form.init .form__bottom-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+}
+
+.contact .wpcf7 .wpcf7-form.init .form__name, .contact .wpcf7 .wpcf7-form.init .form__company, .contact .wpcf7 .wpcf7-form.init .form__phone, .contact .wpcf7 .wpcf7-form.init .form__email {
+  width: 50%;
+}
+
+.contact .wpcf7 .wpcf7-form.init .form__submit {
+  position: relative;
+}
+
+.contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"] {
+  width: 50%;
+  height: 3.125rem;
+  display: block;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  border-radius: 3.125rem;
+  background-color: #5f9595;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.contact .wpcf7 .wpcf7-form.init .form__submit .ajax-loader {
+  position: absolute;
+  top: calc(3.125rem - (24px + 12px));
+  right: calc(50% + 1.25rem);
+  margin: 0;
 }
