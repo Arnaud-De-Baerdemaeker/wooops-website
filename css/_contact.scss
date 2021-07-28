@@ -1,3 +1,96 @@
 .contact {
 	@include positioning-sections;
+
+	.wpcf7 { // <div>
+		width: 50%;
+
+		.wpcf7-form.init { // <form>
+			display: flex;
+			flex-direction: column;
+			row-gap: 1.25rem;
+			
+			label, span {
+				display: block;
+			}
+
+			input[type="text"], input[type="tel"], input[type="email"], textarea {
+				padding: {
+					top: 0;
+					right: 0;
+					bottom: 0.5rem;
+					left: 0;
+				}
+				outline: none;
+				border: {
+					top: none;
+					right: none;
+					bottom: {
+						style: solid;
+						width: 0.063rem;
+					}
+					left: none;
+				}
+				border-radius: 0.125rem;
+				font: {
+					family: inherit;
+					size: 1rem;
+				}
+				display: block;
+				width: 100%;
+			}
+
+			.form { // no tags
+				&__part-1, &__part-2 { // <div>
+					display: flex;
+					flex-direction: column;
+					row-gap: 1.25rem;
+				}
+
+				&__top-part, &__bottom-part { // <div>
+					display: flex;
+					flex-direction: row;
+					column-gap: 2.5rem;
+				}
+
+				&__name, &__company, &__phone, &__email {
+					width: 50%;
+				}
+
+				&__submit { // <input>
+					position: relative;
+
+					input[type="submit"] {
+						width: 50%;
+						height: 3.125rem;
+						display: block;
+						margin: {
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: auto;
+						}
+						padding: 0;
+						border: none;
+						border-radius: 3.125rem;
+						background-color: $wooops;
+						color: $white;
+						cursor: pointer;
+						text-transform: uppercase;
+						font: {
+							family: inherit;
+							weight: 500;
+							size: 1rem;
+						}
+					}
+
+					.ajax-loader { // <span>
+						position: absolute;
+						top: calc(3.125rem - (24px + 12px));
+						right: calc(50% + 1.25rem);
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
 }
