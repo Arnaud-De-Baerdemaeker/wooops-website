@@ -1,3 +1,230 @@
 .services { // <div>
-	@include positioning-sections--reverse;
+	@include container;
+
+	&__title { // <h2>
+		font: {
+			size: 4rem;
+			weight: 400;
+		}
+		text-align: center;
+		margin: 0;
+	}
+
+	.service1, .service2, .service3, .service4, .service5, .service6 {
+		&__title { // <h3>
+			text-align: center;
+			font: {
+				size: 2rem;
+				weight: 400;
+			}
+			margin: 0;
+		}
+	}
+
+	.service1 { // <div>
+		.service1a { // <div>
+			display: flex;
+			column-gap: 2.5rem;
+
+			&__intro { // <div>
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			&__title { // <h4>
+				font-size: 1.25rem;
+				margin: 0;
+			}
+	
+			&__text { // <p>
+				margin: 0;
+			}
+
+			&__keywords { // <div>
+				width: 50%;
+			}
+
+			&__list { // <ul>
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: flex;
+				justify-items: center;
+				column-gap: 6rem;
+				row-gap: 2rem;;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+			}
+
+			&__item { // <li>
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				width: 9.375rem;
+				height: 9.375rem;
+				padding: 1rem;
+				background-color: $wooops;
+				color: $white;
+				border-radius: 3px;
+				box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+			}
+		}
+
+		.service1b { // <div>
+			display: flex;
+			flex-direction: row-reverse;
+			column-gap: 2.5rem;
+
+			&__intro { // <div>
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			&__title { // <h4>
+				font-size: 1.25rem;
+				margin: 0;
+			}
+
+			&__text { // <p>
+				margin: 0;
+			}
+
+			&__keywords { // <div>
+				width: 50%;
+			}
+
+			&__list { // <ul>
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: flex;
+				justify-items: center;
+				justify-content: space-evenly;
+				column-gap: 6rem;
+				row-gap: 2rem;
+				flex-wrap: wrap;
+			}
+
+			&__item { // <li>
+				width: 9.375rem;
+				height: 9.375rem;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 1rem;
+				background-color: $wooops;
+				color: $white;
+				border-radius: 3px;
+				box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+			}
+		}
+
+		.service1c { // <div>
+			width: 70%;
+
+			&__title { // <h4>
+				font-size: 1.25rem;
+				margin: 0;
+			}
+
+			&__text { // <p>
+				margin: 0;
+			}
+		}
+	}
+
+	.service2 { // <div>
+		&__list { // <ol>
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		&__item { // <li>
+			width: 9.375rem;
+			height: 9.375rem;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 1rem;
+			background-color: $wooops;
+			color: $white;
+			border-radius: 3px;
+			box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+		}
+	}
+
+	.service3 { // <div>
+		&__text { // <p>
+			margin: 0;
+			width: 70%;
+			margin-left: auto;
+			text-align: end;
+		}
+	}
+
+	.service4 { // <div>
+		.service4a { // <div>
+			width: 70%;
+
+			&__title { // <h4>
+				font-size: 1.25rem;
+				margin: 0;
+			}
+
+			&__text { // <p>
+				margin: 0;
+			}
+		}
+
+		.service4b { // <div>
+			width: 70%;
+			margin-left: auto;
+			text-align: end;
+
+			&__title { // <h4>
+				font-size: 1.25rem;
+				margin: 0;
+			}
+
+			&__text { // <p>
+				margin: 0;
+			}
+		}
+
+		.service4c { // <div>
+			width: 70%;
+
+			&__title { // <h4>
+				font-size: 1.25rem;
+				margin: 0;
+			}
+
+			&__text { // <p>
+				margin: 0;
+			}
+		}
+
+		.service4d { // <div>
+			&__title { // <h4>
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+
+	.service5 { // <div>
+	}
+
+	.service6 { // <div>
+	}
 }
