@@ -10,12 +10,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wooopsagency
 Tags: SCSS
 */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .half-part {
@@ -171,18 +174,271 @@ body {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.services__title {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.services .service1__title, .services .service2__title, .services .service3__title, .services .service4__title, .services .service5__title, .services .service6__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.services .service1 .service1a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4rem;
-  height: 100vh;
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+}
+
+.services .service1 .service1a__intro {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .service1 .service1a__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.services .service1 .service1a__text {
+  margin: 0;
+}
+
+.services .service1 .service1a__keywords {
+  width: 50%;
+}
+
+.services .service1 .service1a__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-column-gap: 6rem;
+          column-gap: 6rem;
+  row-gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.services .service1 .service1a__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  width: 9.375rem;
+  height: 9.375rem;
+  padding: 1rem;
+  background-color: #5f9595;
+  color: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+          box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+}
+
+.services .service1 .service1b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+}
+
+.services .service1 .service1b__intro {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .service1 .service1b__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.services .service1 .service1b__text {
+  margin: 0;
+}
+
+.services .service1 .service1b__keywords {
+  width: 50%;
+}
+
+.services .service1 .service1b__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-column-gap: 6rem;
+          column-gap: 6rem;
+  row-gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .service1 .service1b__item {
+  width: 9.375rem;
+  height: 9.375rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  background-color: #5f9595;
+  color: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+          box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+}
+
+.services .service1 .service1c {
+  width: 70%;
+}
+
+.services .service1 .service1c__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.services .service1 .service1c__text {
+  margin: 0;
+}
+
+.services .service2__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.services .service2__item {
+  width: 9.375rem;
+  height: 9.375rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  background-color: #5f9595;
+  color: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+          box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+}
+
+.services .service3__text {
+  margin: 0;
+  width: 70%;
+  margin-left: auto;
+  text-align: end;
+}
+
+.services .service4 .service4a {
+  width: 70%;
+}
+
+.services .service4 .service4a__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.services .service4 .service4a__text {
+  margin: 0;
+}
+
+.services .service4 .service4b {
+  width: 70%;
+  margin-left: auto;
+  text-align: end;
+}
+
+.services .service4 .service4b__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.services .service4 .service4b__text {
+  margin: 0;
+}
+
+.services .service4 .service4c {
+  width: 70%;
+}
+
+.services .service4 .service4c__title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.services .service4 .service4c__text {
+  margin: 0;
+}
+
+.services .service4 .service4d__title {
+  text-align: center;
+  margin: 0;
 }
 
 .contact {
