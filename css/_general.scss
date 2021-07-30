@@ -1,10 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font: {
 		family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
 		size: 16px;
 	}
-	box-sizing: border-box;
 }
 
 .half-part { // <section>
