@@ -1,45 +1,37 @@
 .services { // <div>
 	@include container;
+	padding-top: 12.5rem;
 
 	&__title { // <h2>
-		font: {
-			size: 4rem;
-			weight: 400;
-		}
-		text-align: center;
-		margin: 0;
-	}
-
-	.service1, .service2, .service3, .service4, .service5, .service6 {
-		&__title { // <h3>
-			text-align: center;
-			font: {
-				size: 2rem;
-				weight: 400;
-			}
-			margin: 0;
-		}
+		@include h2-titles;
 	}
 
 	.service1 { // <div>
+		margin-top: 6.25rem;
+
+		&__title { // <h3>
+			@include h3-titles;
+
+			&:after {
+				@include title-decoration;
+			}
+		}
+
 		.service1a { // <div>
-			display: flex;
-			column-gap: 2.5rem;
+			@include sub-sections;
 
 			&__intro { // <div>
-				width: 50%;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				@include services-intros;
 			}
 
 			&__title { // <h4>
-				font-size: 1.25rem;
-				margin: 0;
+				@include h4-titles;
+				width: 50%;
 			}
 	
 			&__text { // <p>
-				margin: 0;
+				@include services-text;
+				width: 50%;
 			}
 
 			&__keywords { // <div>
@@ -47,51 +39,30 @@
 			}
 
 			&__list { // <ul>
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				display: flex;
-				justify-items: center;
-				column-gap: 6rem;
-				row-gap: 2rem;;
-				flex-wrap: wrap;
-				justify-content: space-evenly;
+				@include services-list;
 			}
 
 			&__item { // <li>
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				width: 9.375rem;
-				height: 9.375rem;
-				padding: 1rem;
-				background-color: $wooops;
-				color: $white;
-				border-radius: 3px;
-				box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+				@include services-item;
 			}
 		}
 
 		.service1b { // <div>
-			display: flex;
+			@include sub-sections;
 			flex-direction: row-reverse;
-			column-gap: 2.5rem;
-
+			
 			&__intro { // <div>
-				width: 50%;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				@include services-intros;
 			}
 
 			&__title { // <h4>
-				font-size: 1.25rem;
-				margin: 0;
+				@include h4-titles;
+				width: 50%;
 			}
 
 			&__text { // <p>
-				margin: 0;
+				@include services-text;
+				width: 50%;
 			}
 
 			&__keywords { // <div>
@@ -99,101 +70,125 @@
 			}
 
 			&__list { // <ul>
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				display: flex;
-				justify-items: center;
-				justify-content: space-evenly;
-				column-gap: 6rem;
-				row-gap: 2rem;
-				flex-wrap: wrap;
+				@include services-list;
 			}
 
 			&__item { // <li>
-				width: 9.375rem;
-				height: 9.375rem;
-				text-align: center;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				padding: 1rem;
-				background-color: $wooops;
-				color: $white;
-				border-radius: 3px;
-				box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+				@include services-item;
 			}
 		}
 
 		.service1c { // <div>
-			width: 70%;
+			width: 37.5%;
+			margin: {
+				top: 12.5rem;
+				right: auto;
+				left: auto;
+			}
 
 			&__title { // <h4>
-				font-size: 1.25rem;
-				margin: 0;
+				@include h4-titles;
 			}
 
 			&__text { // <p>
-				margin: 0;
+				@include services-text;
 			}
 		}
 	}
 
 	.service2 { // <div>
+		margin-top: 12.5rem;
+
+		&__title { // <h3>
+			@include h3-titles;
+
+			&:after {
+				@include title-decoration;
+			}
+		}
+
 		&__list { // <ol>
 			list-style: none;
-			margin: 0;
+			margin: {
+				top: 6.25rem;
+				bottom: 0;
+			}
 			padding: 0;
 			display: flex;
 			justify-content: space-evenly;
 		}
 
 		&__item { // <li>
-			width: 9.375rem;
-			height: 9.375rem;
-			text-align: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 1rem;
-			background-color: $wooops;
-			color: $white;
-			border-radius: 3px;
-			box-shadow: 5px 5px 10px rgba(39, 28, 28, 0.4);
+			@include services-item;
 		}
 	}
 
 	.service3 { // <div>
+		margin-top: 12.5rem;
+
+		&__title { // <h3>
+			@include h3-titles;
+
+			&:after {
+				@include title-decoration;
+			}
+		}
+
 		&__text { // <p>
-			margin: 0;
-			width: 70%;
-			margin-left: auto;
-			text-align: end;
+			width: 37.5%;
+			margin: {
+				right: auto;
+				left: auto;
+			}
+			text-align: justify;
+
+			&:first-of-type {
+				margin: {
+					top: 6.25rem;
+					bottom: 0;
+				}
+			}
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 	}
 
 	.service4 { // <div>
+		margin-top: 12.5rem;
+
+		&__title { // <h3>
+			@include h3-titles;
+
+			&:after {
+				@include title-decoration;
+			}
+		}
+
 		.service4a { // <div>
-			width: 70%;
+			width: 50%;
+			margin-top: 6.25rem;
 
 			&__title { // <h4>
-				font-size: 1.25rem;
-				margin: 0;
+				@include h4-titles;
 			}
 
 			&__text { // <p>
-				margin: 0;
+				@include services-text;
 			}
 		}
 
 		.service4b { // <div>
-			width: 70%;
-			margin-left: auto;
-			text-align: end;
+			width: 50%;
+			margin: {
+				top: 6.25rem;
+				left: auto;
+			}
+			text-align: justify;
 
 			&__title { // <h4>
-				font-size: 1.25rem;
-				margin: 0;
+				@include h4-titles;
 			}
 
 			&__text { // <p>
@@ -202,29 +197,48 @@
 		}
 
 		.service4c { // <div>
-			width: 70%;
+			width: 50%;
+			margin-top: 6.25rem;
 
 			&__title { // <h4>
-				font-size: 1.25rem;
-				margin: 0;
+				@include h4-titles;
 			}
 
 			&__text { // <p>
-				margin: 0;
+				@include services-text;
 			}
 		}
 
 		.service4d { // <div>
+			margin-top: 6.25rem;
+
 			&__title { // <h4>
-				text-align: center;
-				margin: 0;
+				@include h4-titles;
 			}
 		}
 	}
 
 	.service5 { // <div>
+		margin-top: 12.5rem;
+
+		&__title { // <h3>
+			@include h3-titles;
+
+			&:after {
+				@include title-decoration;
+			}
+		}
 	}
 
 	.service6 { // <div>
+		margin-top: 12.5rem;
+
+		&__title {
+			@include h3-titles;
+
+			&:after {
+				@include title-decoration;
+			}
+		}
 	}
 }
