@@ -1,4 +1,4 @@
-<?php $agency = get_field("agency");
+<!-- <?php $agency = get_field("agency");
 if ($agency): ?>
 	<div id="our_agency" class="agency">
 		<section class="half-part">
@@ -11,4 +11,4 @@ if ($agency): ?>
 		</section>
 		<div class="half-part"></div>
 	</div>
-<?php endif; ?>
+<?php endif; ?> -->
