@@ -2,6 +2,26 @@
 	@include positioning-sections;
 	margin-top: 12.5rem;
 
+	&__introduction { // <section>
+		@include services-intros;
+		width: 50%;
+	}
+
+	&__title { // <h3>
+		@include h3-titles;
+		width: 50%;
+
+		&:after {
+			@include title-decoration;
+		}
+	}
+
+	&__text { // <p>
+		@include services-text;
+		width: 50%;
+		margin-top: 3.125rem;
+	}
+
 	.wpcf7 { // <div>
 		width: 50%;
 
@@ -72,7 +92,7 @@
 						}
 						padding: 0;
 						border: none;
-						border-radius: 3.125rem;
+						border-radius: 0.188rem;
 						background-color: $wooops;
 						color: $white;
 						cursor: pointer;
