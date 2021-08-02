@@ -1,19 +1,17 @@
 	<section class="introduction">
 		<h2 class="introduction__title">
 			<?php $introduction = get_field("introduction");
-			$part_1 = $introduction["introduction_text_part_1"];
-			$part_2 = $introduction["introduction_text_part_2"];
 			if ($introduction): ?>
-				<img src="<?php echo esc_url($introduction["introduction_image"]["url"]); ?>" alt="<?php esc_attr($introduction["introduction_image"]["alt"]); ?>" class="introduction__image" />
+				<img src="<?php echo esc_url($introduction["image"]["url"]); ?>" alt="<?php esc_attr($introduction["image"]["alt"]); ?>" class="introduction__image" />
 				<p class="introduction__text">
-					<?php echo $part_1["introduction_text_part_1_normal"]; ?>
+					<?php echo $introduction["text_part_1"]["normal_text"]; ?>
 					<br />
-					<span class="introduction__keyword"><?php echo $part_1["introduction_text_part_1_key"] ?></span>
+					<span class="introduction__keyword"><?php echo $introduction["text_part_1"]["keyword"]; ?></span>
 				</p>
 				<p class="introduction__text">
-					<?php echo $part_2["introduction_text_part_2_normal"]; ?>
+					<?php echo $introduction["text_part_2"]["normal_text"]; ?>
 					<br />
-					<span class="introduction__keyword"><?php echo $part_2["introduction_text_part_2_key"] ?></span>
+					<span class="introduction__keyword"><?php echo $introduction["text_part_2"]["keyword"]; ?></span>
 				</p>
 			<?php endif; ?>
 		</h2>
