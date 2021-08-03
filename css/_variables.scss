@@ -6,5 +6,11 @@ $wooops: rgba(95, 149, 149, 1);
 $black_shadow: rgba(0, 0, 0, 0.4);
 
 // Breakpoints
+$bp_w320: 20rem; // 300px
+
+$bp_w1920: 120rem; // 1920px
 
 // Media queries
+$mq_w320_up: "(min-width: #{$bp_w320})";
+
+$mq_w1920_up: "(min-width: #{$bp_w1920})";
