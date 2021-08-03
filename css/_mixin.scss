@@ -4,6 +4,13 @@
 		right: auto;
 		left: auto;
 	}
+
+	@media #{$mq_w320_up} {
+		padding: {
+			right: 1rem;
+			left: 1rem;
+		}
+	}
 }
 
 @mixin positioning-sections {
@@ -20,40 +27,66 @@
 }
 
 @mixin h2-titles {
-	font: {
-		size: 4rem;
-		weight: 400;
-	}
+	font-weight: 400;
 	text-align: center;
 	margin: 0;
+
+	@media #{$mq_w320_up} {
+		font-size: 2rem;
+	}
+
+	@media #{$mq_w1920_up} {
+		font-size: 4rem;
+	}
 }
 
 @mixin h3-titles {
 	text-align: center;
-	font: {
-		size: 2rem;
-		weight: 400;
-	}
+	font-weight: 400;
 	margin: 0;
 	position: relative;
+
+	@media #{$mq_w320_up} {
+		font-size: 1.25rem;
+	}
+
+	@media #{$mq_w1920_up} {
+		font-size: 2rem;
+	}
 }
 
 @mixin title-decoration {
 	content: "";
 	display: block;
 	position: absolute;
-	left: calc(50% - 18.75rem / 2);
-	width: 18.75rem;
 	border-bottom: {
 		style: solid;
 		width: 0.469rem;
 		color: $wooops;
 	};
+
+	@media #{$mq_w320_up} {
+		width: 9.375rem;
+		left: calc(50% - 9.375rem / 2);
+	}
+
+	@media #{$mq_w1920_up} {
+		left: calc(50% - 18.75rem / 2);
+		width: 18.75rem;
+	}
 }
 
 @mixin h4-titles {
-	font-size: 1.25rem;
 	margin: 0;
+
+	@media #{$mq_w320_up} {
+		font-size: 1.10rem;
+		text-align: center;
+	}
+
+	@media #{$mq_w1920_up} {
+		font-size: 1.25rem;
+	}
 }
 
 @mixin sub-sections {
@@ -82,9 +115,16 @@
 	display: flex;
 	justify-items: center;
 	justify-content: space-evenly;
-	column-gap: 6rem;
 	row-gap: 2rem;
 	flex-wrap: wrap;
+
+	@media #{$mq_w320_up} {
+		column-gap: 0.75rem;
+	}
+
+	@media #{$mq_w1920_up} {
+		column-gap: 6rem;
+	}
 }
 
 @mixin services-item {
@@ -99,4 +139,9 @@
 	color: $white;
 	border-radius: 0.188rem;
 	box-shadow: 0.313rem 0.313rem 0.938rem $black_shadow;
+
+	@media #{$mq_w320_up} {
+		width: 7.5rem;
+		height: 7.5rem;
+	}
 }

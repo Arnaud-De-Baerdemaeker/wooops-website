@@ -1,6 +1,12 @@
 .services { // <div>
-	@include container;
-	padding-top: 12.5rem;
+	@media #{$mq_w320_up} {
+		padding-top: 6.25rem;
+	}
+
+	@media #{$mq_w1920_up} {
+		@include container;
+		padding-top: 12.5rem;
+	}
 
 	&__title { // <h2>
 		@include h2-titles;
@@ -18,24 +24,44 @@
 		}
 
 		.service1a { // <div>
-			@include sub-sections;
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+			}
+
+			@media #{$mq_w1920_up} {
+				@include sub-sections;
+			}
 
 			&__intro { // <div>
-				@include services-intros;
+				@media #{$mq_w1920_up} {
+					@include services-intros;
+				}
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
-				width: 50%;
+
+				@media #{$mq_w1920_up} {
+					width: 50%;
+				}
 			}
 	
 			&__text { // <p>
 				@include services-text;
-				width: 50%;
+
+				@media #{$mq_w1920_up} {
+					width: 50%;
+				}
 			}
 
 			&__keywords { // <div>
-				width: 50%;
+				@media #{$mq_w320_up} {
+					margin-top: 1.563rem;
+				}
+
+				@media #{$mq_w1920_up} {
+					width: 50%;
+				}
 			}
 
 			&__list { // <ul>
@@ -48,25 +74,45 @@
 		}
 
 		.service1b { // <div>
-			@include sub-sections;
-			flex-direction: row-reverse;
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+			}
+
+			@media #{$mq_w1920_up} {
+				@include sub-sections;
+				flex-direction: row-reverse;
+			}
 			
 			&__intro { // <div>
-				@include services-intros;
+				@media #{$mq_w1920_up} {
+					@include services-intros;
+				}
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
-				width: 50%;
+
+				@media #{$mq_w1920_up} {
+					width: 50%;
+				}
 			}
 
 			&__text { // <p>
 				@include services-text;
-				width: 50%;
+
+				@media #{$mq_w1920_up} {
+					width: 50%;
+				}
 			}
 
 			&__keywords { // <div>
-				width: 50%;
+				@media #{$mq_w320_up} {
+					margin-top: 1.563rem;
+				}
+
+				@media #{$mq_w1920_up} {
+					width: 50%;
+				}
 			}
 
 			&__list { // <ul>
@@ -79,11 +125,17 @@
 		}
 
 		.service1c { // <div>
-			width: 37.5%;
-			margin: {
-				top: 12.5rem;
-				right: auto;
-				left: auto;
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+			}
+
+			@media #{$mq_w1920_up} {
+				width: 37.5%;
+				margin: {
+					top: 12.5rem;
+					right: auto;
+					left: auto;
+				}
 			}
 
 			&__title { // <h4>
@@ -97,7 +149,13 @@
 	}
 
 	.service2 { // <div>
-		margin-top: 12.5rem;
+		@media #{$mq_w320_up} {
+			margin-top: 6.25rem;
+		}
+
+		@media #{$mq_w1920_up} {
+			margin-top: 12.5rem;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -109,13 +167,20 @@
 
 		&__list { // <ol>
 			list-style: none;
-			margin: {
-				top: 6.25rem;
-				bottom: 0;
-			}
 			padding: 0;
 			display: flex;
+			margin-bottom: 0;
 			justify-content: space-evenly;
+
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+				flex-wrap: wrap;
+				row-gap: 2rem;
+			}
+
+			@media #{$mq_w1920_up} {
+				margin-top: 6.25rem;
+			}
 		}
 
 		&__item { // <li>
@@ -124,7 +189,13 @@
 	}
 
 	.service3 { // <div>
-		margin-top: 12.5rem;
+		@media #{$mq_w320_up} {
+			margin-top: 6.25rem;
+		}
+
+		@media #{$mq_w1920_up} {
+			margin-top: 12.5rem;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -135,17 +206,25 @@
 		}
 
 		&__text { // <p>
-			width: 37.5%;
-			margin: {
-				right: auto;
-				left: auto;
-			}
 			text-align: justify;
 
-			&:first-of-type {
+			@media #{$mq_w1920_up} {
+				width: 37.5%;
 				margin: {
-					top: 6.25rem;
-					bottom: 0;
+					right: auto;
+					left: auto;
+				}
+			}
+
+			&:first-of-type {
+				margin-bottom: 0;
+				
+				@media #{$mq_w320_up} {
+					margin-top: 3.125rem;
+				}
+
+				@media #{$mq_w1920_up} {
+					margin-top: 6.25rem;
 				}
 			}
 
