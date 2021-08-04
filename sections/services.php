@@ -105,7 +105,7 @@
 			<?php if ($service_4["service_4b"]): ?>
 				<div class="service4b"><!-- S4b -->
 					<h4 class="service4b__title"><?php echo $service_4["service_4b"]["title"]; ?></h4>
-					<p class="service4c__text"><?php echo $service_4["service_4b"]["text"]; ?></p>
+					<p class="service4b__text"><?php echo $service_4["service_4b"]["text"]; ?></p>
 				</div>
 			<?php endif; ?>
 
