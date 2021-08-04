@@ -1,24 +1,31 @@
 @mixin container {
-	width: 80%;
-	margin: {
-		right: auto;
-		left: auto;
-	}
-
 	@media #{$mq_w320_up} {
+		margin: 0;
 		padding: {
 			right: 1rem;
 			left: 1rem;
 		}
 	}
+
+	@media #{$mq_w900_up} {
+		width: 80%;
+		margin: {
+			right: auto;
+			left: auto;
+		}
+		padding: 0;
+	}
 }
 
 @mixin positioning-sections {
 	@include container;
-	display: flex;
-	gap: 4rem;
-	height: 100vh;
-	align-items: center;
+
+	@media #{$mq_w1920_up} {
+		display: flex;
+		gap: 4rem;
+		height: 100vh;
+		align-items: center;
+	}
 }
 
 @mixin positioning-sections--reverse {
@@ -96,11 +103,14 @@
 }
 
 @mixin services-intros {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
+	@media #{$mq_w1920_up} {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @mixin services-text {
