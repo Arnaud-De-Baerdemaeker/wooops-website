@@ -1,43 +1,86 @@
 .footer { // <footer>
-	height: 25rem;
 	background-color: $dark_gray;
 	color: $white;
 	position: relative;
 
+	@media #{$mq_w320_up} {
+		@include container;
+		padding-top: 3.125rem;
+	}
+
+	@media #{$mq_w1920_up} {
+		height: 25rem;
+	}
+
 	&__informations { // <div>
-		display: flex;
 		height: inherit;
+
+		@media #{$mq_w1920_up} {
+			display: flex;
+		}
 	}
 
 	&__logo { // <div>
-		width: 30%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@media #{$mq_w320_up} {}
+
+		@media #{$mq_w1920_up} {
+			width: 30%;
+		}
 	}
 
 	&__image { // <img>
 		width: 40%;
+		vertical-align: middle;
 	}
 
 	&__contact-infos { // <div>
-		width: 70%;
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
+		@media #{$mq_w320_up} {
+			margin-top: 3.125rem;
+		}
+
+		@media #{$mq_w450_up} {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			column-gap: 5rem;
+			row-gap: 2rem;
+		}
+
+		@media #{$mq_w1920_up} {
+			width: 70%;
+		}
 	}
 
 	&__address, &__contact, &__social { // <section>
-		display: flex;
-		flex-direction: column;
-		height: 7.5rem;
+		@media #{$mq_w320_up} {
+			margin-top: 2rem;
+
+			&:first-of-type {
+				margin-top: 0;
+			}
+		}
+
+		@media #{$mq_w450_up} {
+			margin-top: unset;
+			align-self: start;
+		}
+
+		@media #{$mq_w1920_up} {
+			display: flex;
+			flex-direction: column;
+			height: 7.5rem;
+		}
 	}
 
 	&__title { // <h4>
 		margin: 0;
 		font-size: 1.25rem;
 		justify-self: flex-start;
-		margin-bottom: 1rem;
 	}
 
 	&__entry { // <p>
@@ -45,7 +88,13 @@
 	}
 
 	&__copyright { // <div>
-		position: absolute;
-		bottom: 0;
+		@media #{$mq_w320_up} {
+			text-align: center;
+		}
+
+		@media #{$mq_w1920_up} {
+			position: absolute;
+			bottom: 0;
+		}
 	}
 }

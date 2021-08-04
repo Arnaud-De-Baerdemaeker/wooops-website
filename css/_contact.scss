@@ -1,34 +1,55 @@
 .contact {
 	@include positioning-sections;
-	margin-top: 12.5rem;
+
+	@media #{$mq_w320_up} {
+		margin-top: 6.25rem;
+		padding-bottom: 6.25rem;
+	}
+
+	@media #{$mq_w1920_up} {
+		margin-top: 12.5rem;
+	}
 
 	&__introduction { // <section>
 		@include services-intros;
-		width: 50%;
+
+		@media #{$mq_w1920_up} {
+			width: 50%;
+		}
 	}
 
-	&__title { // <h3>
-		@include h3-titles;
-		width: 50%;
+	&__title { // <h2>
+		@include h2-titles;
 
-		&:after {
-			@include title-decoration;
+		@media #{$mq_w1920_up} {
+			width: 50%;
 		}
 	}
 
 	&__text { // <p>
 		@include services-text;
-		width: 50%;
-		margin-top: 3.125rem;
+		margin-top: 6.25rem;
+
+		@media #{$mq_w1920_up} {
+			width: 50%;
+		}
 	}
 
 	.wpcf7 { // <div>
-		width: 50%;
+		@media #{$mq_w320_up} {
+			margin-top: 3.125rem;
+		}
+
+		@media #{$mq_w1920_up} {
+			width: 50%;
+		}
 
 		.wpcf7-form.init { // <form>
-			display: flex;
-			flex-direction: column;
-			row-gap: 1.25rem;
+			@media #{$mq_w1920_up} {
+				display: flex;
+				flex-direction: column;
+				row-gap: 1.25rem;
+			}
 			
 			label, span {
 				display: block;
@@ -62,26 +83,41 @@
 
 			.form { // no tags
 				&__part-1, &__part-2 { // <div>
-					display: flex;
-					flex-direction: column;
-					row-gap: 1.25rem;
+					@media #{$mq_w1920_up} {
+						display: flex;
+						flex-direction: column;
+						row-gap: 1.25rem;
+					}
 				}
 
 				&__top-part, &__bottom-part { // <div>
-					display: flex;
-					flex-direction: row;
-					column-gap: 2.5rem;
+					@media #{$mq_w1920_up} {
+						display: flex;
+						flex-direction: row;
+						column-gap: 2.5rem;
+					}
 				}
 
 				&__name, &__company, &__phone, &__email {
-					width: 50%;
+					@media #{$mq_w320_up} {
+						margin-top: 2rem;
+					}
+
+					@media #{$mq_w1920_up} {
+						width: 50%;
+					}
+				}
+
+				&__object, &__message {
+					@media #{$mq_w320_up} {
+						margin-top: 2rem;
+					}
 				}
 
 				&__submit { // <input>
 					position: relative;
 
 					input[type="submit"] {
-						width: 50%;
 						height: 3.125rem;
 						display: block;
 						margin: {
@@ -101,6 +137,15 @@
 							family: inherit;
 							weight: 500;
 							size: 1rem;
+						}
+
+						@media #{$mq_w320_up} {
+							width: 100%;
+							margin-top: 2rem;
+						}
+
+						@media #{$mq_w1920_up} {
+							width: 50%;
 						}
 					}
 

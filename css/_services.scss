@@ -1,10 +1,11 @@
 .services { // <div>
+	@include container;
+
 	@media #{$mq_w320_up} {
 		padding-top: 6.25rem;
 	}
 
 	@media #{$mq_w1920_up} {
-		@include container;
 		padding-top: 12.5rem;
 	}
 
@@ -178,6 +179,10 @@
 				row-gap: 2rem;
 			}
 
+			@media #{$mq_w392_up} {
+				column-gap: 2rem;
+			}
+
 			@media #{$mq_w1920_up} {
 				margin-top: 6.25rem;
 			}
@@ -235,7 +240,13 @@
 	}
 
 	.service4 { // <div>
-		margin-top: 12.5rem;
+		@media #{$mq_w320_up} {
+			margin-top: 6.25rem;
+		}
+
+		@media #{$mq_w1920_up} {
+			margin-top: 12.5rem;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -246,8 +257,14 @@
 		}
 
 		.service4a { // <div>
-			width: 50%;
-			margin-top: 6.25rem;
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+			}
+
+			@media #{$mq_w1920_up} {
+				width: 50%;
+				margin-top: 6.25rem;
+			}
 
 			&__title { // <h4>
 				@include h4-titles;
@@ -255,16 +272,26 @@
 
 			&__text { // <p>
 				@include services-text;
+
+				&:last-of-type {
+					margin-top: revert;
+				}
 			}
 		}
 
 		.service4b { // <div>
-			width: 50%;
-			margin: {
-				top: 6.25rem;
-				left: auto;
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+				text-align: justify;
 			}
-			text-align: justify;
+
+			@media #{$mq_w1920_up} {
+				width: 50%;
+				margin: {
+					top: 6.25rem;
+					left: auto;
+				}
+			}
 
 			&__title { // <h4>
 				@include h4-titles;
@@ -276,8 +303,14 @@
 		}
 
 		.service4c { // <div>
-			width: 50%;
-			margin-top: 6.25rem;
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+			}
+
+			@media #{$mq_w1920_up} {
+				width: 50%;
+				margin-top: 6.25rem;
+			}
 
 			&__title { // <h4>
 				@include h4-titles;
@@ -285,11 +318,21 @@
 
 			&__text { // <p>
 				@include services-text;
+
+				&:last-child {
+					margin-top: revert;
+				}
 			}
 		}
 
 		.service4d { // <div>
-			margin-top: 6.25rem;
+			@media #{$mq_w320_up} {
+				margin-top: 3.125rem;
+			}
+
+			@media #{$mq_w1920_up} {
+				margin-top: 6.25rem;
+			}
 
 			&__title { // <h4>
 				@include h4-titles;
@@ -298,7 +341,13 @@
 	}
 
 	.service5 { // <div>
-		margin-top: 12.5rem;
+		@media #{$mq_w320_up} {
+			margin-top: 6.25rem;
+		}
+
+		@media #{$mq_w1920_up} {
+			margin-top: 12.5rem;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -310,7 +359,13 @@
 	}
 
 	.service6 { // <div>
-		margin-top: 12.5rem;
+		@media #{$mq_w320_up} {
+			margin-top: 6.25rem;
+		}
+
+		@media #{$mq_w1920_up} {
+			margin-top: 12.5rem;
+		}
 
 		&__title {
 			@include h3-titles;

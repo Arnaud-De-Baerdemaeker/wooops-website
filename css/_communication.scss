@@ -1,17 +1,24 @@
 .communication { // <div>
-    @include container;
+	@include container;
 
-    &__title { // <h2>
-        @include h2-titles;
-        margin-top: 12.5rem;
-    }
+	@media #{$mq_w320_up} {
+		margin-top: 6.25rem;
+	}
 
-    &__list { // <ul>
-        @include services-list;
-        margin-top: 6.25rem;
-    }
+	@media #{$mq_w1920_up} {
+		margin-top: 12.5rem;
+	}
 
-    &__item { // <li>
-        @include services-item;
-    }
+	&__title { // <h2>
+		@include h2-titles;
+	}
+
+	&__list { // <ul>
+		@include services-list;
+		margin-top: 6.25rem;
+	}
+
+	&__item { // <li>
+		@include services-item;
+	}
 }
