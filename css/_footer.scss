@@ -4,18 +4,18 @@
 	position: relative;
 
 	@media #{$mq_w320_up} {
-		@include container;
 		padding-top: 3.125rem;
 	}
 
-	@media #{$mq_w1920_up} {
-		height: 25rem;
+	@media #{$mq_w1200_up} {
+		//height: 25rem;
 	}
 
 	&__informations { // <div>
 		height: inherit;
+		text-align: center;
 
-		@media #{$mq_w1920_up} {
+		@media #{$mq_w1200_up} {
 			display: flex;
 		}
 	}
@@ -25,16 +25,32 @@
 		justify-content: center;
 		align-items: center;
 
-		@media #{$mq_w320_up} {}
+		@media #{$mq_w320_up} {
+			width: 10.938rem;
+			margin: {
+				right: auto;
+				left: auto;
+			}
+		}
 
-		@media #{$mq_w1920_up} {
-			width: 30%;
+		@media #{$mq_w875_up} {
+		}
+
+		@media #{$mq_w1200_up} {
+			
 		}
 	}
 
 	&__image { // <img>
-		width: 40%;
+		width: 80%;
 		vertical-align: middle;
+
+		@media #{$mq_w875_up} {
+			width: 100%;
+		}
+
+		@media #{$mq_w1200_up} {
+		}
 	}
 
 	&__contact-infos { // <div>
@@ -51,8 +67,10 @@
 			row-gap: 2rem;
 		}
 
-		@media #{$mq_w1920_up} {
+		@media #{$mq_w1200_up} {
 			width: 70%;
+			margin-top: unset;
+			align-content: center;
 		}
 	}
 
@@ -70,7 +88,7 @@
 			align-self: start;
 		}
 
-		@media #{$mq_w1920_up} {
+		@media #{$mq_w1200_up} {
 			display: flex;
 			flex-direction: column;
 			height: 7.5rem;
@@ -90,11 +108,12 @@
 	&__copyright { // <div>
 		@media #{$mq_w320_up} {
 			text-align: center;
+			margin-top: 3.125rem;
 		}
 
-		@media #{$mq_w1920_up} {
-			position: absolute;
-			bottom: 0;
+		@media #{$mq_w1200_up} {
+			//position: absolute;
+			//bottom: 0;
 		}
 	}
 }
