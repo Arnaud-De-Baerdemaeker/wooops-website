@@ -5,7 +5,7 @@
 		padding-top: 6.25rem;
 	}
 
-	@media #{$mq_w1920_up} {
+	@media #{$mq_w1500_up} {
 		padding-top: 12.5rem;
 	}
 
@@ -14,6 +14,7 @@
 	}
 
 	.service1 { // <div>
+		@include sub-container;
 		margin-top: 6.25rem;
 
 		&__title { // <h3>
@@ -29,30 +30,26 @@
 				margin-top: 3.125rem;
 			}
 
-			@media #{$mq_w1920_up} {
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
 				@include sub-sections;
 			}
 
 			&__intro { // <div>
-				@media #{$mq_w1920_up} {
+				@media #{$mq_w1500_up} {
 					@include services-intros;
 				}
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
-
-				@media #{$mq_w1920_up} {
-					width: 50%;
-				}
 			}
 	
 			&__text { // <p>
 				@include services-text;
-
-				@media #{$mq_w1920_up} {
-					width: 50%;
-				}
 			}
 
 			&__keywords { // <div>
@@ -60,8 +57,9 @@
 					margin-top: 1.563rem;
 				}
 
-				@media #{$mq_w1920_up} {
+				@media #{$mq_w1500_up} {
 					width: 50%;
+					margin-top: unset;
 				}
 			}
 
@@ -79,31 +77,27 @@
 				margin-top: 3.125rem;
 			}
 
-			@media #{$mq_w1920_up} {
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
 				@include sub-sections;
 				flex-direction: row-reverse;
 			}
 			
 			&__intro { // <div>
-				@media #{$mq_w1920_up} {
+				@media #{$mq_w1500_up} {
 					@include services-intros;
 				}
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
-
-				@media #{$mq_w1920_up} {
-					width: 50%;
-				}
 			}
 
 			&__text { // <p>
 				@include services-text;
-
-				@media #{$mq_w1920_up} {
-					width: 50%;
-				}
 			}
 
 			&__keywords { // <div>
@@ -111,8 +105,9 @@
 					margin-top: 1.563rem;
 				}
 
-				@media #{$mq_w1920_up} {
+				@media #{$mq_w1500_up} {
 					width: 50%;
+					margin-top: unset;
 				}
 			}
 
@@ -130,10 +125,13 @@
 				margin-top: 3.125rem;
 			}
 
-			@media #{$mq_w1920_up} {
-				width: 37.5%;
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
+				width: 50%;
 				margin: {
-					top: 12.5rem;
 					right: auto;
 					left: auto;
 				}
@@ -141,21 +139,27 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+
+				&:last-of-type {
+					width: 100%;
+				}
 			}
 
 			&__text { // <p>
 				@include services-text;
+
+				&:last-of-type {
+					width: 100%;
+				}
 			}
 		}
 	}
 
 	.service2 { // <div>
+		@include sub-container;
+
 		@media #{$mq_w320_up} {
 			margin-top: 6.25rem;
-		}
-
-		@media #{$mq_w1920_up} {
-			margin-top: 12.5rem;
 		}
 
 		&__title { // <h3>
@@ -183,7 +187,11 @@
 				column-gap: 2rem;
 			}
 
-			@media #{$mq_w1920_up} {
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
 				margin-top: 6.25rem;
 			}
 		}
@@ -194,12 +202,10 @@
 	}
 
 	.service3 { // <div>
+		@include sub-container;
+
 		@media #{$mq_w320_up} {
 			margin-top: 6.25rem;
-		}
-
-		@media #{$mq_w1920_up} {
-			margin-top: 12.5rem;
 		}
 
 		&__title { // <h3>
@@ -213,8 +219,8 @@
 		&__text { // <p>
 			text-align: justify;
 
-			@media #{$mq_w1920_up} {
-				width: 37.5%;
+			@media #{$mq_w1500_up} {
+				width: 60%;
 				margin: {
 					right: auto;
 					left: auto;
@@ -228,7 +234,11 @@
 					margin-top: 3.125rem;
 				}
 
-				@media #{$mq_w1920_up} {
+				@media #{$mq_w1000_up} {
+					margin-top: 4.688rem;
+				}
+
+				@media #{$mq_w1500_up} {
 					margin-top: 6.25rem;
 				}
 			}
@@ -240,12 +250,10 @@
 	}
 
 	.service4 { // <div>
+		@include sub-container;
+
 		@media #{$mq_w320_up} {
 			margin-top: 6.25rem;
-		}
-
-		@media #{$mq_w1920_up} {
-			margin-top: 12.5rem;
 		}
 
 		&__title { // <h3>
@@ -261,17 +269,29 @@
 				margin-top: 3.125rem;
 			}
 
-			@media #{$mq_w1920_up} {
-				width: 50%;
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
+				width: 60%;
 				margin-top: 6.25rem;
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
+				
+				@media #{$mq_w1500_up} {
+					width: 100%;
+				}
 			}
 
 			&__text { // <p>
 				@include services-text;
+
+				@media #{$mq_w1500_up} {
+					width: 100%;
+				}
 
 				&:last-of-type {
 					margin-top: revert;
@@ -285,8 +305,12 @@
 				text-align: justify;
 			}
 
-			@media #{$mq_w1920_up} {
-				width: 50%;
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
+				width: 60%;
 				margin: {
 					top: 6.25rem;
 					left: auto;
@@ -295,6 +319,10 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+
+				@media #{$mq_w1500_up} {
+					width: 100%;
+				}
 			}
 
 			&__text { // <p>
@@ -307,17 +335,29 @@
 				margin-top: 3.125rem;
 			}
 
-			@media #{$mq_w1920_up} {
-				width: 50%;
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
+				width: 60%;
 				margin-top: 6.25rem;
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
+
+				@media #{$mq_w1500_up} {
+					width: 100%;
+				}
 			}
 
 			&__text { // <p>
 				@include services-text;
+
+				@media #{$mq_w1500_up} {
+					width: 100%;
+				}
 
 				&:last-child {
 					margin-top: revert;
@@ -330,23 +370,29 @@
 				margin-top: 3.125rem;
 			}
 
-			@media #{$mq_w1920_up} {
+			@media #{$mq_w1000_up} {
+				margin-top: 4.688rem;
+			}
+
+			@media #{$mq_w1500_up} {
 				margin-top: 6.25rem;
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
+
+				@media #{$mq_w1500_up} {
+					width: 100%;
+				}
 			}
 		}
 	}
 
 	.service5 { // <div>
+		@include sub-container;
+
 		@media #{$mq_w320_up} {
 			margin-top: 6.25rem;
-		}
-
-		@media #{$mq_w1920_up} {
-			margin-top: 12.5rem;
 		}
 
 		&__title { // <h3>
@@ -359,12 +405,10 @@
 	}
 
 	.service6 { // <div>
+		@include sub-container;
+
 		@media #{$mq_w320_up} {
 			margin-top: 6.25rem;
-		}
-
-		@media #{$mq_w1920_up} {
-			margin-top: 12.5rem;
 		}
 
 		&__title {
