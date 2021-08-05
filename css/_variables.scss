@@ -15,6 +15,7 @@ $bp_w537: 33.563rem; // 537px
 $bp_w600: 37.5rem; // 600px
 $bp_w750: 46.875rem; // 750px
 $bp_w800: 50rem; // 800px
+$bp_w875: 54.688rem; // 875px
 $bp_w900: 56.25rem; // 900px
 $bp_w1000: 62.5rem; // 1000px
 $bp_w1100: 68.75rem; // 1100px
@@ -33,6 +34,7 @@ $mq_w537_up: "(min-width: #{$bp_w537})";
 $mq_w600_up: "(min-width: #{$bp_w600})";
 $mq_w750_up: "(min-width: #{$bp_w750})";
 $mq_w800_up: "(min-width: #{$bp_w800})";
+$mq_w875_up: "(min-width: #{$bp_w875})";
 $mq_w900_up: "(min-width: #{$bp_w900})";
 $mq_w1000_up: "(min-width: #{$bp_w1000})";
 $mq_w1100_up: "(min-width: #{$bp_w1100})";
