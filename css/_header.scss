@@ -18,7 +18,11 @@
 		}
 
 		@media #{$mq_w1100_up} {
-			@include container;
+			width: 80%;
+			margin: {
+				right: auto;
+				left: auto;
+			}
 		}
 
 		@media #{$mq_w1920_up} {
