@@ -1,19 +1,16 @@
 .contact {
-	@include positioning-sections;
+	@include container;
 
 	@media #{$mq_w320_up} {
 		margin-top: 6.25rem;
 		padding-bottom: 6.25rem;
 	}
 
-	@media #{$mq_w1920_up} {
-		margin-top: 12.5rem;
-	}
-
 	&__introduction { // <section>
-		@include services-intros;
+		
 
-		@media #{$mq_w1920_up} {
+		@media #{$mq_w1500_up} {
+			@include services-intros;
 			width: 50%;
 		}
 	}
@@ -21,7 +18,7 @@
 	&__title { // <h2>
 		@include h2-titles;
 
-		@media #{$mq_w1920_up} {
+		@media #{$mq_w1500_up} {
 			width: 50%;
 		}
 	}
@@ -30,22 +27,34 @@
 		@include services-text;
 		margin-top: 6.25rem;
 
-		@media #{$mq_w1920_up} {
+		@media #{$mq_w1500_up} {
 			width: 50%;
 		}
 	}
 
 	.wpcf7 { // <div>
 		@media #{$mq_w320_up} {
-			margin-top: 3.125rem;
+			margin-top: 6.25rem;
 		}
 
-		@media #{$mq_w1920_up} {
+		@media #{$mq_w800_up} {
+			width: 80%;
+			margin: {
+				right: auto;
+				left: auto;
+			}
+		}
+
+		@media #{$mq_w1100_up} {
+			width: unset;
+		}
+
+		@media #{$mq_w1500_up} {
 			width: 50%;
 		}
 
 		.wpcf7-form.init { // <form>
-			@media #{$mq_w1920_up} {
+			@media #{$mq_w1100_up} {
 				display: flex;
 				flex-direction: column;
 				row-gap: 1.25rem;
@@ -83,7 +92,7 @@
 
 			.form { // no tags
 				&__part-1, &__part-2 { // <div>
-					@media #{$mq_w1920_up} {
+					@media #{$mq_w1100_up} {
 						display: flex;
 						flex-direction: column;
 						row-gap: 1.25rem;
@@ -91,7 +100,7 @@
 				}
 
 				&__top-part, &__bottom-part { // <div>
-					@media #{$mq_w1920_up} {
+					@media #{$mq_w1100_up} {
 						display: flex;
 						flex-direction: row;
 						column-gap: 2.5rem;
@@ -103,14 +112,19 @@
 						margin-top: 2rem;
 					}
 
-					@media #{$mq_w1920_up} {
+					@media #{$mq_w1100_up} {
 						width: 50%;
+						margin-top: unset;
 					}
 				}
 
 				&__object, &__message {
 					@media #{$mq_w320_up} {
 						margin-top: 2rem;
+					}
+
+					@media #{$mq_w1100_up} {
+						margin-top: unset;
 					}
 				}
 
@@ -121,7 +135,7 @@
 						height: 3.125rem;
 						display: block;
 						margin: {
-							top: 0;
+							top: 2rem;
 							right: 0;
 							bottom: 0;
 							left: auto;
@@ -138,15 +152,7 @@
 							weight: 500;
 							size: 1rem;
 						}
-
-						@media #{$mq_w320_up} {
-							width: 100%;
-							margin-top: 2rem;
-						}
-
-						@media #{$mq_w1920_up} {
-							width: 50%;
-						}
+						width: 50%;
 					}
 
 					.ajax-loader { // <span>
@@ -154,6 +160,10 @@
 						top: calc(3.125rem - (24px + 12px));
 						right: calc(50% + 1.25rem);
 						margin: 0;
+
+						@media #{$mq_w1100_up} {
+							top: calc((3.125rem + 2rem) - (24px + 12px));
+						}
 					}
 				}
 			}
