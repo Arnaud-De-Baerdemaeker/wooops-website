@@ -7,13 +7,31 @@
 		}
 	}
 
-	@media #{$mq_w900_up} {
+	@media #{$mq_w600_up} {
 		width: 80%;
 		margin: {
 			right: auto;
 			left: auto;
 		}
 		padding: 0;
+	}
+
+	@media #{$mq_w750_up} {
+		width: 70%;
+	}
+
+	@media #{$mq_w1500_up} {
+		width: 80%;
+	}
+}
+
+@mixin sub-container {
+	@media #{$mq_w1200_up} {
+		width: 80%;
+		margin: {
+			right: auto;
+			left: auto;
+		}
 	}
 }
 
@@ -42,7 +60,11 @@
 		font-size: 2rem;
 	}
 
-	@media #{$mq_w1920_up} {
+	@media #{$mq_w1300_up} {
+		font-size: 3rem;
+	}
+
+	@media #{$mq_w1500_up} {
 		font-size: 4rem;
 	}
 }
@@ -57,7 +79,11 @@
 		font-size: 1.25rem;
 	}
 
-	@media #{$mq_w1920_up} {
+	@media #{$mq_w1300_up} {
+		font-size: 1.625rem;
+	}
+
+	@media #{$mq_w1500_up} {
 		font-size: 2rem;
 	}
 }
@@ -77,7 +103,7 @@
 		left: calc(50% - 9.375rem / 2);
 	}
 
-	@media #{$mq_w1920_up} {
+	@media #{$mq_w1300_up} {
 		left: calc(50% - 18.75rem / 2);
 		width: 18.75rem;
 	}
@@ -91,8 +117,9 @@
 		text-align: center;
 	}
 
-	@media #{$mq_w1920_up} {
+	@media #{$mq_w1500_up} {
 		font-size: 1.25rem;
+		width: 80%;
 	}
 }
 
@@ -103,19 +130,20 @@
 }
 
 @mixin services-intros {
-
-	@media #{$mq_w1920_up} {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 @mixin services-text {
 	margin: 0;
 	text-align: justify;
+
+	@media #{$mq_w1500_up} {
+		width: 80%;
+	}
 }
 
 @mixin services-list {
