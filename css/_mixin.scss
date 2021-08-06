@@ -1,10 +1,8 @@
 @mixin container {
-	@media #{$mq_w320_up} {
-		margin: 0;
-		padding: {
-			right: 1rem;
-			left: 1rem;
-		}
+	margin: 0;
+	padding: {
+		right: 1rem;
+		left: 1rem;
 	}
 
 	@media #{$mq_w600_up} {
@@ -33,31 +31,27 @@
 			left: auto;
 		}
 	}
-}
 
-@mixin positioning-sections {
-	@include container;
-
-	@media #{$mq_w1920_up} {
-		display: flex;
-		gap: 4rem;
-		height: 100vh;
-		align-items: center;
+	@media #{$mq_w1500_up} {
+		width: 100%;
+		margin: {
+			right: 0;
+			left: 0;
+		}
 	}
 }
 
-@mixin positioning-sections--reverse {
-	@include positioning-sections;
-	flex-direction: row-reverse;
-}
-
 @mixin h2-titles {
-	font-weight: 400;
+	font: {
+		size: 2rem;
+		weight: 400;
+	}
 	text-align: center;
 	margin: 0;
 
-	@media #{$mq_w320_up} {
-		font-size: 2rem;
+	&:first-letter {
+		color: $wooops;
+		font-weight: 900;
 	}
 
 	@media #{$mq_w1300_up} {
@@ -71,13 +65,12 @@
 
 @mixin h3-titles {
 	text-align: center;
-	font-weight: 400;
+	font: {
+		size: 1.25rem;
+		weight: 400;
+	}
 	margin: 0;
 	position: relative;
-
-	@media #{$mq_w320_up} {
-		font-size: 1.25rem;
-	}
 
 	@media #{$mq_w1300_up} {
 		font-size: 1.625rem;
@@ -96,12 +89,9 @@
 		style: solid;
 		width: 0.469rem;
 		color: $wooops;
-	};
-
-	@media #{$mq_w320_up} {
-		width: 9.375rem;
-		left: calc(50% - 9.375rem / 2);
 	}
+	width: 9.375rem;
+	left: calc(50% - 9.375rem / 2);
 
 	@media #{$mq_w1300_up} {
 		left: calc(50% - 18.75rem / 2);
@@ -111,11 +101,8 @@
 
 @mixin h4-titles {
 	margin: 0;
-
-	@media #{$mq_w320_up} {
-		font-size: 1.10rem;
-		text-align: center;
-	}
+	font-size: 1.10rem;
+	text-align: center;
 
 	@media #{$mq_w1500_up} {
 		font-size: 1.25rem;
@@ -155,19 +142,14 @@
 	justify-content: space-evenly;
 	row-gap: 2rem;
 	flex-wrap: wrap;
+	column-gap: 0.75rem;
 
-	@media #{$mq_w320_up} {
-		column-gap: 0.75rem;
-	}
-
-	@media #{$mq_w1920_up} {
-		column-gap: 6rem;
+	@media #{$mq_w1500_up} {
+		column-gap: 4rem;
 	}
 }
 
 @mixin services-item {
-	width: 9.375rem;
-	height: 9.375rem;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -177,9 +159,11 @@
 	color: $white;
 	border-radius: 0.188rem;
 	box-shadow: 0.313rem 0.313rem 0.938rem $black_shadow;
+	width: 7.5rem;
+	height: 7.5rem;
 
-	@media #{$mq_w320_up} {
-		width: 7.5rem;
-		height: 7.5rem;
+	@media #{$mq_w1500_up} {
+		width: 9.375rem;
+		height: 9.375rem;
 	}
 }
