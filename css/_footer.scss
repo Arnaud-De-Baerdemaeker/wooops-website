@@ -2,11 +2,19 @@
 	background-color: $dark_gray;
 	color: $white;
 	position: relative;
-	padding-top: 3.125rem;
+	padding: {
+		top: 3.125rem;
+		right: 1rem;
+		left: 1rem;
+	}
 	
 	&__informations { // <div>
 		height: inherit;
 		text-align: center;
+
+		@media #{$mq_w450_up} {
+			text-align: start;
+		}
 
 		@media #{$mq_w1200_up} {
 			display: flex;
@@ -17,13 +25,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-		@media #{$mq_w320_up} {
-			width: 10.938rem;
-			margin: {
-				right: auto;
-				left: auto;
-			}
+		width: 10.938rem;
+		margin: {
+			right: auto;
+			left: auto;
 		}
 	}
 
@@ -37,16 +42,14 @@
 	}
 
 	&__contact-infos { // <div>
-		@media #{$mq_w320_up} {
-			margin-top: 3.125rem;
-		}
+		margin-top: 3.125rem;
 
 		@media #{$mq_w450_up} {
 			display: flex;
 			align-items: center;
 			justify-content: space-evenly;
 			flex-wrap: wrap;
-			column-gap: 5rem;
+			column-gap: 4rem;
 			row-gap: 2rem;
 		}
 
@@ -58,12 +61,10 @@
 	}
 
 	&__address, &__contact, &__social { // <section>
-		@media #{$mq_w320_up} {
-			margin-top: 2rem;
+		margin-top: 2rem;
 
-			&:first-of-type {
-				margin-top: 0;
-			}
+		&:first-of-type {
+			margin-top: 0;
 		}
 
 		@media #{$mq_w450_up} {
@@ -89,9 +90,7 @@
 	}
 
 	&__copyright { // <div>
-		@media #{$mq_w320_up} {
-			text-align: center;
-			margin-top: 3.125rem;
-		}
+		text-align: center;
+		margin-top: 3.125rem;
 	}
 }

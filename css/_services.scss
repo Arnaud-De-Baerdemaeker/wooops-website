@@ -1,9 +1,6 @@
 .services { // <div>
 	@include container;
-
-	@media #{$mq_w320_up} {
-		padding-top: 6.25rem;
-	}
+	padding-top: 12.5rem;
 
 	&__title { // <h2>
 		@include h2-titles;
@@ -22,10 +19,8 @@
 		}
 
 		.service1a { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-			}
-
+			margin-top: 3.125rem;
+			
 			@media #{$mq_w1000_up} {
 				margin-top: 4.688rem;
 			}
@@ -49,10 +44,8 @@
 			}
 
 			&__keywords { // <div>
-				@media #{$mq_w320_up} {
-					margin-top: 1.563rem;
-				}
-
+				margin-top: 1.563rem;
+				
 				@media #{$mq_w1500_up} {
 					width: 50%;
 					margin-top: unset;
@@ -69,10 +62,8 @@
 		}
 
 		.service1b { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-			}
-
+			margin-top: 3.125rem;
+			
 			@media #{$mq_w1000_up} {
 				margin-top: 4.688rem;
 			}
@@ -97,9 +88,7 @@
 			}
 
 			&__keywords { // <div>
-				@media #{$mq_w320_up} {
-					margin-top: 1.563rem;
-				}
+				margin-top: 1.563rem;
 
 				@media #{$mq_w1500_up} {
 					width: 50%;
@@ -117,9 +106,7 @@
 		}
 
 		.service1c { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-			}
+			margin-top: 3.125rem;
 
 			@media #{$mq_w1000_up} {
 				margin-top: 4.688rem;
@@ -153,11 +140,8 @@
 
 	.service2 { // <div>
 		@include sub-container;
-
-		@media #{$mq_w320_up} {
-			margin-top: 6.25rem;
-		}
-
+		margin-top: 6.25rem;
+		
 		&__title { // <h3>
 			@include h3-titles;
 
@@ -172,12 +156,9 @@
 			display: flex;
 			margin-bottom: 0;
 			justify-content: space-evenly;
-
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-				flex-wrap: wrap;
-				row-gap: 2rem;
-			}
+			margin-top: 3.125rem;
+			flex-wrap: wrap;
+			row-gap: 2rem;
 
 			@media #{$mq_w392_up} {
 				column-gap: 2rem;
@@ -199,10 +180,7 @@
 
 	.service3 { // <div>
 		@include sub-container;
-
-		@media #{$mq_w320_up} {
-			margin-top: 6.25rem;
-		}
+		margin-top: 6.25rem;
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -224,10 +202,9 @@
 			}
 
 			&:first-of-type {
-				margin-bottom: 0;
-				
-				@media #{$mq_w320_up} {
-					margin-top: 3.125rem;
+				margin: {
+					top: 3.125rem;
+					bottom: 0;
 				}
 
 				@media #{$mq_w1000_up} {
@@ -247,10 +224,7 @@
 
 	.service4 { // <div>
 		@include sub-container;
-
-		@media #{$mq_w320_up} {
-			margin-top: 6.25rem;
-		}
+		margin-top: 6.25rem;
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -261,9 +235,7 @@
 		}
 
 		.service4a { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-			}
+			margin-top: 3.125rem;
 
 			@media #{$mq_w1000_up} {
 				margin-top: 4.688rem;
@@ -296,10 +268,8 @@
 		}
 
 		.service4b { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-				text-align: justify;
-			}
+			margin-top: 3.125rem;
+			text-align: justify;
 
 			@media #{$mq_w1000_up} {
 				margin-top: 4.688rem;
@@ -327,9 +297,7 @@
 		}
 
 		.service4c { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-			}
+			margin-top: 3.125rem;
 
 			@media #{$mq_w1000_up} {
 				margin-top: 4.688rem;
@@ -362,9 +330,7 @@
 		}
 
 		.service4d { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 3.125rem;
-			}
+			margin-top: 3.125rem;
 
 			@media #{$mq_w1000_up} {
 				margin-top: 4.688rem;
@@ -386,10 +352,7 @@
 
 	.service5 { // <div>
 		@include sub-container;
-
-		@media #{$mq_w320_up} {
-			margin-top: 6.25rem;
-		}
+		margin-top: 6.25rem;
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -402,10 +365,7 @@
 
 	.service6 { // <div>
 		@include sub-container;
-
-		@media #{$mq_w320_up} {
-			margin-top: 6.25rem;
-		}
+		margin-top: 6.25rem;
 
 		&__title {
 			@include h3-titles;
