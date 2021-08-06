@@ -11,7 +11,10 @@
 			right: auto;
 			left: auto;
 		}
-		padding: 0;
+		padding: {
+			right: unset;
+			left: unset;
+		}
 	}
 
 	@media #{$mq_w750_up} {
