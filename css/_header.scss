@@ -3,15 +3,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-
-	@media #{$mq_w320_up} {
-		background-position-x: 55%;
-	}
+	background-position-x: 55%;
 
 	.header { // <header>
-		@media #{$mq_w320_up} {
-			height: 20vh;
-		}
+		height: 20vh;
 
 		@media #{$mq_w800_up} {
 			display: flex;
@@ -23,9 +18,6 @@
 				right: auto;
 				left: auto;
 			}
-		}
-
-		@media #{$mq_w1920_up} {
 		}
 
 		&__logo-container { // <h1>
@@ -50,19 +42,14 @@
 
 		&__logo-image { // <img>
 			vertical-align: middle;
-
-			@media #{$mq_w320_up} {
-				height: 90%;
-			}
+			height: 90%;
 		}
 
 		.menu-menu-principal-container { // <div>
-			@media #{$mq_w320_up} {
-				margin-top: 1rem;
-				padding: {
-					right: 10px;
-					left: 10px;
-				}
+			margin-top: 1rem;
+			padding: {
+				right: 10px;
+				left: 10px;
 			}
 
 			@media #{$mq_w500_up} {
@@ -75,7 +62,7 @@
 				margin-top: unset;
 			}
 
-			@media #{$mq_w1920_up} {
+			@media #{$mq_w1500_up} {
 				width: calc(100% - 28.125rem);
 			}
 
@@ -83,24 +70,13 @@
 				list-style: none;
 				display: flex;
 				padding: 0;
-				
-				@media #{$mq_w320_up} {
-					margin: {
-						top: 0;
-						bottom: 0;
-					}
-					justify-content: space-between;
+				margin: {
+					top: 0;
+					bottom: 0;
 				}
+				justify-content: space-between;
 
 				@media #{$mq_w500_up} {
-					justify-content: space-evenly;
-				}
-
-				@media #{$mq_w1920_up} {
-					margin: {
-						top: 0;
-						bottom: 0;
-					}
 					justify-content: space-evenly;
 				}
 
@@ -112,10 +88,7 @@
 							transform: uppercase;
 						}
 						font-weight: 500;
-
-						@media #{$mq_w320_up} {
-							font-size: 0.8rem;
-						}
+						font-size: 0.8rem;
 
 						@media #{$mq_w1000_up} {
 							font-size: 1rem;
@@ -135,10 +108,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
-		@media #{$mq_w320_up} {
-			height: calc(100vh - 20vh);
-		}
+		height: calc(100vh - 20vh);
 
 		@media #{$mq_w900_up} {
 			@include container;
@@ -159,10 +129,6 @@
 			@media #{$mq_w600_up} {
 				column-gap: 2rem;
 			}
-
-			@media #{$mq_w1920_up} {
-				width: 40%;
-			}
 		}
 	
 		&__image { // <img
@@ -175,10 +141,7 @@
 			text-transform: uppercase;
 			color: $white;
 			font-weight: 100;
-
-			@media #{$mq_w320_up} {
-				font-size: 1.563rem;
-			}
+			font-size: 1.563rem;
 
 			@media #{$mq_w600_up} {
 				font-size: 2.343rem;
