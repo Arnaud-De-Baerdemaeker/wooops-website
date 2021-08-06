@@ -6,12 +6,9 @@ $wooops: rgba(95, 149, 149, 1);
 $black_shadow: rgba(0, 0, 0, 0.4);
 
 // Breakpoints
-$bp_w320: 20rem; // 300px
 $bp_w392: 24.5rem; // 392px
 $bp_w450: 28.125rem; // 450px
-$bp_w482: 30.125rem; // 482px
 $bp_w500: 31.25rem; // 500px
-$bp_w537: 33.563rem; // 537px
 $bp_w600: 37.5rem; // 600px
 $bp_w750: 46.875rem; // 750px
 $bp_w800: 50rem; // 800px
@@ -22,15 +19,11 @@ $bp_w1100: 68.75rem; // 1100px
 $bp_w1200: 75rem; // 1200px
 $bp_w1300: 81.25rem; // 1300px
 $bp_w1500: 93.75rem; // 1500px
-$bp_w1920: 120rem; // 1920px
 
 // Media queries
-$mq_w320_up: "(min-width: #{$bp_w320})";
 $mq_w392_up: "(min-width: #{$bp_w392})";
 $mq_w450_up: "(min-width: #{$bp_w450})";
-$mq_w482_up: "(min-width: #{$bp_w482})";
 $mq_w500_up: "(min-width: #{$bp_w500})";
-$mq_w537_up: "(min-width: #{$bp_w537})";
 $mq_w600_up: "(min-width: #{$bp_w600})";
 $mq_w750_up: "(min-width: #{$bp_w750})";
 $mq_w800_up: "(min-width: #{$bp_w800})";
@@ -41,4 +34,3 @@ $mq_w1100_up: "(min-width: #{$bp_w1100})";
 $mq_w1200_up: "(min-width: #{$bp_w1200})";
 $mq_w1300_up: "(min-width: #{$bp_w1300})";
 $mq_w1500_up: "(min-width: #{$bp_w1500})";
-$mq_w1920_up: "(min-width: #{$bp_w1920})";
