@@ -2,15 +2,8 @@
 	background-color: $dark_gray;
 	color: $white;
 	position: relative;
-
-	@media #{$mq_w320_up} {
-		padding-top: 3.125rem;
-	}
-
-	@media #{$mq_w1200_up} {
-		//height: 25rem;
-	}
-
+	padding-top: 3.125rem;
+	
 	&__informations { // <div>
 		height: inherit;
 		text-align: center;
@@ -32,13 +25,6 @@
 				left: auto;
 			}
 		}
-
-		@media #{$mq_w875_up} {
-		}
-
-		@media #{$mq_w1200_up} {
-			
-		}
 	}
 
 	&__image { // <img>
@@ -47,9 +33,6 @@
 
 		@media #{$mq_w875_up} {
 			width: 100%;
-		}
-
-		@media #{$mq_w1200_up} {
 		}
 	}
 
@@ -109,11 +92,6 @@
 		@media #{$mq_w320_up} {
 			text-align: center;
 			margin-top: 3.125rem;
-		}
-
-		@media #{$mq_w1200_up} {
-			//position: absolute;
-			//bottom: 0;
 		}
 	}
 }
