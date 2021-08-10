@@ -8,7 +8,7 @@
 	<body <?php body_class(); ?>>
 		<div id="hero" class="hero">
 			<header class="header">
-				<?php $logo = get_field("logo"); ?>
+				<?php $logo = get_field("hero_logo"); ?>
 
 				<h1 class="header__logo-container">
 					<?php if ($logo): ?>
