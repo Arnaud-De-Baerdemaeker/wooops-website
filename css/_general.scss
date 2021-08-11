@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font: {
+		family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		size: 16px;
+	}
+}
+
+.half-part { // <section>
+	width: 50%;
+
+	&__title { // <h3>
+		text-transform: uppercase;
+		font-size: 1.875rem;
+		margin: 0;
+	}
+
+	&__text { // <p>
+		margin: {
+			top: revert;
+			bottom: 0;
+		}
+	}
+}

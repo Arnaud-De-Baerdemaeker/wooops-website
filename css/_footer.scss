@@ -1,0 +1,96 @@
+.footer { // <footer>
+	background-color: $dark_gray;
+	color: $white;
+	position: relative;
+	padding: {
+		top: 3.125rem;
+		right: 1rem;
+		left: 1rem;
+	}
+	
+	&__informations { // <div>
+		height: inherit;
+		text-align: center;
+
+		@media #{$mq_w450_up} {
+			text-align: start;
+		}
+
+		@media #{$mq_w1200_up} {
+			display: flex;
+		}
+	}
+
+	&__logo { // <div>
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 10.938rem;
+		margin: {
+			right: auto;
+			left: auto;
+		}
+	}
+
+	&__image { // <img>
+		width: 80%;
+		vertical-align: middle;
+
+		@media #{$mq_w875_up} {
+			width: 100%;
+		}
+	}
+
+	&__contact-infos { // <div>
+		margin-top: 3.125rem;
+
+		@media #{$mq_w450_up} {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			column-gap: 4rem;
+			row-gap: 2rem;
+		}
+
+		@media #{$mq_w1200_up} {
+			width: 70%;
+			margin-top: unset;
+			align-content: center;
+		}
+	}
+
+	&__address, &__contact, &__social { // <section>
+		margin-top: 2rem;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		@media #{$mq_w450_up} {
+			margin-top: unset;
+			align-self: start;
+		}
+
+		@media #{$mq_w1200_up} {
+			display: flex;
+			flex-direction: column;
+			height: 7.5rem;
+		}
+	}
+
+	&__title { // <h4>
+		margin: 0;
+		font-size: 1.25rem;
+		justify-self: flex-start;
+	}
+
+	&__entry { // <p>
+		margin: 0;
+	}
+
+	&__copyright { // <div>
+		text-align: center;
+		margin-top: 3.125rem;
+	}
+}
