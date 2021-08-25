@@ -23,3 +23,22 @@
 				</h1>
 				<?php wp_nav_menu(); ?>
 			</header>
+
+			<section class="introduction">
+				<h2 class="introduction__title">
+					<?php $introduction = get_field("introduction");
+					if ($introduction): ?>
+						<p class="introduction__text">
+							<?php echo $introduction["text_part_1"]["normal_text"]; ?>
+							<br />
+							<span class="introduction__keyword"><?php echo $introduction["text_part_1"]["keyword"]; ?></span>
+						</p>
+						<p class="introduction__text">
+							<?php echo $introduction["text_part_2"]["normal_text"]; ?>
+							<br />
+							<span class="introduction__keyword"><?php echo $introduction["text_part_2"]["keyword"]; ?></span>
+						</p>
+					<?php endif; ?>
+				</h2>
+			</section>
+		</div>
