@@ -39,12 +39,13 @@ body {
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
-  background-position-x: 55%;
 }
 
 .hero .header {
-  height: 20vh;
+  height: 4.688rem;
+  background-color: white;
 }
 
 @media (min-width: 50rem) {
@@ -57,14 +58,20 @@ body {
 
 @media (min-width: 68.75rem) {
   .hero .header {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom-right-radius: 37.5px;
+    border-bottom-left-radius: 37.5px;
   }
 }
 
 .hero .header__logo-container {
   background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   margin-top: 0;
   margin-bottom: 0;
   display: -webkit-box;
@@ -77,6 +84,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+  position: absolute;
+  top: calc(50vh - 10.9375rem + 2.344rem);
+  -webkit-box-shadow: 0px 0px 20px 5px white;
+          box-shadow: 0px 0px 20px 5px white;
 }
 
 @media (min-width: 50rem) {
@@ -87,13 +98,16 @@ body {
 
 @media (min-width: 68.75rem) {
   .hero .header__logo-container {
-    width: 28.175rem;
+    width: 21.875rem;
+    height: 21.875rem;
   }
 }
 
 .hero .header__logo-image {
   vertical-align: middle;
-  height: 90%;
+  width: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .hero .header .menu-menu-principal-container {
@@ -120,7 +134,7 @@ body {
 
 @media (min-width: 93.75rem) {
   .hero .header .menu-menu-principal-container {
-    width: calc(100% - 28.125rem);
+    width: calc(100% - 20rem);
   }
 }
 
@@ -146,11 +160,11 @@ body {
 }
 
 .hero .header .menu-menu-principal-container .menu .menu-item a {
-  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.8rem;
+  color: black;
 }
 
 @media (min-width: 62.5rem) {
@@ -176,39 +190,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: calc(100vh - 20vh);
+  height: calc(100vh - 4.688rem);
 }
 
 @media (min-width: 56.25rem) {
   .hero .introduction {
-    margin: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
-@media (min-width: 56.25rem) and (min-width: 37.5rem) {
-  .hero .introduction {
-    width: 80%;
-    margin-right: auto;
     margin-left: auto;
-    padding-right: unset;
-    padding-left: unset;
-  }
-}
-
-@media (min-width: 56.25rem) and (min-width: 46.875rem) {
-  .hero .introduction {
-    width: 70%;
-  }
-}
-
-@media (min-width: 56.25rem) and (min-width: 93.75rem) {
-  .hero .introduction {
-    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -216,7 +210,7 @@ body {
   margin: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "image text1" "image text2";
+      grid-template-areas: "text1 text2";
   row-gap: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -227,15 +221,16 @@ body {
 
 @media (min-width: 37.5rem) {
   .hero .introduction__title {
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 }
 
 .hero .introduction__image {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   grid-area: image;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -266,7 +261,7 @@ body {
 
 .hero .introduction__text:first-of-type {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: text1;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -274,14 +269,16 @@ body {
 }
 
 .hero .introduction__text:last-of-type {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text2;
+  text-align: end;
 }
 
 .hero .introduction__keyword {
   font-weight: 700;
-  color: black;
+  color: white;
+  text-shadow: 0px 0px 10px white;
 }
 
 .services {
