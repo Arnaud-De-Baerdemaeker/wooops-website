@@ -1,14 +1,36 @@
 .services { // <div>
 	@include container;
-	padding-top: 12.5rem;
-
+	
 	&__title { // <h2>
 		@include h2-titles;
 	}
 
+	&__sides-container { // <div>
+		display: flex;
+		
+	}
+
+	&__left-side { // <div>
+		width: 30%;
+		height: calc(100vh - 4.688rem);
+		position: sticky;
+		top: 4.688rem;
+	}
+
+	&__image { // <img>
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 30%;
+	}
+
+	&__right-side { // <div>
+		width: 70%;
+	}
+
 	.service1 { // <div>
 		@include sub-container;
-		margin-top: 6.25rem;
+		margin-top: 4.688rem;
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -16,6 +38,19 @@
 			&:after {
 				@include title-decoration;
 			}
+		}
+
+		&__image-container { // <div>
+			width: 30vw;
+			height: 40.625rem;
+			position: sticky;
+			top: calc(100vh / 2 - 20.3125rem);
+		}
+
+		&__image { // <img>
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 
 		.service1a { // <div>
@@ -373,6 +408,28 @@
 			&:after {
 				@include title-decoration;
 			}
+		}
+	}
+
+	.service_7 { // <div>
+		@include container;
+		margin-top: 12.5rem;
+	
+		&__title { // <h3>
+			@include h3-titles;
+
+			&:after {
+				@include title-decoration;
+			}
+		}
+	
+		&__list { // <ul>
+			@include services-list;
+			margin-top: 6.25rem;
+		}
+	
+		&__item { // <li>
+			@include services-item;
 		}
 	}
 }
