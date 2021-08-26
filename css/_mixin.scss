@@ -1,28 +1,24 @@
 @mixin container {
 	margin: 0;
-	padding: {
-		right: 1rem;
-		left: 1rem;
-	}
+	// padding: {
+	// 	right: 1rem;
+	// 	left: 1rem;
+	// }
 
 	@media #{$mq_w600_up} {
-		width: 80%;
-		margin: {
-			right: auto;
-			left: auto;
-		}
-		padding: {
-			right: unset;
-			left: unset;
-		}
+		//width: 80%;
+		// padding: {
+		// 	right: auto;
+		// 	left: auto;
+		// }
 	}
 
 	@media #{$mq_w750_up} {
-		width: 70%;
+		//width: 70%;
 	}
 
 	@media #{$mq_w1500_up} {
-		width: 80%;
+		//width: 80%;
 	}
 }
 
@@ -49,20 +45,22 @@
 		size: 2rem;
 		weight: 400;
 	}
-	text-align: center;
+	//text-align: center;
 	margin: 0;
-
-	&:first-letter {
-		color: $wooops;
-		font-weight: 900;
-	}
+	background: -webkit-linear-gradient(left, $wooops 25%, $black);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	@media #{$mq_w1300_up} {
 		font-size: 3rem;
 	}
 
 	@media #{$mq_w1500_up} {
-		font-size: 4rem;
+		font-size: 7.5rem;
 	}
 }
 
