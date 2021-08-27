@@ -1,5 +1,5 @@
-<?php get_header(); ?>
-
+		<?php get_header();
+		include("sections/hero.php"); ?>
 		<main>
 			<?php
 				include("sections/agency.php");
