@@ -8,9 +8,9 @@
 >
 	<section class="introduction">
 		<?php $logo = get_field("hero_logo"); ?>
-		<h1 class="header__logo-container">
+		<h1 class="introduction__logo-container">
 			<?php if ($logo): ?>
-				<img src="<?php echo esc_url($logo["url"]); ?>" alt="<?php echo esc_attr($logo["alt"]); ?>" class="header__logo-image" />
+				<img src="<?php echo esc_url($logo["url"]); ?>" alt="<?php echo esc_attr($logo["alt"]); ?>" class="introduction__logo-image" />
 			<?php endif; ?>
 		</h1>
 		<h2 class="introduction__title">
