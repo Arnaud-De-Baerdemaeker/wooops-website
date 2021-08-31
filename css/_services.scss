@@ -5,34 +5,43 @@
 		@include h2-titles;
 	}
 
-	.service1 { // <div>
-		@include sub-container;
+	&__image { // <img>
+		height: 100%;
 		position: relative;
+		top: 50px;
+		box-shadow: 0px 0px 40px 10px $black_shadow;
+	}
+
+	.service1 { // <div>
+		//@include sub-container;
+		@include container-by-padding;
+		margin-top: 150px;
 
 		&__title { // <h3>
 			@include h3-titles;
-			background-attachment: fixed;
-			background-repeat: no-repeat;
 		}
 
-		&__title-text { // <span>
-			text-transform: uppercase;
+		&__services-container { // <div>
+			margin-top: 75px;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		.service1a { // <div>
-			margin-top: 3.125rem;
-			
+			@include card-container;
+
 			@media #{$mq_w1000_up} {
-				margin-top: 4.688rem;
 			}
 
 			@media #{$mq_w1500_up} {
-				@include sub-sections;
+				//@include sub-sections;
 			}
 
 			&__intro { // <div>
+				@include card-intro;
+
 				@media #{$mq_w1500_up} {
-					@include services-intros;
+					//@include services-intros;
 				}
 			}
 
@@ -45,11 +54,11 @@
 			}
 
 			&__keywords { // <div>
-				margin-top: 1.563rem;
+				@include card-keywords;
 				
 				@media #{$mq_w1500_up} {
-					width: 50%;
-					margin-top: unset;
+					//width: 50%;
+					//margin-top: unset;
 				}
 			}
 
@@ -63,20 +72,20 @@
 		}
 
 		.service1b { // <div>
-			margin-top: 3.125rem;
+			@include card-container;
 			
 			@media #{$mq_w1000_up} {
-				margin-top: 4.688rem;
 			}
 
 			@media #{$mq_w1500_up} {
-				@include sub-sections;
-				flex-direction: row-reverse;
+				//@include sub-sections;
 			}
 			
 			&__intro { // <div>
+				@include card-intro;
+
 				@media #{$mq_w1500_up} {
-					@include services-intros;
+					//@include services-intros;
 				}
 			}
 
@@ -89,11 +98,9 @@
 			}
 
 			&__keywords { // <div>
-				margin-top: 1.563rem;
+				@include card-keywords;
 
 				@media #{$mq_w1500_up} {
-					width: 50%;
-					margin-top: unset;
 				}
 			}
 
@@ -107,18 +114,16 @@
 		}
 
 		.service1c { // <div>
-			margin-top: 3.125rem;
+			@include card-container-light;
 
 			@media #{$mq_w1000_up} {
-				margin-top: 4.688rem;
 			}
 
 			@media #{$mq_w1500_up} {
-				width: 50%;
-				margin: {
-					right: auto;
-					left: auto;
-				}
+			}
+
+			&__intro { // <div>
+				@include card-intro-light;
 			}
 
 			&__title { // <h4>
@@ -131,24 +136,16 @@
 
 			&__text { // <p>
 				@include services-text;
-
-				&:last-of-type {
-					width: 100%;
-				}
 			}
 		}
 	}
 
 	.service2 { // <div>
-		@include sub-container;
-		margin-top: 6.25rem;
+		@include container-by-padding;
+		margin-top: 150px;
 		
 		&__title { // <h3>
 			@include h3-titles;
-
-			&:after {
-				@include title-decoration;
-			}
 		}
 
 		&__list { // <ol>
@@ -156,7 +153,7 @@
 			padding: 0;
 			display: flex;
 			margin-bottom: 0;
-			justify-content: space-evenly;
+			justify-content: space-between;
 			margin-top: 3.125rem;
 			flex-wrap: wrap;
 			row-gap: 2rem;
@@ -170,81 +167,91 @@
 			}
 
 			@media #{$mq_w1500_up} {
-				margin-top: 6.25rem;
+				margin-top: 75px;
 			}
 		}
 
 		&__item { // <li>
-			@include services-item;
+			@include card-dark;
+			width: 500px;
+			font: {
+				size: 23px;
+				weight: 600;
+			}
+			text-align: center;
 		}
 	}
 
 	.service3 { // <div>
-		@include sub-container;
-		margin-top: 6.25rem;
+		//@include sub-container;
+		@include container-by-padding;
+		margin-top: 150px;
 
 		&__title { // <h3>
 			@include h3-titles;
+		}
 
-			&:after {
-				@include title-decoration;
-			}
+		&__text-container { // <div>
+			margin-top: 75px;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		&__text { // <p>
+			@include card-dark;
 			text-align: justify;
 
 			@media #{$mq_w1500_up} {
-				width: 60%;
-				margin: {
-					right: auto;
-					left: auto;
-				}
+				margin: 0;
 			}
 
 			&:first-of-type {
-				margin: {
-					top: 3.125rem;
-					bottom: 0;
-				}
-
 				@media #{$mq_w1000_up} {
-					margin-top: 4.688rem;
 				}
 
 				@media #{$mq_w1500_up} {
-					margin-top: 6.25rem;
+					font: {
+						size: 25px;
+						weight: 500;
+					}
+					width: 45%;
+					word-spacing: 1px;
 				}
 			}
 
 			&:last-of-type {
 				margin-bottom: 0;
+				width: 45%;
+				line-height: 30px;
 			}
 		}
 	}
 
 	.service4 { // <div>
 		@include sub-container;
-		margin-top: 6.25rem;
+		@include container-by-padding;
+		margin-top: 150px;
 
 		&__title { // <h3>
 			@include h3-titles;
+		}
 
-			&:after {
-				@include title-decoration;
-			}
+		&__services-container { // <div>
+			margin-top: 75px;
+			display: flex;
+			flex-wrap: wrap;
+			row-gap: 42px;
+			column-gap: 41.5px;
+			justify-content: center;
 		}
 
 		.service4a { // <div>
-			margin-top: 3.125rem;
+			@include card-container-light;
 
 			@media #{$mq_w1000_up} {
-				margin-top: 4.688rem;
 			}
 
 			@media #{$mq_w1500_up} {
-				width: 60%;
-				margin-top: 6.25rem;
 			}
 
 			&__title { // <h4>
@@ -259,7 +266,7 @@
 				@include services-text;
 
 				@media #{$mq_w1500_up} {
-					width: 100%;
+					//width: 100%;
 				}
 
 				&:last-of-type {
@@ -269,51 +276,52 @@
 		}
 
 		.service4b { // <div>
-			margin-top: 3.125rem;
+			@include card-container-light;
 			text-align: justify;
 
 			@media #{$mq_w1000_up} {
-				margin-top: 4.688rem;
+				//margin-top: 4.688rem;
 			}
 
 			@media #{$mq_w1500_up} {
-				width: 60%;
-				margin: {
-					top: 6.25rem;
-					left: auto;
-				}
+				//width: 60%;
+				// margin: {
+				// 	top: 6.25rem;
+				// 	left: auto;
+				// }
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
 
 				@media #{$mq_w1500_up} {
-					width: 100%;
+					//width: 100%;
 				}
 			}
 
 			&__text { // <p>
-				margin: 0;
+				@include services-text;
 			}
 		}
 
 		.service4c { // <div>
-			margin-top: 3.125rem;
+			@include card-container-light;
+			//margin-top: 3.125rem;
 
 			@media #{$mq_w1000_up} {
-				margin-top: 4.688rem;
+				//margin-top: 4.688rem;
 			}
 
 			@media #{$mq_w1500_up} {
-				width: 60%;
-				margin-top: 6.25rem;
+				//width: 60%;
+				//margin-top: 6.25rem;
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
 
 				@media #{$mq_w1500_up} {
-					width: 100%;
+					//width: 100%;
 				}
 			}
 
@@ -321,7 +329,7 @@
 				@include services-text;
 
 				@media #{$mq_w1500_up} {
-					width: 100%;
+					//width: 100%;
 				}
 
 				&:last-child {
@@ -331,71 +339,74 @@
 		}
 
 		.service4d { // <div>
-			margin-top: 3.125rem;
+			//margin-top: 3.125rem;
+			@include card-container-light;
 
 			@media #{$mq_w1000_up} {
-				margin-top: 4.688rem;
+				//margin-top: 4.688rem;
 			}
 
 			@media #{$mq_w1500_up} {
-				margin-top: 6.25rem;
+				//margin-top: 6.25rem;
 			}
 
 			&__title { // <h4>
 				@include h4-titles;
 
 				@media #{$mq_w1500_up} {
-					width: 100%;
+					//width: 100%;
 				}
 			}
 		}
 	}
 
 	.service5 { // <div>
-		@include sub-container;
-		margin-top: 6.25rem;
+		//@include sub-container;
+		@include container-by-padding;
+		margin-top: 150px;
 
 		&__title { // <h3>
 			@include h3-titles;
-
-			&:after {
-				@include title-decoration;
-			}
 		}
 	}
 
 	.service6 { // <div>
-		@include sub-container;
-		margin-top: 6.25rem;
+		//@include sub-container;
+		@include container-by-padding;
+		margin-top: 150px;
 
 		&__title {
 			@include h3-titles;
-
-			&:after {
-				@include title-decoration;
-			}
 		}
 	}
 
-	.service_7 { // <div>
-		@include container;
-		margin-top: 12.5rem;
+	.service7 { // <div>
+		//@include container;
+		@include container-by-padding;
+		margin-top: 150px;
 	
 		&__title { // <h3>
 			@include h3-titles;
-
-			&:after {
-				@include title-decoration;
-			}
 		}
 	
 		&__list { // <ul>
 			@include services-list;
-			margin-top: 6.25rem;
+			margin-top: 75px;
+			display: flex;
+			justify-content: space-between;
 		}
 	
 		&__item { // <li>
 			@include services-item;
+			@include card-dark;
+			display: inline-block;
+			width: 250px;
+			text-align: center;
+			align-content: center;
+			font: {
+				size: 23px;
+				weight: 600;
+			}
 		}
 	}
 }
