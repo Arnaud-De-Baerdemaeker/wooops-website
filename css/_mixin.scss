@@ -50,20 +50,23 @@
 @mixin h2-titles {
 	font: {
 		size: 2rem;
-		weight: 400;
+		weight: 800;
 	}
 	margin: 0;
-	color: $white;
+	color: $black;
+	background-color: $white;
 	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-transform: uppercase;
 
 	@media #{$mq_w1300_up} {
 		font-size: 3rem;
 	}
 
 	@media #{$mq_w1500_up} {
+		@include container-by-padding;
 		font-size: 7.5rem;
 	}
 }
@@ -71,11 +74,11 @@
 @mixin h3-titles {
 	text-align: center;
 	font: {
+		family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
 		size: 1.25rem;
 		weight: 400;
 	}
 	margin: 0;
-	//position: absolute;
 	color: $white;
 
 	@media #{$mq_w1300_up} {
@@ -83,41 +86,50 @@
 	}
 
 	@media #{$mq_w1500_up} {
-		font-size: 3rem;
-		height: 200px;
+		font-size: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 }
 
-@mixin title-decoration {
-	content: "";
-	display: block;
-	position: absolute;
-	border-bottom: {
-		style: solid;
-		width: 0.469rem;
-		color: $wooops;
-	}
-	width: 9.375rem;
-	left: calc(50% - 9.375rem / 2);
-
-	@media #{$mq_w1300_up} {
-		left: calc(50% - 18.75rem / 2);
-		width: 18.75rem;
-	}
-}
-
 @mixin h4-titles {
 	margin: 0;
 	font-size: 1.10rem;
-	text-align: center;
+	//text-align: center;
 
 	@media #{$mq_w1500_up} {
-		font-size: 1.25rem;
-		width: 80%;
+		font-size: 30px;
+		//width: 80%;
 	}
+}
+
+@mixin card-container {
+	background-color: $wooops;
+	width: 500px;
+}
+
+@mixin card-container-light {
+	@include card-container;
+	background-color: $white;
+	padding: 40px;
+}
+
+@mixin card-intro {
+	background-color: $white;
+	padding: 40px;
+	box-shadow: 0px 0px 20px $black_shadow;
+}
+
+@mixin card-intro-light {
+	@include card-intro;
+	box-shadow: unset;
+	padding: unset;
+}
+
+@mixin card-keywords {
+	padding: 40px;
+	text-align: justify;
 }
 
 @mixin sub-sections {
@@ -127,19 +139,24 @@
 }
 
 @mixin services-intros {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	//width: 50%;
+	//display: flex;
+	//flex-direction: column;
+	//justify-content: center;
+	//align-items: center;
 }
 
 @mixin services-text {
-	margin: 0;
+	margin: {
+		top: 20px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
 	text-align: justify;
 
 	@media #{$mq_w1500_up} {
-		width: 80%;
+		//width: 80%;
 	}
 }
 
@@ -147,33 +164,45 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	display: flex;
-	justify-items: center;
-	justify-content: space-evenly;
-	row-gap: 2rem;
-	flex-wrap: wrap;
-	column-gap: 0.75rem;
+	color: $white;
+	//display: flex;
+	//justify-items: center;
+	//justify-content: space-evenly;
+	//row-gap: 2rem;
+	//flex-wrap: wrap;
+	//column-gap: 0.75rem;
 
 	@media #{$mq_w1500_up} {
-		column-gap: 4rem;
+		//column-gap: 4rem;
 	}
 }
 
 @mixin services-item {
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 1rem;
-	background-color: $wooops;
-	color: $white;
-	border-radius: 0.188rem;
-	box-shadow: 0.313rem 0.313rem 0.938rem $black_shadow;
-	width: 7.5rem;
-	height: 7.5rem;
+	display: inline;
+	//text-align: center;
+	//display: flex;
+	//align-items: center;
+	//justify-content: center;
+	//padding: 1rem;
+	//background-color: $wooops;
+	font-weight: 500;
+	//border-radius: 0.188rem;
+	//box-shadow: 0.313rem 0.313rem 0.938rem $black_shadow;
+	//width: 7.5rem;
+	//height: 7.5rem;
 
 	@media #{$mq_w1500_up} {
-		width: 9.375rem;
-		height: 9.375rem;
+		//width: 9.375rem;
+		//height: 9.375rem;
+	}
+}
+
+@mixin card-dark {
+	color: $white;
+	padding: 40px;
+	border: {
+		style: solid;
+		width: 1px;
+		color: $white;
 	}
 }
