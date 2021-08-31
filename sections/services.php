@@ -103,34 +103,36 @@
 		<div class="service4"><!-- S4 -->
 			<h3 class="service4__title"><?php echo $service_4["title"]; ?></h3>
 
-			<?php if ($service_4["service_4a"]): ?>
-				<div class="service4a"><!-- S4a -->
-					<h4 class="service4a__title"><?php echo $service_4["service_4a"]["title"]; ?></h4>
-					<p class="service4a__text"><?php echo $service_4["service_4a"]["paragraphs"]["paragraph_1"]; ?></p>
-					<p class="service4a__text"><?php echo $service_4["service_4a"]["paragraphs"]["paragraph_2"]; ?></p>
-				</div>
-			<?php endif; ?>
+			<div class="service4__services-container">
+				<?php if ($service_4["service_4a"]): ?>
+					<div class="service4a"><!-- S4a -->
+						<h4 class="service4a__title"><?php echo $service_4["service_4a"]["title"]; ?></h4>
+						<p class="service4a__text"><?php echo $service_4["service_4a"]["paragraphs"]["paragraph_1"]; ?></p>
+						<p class="service4a__text"><?php echo $service_4["service_4a"]["paragraphs"]["paragraph_2"]; ?></p>
+					</div>
+				<?php endif; ?>
 
-			<?php if ($service_4["service_4b"]): ?>
-				<div class="service4b"><!-- S4b -->
-					<h4 class="service4b__title"><?php echo $service_4["service_4b"]["title"]; ?></h4>
-					<p class="service4b__text"><?php echo $service_4["service_4b"]["text"]; ?></p>
-				</div>
-			<?php endif; ?>
+				<?php if ($service_4["service_4b"]): ?>
+					<div class="service4b"><!-- S4b -->
+						<h4 class="service4b__title"><?php echo $service_4["service_4b"]["title"]; ?></h4>
+						<p class="service4b__text"><?php echo $service_4["service_4b"]["text"]; ?></p>
+					</div>
+				<?php endif; ?>
 
-			<?php if ($service_4["service_4c"]): ?>
-				<div class="service4c"><!-- S4c -->
-					<h4 class="service4c__title"><?php echo $service_4["service_4c"]["title"]; ?></h4>
-					<p class="service4c__text"><?php echo $service_4["service_4c"]["paragraphs"]["paragraph_1"]; ?></p>
-					<p class="service4c__text"><?php echo $service_4["service_4c"]["paragraphs"]["paragraph_2"]; ?></p>
-				</div>
-			<?php endif; ?>
+				<?php if ($service_4["service_4c"]): ?>
+					<div class="service4c"><!-- S4c -->
+						<h4 class="service4c__title"><?php echo $service_4["service_4c"]["title"]; ?></h4>
+						<p class="service4c__text"><?php echo $service_4["service_4c"]["paragraphs"]["paragraph_1"]; ?></p>
+						<p class="service4c__text"><?php echo $service_4["service_4c"]["paragraphs"]["paragraph_2"]; ?></p>
+					</div>
+				<?php endif; ?>
 
-			<?php if ($service_4["service_4d_title"]): ?>
-				<div class="service4d"><!-- S4d -->
-					<h4 class="service4d__title"><?php echo $service_4["service_4d_title"]; ?></h4>
-				</div>
-			<?php endif; ?>
+				<?php if ($service_4["service_4d_title"]): ?>
+					<div class="service4d"><!-- S4d -->
+						<h4 class="service4d__title"><?php echo $service_4["service_4d_title"]; ?></h4>
+					</div>
+				<?php endif; ?>
+			</div>
 		</div>
 	<?php endif; ?>
 
@@ -147,15 +149,15 @@
 	<?php endif; ?>
 
 	<?php if ($service_7): ?>
-		<div class="service_7">
-			<h3 class="service_7__title"><?php echo $service_7["title"]; ?></h3>
-			<ul class="service_7__list">
-				<li class="service_7__item"><?php echo $service_7["keywords"]["keyword_1"]; ?></li>
-				<li class="service_7__item"><?php echo $service_7["keywords"]["keyword_2"]; ?></li>
-				<li class="service_7__item"><?php echo $service_7["keywords"]["keyword_3"]; ?></li>
-				<li class="service_7__item"><?php echo $service_7["keywords"]["keyword_4"]; ?></li>
-				<li class="service_7__item"><?php echo $service_7["keywords"]["keyword_5"]; ?></li>
-				<li class="service_7__item"><?php echo $service_7["keywords"]["keyword_6"]; ?></li>
+		<div class="service7">
+			<h3 class="service7__title"><?php echo $service_7["title"]; ?></h3>
+			<ul class="service7__list">
+				<li class="service7__item"><?php echo $service_7["keywords"]["keyword_1"]; ?></li>
+				<li class="service7__item"><?php echo $service_7["keywords"]["keyword_2"]; ?></li>
+				<li class="service7__item"><?php echo $service_7["keywords"]["keyword_3"]; ?></li>
+				<li class="service7__item"><?php echo $service_7["keywords"]["keyword_4"]; ?></li>
+				<li class="service7__item"><?php echo $service_7["keywords"]["keyword_5"]; ?></li>
+				<li class="service7__item"><?php echo $service_7["keywords"]["keyword_6"]; ?></li>
 			</ul>
 		</div>
 	<?php endif; ?>
