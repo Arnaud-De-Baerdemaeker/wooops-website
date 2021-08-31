@@ -11,43 +11,8 @@
 	}
 
 	@media #{$mq_w1100_up} {
-		padding: {
-			right: 10%;
-			left: 10%;
-		}
+		@include container-by-padding;
 		justify-content: center;
-	}
-
-	&__logo-container { // <h1>
-		background-color: $white;
-		transform: rotate(45deg);
-		margin: {
-			top: 0;
-			bottom: 0;
-		}
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: inherit;
-		position: absolute;
-		top: calc(50vh - 10.9375rem + 2.344rem);
-		box-shadow: 0px 0px 1.25rem 0.313rem $white;
-		z-index: 0;
-
-		@media #{$mq_w800_up} {
-			width: 18.75rem;
-		}
-
-		@media #{$mq_w1100_up} {
-			width: 21.875rem;
-			height: 21.875rem;
-		}
-	}
-
-	&__logo-image { // <img>
-		vertical-align: middle;
-		width: 100%;
-		transform: rotate(-45deg);
 	}
 
 	.menu-menu-principal-container { // <div>
