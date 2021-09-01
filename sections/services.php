@@ -12,8 +12,8 @@
 
 	<?php if ($provided_services): ?>
 		<h2 class="services__title">
-			<?php echo $provided_services["provided_services_title"]; ?>
-			<img src="<?php echo $provided_services["provided_services_image"]["url"]; ?>" alt="" class="services__image" />
+			<?php echo $provided_services["title"]; ?>
+			<img src="<?php echo $provided_services["image"]["url"]; ?>" alt="<?php echo $provided_services["image"]["alt"]; ?>" class="services__image" />
 		</h2>
 	<?php endif; ?>
 
