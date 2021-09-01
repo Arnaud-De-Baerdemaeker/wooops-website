@@ -104,6 +104,13 @@
 	}
 }
 
+@mixin section-header {
+	height: 100%;
+	position: relative;
+	top: 50px;
+	box-shadow: 0px 0px 40px 10px $black_shadow;
+}
+
 @mixin card-container {
 	background-color: $wooops;
 	width: 500px;

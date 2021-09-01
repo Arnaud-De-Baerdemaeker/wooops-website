@@ -6,10 +6,7 @@
 	}
 
 	&__image { // <img>
-		height: 100%;
-		position: relative;
-		top: 50px;
-		box-shadow: 0px 0px 40px 10px $black_shadow;
+		@include section-header;
 	}
 
 	.service1 { // <div>
