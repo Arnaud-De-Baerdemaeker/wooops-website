@@ -11,8 +11,11 @@
 
 	.service1 { // <div>
 		//@include sub-container;
-		@include container-by-padding;
 		margin-top: 150px;
+
+		@media #{$mq_w1500_up} {
+			@include container-by-padding;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -20,8 +23,11 @@
 
 		&__services-container { // <div>
 			margin-top: 75px;
-			display: flex;
-			justify-content: space-between;
+
+			@media #{$mq_w1500_up} {
+				display: flex;
+				justify-content: space-between;
+			}
 		}
 
 		.service1a { // <div>
@@ -138,8 +144,11 @@
 	}
 
 	.service2 { // <div>
-		@include container-by-padding;
 		margin-top: 150px;
+
+		@media #{$mq_w1500_up} {
+			@include container-by-padding;
+		}
 		
 		&__title { // <h3>
 			@include h3-titles;
@@ -181,8 +190,11 @@
 
 	.service3 { // <div>
 		//@include sub-container;
-		@include container-by-padding;
 		margin-top: 150px;
+
+		@media #{$mq_w1500_up} {
+			@include container-by-padding;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -190,8 +202,11 @@
 
 		&__text-container { // <div>
 			margin-top: 75px;
-			display: flex;
-			justify-content: space-between;
+
+			@media #{$mq_w1500_up} {
+				display: flex;
+				justify-content: space-between;
+			}
 		}
 
 		&__text { // <p>
@@ -218,16 +233,22 @@
 
 			&:last-of-type {
 				margin-bottom: 0;
-				width: 45%;
 				line-height: 30px;
+
+				@media #{$mq_w1500_up} {
+					width: 45%;
+				}
 			}
 		}
 	}
 
 	.service4 { // <div>
-		@include sub-container;
-		@include container-by-padding;
+		//@include sub-container;
 		margin-top: 150px;
+
+		@media #{$mq_w1500_up} {
+			@include container-by-padding;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -359,8 +380,11 @@
 
 	.service5 { // <div>
 		//@include sub-container;
-		@include container-by-padding;
 		margin-top: 150px;
+
+		@media #{$mq_w1500_up} {
+			@include container-by-padding;
+		}
 
 		&__title { // <h3>
 			@include h3-titles;
@@ -369,8 +393,11 @@
 
 	.service6 { // <div>
 		//@include sub-container;
-		@include container-by-padding;
 		margin-top: 150px;
+
+		@media #{$mq_w1500_up} {
+			@include container-by-padding;
+		}
 
 		&__title {
 			@include h3-titles;
@@ -379,8 +406,11 @@
 
 	.service7 { // <div>
 		//@include container;
-		@include container-by-padding;
 		margin-top: 150px;
+
+		@media #{$mq_w1500_up} {
+			@include container-by-padding;
+		}
 	
 		&__title { // <h3>
 			@include h3-titles;
@@ -389,20 +419,26 @@
 		&__list { // <ul>
 			@include services-list;
 			margin-top: 75px;
-			display: flex;
-			justify-content: space-between;
+
+			@media #{$mq_w1500_up} {
+				display: flex;
+				justify-content: space-between;
+			}
 		}
 	
 		&__item { // <li>
 			@include services-item;
 			@include card-dark;
 			display: inline-block;
-			width: 250px;
 			text-align: center;
 			align-content: center;
 			font: {
 				size: 23px;
 				weight: 600;
+			}
+
+			@media #{$mq_w1500_up} {
+				width: 250px;
 			}
 		}
 	}

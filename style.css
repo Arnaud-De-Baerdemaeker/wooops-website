@@ -329,9 +329,14 @@ body main {
 }
 
 .services .service1 {
-  padding-right: 10rem;
-  padding-left: 10rem;
   margin-top: 150px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service1 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
 }
 
 .services .service1__title {
@@ -366,17 +371,27 @@ body main {
 
 .services .service1__services-container {
   margin-top: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service1__services-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .services .service1 .service1a {
   background-color: #3e8c74;
-  width: 500px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service1 .service1a {
+    width: 500px;
+  }
 }
 
 .services .service1 .service1a__intro {
@@ -424,7 +439,12 @@ body main {
 
 .services .service1 .service1b {
   background-color: #3e8c74;
-  width: 500px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service1 .service1b {
+    width: 500px;
+  }
 }
 
 .services .service1 .service1b__intro {
@@ -472,9 +492,14 @@ body main {
 
 .services .service1 .service1c {
   background-color: #3e8c74;
-  width: 500px;
   background-color: white;
   padding: 40px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service1 .service1c {
+    width: 500px;
+  }
 }
 
 .services .service1 .service1c__intro {
@@ -511,9 +536,14 @@ body main {
 }
 
 .services .service2 {
-  padding-right: 10rem;
-  padding-left: 10rem;
   margin-top: 150px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service2 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
 }
 
 .services .service2__title {
@@ -594,9 +624,14 @@ body main {
 }
 
 .services .service3 {
-  padding-right: 10rem;
-  padding-left: 10rem;
   margin-top: 150px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service3 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
 }
 
 .services .service3__title {
@@ -631,12 +666,17 @@ body main {
 
 .services .service3__text-container {
   margin-top: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service3__text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .services .service3__text {
@@ -665,29 +705,23 @@ body main {
 
 .services .service3__text:last-of-type {
   margin-bottom: 0;
-  width: 45%;
   line-height: 30px;
 }
 
-.services .service4 {
-  padding-right: 10rem;
-  padding-left: 10rem;
-  margin-top: 150px;
+@media (min-width: 93.75rem) {
+  .services .service3__text:last-of-type {
+    width: 45%;
+  }
 }
 
-@media (min-width: 75rem) {
-  .services .service4 {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.services .service4 {
+  margin-top: 150px;
 }
 
 @media (min-width: 93.75rem) {
   .services .service4 {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
+    padding-right: 10rem;
+    padding-left: 10rem;
   }
 }
 
@@ -738,9 +772,14 @@ body main {
 
 .services .service4 .service4a {
   background-color: #3e8c74;
-  width: 500px;
   background-color: white;
   padding: 40px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service4 .service4a {
+    width: 500px;
+  }
 }
 
 .services .service4 .service4a__title {
@@ -774,10 +813,15 @@ body main {
 
 .services .service4 .service4b {
   background-color: #3e8c74;
-  width: 500px;
   background-color: white;
   padding: 40px;
   text-align: justify;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service4 .service4b {
+    width: 500px;
+  }
 }
 
 .services .service4 .service4b__title {
@@ -801,9 +845,14 @@ body main {
 
 .services .service4 .service4c {
   background-color: #3e8c74;
-  width: 500px;
   background-color: white;
   padding: 40px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service4 .service4c {
+    width: 500px;
+  }
 }
 
 .services .service4 .service4c__title {
@@ -831,9 +880,14 @@ body main {
 
 .services .service4 .service4d {
   background-color: #3e8c74;
-  width: 500px;
   background-color: white;
   padding: 40px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service4 .service4d {
+    width: 500px;
+  }
 }
 
 .services .service4 .service4d__title {
@@ -848,9 +902,14 @@ body main {
 }
 
 .services .service5 {
-  padding-right: 10rem;
-  padding-left: 10rem;
   margin-top: 150px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service5 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
 }
 
 .services .service5__title {
@@ -884,9 +943,14 @@ body main {
 }
 
 .services .service6 {
-  padding-right: 10rem;
-  padding-left: 10rem;
   margin-top: 150px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service6 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
 }
 
 .services .service6__title {
@@ -920,9 +984,14 @@ body main {
 }
 
 .services .service7 {
-  padding-right: 10rem;
-  padding-left: 10rem;
   margin-top: 150px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service7 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
 }
 
 .services .service7__title {
@@ -961,12 +1030,17 @@ body main {
   list-style: none;
   color: white;
   margin-top: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service7__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .services .service7__item {
@@ -978,12 +1052,17 @@ body main {
   border-width: 1px;
   border-color: white;
   display: inline-block;
-  width: 250px;
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
   font-size: 23px;
   font-weight: 600;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service7__item {
+    width: 250px;
+  }
 }
 
 .contact {

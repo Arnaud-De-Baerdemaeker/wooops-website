@@ -113,7 +113,10 @@
 
 @mixin card-container {
 	background-color: $wooops;
-	width: 500px;
+
+	@media #{$mq_w1500_up} {
+		width: 500px;
+	}
 }
 
 @mixin card-container-light {
