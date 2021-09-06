@@ -1,73 +1,97 @@
 @mixin container {
-	margin: 0;
-	// padding: {
-	// 	right: 1rem;
-	// 	left: 1rem;
-	// }
-
-	@media #{$mq_w600_up} {
-		//width: 80%;
-		// padding: {
-		// 	right: auto;
-		// 	left: auto;
-		// }
-	}
-
-	@media #{$mq_w750_up} {
-		//width: 70%;
-	}
-
-	@media #{$mq_w1500_up} {
-		//width: 80%;
-	}
-}
-
-@mixin container-by-padding {
-	padding: {
-		right: 10rem;
-		left: 10rem;
-	}
-}
-
-@mixin sub-container {
-	@media #{$mq_w1200_up} {
-		width: 80%;
-		margin: {
-			right: auto;
-			left: auto;
-		}
-	}
-
-	@media #{$mq_w1500_up} {
-		width: 100%;
-		margin: {
-			right: 0;
-			left: 0;
-		}
+	max-width: 1920px;
+	margin: {
+		right: 20px;
+		left: 20px;
 	}
 }
 
 @mixin h2-titles {
-	font: {
-		size: 2rem;
-		weight: 800;
-	}
+	//@include container;
 	margin: 0;
-	color: $black;
 	background-color: $white;
-	height: 50vh;
+	height: 250px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
-	text-transform: uppercase;
-
-	@media #{$mq_w1300_up} {
-		font-size: 3rem;
+	
+	@media #{$mq_w1100_up} {
+		height: 300px;
 	}
 
 	@media #{$mq_w1500_up} {
-		@include container-by-padding;
-		font-size: 7.5rem;
+		height: 400px;
+	}
+}
+
+@mixin h2-titles__text {
+	display: block;
+	width: 50%;
+	font: {
+		size: 30px;
+		weight: 800;
+	}
+	text: {
+		align: center;
+		transform: uppercase;
+	}
+	align-items: center;
+
+	@media #{$mq_w500_up} {
+		font-size: 40px;
+	}
+
+	@media #{$mq_w600_up} {
+		font-size: 50px;
+	}
+
+	@media #{$mq_w800_up} {
+		font-size: 60px;
+	}
+
+	@media #{$mq_w1000_up} {
+		font-size: 70px;
+	}
+
+	@media #{$mq_w1300_up} {
+		font-size: 80px;
+	}
+
+	@media #{$mq_w1500_up} {
+		font-size: 100px;
+	}
+}
+
+@mixin h2-titles__image-container {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+@mixin h2-titles__image {
+	width: 125px;
+	vertical-align: middle;
+	border-radius: 125px;
+	box-shadow: 0px 0px 40px 10px $black_shadow;
+
+	@media #{$mq_w500_up} {
+		width: 200px;
+		border-radius: 200px;
+	}
+
+	@media #{$mq_w800_up} {
+		width: 300px;
+		border-radius: 300px;
+	}
+
+	@media #{$mq_w1100_up} {
+		width: 350px;
+		border-radius: 350px;
+	}
+
+	@media #{$mq_w1500_up} {
+		width: 450px;
+		border-radius: 450px;
 	}
 }
 
@@ -75,59 +99,48 @@
 	text-align: center;
 	font: {
 		family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
-		size: 1.25rem;
+		size: 25px;
 		weight: 400;
 	}
 	margin: 0;
 	color: $white;
 
-	@media #{$mq_w1300_up} {
-		font-size: 1.625rem;
+	@media #{$mq_w700_up} {
+		font-size: 30px;
+	}
+
+	@media #{$mq_w1200_up} {
+		font-size: 40px;
 	}
 
 	@media #{$mq_w1500_up} {
 		font-size: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 }
 
 @mixin h4-titles {
 	margin: 0;
 	font-size: 1.10rem;
-	//text-align: center;
 
 	@media #{$mq_w1500_up} {
 		font-size: 30px;
-		//width: 80%;
 	}
-}
-
-@mixin section-header {
-	height: 100%;
-	position: relative;
-	top: 50px;
-	box-shadow: 0px 0px 40px 10px $black_shadow;
 }
 
 @mixin card-container {
 	background-color: $wooops;
-
-	@media #{$mq_w1500_up} {
-		width: 500px;
-	}
+	max-width: 400px;
 }
 
 @mixin card-container-light {
 	@include card-container;
 	background-color: $white;
-	padding: 40px;
+	padding: 20px;
 }
 
 @mixin card-intro {
 	background-color: $white;
-	padding: 40px;
+	padding: 20px;
 	box-shadow: 0px 0px 20px $black_shadow;
 }
 
@@ -138,8 +151,12 @@
 }
 
 @mixin card-keywords {
-	padding: 40px;
+	padding: 20px;
 	text-align: justify;
+
+	@media #{$mq_w1500_up} {
+		padding: 40px;
+	}
 }
 
 @mixin sub-sections {
@@ -148,26 +165,9 @@
 	margin-top: 6.25rem;
 }
 
-@mixin services-intros {
-	//width: 50%;
-	//display: flex;
-	//flex-direction: column;
-	//justify-content: center;
-	//align-items: center;
-}
-
 @mixin services-text {
-	margin: {
-		top: 20px;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
+	margin: 0;
 	text-align: justify;
-
-	@media #{$mq_w1500_up} {
-		//width: 80%;
-	}
 }
 
 @mixin services-list {
@@ -175,41 +175,21 @@
 	padding: 0;
 	list-style: none;
 	color: $white;
-	//display: flex;
-	//justify-items: center;
-	//justify-content: space-evenly;
-	//row-gap: 2rem;
-	//flex-wrap: wrap;
-	//column-gap: 0.75rem;
-
-	@media #{$mq_w1500_up} {
-		//column-gap: 4rem;
-	}
 }
 
 @mixin services-item {
 	display: inline;
-	//text-align: center;
-	//display: flex;
-	//align-items: center;
-	//justify-content: center;
-	//padding: 1rem;
-	//background-color: $wooops;
 	font-weight: 500;
-	//border-radius: 0.188rem;
-	//box-shadow: 0.313rem 0.313rem 0.938rem $black_shadow;
-	//width: 7.5rem;
-	//height: 7.5rem;
-
-	@media #{$mq_w1500_up} {
-		//width: 9.375rem;
-		//height: 9.375rem;
-	}
 }
 
 @mixin card-dark {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	max-width: 400px;
 	color: $white;
-	padding: 40px;
+	padding: 20px;
 	border: {
 		style: solid;
 		width: 1px;
