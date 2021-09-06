@@ -1,36 +1,67 @@
 // Colors
 $white: rgba(255, 255, 255, 1);
 $black: rgba(0, 0, 0, 1);
+$light_gray: rgba(180, 180, 180, 1);
 $dark_gray: rgba(50, 50, 50, 1);
 $wooops: rgba(62, 140, 116, 1);
 $black_shadow: rgba(0, 0, 0, 0.4);
 
 // Breakpoints
-$bp_w392: 24.5rem; // 392px
-$bp_w450: 28.125rem; // 450px
-$bp_w500: 31.25rem; // 500px
-$bp_w600: 37.5rem; // 600px
-$bp_w750: 46.875rem; // 750px
-$bp_w800: 50rem; // 800px
-$bp_w875: 54.688rem; // 875px
-$bp_w900: 56.25rem; // 900px
-$bp_w1000: 62.5rem; // 1000px
-$bp_w1100: 68.75rem; // 1100px
-$bp_w1200: 75rem; // 1200px
-$bp_w1300: 81.25rem; // 1300px
-$bp_w1500: 93.75rem; // 1500px
+$bp_300: 18.75rem; // 300px
+$bp_350: 21.875rem; // 350px
+$bp_392: 24.5rem; // 392px
+$bp_400: 25rem; // 400px
+$bp_440: 27.5rem; // 440px
+$bp_450: 28.125rem; // 450px
+$bp_475: 29.688rem; // 475px
+$bp_500: 31.25rem; // 500px
+$bp_550: 34.375rem; // 550px
+$bp_600: 37.5rem; // 600px
+$bp_650: 40.625rem; // 650px
+$bp_700: 43.75rem; // 700px
+$bp_750: 46.875rem; // 750px
+$bp_800: 50rem; // 800px
+$bp_820: 51.25rem; // 860px
+$bp_875: 54.688rem; // 875px
+$bp_900: 56.25rem; // 900px
+$bp_1000: 62.5rem; // 1000px
+$bp_1100: 68.75rem; // 1100px
+$bp_1200: 75rem; // 1200px
+$bp_1300: 81.25rem; // 1300px
+$bp_1400: 87.5rem; // 1400px
+$bp_1500: 93.75rem; // 1500px
 
 // Media queries
-$mq_w392_up: "(min-width: #{$bp_w392})";
-$mq_w450_up: "(min-width: #{$bp_w450})";
-$mq_w500_up: "(min-width: #{$bp_w500})";
-$mq_w600_up: "(min-width: #{$bp_w600})";
-$mq_w750_up: "(min-width: #{$bp_w750})";
-$mq_w800_up: "(min-width: #{$bp_w800})";
-$mq_w875_up: "(min-width: #{$bp_w875})";
-$mq_w900_up: "(min-width: #{$bp_w900})";
-$mq_w1000_up: "(min-width: #{$bp_w1000})";
-$mq_w1100_up: "(min-width: #{$bp_w1100})";
-$mq_w1200_up: "(min-width: #{$bp_w1200})";
-$mq_w1300_up: "(min-width: #{$bp_w1300})";
-$mq_w1500_up: "(min-width: #{$bp_w1500})";
+$mq_w300_up: "(min-width: #{$bp_300})";
+$mq_w350_up: "(min-width: #{$bp_350})";
+$mq_w392_up: "(min-width: #{$bp_392})";
+$mq_w400_up: "(min-width: #{$bp_400})";
+$mq_w440_up: "(min-width: #{$bp_440})";
+$mq_w450_up: "(min-width: #{$bp_450})";
+$mq_w475_up: "(min-width: #{$bp_475})";
+$mq_w500_up: "(min-width: #{$bp_500})";
+$mq_w600_up: "(min-width: #{$bp_600})";
+$mq_w650_up: "(min-width: #{$bp_650})";
+$mq_w700_up: "(min-width: #{$bp_700})";
+$mq_w750_up: "(min-width: #{$bp_750})";
+$mq_w800_up: "(min-width: #{$bp_800})";
+$mq_w820_up: "(min-width: #{$bp_820})";
+$mq_w875_up: "(min-width: #{$bp_875})";
+$mq_w900_up: "(min-width: #{$bp_900})";
+$mq_w1000_up: "(min-width: #{$bp_1000})";
+$mq_w1100_up: "(min-width: #{$bp_1100})";
+$mq_w1200_up: "(min-width: #{$bp_1200})";
+$mq_w1300_up: "(min-width: #{$bp_1300})";
+$mq_w1400_up: "(min-width: #{$bp_1400})";
+$mq_w1500_up: "(min-width: #{$bp_1500})";
+
+$mq_h300_up: "(min-height: #{$bp_300})";
+$mq_h400_up: "(min-height: #{$bp_400})";
+$mq_h450_up: "(min-height: #{$bp_450})";
+$mq_h500_up: "(min-height: #{$bp_500})";
+$mq_h550_up: "(min-height: #{$bp_550})";
+$mq_h600_up: "(min-height: #{$bp_600})";
+$mq_h700_up: "(min-height: #{$bp_700})";
+
+$portrait: "(orientation: portrait)";
+$landscape: "(orientation: landscape)";
