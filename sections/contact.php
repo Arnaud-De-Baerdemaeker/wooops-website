@@ -2,8 +2,8 @@
 if ($contact): ?>
 	<div id="contact_us" class="contact">
 		<h2 class="contact__title">
-			<?php echo $contact["title"]; ?>
-			<img src="<?php echo $contact["image"]["url"]; ?>" alt="<?php echo $contact["image"]["alt"]; ?>" class="contact__image" />
+			<span class="title__text"><?php echo $contact["title"]; ?></span>
+			<span class="title__image-container"><img src="<?php echo $contact["image"]["url"]; ?>" alt="<?php echo $contact["image"]["alt"]; ?>" class="title__image" /></span>
 		</h2>
 		
 		<div class="contact__content-container">

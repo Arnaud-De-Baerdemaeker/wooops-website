@@ -12,8 +12,8 @@
 
 	<?php if ($provided_services): ?>
 		<h2 class="services__title">
-			<?php echo $provided_services["title"]; ?>
-			<img src="<?php echo $provided_services["image"]["url"]; ?>" alt="<?php echo $provided_services["image"]["alt"]; ?>" class="services__image" />
+			<span class="title__text"><?php echo $provided_services["title"]; ?></span>
+			<span class="title__image-container"><img src="<?php echo $provided_services["image"]["url"]; ?>" alt="<?php echo $provided_services["image"]["alt"]; ?>" class="title__image" /></span>
 		</h2>
 	<?php endif; ?>
 
