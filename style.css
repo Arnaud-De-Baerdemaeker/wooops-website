@@ -132,6 +132,8 @@ body main {
 }
 
 .hero .introduction {
+  padding-right: 20px;
+  padding-left: 20px;
   height: inherit;
 }
 
@@ -373,9 +375,14 @@ body main {
 }
 
 .services__title {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1920px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin: 0;
   background-color: white;
-  height: 250px;
+  height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,6 +392,38 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 120rem) {
+  .services__title {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
+
+@media (min-width: 25rem) {
+  .services__title {
+    height: 100px;
+  }
+}
+
+@media (min-width: 31.25rem) {
+  .services__title {
+    height: 150px;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .services__title {
+    height: 200px;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .services__title {
+    height: 250px;
+  }
 }
 
 @media (min-width: 68.75rem) {
@@ -402,7 +441,7 @@ body main {
 .services__title .title__text {
   display: block;
   width: 50%;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
@@ -411,19 +450,25 @@ body main {
           align-items: center;
 }
 
+@media (min-width: 25rem) {
+  .services__title .title__text {
+    font-size: 30px;
+  }
+}
+
 @media (min-width: 31.25rem) {
   .services__title .title__text {
     font-size: 40px;
   }
 }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 43.75rem) {
   .services__title .title__text {
     font-size: 50px;
   }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
   .services__title .title__text {
     font-size: 60px;
   }
@@ -465,6 +510,13 @@ body main {
           box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 25rem) {
+  .services__title .title__image {
+    width: 150px;
+    border-radius: 150px;
+  }
+}
+
 @media (min-width: 31.25rem) {
   .services__title .title__image {
     width: 200px;
@@ -472,7 +524,14 @@ body main {
   }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 43.75rem) {
+  .services__title .title__image {
+    width: 250px;
+    border-radius: 250px;
+  }
+}
+
+@media (min-width: 56.25rem) {
   .services__title .title__image {
     width: 300px;
     border-radius: 300px;
@@ -498,6 +557,14 @@ body main {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 75px;
+}
+
+@media (min-width: 120rem) {
+  .services .service1 {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 
 @media (min-width: 75rem) {
@@ -566,6 +633,12 @@ body main {
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 93.75rem) {
+  .services .service1 .service1a__intro {
+    padding: 40px;
+  }
+}
+
 .services .service1 .service1a__title {
   margin: 0;
   font-size: 1.10rem;
@@ -617,6 +690,12 @@ body main {
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 93.75rem) {
+  .services .service1 .service1b__intro {
+    padding: 40px;
+  }
+}
+
 .services .service1 .service1b__title {
   margin: 0;
   font-size: 1.10rem;
@@ -663,14 +742,10 @@ body main {
   padding: 20px;
 }
 
-.services .service1 .service1c__intro {
-  background-color: white;
-  padding: 20px;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
-  padding: unset;
+@media (min-width: 93.75rem) {
+  .services .service1 .service1c {
+    padding: 40px;
+  }
 }
 
 .services .service1 .service1c__title {
@@ -698,6 +773,14 @@ body main {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 75px;
+}
+
+@media (min-width: 120rem) {
+  .services .service2 {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 
 @media (min-width: 93.75rem) {
@@ -768,7 +851,7 @@ body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 400px;
+  max-width: 500px;
   color: white;
   padding: 20px;
   border-style: solid;
@@ -780,11 +863,25 @@ body main {
   text-align: center;
 }
 
+@media (min-width: 93.75rem) {
+  .services .service2__item {
+    padding: 40px;
+  }
+}
+
 .services .service3 {
   max-width: 1920px;
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 75px;
+}
+
+@media (min-width: 120rem) {
+  .services .service3 {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 
 @media (min-width: 93.75rem) {
@@ -853,7 +950,7 @@ body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 400px;
+  max-width: 500px;
   color: white;
   padding: 20px;
   border-style: solid;
@@ -863,6 +960,12 @@ body main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service3__text {
+    padding: 40px;
+  }
 }
 
 @media (min-width: 93.75rem) {
@@ -880,6 +983,14 @@ body main {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 75px;
+}
+
+@media (min-width: 120rem) {
+  .services .service4 {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 
 @media (min-width: 93.75rem) {
@@ -943,6 +1054,12 @@ body main {
   padding: 20px;
 }
 
+@media (min-width: 93.75rem) {
+  .services .service4 .service4a {
+    padding: 40px;
+  }
+}
+
 .services .service4 .service4a__title {
   margin: 0;
   font-size: 1.10rem;
@@ -967,6 +1084,12 @@ body main {
   text-align: justify;
 }
 
+@media (min-width: 93.75rem) {
+  .services .service4 .service4b {
+    padding: 40px;
+  }
+}
+
 .services .service4 .service4b__title {
   margin: 0;
   font-size: 1.10rem;
@@ -988,6 +1111,12 @@ body main {
   max-width: 400px;
   background-color: white;
   padding: 20px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service4 .service4c {
+    padding: 40px;
+  }
 }
 
 .services .service4 .service4c__title {
@@ -1014,6 +1143,12 @@ body main {
   width: 100%;
 }
 
+@media (min-width: 93.75rem) {
+  .services .service4 .service4d {
+    padding: 40px;
+  }
+}
+
 .services .service4 .service4d__title {
   margin: 0;
   font-size: 1.10rem;
@@ -1030,6 +1165,14 @@ body main {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 75px;
+}
+
+@media (min-width: 120rem) {
+  .services .service5 {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 
 @media (min-width: 93.75rem) {
@@ -1072,6 +1215,14 @@ body main {
   margin-top: 75px;
 }
 
+@media (min-width: 120rem) {
+  .services .service6 {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
+
 @media (min-width: 93.75rem) {
   .services .service6 {
     margin-top: 150px;
@@ -1110,6 +1261,14 @@ body main {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 75px;
+}
+
+@media (min-width: 120rem) {
+  .services .service7 {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 
 @media (min-width: 93.75rem) {
@@ -1185,7 +1344,7 @@ body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 400px;
+  max-width: 500px;
   color: white;
   padding: 20px;
   border-style: solid;
@@ -1198,6 +1357,12 @@ body main {
   font-size: 18px;
   font-weight: 600;
   width: 250px;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service7__item {
+    padding: 40px;
+  }
 }
 
 .contact {
@@ -1213,9 +1378,14 @@ body main {
 }
 
 .contact__title {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1920px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin: 0;
   background-color: white;
-  height: 250px;
+  height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1225,6 +1395,38 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 120rem) {
+  .contact__title {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
+
+@media (min-width: 25rem) {
+  .contact__title {
+    height: 100px;
+  }
+}
+
+@media (min-width: 31.25rem) {
+  .contact__title {
+    height: 150px;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .contact__title {
+    height: 200px;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .contact__title {
+    height: 250px;
+  }
 }
 
 @media (min-width: 68.75rem) {
@@ -1242,7 +1444,7 @@ body main {
 .contact__title .title__text {
   display: block;
   width: 50%;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
@@ -1251,19 +1453,25 @@ body main {
           align-items: center;
 }
 
+@media (min-width: 25rem) {
+  .contact__title .title__text {
+    font-size: 30px;
+  }
+}
+
 @media (min-width: 31.25rem) {
   .contact__title .title__text {
     font-size: 40px;
   }
 }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 43.75rem) {
   .contact__title .title__text {
     font-size: 50px;
   }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 56.25rem) {
   .contact__title .title__text {
     font-size: 60px;
   }
@@ -1305,6 +1513,13 @@ body main {
           box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 25rem) {
+  .contact__title .title__image {
+    width: 150px;
+    border-radius: 150px;
+  }
+}
+
 @media (min-width: 31.25rem) {
   .contact__title .title__image {
     width: 200px;
@@ -1312,7 +1527,14 @@ body main {
   }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 43.75rem) {
+  .contact__title .title__image {
+    width: 250px;
+    border-radius: 250px;
+  }
+}
+
+@media (min-width: 56.25rem) {
   .contact__title .title__image {
     width: 300px;
     border-radius: 300px;
@@ -1351,6 +1573,14 @@ body main {
           column-gap: 20px;
 }
 
+@media (min-width: 120rem) {
+  .contact__content-container {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
+
 @media (min-width: 93.75rem) {
   .contact__content-container {
     margin-top: 150px;
@@ -1370,13 +1600,19 @@ body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 400px;
+  max-width: 500px;
   color: white;
   padding: 20px;
   border-style: solid;
   border-width: 1px;
   border-color: white;
   text-align: justify;
+}
+
+@media (min-width: 93.75rem) {
+  .contact__text {
+    padding: 40px;
+  }
 }
 
 .contact .wpcf7 {
@@ -1391,6 +1627,12 @@ body main {
 @media (min-width: 75rem) {
   .contact .wpcf7 {
     width: 600px;
+  }
+}
+
+@media (min-width: 93.75rem) {
+  .contact .wpcf7 {
+    padding: 40px;
   }
 }
 
@@ -1545,7 +1787,17 @@ body main {
   padding-bottom: 50px;
 }
 
+@media (min-width: 120rem) {
+  .footer__container {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
+}
+
 .footer__logo {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1556,7 +1808,7 @@ body main {
 }
 
 .footer__image {
-  width: 100%;
+  width: 200px;
   vertical-align: middle;
 }
 
@@ -1628,4 +1880,12 @@ body main {
   margin: unset;
   border-top-style: solid;
   border-top-width: 1px;
+}
+
+@media (min-width: 120rem) {
+  .footer__copyright {
+    margin: 0;
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
