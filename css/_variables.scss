@@ -30,6 +30,7 @@ $bp_1200: 75rem; // 1200px
 $bp_1300: 81.25rem; // 1300px
 $bp_1400: 87.5rem; // 1400px
 $bp_1500: 93.75rem; // 1500px
+$bp_1920: 120rem; // 1920px
 
 // Media queries
 $mq_w300_up: "(min-width: #{$bp_300})";
@@ -54,6 +55,7 @@ $mq_w1200_up: "(min-width: #{$bp_1200})";
 $mq_w1300_up: "(min-width: #{$bp_1300})";
 $mq_w1400_up: "(min-width: #{$bp_1400})";
 $mq_w1500_up: "(min-width: #{$bp_1500})";
+$mq_w1920_up: "(min-width: #{$bp_1920})";
 
 $mq_h300_up: "(min-height: #{$bp_300})";
 $mq_h400_up: "(min-height: #{$bp_400})";

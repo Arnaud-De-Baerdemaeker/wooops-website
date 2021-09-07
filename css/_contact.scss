@@ -8,6 +8,7 @@
 	}
 
 	&__title { // <h2>
+		@include h2-titles-container;
 		@include h2-titles;
 
 		.title {
@@ -60,6 +61,10 @@
 
 		@media #{$mq_w1200_up} {
 			width: 600px;
+		}
+
+		@media #{$mq_w1500_up} {
+			padding: 40px;
 		}
 
 		.wpcf7-form.init { // <form>

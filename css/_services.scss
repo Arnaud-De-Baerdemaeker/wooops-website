@@ -1,5 +1,6 @@
 .services { // <div>
 	&__title { // <h2>
+		@include h2-titles-container;
 		@include h2-titles;
 
 		.title {
@@ -101,9 +102,8 @@
 		.service1c { // <div>
 			@include card-container-light;
 
-			&__intro { // <div>
-				@include card-intro-light;
-			}
+			// &__intro { // <div>
+			// }
 
 			&__title { // <h4>
 				@include h4-titles;

@@ -4,16 +4,47 @@
 		right: 20px;
 		left: 20px;
 	}
+
+	@media #{$mq_w1920_up} {
+		margin: 0;
+		padding: {
+			right: auto;
+			left: auto;
+		}
+	}
+}
+
+@mixin h2-titles-container {
+	padding: {
+		right: 20px;
+		left: 20px;
+	}
 }
 
 @mixin h2-titles {
-	//@include container;
+	@include container;
 	margin: 0;
 	background-color: $white;
-	height: 250px;
+	height: 75px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+
+	@media #{$mq_w400_up} {
+		height: 100px;
+	}
+
+	@media #{$mq_w500_up} {
+		height: 150px;
+	}
+
+	@media #{$mq_w700_up} {
+		height: 200px;
+	}
+
+	@media #{$mq_w900_up} {
+		height: 250px;
+	}
 	
 	@media #{$mq_w1100_up} {
 		height: 300px;
@@ -28,7 +59,7 @@
 	display: block;
 	width: 50%;
 	font: {
-		size: 30px;
+		size: 20px;
 		weight: 800;
 	}
 	text: {
@@ -37,15 +68,19 @@
 	}
 	align-items: center;
 
+	@media #{$mq_w400_up} {
+		font-size: 30px;
+	}
+
 	@media #{$mq_w500_up} {
 		font-size: 40px;
 	}
 
-	@media #{$mq_w600_up} {
+	@media #{$mq_w700_up} {
 		font-size: 50px;
 	}
 
-	@media #{$mq_w800_up} {
+	@media #{$mq_w900_up} {
 		font-size: 60px;
 	}
 
@@ -74,12 +109,22 @@
 	border-radius: 125px;
 	box-shadow: 0px 0px 40px 10px $black_shadow;
 
+	@media #{$mq_w400_up} {
+		width: 150px;
+		border-radius: 150px;
+	}
+
 	@media #{$mq_w500_up} {
 		width: 200px;
 		border-radius: 200px;
 	}
 
-	@media #{$mq_w800_up} {
+	@media #{$mq_w700_up} {
+		width: 250px;
+		border-radius: 250px;
+	}
+
+	@media #{$mq_w900_up} {
 		width: 300px;
 		border-radius: 300px;
 	}
@@ -136,12 +181,20 @@
 	@include card-container;
 	background-color: $white;
 	padding: 20px;
+
+	@media #{$mq_w1500_up} {
+		padding: 40px;
+	}
 }
 
 @mixin card-intro {
 	background-color: $white;
 	padding: 20px;
 	box-shadow: 0px 0px 20px $black_shadow;
+
+	@media #{$mq_w1500_up} {
+		padding: 40px;
+	}
 }
 
 @mixin card-intro-light {
@@ -187,12 +240,16 @@
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	max-width: 400px;
+	max-width: 500px;
 	color: $white;
 	padding: 20px;
 	border: {
 		style: solid;
 		width: 1px;
 		color: $white;
+	}
+
+	@media #{$mq_w1500_up} {
+		padding: 40px;
 	}
 }

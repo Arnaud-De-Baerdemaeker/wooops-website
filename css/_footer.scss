@@ -15,13 +15,14 @@
 	}
 
 	&__logo { // <div>
+		flex-basis: 100%;
 		width: 200px;
 		display: flex;
 		justify-content: center;
 	}
 
 	&__image { // <img>
-		width: 100%;
+		width: 200px;
 		vertical-align: middle;
 	}
 	
