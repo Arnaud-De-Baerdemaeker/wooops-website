@@ -1,5 +1,5 @@
 .footer { // <footer>
-	background-color: $dark_gray;
+	background-color: $neutral_50;
 	color: $white;
 
 	&__container { // <div>
@@ -52,7 +52,7 @@
 	&__title { // <h4>
 		margin: 0;
 		font-size: 14px;
-		color: $light_gray;
+		color: $neutral_180;
 	}
 
 	&__entry { // <p>
@@ -64,14 +64,12 @@
 		@include container;
 		height: 50px;
 		text-align: center;
-		background-color: inherit;
+		background-color: $neutral_55;
+		color: $neutral_180;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: unset;
-		border-top: {
-			style: solid;
-			width: 1px;
-		}
+		font-size: 14px;
 	}
 }
