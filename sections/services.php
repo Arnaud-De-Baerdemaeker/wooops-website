@@ -1,6 +1,6 @@
 <div id="our_services" class="services">
 	<?php
-	$provided_services = get_field("provided_services");
+	$services_header = get_field("services_header");
 	$service_1 = get_field("service_1");
 	$service_2 = get_field("service_2");
 	$service_3 = get_field("service_3");
@@ -10,10 +10,10 @@
 	$service_7 = get_field("service_7");
 	?>
 
-	<?php if ($provided_services): ?>
+	<?php if ($services_header): ?>
 		<h2 class="services__title">
-			<span class="title__text"><?php echo $provided_services["title"]; ?></span>
-			<span class="title__image-container"><img src="<?php echo $provided_services["image"]["url"]; ?>" alt="<?php echo $provided_services["image"]["alt"]; ?>" class="title__image" /></span>
+			<span class="title__text"><?php echo $services_header["title"]; ?></span>
+			<span class="title__image-container"><img src="<?php echo $services_header["image"]["url"]; ?>" alt="<?php echo $services_header["image"]["alt"]; ?>" class="title__image" /></span>
 		</h2>
 	<?php endif; ?>
 
