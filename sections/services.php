@@ -1,5 +1,4 @@
-<div id="our_services" class="services">
-	<?php
+<?php
 	$services_header = get_field("services_header");
 	$service_1 = get_field("service_1");
 	$service_2 = get_field("service_2");
@@ -8,8 +7,9 @@
 	$service_5 = get_field("service_5");
 	$service_6 = get_field("service_6");
 	$service_7 = get_field("service_7");
-	?>
+?>
 
+<div id="our_services" class="services">
 	<?php if ($services_header): ?>
 		<h2 class="services__title">
 			<span class="title__text"><?php echo $services_header["title"]; ?></span>
