@@ -1,4 +1,5 @@
 <?php $background = get_field("hero_background"); ?>
+
 <div
 	id="hero"
 	<?php if ($background): ?>
