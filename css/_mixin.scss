@@ -21,6 +21,14 @@
 	}
 }
 
+@mixin padding-between-sections {
+	padding-bottom: 150px;
+
+    @media #{$mq_w1500_up} {
+		padding-bottom: 300px;
+	}
+}
+
 @mixin h2-titles {
 	@include container;
 	margin: 0;
