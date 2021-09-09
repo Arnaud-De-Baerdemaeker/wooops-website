@@ -1,11 +1,5 @@
 .contact {
-	margin-top: 150px;
-	padding-bottom: 150px;
-
-	@media #{$mq_w1500_up} {
-		margin-top: 300px;
-		padding-bottom: 300px;
-	}
+	@include padding-between-sections;
 
 	&__title { // <h2>
 		@include h2-titles-container;
