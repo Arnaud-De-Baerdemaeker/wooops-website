@@ -1,2 +1,22 @@
 .agency { // <div>
+    @include padding-between-sections;
+
+    &__title { // <h2>
+        @include h2-titles-container;
+        @include h2-titles;
+
+        .title {
+            &__text { // <span>
+                @include h2-titles__text;
+            }
+
+            &__image-container { // <span>
+                @include h2-titles__image-container;
+            }
+
+            &__image { // <img>
+                @include h2-titles__image;
+            }
+        }
+    }
 }
