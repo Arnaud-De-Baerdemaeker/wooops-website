@@ -3,11 +3,13 @@
 	$contact_introduction = get_field("contact_introduction");
 ?>
 
-<div id="contact_us" class="contact">
-	<?php if ($contact_header): ?>
+<?php if ($contact_header["title"]): ?>
+	<div id="contact" class="contact">
 		<h2 class="contact__title">
 			<span class="title__text"><?php echo $contact_header["title"]; ?></span>
-			<span class="title__image-container"><img src="<?php echo $contact_header["image"]["url"]; ?>" alt="<?php echo $contact_header["image"]["alt"]; ?>" class="title__image" /></span>
+			<?php if($contact_header["image"]): ?>
+				<span class="title__image-container"><img src="<?php echo $contact_header["image"]["url"]; ?>" alt="<?php echo $contact_header["image"]["alt"]; ?>" class="title__image" /></span>
+			<?php endif; ?>
 		</h2>
 
 		<?php if ($contact_introduction): ?>
