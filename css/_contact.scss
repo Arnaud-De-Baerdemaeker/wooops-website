@@ -2,7 +2,6 @@
 	@include padding-between-sections;
 
 	&__title { // <h2>
-		@include h2-titles-container;
 		@include h2-titles;
 
 		.title {

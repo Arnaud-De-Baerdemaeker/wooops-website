@@ -16,7 +16,6 @@
 	}
 
 	.introduction { // <section>
-		@include h2-titles-container;
 		height: inherit;
 
 		@media #{$mq_w900_up} {
