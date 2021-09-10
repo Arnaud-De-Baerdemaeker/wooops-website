@@ -1,8 +1,8 @@
 @mixin container {
-	max-width: 1920px;
+	max-width: 120rem;
 	margin: {
-		right: 20px;
-		left: 20px;
+		right: 1.25rem;
+		left: 1.25rem;
 	}
 
 	@media #{$mq_w1920_up} {
@@ -16,16 +16,16 @@
 
 @mixin h2-titles-container {
 	padding: {
-		right: 20px;
-		left: 20px;
+		right: 1.25rem;
+		left: 1.25rem;
 	}
 }
 
 @mixin padding-between-sections {
-	padding-bottom: 150px;
+	padding-bottom: 9.375rem;
 
     @media #{$mq_w1500_up} {
-		padding-bottom: 300px;
+		padding-bottom: 18.75rem;
 	}
 }
 
@@ -33,33 +33,33 @@
 	@include container;
 	margin: 0;
 	background-color: $white;
-	height: 75px;
+	height: 4.688rem;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 
 	@media #{$mq_w400_up} {
-		height: 100px;
+		height: 6.25rem;
 	}
 
 	@media #{$mq_w500_up} {
-		height: 150px;
+		height: 9.375rem;
 	}
 
 	@media #{$mq_w700_up} {
-		height: 200px;
+		height: 12.5rem;
 	}
 
 	@media #{$mq_w900_up} {
-		height: 250px;
+		height: 15.625rem;
 	}
 	
 	@media #{$mq_w1100_up} {
-		height: 300px;
+		height: 18.75rem;
 	}
 
 	@media #{$mq_w1500_up} {
-		height: 400px;
+		height: 25rem;
 	}
 }
 
@@ -67,7 +67,7 @@
 	display: block;
 	width: 50%;
 	font: {
-		size: 20px;
+		size: 1.25rem;
 		weight: 800;
 	}
 	text: {
@@ -77,31 +77,31 @@
 	align-items: center;
 
 	@media #{$mq_w400_up} {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 
 	@media #{$mq_w500_up} {
-		font-size: 40px;
+		font-size: 2.5rem;
 	}
 
 	@media #{$mq_w700_up} {
-		font-size: 50px;
+		font-size: 3.125rem;
 	}
 
 	@media #{$mq_w900_up} {
-		font-size: 60px;
+		font-size: 3.75rem;
 	}
 
 	@media #{$mq_w1000_up} {
-		font-size: 70px;
+		font-size: 4.375rem;
 	}
 
 	@media #{$mq_w1300_up} {
-		font-size: 80px;
+		font-size: 5rem;
 	}
 
 	@media #{$mq_w1500_up} {
-		font-size: 100px;
+		font-size: 6.25rem;
 	}
 }
 
@@ -112,48 +112,48 @@
 }
 
 @mixin h2-titles__image {
-	width: 125px;
-	height: 125px;
+	width: 7.813rem;
+	height: 7.813rem;
 	object-fit: cover;
 	vertical-align: middle;
-	border-radius: 125px;
-	box-shadow: 0px 0px 40px 10px $black_shadow;
+	border-radius: 7.813rem;
+	box-shadow: 0rem 0rem 2.5rem 0.625rem $black_shadow;
 
 
 	@media #{$mq_w400_up} {
-		width: 150px;
-		height: 150px;
-		border-radius: 150px;
+		width: 9.375rem;
+		height: 9.375rem;
+		border-radius: 9.375rem;
 	}
 
 	@media #{$mq_w500_up} {
-		width: 200px;
-		height: 200px;
-		border-radius: 200px;
+		width: 12.5rem;
+		height: 12.5rem;
+		border-radius: 12.5rem;
 	}
 
 	@media #{$mq_w700_up} {
-		width: 250px;
-		height: 250px;
-		border-radius: 250px;
+		width: 15.625rem;
+		height: 15.625rem;
+		border-radius: 15.625rem;
 	}
 
 	@media #{$mq_w900_up} {
-		width: 300px;
-		height: 300px;
-		border-radius: 300px;
+		width: 18.75rem;
+		height: 18.75rem;
+		border-radius: 18.75rem;
 	}
 
 	@media #{$mq_w1100_up} {
-		width: 350px;
-		height: 350px;
-		border-radius: 350px;
+		width: 21.875rem;
+		height: 21.875rem;
+		border-radius: 21.875rem;
 	}
 
 	@media #{$mq_w1500_up} {
-		width: 450px;
-		height: 450px;
-		border-radius: 450px;
+		width: 28.125rem;
+		height: 28.125rem;
+		border-radius: 28.125rem;
 	}
 }
 
@@ -161,22 +161,22 @@
 	text-align: center;
 	font: {
 		family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
-		size: 25px;
+		size: 1.563rem;
 		weight: 400;
 	}
 	margin: 0;
 	color: $white;
 
 	@media #{$mq_w700_up} {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 
 	@media #{$mq_w1200_up} {
-		font-size: 40px;
+		font-size: 2.5rem;
 	}
 
 	@media #{$mq_w1500_up} {
-		font-size: 50px;
+		font-size: 3.125rem;
 	}
 }
 
@@ -185,32 +185,32 @@
 	font-size: 1.10rem;
 
 	@media #{$mq_w1500_up} {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 }
 
 @mixin card-container {
 	background-color: $wooops;
-	max-width: 400px;
+	max-width: 25rem;
 }
 
 @mixin card-container-light {
 	@include card-container;
 	background-color: $white;
-	padding: 20px;
+	padding: 1.25rem;
 
 	@media #{$mq_w1500_up} {
-		padding: 40px;
+		padding: 2.5rem;
 	}
 }
 
 @mixin card-intro {
 	background-color: $white;
-	padding: 20px;
-	box-shadow: 0px 0px 20px $black_shadow;
+	padding: 1.25rem;
+	box-shadow: 0rem 0rem 1.25rem $black_shadow;
 
 	@media #{$mq_w1500_up} {
-		padding: 40px;
+		padding: 2.5rem;
 	}
 }
 
@@ -221,11 +221,11 @@
 }
 
 @mixin card-keywords {
-	padding: 20px;
+	padding: 1.25rem;
 	text-align: justify;
 
 	@media #{$mq_w1500_up} {
-		padding: 40px;
+		padding: 2.5rem;
 	}
 }
 
@@ -257,16 +257,16 @@
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	max-width: 500px;
+	max-width: 31.25rem;
 	color: $white;
-	padding: 20px;
+	padding: 1.25rem;
 	border: {
 		style: solid;
-		width: 1px;
+		width: 0.063rem;
 		color: $white;
 	}
 
 	@media #{$mq_w1500_up} {
-		padding: 40px;
+		padding: 2.5rem;
 	}
 }
