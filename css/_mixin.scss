@@ -1,24 +1,48 @@
-@mixin container {
+@mixin viewport-container {
 	max-width: 120rem;
-	margin: {
-		right: 1.25rem;
-		left: 1.25rem;
-	}
-
-	@media #{$mq_w1920_up} {
-		margin: 0;
-		padding: {
-			right: auto;
-			left: auto;
-		}
-	}
+	margin: auto;
 }
 
-@mixin h2-titles-container {
+@mixin titles-container {
 	padding: {
 		right: 1.25rem;
 		left: 1.25rem;
 	}
+
+	@media #{$mq_w400_up} {
+		padding: {
+			right: 7%;
+			left: 7%;
+		}
+	}
+
+	@media #{$mq_w600_up} {
+		padding: {
+			right: 10%;
+			left: 10%;
+		}
+	}
+
+	@media #{$mq_w1200_up} {
+		padding: {
+			right: 12%;
+			left: 12%;
+		}
+	}
+}
+
+@mixin container {
+	padding: {
+		right: 1.25rem;
+		left: 1.25rem;
+	}
+
+	// @media #{$mq_w1920_up} {
+	// 	padding: {
+	// 		right: 200px;
+	// 		left: 200px;
+	// 	}
+	// }
 }
 
 @mixin padding-between-sections {
@@ -30,7 +54,7 @@
 }
 
 @mixin h2-titles {
-	@include container;
+	@include titles-container;
 	margin: 0;
 	background-color: $white;
 	height: 4.688rem;
@@ -71,7 +95,7 @@
 		weight: 800;
 	}
 	text: {
-		align: center;
+		//align: center;
 		transform: uppercase;
 	}
 	align-items: center;
@@ -107,7 +131,7 @@
 
 @mixin h2-titles__image-container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	width: 50%;
 }
 
