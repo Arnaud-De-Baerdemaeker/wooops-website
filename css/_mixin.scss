@@ -1,9 +1,12 @@
 @mixin viewport-container {
 	max-width: 120rem;
-	margin: auto;
+	margin: {
+		right: auto;
+		left: auto;
+	}
 }
 
-@mixin titles-container {
+@mixin container {
 	padding: {
 		right: 1.25rem;
 		left: 1.25rem;
@@ -31,20 +34,6 @@
 	}
 }
 
-@mixin container {
-	padding: {
-		right: 1.25rem;
-		left: 1.25rem;
-	}
-
-	// @media #{$mq_w1920_up} {
-	// 	padding: {
-	// 		right: 200px;
-	// 		left: 200px;
-	// 	}
-	// }
-}
-
 @mixin padding-between-sections {
 	padding-bottom: 9.375rem;
 
@@ -54,8 +43,11 @@
 }
 
 @mixin h2-titles {
-	@include titles-container;
-	margin: 0;
+	@include container;
+	margin: {
+		top: 0;
+		bottom: 0;
+	}
 	background-color: $white;
 	height: 4.688rem;
 	display: flex;
@@ -94,10 +86,7 @@
 		size: 1.25rem;
 		weight: 800;
 	}
-	text: {
-		//align: center;
-		transform: uppercase;
-	}
+	text-transform: uppercase;
 	align-items: center;
 
 	@media #{$mq_w400_up} {
@@ -281,7 +270,7 @@
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	max-width: 31.25rem;
+	max-width: 25rem;
 	color: $white;
 	padding: 1.25rem;
 	border: {
