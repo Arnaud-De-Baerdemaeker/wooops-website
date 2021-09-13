@@ -6,6 +6,7 @@
 		color: $black;
 	}
 	height: calc(100vh - 3.125rem);
+	display: flex;
 
 	@media #{$mq_w450_up} {
 		height: calc(100vh - 3.75rem);
@@ -16,173 +17,196 @@
 	}
 
 	.introduction { // <section>
-		height: inherit;
-
-		@media #{$mq_w900_up} {
-			margin-left: auto;
-			flex-direction: column;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		&__logo-container { // <h1>
-			background-color: $white;
-			margin: {
-				top: 0;
-				bottom: 0;
-			}
-			transform: rotate(45deg);
-			display: flex;
-			align-items: center;
-			position: absolute;
-			width: 50vw;
-			height: 50vw;
-			top: calc(50% - 25vw + 1.563rem);
-			left: calc(50% - 25vw);
-			box-shadow: 0rem 0rem 1.25rem 0.313rem $white;
-			z-index: 0;
-
-			@media #{$mq_w400_up} {
-				width: 45vw;
-				height: 45vw;
-				top: calc(50% - 22.5vw + 1.563rem);
-				left: calc(50% - 22.5vw);
-			}
-
-			@media #{$mq_w450_up} {
-				top: calc(50% - 22.5vw + 1.875rem);
-			}
-
-			@media #{$mq_w600_up} {
-				width: 40vw;
-				max-width: 21.875rem;
-				height: 40vw;
-				max-height: 21.875rem;
-				top: calc(50% - 20vw + 1.875rem);
-				left: calc(50% - 20vw);
-			}
-
-			@media #{$mq_w800_up} {
-				top: calc(50% - 20vw + 2.344rem);
-			}
-
-			@media #{$mq_w875_up} {
-				top: calc(50% - 10.938rem + 2.344rem);
-				left: calc(50% - 10.938rem);
-			}
-		}
-
-		&__logo-image { // <img>
-			vertical-align: middle;
-			width: 100%;
-			transform: rotate(-45deg);
-		}
-
-		&__title { // <h2>
-			margin: 0;
-			height: inherit;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
-			width: 100%;
-		}
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100vw;
 
 		&__text { // <p>
 			margin: 0;
 			text-transform: uppercase;
 			color: $white;
-			font: {
-				size: 1.063rem;
-				weight: 100;
-			}
+			font-weight: 100;
 			display: flex;
 			flex-direction: column;
 
-			@media #{$mq_w450_up} {
-				font-size: 1.25rem;
-			}
+			@media #{$portrait} {
+				font-size: 22px;
 
-			@media #{$mq_w600_up} {
-				font-size: 1.375rem;
-			}
-
-			@media #{$mq_w700_up} {
-				font-size: 1.875rem;
-			}
-
-			@media #{$mq_w1000_up} {
-				font-size: 2.5rem;
-			}
-
-			@media #{$mq_w1500_up} {
-				font-size: 3.125rem;
-				word-spacing: 0.25rem;
-				letter-spacing: 0.125rem;
-			}
-
-			&:first-of-type {
-				align-self: flex-start;
-				text-align: start;
-				margin: {
-					top: 0.625rem;
-					left: 0.625rem;
-				}
-
-				@media #{$mq_h500_up} {
-					margin-top: 1.25rem;
+				@media #{$mq_w400_up} {
+					font-size: 24px;
 				}
 
 				@media #{$mq_w600_up} {
-					margin: {
-						top: 2.5rem;
-						left: 2.5rem;
-					}
+					font-size: 34px;
+				}
+
+				@media #{$mq_w700_up} {
+					font-size: 40px;
+				}
+
+				@media #{$mq_w1300_up} {
+					font-size: 45px;
+				}
+
+				@media #{$mq_w1400_up} {
+					font-size: 50px;
+				}
+			}
+
+			@media #{$landscape} {
+				font-size: 18px;
+
+				@media #{$mq_h400_up} {
+					font-size: 20px;
+				}
+
+				@media #{$mq_h500_up} {
+					font-size: 24px;
 				}
 
 				@media #{$mq_h600_up} {
-					margin-top: 3.75rem;
+					font-size: 30px;
 				}
 
-				@media #{$mq_w800_up} {
-					margin-left: 2.5rem;
+				@media #{$mq_h700_up} {
+					font-size: 35px;
 				}
 
-				@media #{$mq_w1200_up} {
-					margin-left: 5rem;
+				@media #{$mq_h800_up} {
+					font-size: 40px;
+				}
+
+				@media #{$mq_h900_up} {
+					font-size: 50px;
+				}
+
+				@media #{$mq_w1700_up} and #{$mq_h950_up} {
+					font-size: 60px;
+				}
+			}
+
+			&:first-of-type {
+				align-self: flex-end;
+				text-align: end;
+
+				@media #{$portrait} {
+					margin: {
+						top: 30px;
+						right: 20px;
+					}
+
+					@media #{$mq_w500_up} {
+						margin-right: 30px;
+					}
+
+					@media #{$mq_w700_up} {
+						margin: {
+							top: 40px;
+							right: 40px;
+						}
+					}
+
+					@media #{$mq_w1300_up} {
+						margin: {
+							top: 50px;
+							right: 50px;
+						}
+					}
+				}
+
+				@media #{$landscape} {
+					margin: {
+						top: 10px;
+						right: 10px;
+					}
+
+					@media #{$mq_h400_up} {
+						margin: {
+							top: 20px;
+							right: 20px;
+						}
+					}
+
+					@media #{$mq_h500_up} {
+						margin: {
+							top: 30px;
+							right: 30px;
+						}
+					}
+
+					@media #{$mq_h700_up} {
+						margin-right: 40px;
+					}
+
+					@media #{$mq_h900_up} {
+						margin: {
+							top: 50px;
+							right: 50px;
+						}
+					}
 				}
 			}
 
 			&:last-of-type {
-				margin: {
-					right: 0.625rem;
-					bottom: 0.625rem;
-				}
-				text-align: end;
-				align-self: flex-end;
+				text-align: start;
+				align-self: flex-start;
 
-				@media #{$mq_h500_up} {
-					margin-bottom: 1.25rem;
-				}
-
-				@media #{$mq_w600_up} {
+				@media #{$portrait} {
 					margin: {
-						right: 2.5rem;
-						bottom: 2.5rem;
+						bottom: 30px;
+						left: 20px;
+					}
+
+					@media #{$mq_w500_up} {
+						margin-left: 30px;
+					}
+
+					@media #{$mq_w700_up} {
+						margin: {
+							bottom: 40px;
+							left: 40px;
+						}
+					}
+
+					@media #{$mq_w1300_up} {
+						margin: {
+							bottom: 50px;
+							left: 50px;
+						}
 					}
 				}
 
-				@media #{$mq_h600_up} {
-					margin-bottom: 3.75rem;
-				}
+				@media #{$landscape} {
+					margin: {
+						bottom: 10px;
+						left: 10px;
+					}
 
-				@media #{$mq_w800_up} {
-					margin-right: 2.5rem;
-				}
+					@media #{$mq_h400_up} {
+						margin: {
+							bottom: 20px;
+							left: 20px;
+						}
+					}
 
-				@media #{$mq_w1200_up} {
-					margin-right: 5rem;
+					@media #{$mq_h500_up} {
+						margin: {
+							bottom: 30px;
+							left: 30px;
+						}
+					}
+
+					@media #{$mq_h700_up} {
+						margin-left: 40px;
+					}
+
+					@media #{$mq_h900_up} {
+						margin: {
+							bottom: 50px;
+							left: 50px;
+						}
+					}
 				}
 			}
 		}
@@ -191,6 +215,95 @@
 			font-weight: 700;
 			color: $white;
 			text-shadow: 0rem 0rem 0.625rem $white;
+		}
+
+		&__logo-container { // <div>
+			background-color: $white;
+			margin: {
+				top: 0;
+				bottom: 0;
+			}
+			transform: rotate(45deg);
+			display: flex;
+			align-self: center;
+			align-items: center;
+			box-shadow: 0rem 0rem 1.25rem 0.313rem $white;
+			z-index: 0;
+
+			@media #{$portrait} {
+				width: 150px;
+				height: 150px;
+
+				@media #{$mq_w400_up} {
+					width: 175px;
+					height: 175px;
+				}
+
+				@media #{$mq_w500_up} {
+					width: 200px;
+					height: 200px;
+				}
+
+				@media #{$mq_w600_up} {
+					width: 225px;
+					height: 225px;
+				}
+
+				@media #{$mq_w700_up} {
+					width: 250px;
+					height: 250px;
+				}
+
+				@media #{$mq_w1100_up} {
+					width: 275px;
+					height: 275px;
+				}
+
+				@media #{$mq_w1500_up} {
+					width: 300px;
+					height: 300px;
+				}
+			}
+
+			@media #{$landscape} {
+				width: 100px;
+				height: 100px;
+
+				@media #{$mq_h400_up} {
+					width: 125px;
+					height: 125px;
+				}
+
+				@media #{$mq_h500_up} {
+					width: 150px;
+					height: 150px;
+				}
+
+				@media #{$mq_h600_up} {
+					width: 200px;
+					height: 200px;
+				}
+
+				@media #{$mq_h700_up} {
+					width: 250px;
+					height: 250px;
+				}
+
+				@media #{$mq_h800_up} {
+					width: 300px;
+					height: 300px;
+				}
+			}
+
+			h1 {
+				display: none;
+			}
+		}
+
+		&__logo-image { // <img>
+			vertical-align: middle;
+			width: 100%;
+			transform: rotate(-45deg);
 		}
 	}
 }
