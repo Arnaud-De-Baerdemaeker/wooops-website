@@ -1,4 +1,5 @@
 .agency { // <div>
+    @include viewport-container;
     @include padding-between-sections;
 
     &__title { // <h2>
