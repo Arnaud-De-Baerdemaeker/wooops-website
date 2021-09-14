@@ -19,10 +19,9 @@
 		<?php endif; ?>
 
 		<?php if ($logo): ?>
-			<div class="introduction__logo-container">
-				<h1>Wooops Agency</h1>
-				<img src="<?php echo esc_url($logo["url"]); ?>" alt="<?php echo esc_attr($logo["alt"]); ?>" class="introduction__logo-image" />
-			</div>
+			<h1 class="introduction__logo-container">
+				<img src="<?php echo esc_url($logo["url"]); ?>" alt="Wooops Agency" class="introduction__logo-image" />
+			</h1>
 		<?php endif; ?>
 
 		<?php if ($introduction["text_part_2"]): ?>
