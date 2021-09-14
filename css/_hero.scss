@@ -217,7 +217,7 @@
 			text-shadow: 0rem 0rem 0.625rem $white;
 		}
 
-		&__logo-container { // <div>
+		&__logo-container { // <h1>
 			background-color: $white;
 			margin: {
 				top: 0;
@@ -293,10 +293,6 @@
 					width: 300px;
 					height: 300px;
 				}
-			}
-
-			h1 {
-				display: none;
 			}
 		}
 
