@@ -15,6 +15,7 @@
 	}
 
 	.menu-menu-principal-container { // <div>
+		@include viewport-container;
 		height: inherit;
 
 		.menu { // <ul>
