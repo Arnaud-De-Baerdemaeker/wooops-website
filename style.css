@@ -64,6 +64,9 @@ body main {
 }
 
 .header .menu-menu-principal-container {
+  max-width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
   height: inherit;
 }
 
@@ -494,10 +497,6 @@ body main {
     width: 300px;
     height: 300px;
   }
-}
-
-.hero .introduction__logo-container h1 {
-  display: none;
 }
 
 .hero .introduction__logo-image {
