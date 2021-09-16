@@ -3,13 +3,42 @@ Theme Name: Wooops Agency
 Theme URI: 
 Author: Wooops Agency
 Author URI: 
-Description: Wooops Agency's first theme
-Version: 1.0.0
+Description: Wooops Agency's theme
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wooopsagency
 Tags: SCSS
 */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 white;
+            box-shadow: 0 0 0 0 white;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 40px 10px white;
+            box-shadow: 0 0 40px 10px white;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 white;
+            box-shadow: 0 0 0 0 white;
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 white;
+            box-shadow: 0 0 0 0 white;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 40px 10px white;
+            box-shadow: 0 0 40px 10px white;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 white;
+            box-shadow: 0 0 0 0 white;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -403,8 +432,12 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0rem 0rem 1.25rem 0.313rem white;
-          box-shadow: 0rem 0rem 1.25rem 0.313rem white;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   z-index: 0;
 }
 
