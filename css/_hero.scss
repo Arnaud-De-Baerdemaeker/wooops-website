@@ -227,7 +227,11 @@
 			display: flex;
 			align-self: center;
 			align-items: center;
-			box-shadow: 0rem 0rem 1.25rem 0.313rem $white;
+			animation: {
+				name: pulse;
+				duration: 2s;
+				iteration-count: infinite;
+			}
 			z-index: 0;
 
 			@media #{$portrait} {
