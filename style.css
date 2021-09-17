@@ -48,6 +48,8 @@ body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
+  background-color: black;
 }
 
 body main {
@@ -986,9 +988,9 @@ body main {
 
 .services .service1__title {
   text-align: center;
-  font-family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   color: white;
 }
@@ -1214,9 +1216,9 @@ body main {
 
 .services .service2__title {
   text-align: center;
-  font-family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   color: white;
 }
@@ -1327,9 +1329,9 @@ body main {
 
 .services .service3__title {
   text-align: center;
-  font-family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   color: white;
 }
@@ -1448,9 +1450,9 @@ body main {
 
 .services .service4__title {
   text-align: center;
-  font-family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   color: white;
 }
@@ -1642,9 +1644,9 @@ body main {
 
 .services .service5__title {
   text-align: center;
-  font-family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   color: white;
 }
@@ -1702,9 +1704,9 @@ body main {
 
 .services .service6__title {
   text-align: center;
-  font-family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   color: white;
 }
@@ -1762,9 +1764,9 @@ body main {
 
 .services .service7__title {
   text-align: center;
-  font-family: "Crimson Text", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   color: white;
 }
