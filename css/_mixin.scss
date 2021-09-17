@@ -73,10 +73,6 @@
 	@media #{$mq_w1100_up} {
 		height: 18.75rem;
 	}
-
-	@media #{$mq_w1500_up} {
-		height: 25rem;
-	}
 }
 
 @mixin h2-titles__text {
@@ -162,12 +158,6 @@
 		width: 21.875rem;
 		height: 21.875rem;
 		border-radius: 21.875rem;
-	}
-
-	@media #{$mq_w1500_up} {
-		width: 28.125rem;
-		height: 28.125rem;
-		border-radius: 28.125rem;
 	}
 }
 
