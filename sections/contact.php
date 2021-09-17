@@ -17,7 +17,7 @@
 				<div class="contact__introduction">
 					<p class="contact__text"><?php echo $contact_introduction["text"]; ?></p>
 				</div>
-				<?php the_content(); ?>
+				<?php echo $contact_introduction["form"]; ?>
 			</div>
 		<?php endif;
 	endif; ?>
