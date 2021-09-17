@@ -7,6 +7,7 @@
 	<?php endif; ?>
 	class="hero"
 >
+	<?php echo $hero["parallax"]; ?>
 	<section class="introduction">
 		<?php if ($hero["introduction"]["text_part_1"]): ?>
 			<p class="introduction__text">
