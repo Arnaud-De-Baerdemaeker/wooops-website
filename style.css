@@ -121,12 +121,23 @@ body main {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.625rem;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   color: black;
+}
+
+.header .menu-menu-principal-container .menu .menu-item a:hover {
+  font-size: 1.25rem;
 }
 
 @media (min-width: 29.688rem) {
   .header .menu-menu-principal-container .menu .menu-item a {
     font-size: 0.813rem;
+  }
+  .header .menu-menu-principal-container .menu .menu-item a:hover {
+    font-size: 19.5px;
   }
 }
 
@@ -135,11 +146,17 @@ body main {
     font-size: 1rem;
     word-spacing: 0.25rem;
   }
+  .header .menu-menu-principal-container .menu .menu-item a:hover {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 81.25rem) {
   .header .menu-menu-principal-container .menu .menu-item a {
     font-size: 1.25rem;
+  }
+  .header .menu-menu-principal-container .menu .menu-item a:hover {
+    font-size: 30px;
   }
 }
 
@@ -178,6 +195,7 @@ body main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100vw;
+  z-index: 1;
 }
 
 .hero .introduction__text {
@@ -688,6 +706,7 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
+  z-index: 1;
 }
 
 .agency__title .title__image {
@@ -898,6 +917,7 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
+  z-index: 1;
 }
 
 .services__title .title__image {
@@ -2005,6 +2025,7 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
+  z-index: 1;
 }
 
 .work__title .title__image {
@@ -2215,6 +2236,7 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
+  z-index: 1;
 }
 
 .contact__title .title__image {
