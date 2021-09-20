@@ -44,6 +44,10 @@ Tags: SCSS
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
