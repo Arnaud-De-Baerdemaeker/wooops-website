@@ -10,7 +10,7 @@
 	<?php echo $hero["parallax"]; ?>
 	<section class="introduction">
 		<?php if ($hero["introduction"]["text_part_1"]): ?>
-			<p class="introduction__text">
+			<p id="text_1" class="introduction__text">
 				<?php echo $hero["introduction"]["text_part_1"]["normal_text"]; ?>
 				<br />
 				<span class="introduction__keyword"><?php echo $hero["introduction"]["text_part_1"]["keyword"]; ?></span>
@@ -24,7 +24,7 @@
 		<?php endif; ?>
 
 		<?php if ($hero["introduction"]["text_part_2"]): ?>
-			<p class="introduction__text">
+			<p id="text_2" class="introduction__text">
 				<?php echo $hero["introduction"]["text_part_2"]["normal_text"]; ?>
 				<br />
 				<span class="introduction__keyword"><?php echo $hero["introduction"]["text_part_2"]["keyword"]; ?></span>

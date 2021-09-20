@@ -83,9 +83,9 @@
 			<div class="service2"><!-- S2 -->
 				<h3 class="service2__title"><?php echo $service_2["title"]; ?></h3>
 				<ol class="service2__list">
-					<li class="service2__item"><?php echo $service_2["service_2a_title"]; ?></li>
-					<li class="service2__item"><?php echo $service_2["service_2b_title"]; ?></li>
-					<li class="service2__item"><?php echo $service_2["service_2c_title"]; ?></li>
+					<li id="service2__item1" class="service2__item"><?php echo $service_2["service_2a_title"]; ?></li>
+					<li id="service2__item2" class="service2__item"><?php echo $service_2["service_2b_title"]; ?></li>
+					<li id="service2__item3" class="service2__item"><?php echo $service_2["service_2c_title"]; ?></li>
 				</ol>
 			</div>
 		<?php endif; ?>
@@ -94,8 +94,8 @@
 			<div class="service3"><!-- S3 -->
 				<h3 class="service3__title"><?php echo $service_3["title"]; ?></h3>
 				<div class="service3__text-container">
-					<p class="service3__text"><?php echo $service_3["paragraphs"]["paragraph_1"]; ?></p>
-					<p class="service3__text"><?php echo $service_3["paragraphs"]["paragraph_2"]; ?></p>
+					<p id="service3__text1" class="service3__text"><?php echo $service_3["paragraphs"]["paragraph_1"]; ?></p>
+					<p id="service3__text2" class="service3__text"><?php echo $service_3["paragraphs"]["paragraph_2"]; ?></p>
 				</div>
 			</div>
 		<?php endif; ?>
@@ -153,12 +153,12 @@
 			<div class="service7">
 				<h3 class="service7__title"><?php echo $service_7["title"]; ?></h3>
 				<ul class="service7__list">
-					<li class="service7__item"><?php echo $service_7["keywords"]["keyword_1"]; ?></li>
-					<li class="service7__item"><?php echo $service_7["keywords"]["keyword_2"]; ?></li>
-					<li class="service7__item"><?php echo $service_7["keywords"]["keyword_3"]; ?></li>
-					<li class="service7__item"><?php echo $service_7["keywords"]["keyword_4"]; ?></li>
-					<li class="service7__item"><?php echo $service_7["keywords"]["keyword_5"]; ?></li>
-					<li class="service7__item"><?php echo $service_7["keywords"]["keyword_6"]; ?></li>
+					<li id="service7__item1" class="service7__item"><?php echo $service_7["keywords"]["keyword_1"]; ?></li>
+					<li id="service7__item2" class="service7__item"><?php echo $service_7["keywords"]["keyword_2"]; ?></li>
+					<li id="service7__item3" class="service7__item"><?php echo $service_7["keywords"]["keyword_3"]; ?></li>
+					<li id="service7__item4" class="service7__item"><?php echo $service_7["keywords"]["keyword_4"]; ?></li>
+					<li id="service7__item5" class="service7__item"><?php echo $service_7["keywords"]["keyword_5"]; ?></li>
+					<li id="service7__item6" class="service7__item"><?php echo $service_7["keywords"]["keyword_6"]; ?></li>
 				</ul>
 			</div>
 		<?php endif; ?>
