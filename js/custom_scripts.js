@@ -48,6 +48,13 @@ sr.reveal(".footer", {
 
 
 // ---- DESKTOP ----
+// HERO
+sr.reveal(".jarallax-img", {
+	opacity: 0,
+	duration: 2000,
+	delay: 5000
+})
+
 // H2 TITLES
 sr.reveal(".agency__title, .services__title, .work__title, .contact__title", {
 	origin: "top",
