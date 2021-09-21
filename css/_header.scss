@@ -2,8 +2,8 @@
 	height: 3.125rem;
 	background-color: $white;
 	position: sticky;
-	top: 0rem;
-	z-index: 2;
+	top: 0px;
+	z-index: 5;
 	box-shadow: 0rem 0.313rem 0.625rem $black_shadow;
 
 	@media #{$mq_w450_up} {
