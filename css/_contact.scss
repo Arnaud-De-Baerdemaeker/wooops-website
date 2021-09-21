@@ -150,16 +150,34 @@
 						}
 						padding: 0;
 						border: none;
-						background-color: $wooops;
-						color: $white;
+						background-color: unset;
+						color: $wooops;
 						cursor: pointer;
 						text-transform: uppercase;
 						font: {
 							family: inherit;
-							weight: 500;
+							weight: 700;
 							size: 1rem;
 						}
+						letter-spacing: 1px;
+						outline: {
+							style: solid;
+							width: 1px;
+							color: $wooops;
+							offset: 0;
+						}
 						width: 50%;
+						transition-property: background-color color outline-width outline-offset;
+						transition-duration: 0.3s;
+
+						&:hover {
+							background-color: $wooops;
+							color: $white;
+							outline: {
+								width: 4px;
+								offset: 5px;
+							}
+						}
 					}
 
 					.ajax-loader { // <span>
