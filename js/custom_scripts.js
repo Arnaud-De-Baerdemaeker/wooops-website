@@ -1,5 +1,5 @@
 const sr = ScrollReveal({
-	cleanup: true
+	//cleanup: true
 });
 
 // ---- ALL DISPLAYS ----
