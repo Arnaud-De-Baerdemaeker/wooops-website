@@ -9,9 +9,11 @@ function add_tags() { ?>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/style.css'; ?>">
+	<!-- Development link -->
 	<script src="https://unpkg.com/scrollreveal"></script>
-	<script src="<?php echo get_template_directory_uri().'/js/custom_scripts.js'; ?>" type="module"></script>
+	<!-- Production link -->
 	<!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+	<script src="<?php echo get_template_directory_uri().'/js/custom_scripts.js'; ?>" type="module"></script>
 	<title><?php the_title(); ?></title>
 	<?php
 }
