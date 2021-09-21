@@ -1,42 +1,21 @@
-window.sr = ScrollReveal();
-
-ScrollReveal().clean(".header, .menu-item-104, .menu-item-105, .menu-item-279, .menu-item-106, #text_1, .introduction__logo-container, #text_2, .agency__title, .services__title, .work__title, .contact__title, .title__text, .title__image, .service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title, .service1a, #service2__item1, #service3__text1, .service4a, .contact__introduction, .service1b, #service2__item2, .service4b, .service4d, .service1c, #service2__item3, #service3__text2, .service4c, .wpcf7, #service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6, .footer, .footer__logo, .footer__address, .footer__contact, .footer__social, .footer__copyright");
+const sr = ScrollReveal({
+	cleanup: true
+});
 
 // ---- ALL DISPLAYS ----
 // MENU BAR
 sr.reveal(".header", {
 	origin: "top",
 	distance: "100px",
-	duration: 500,
-	cleanup: true
+	duration: 1000
 });
 
-sr.reveal(".menu-item-104", {
+sr.reveal(".menu-item-104, .menu-item-105, .menu-item-279, .menu-item-106", {
 	origin: "top",
 	distance: "100px",
-	duration: 1500,
-	cleanup: true
-});
-
-sr.reveal(".menu-item-105", {
-	origin: "top",
-	distance: "100px",
-	duration: 2000,
-	cleanup: true
-});
-
-sr.reveal(".menu-item-279", {
-	origin: "top",
-	distance: "100px",
-	duration: 2500,
-	cleanup: true
-});
-
-sr.reveal(".menu-item-106", {
-	origin: "top",
-	distance: "100px",
-	duration: 3000,
-	cleanup: true
+	duration: 1000,
+	delay: 500,
+	interval: 200
 });
 
 // HERO
@@ -44,23 +23,20 @@ sr.reveal("#text_1", {
 	origin: "left",
 	distance: "1000px",
 	duration: 1500,
-	delay: 1500,
-	cleanup: true
+	delay: 2000
 });
 
 sr.reveal(".introduction__logo-container", {
 	scale: 0,
 	duration: 2000,
-	delay: 3500,
-	cleanup: true
+	delay: 4000
 });
 
 sr.reveal("#text_2", {
 	origin: "right",
 	distance: "1000px",
 	duration: 1500,
-	delay: 2500,
-	cleanup: true
+	delay: 3000
 });
 
 // FOOTER
@@ -124,7 +100,7 @@ sr.reveal(".service1a, #service2__item1, #service3__text1, .service4a, .contact_
 	origin: "left",
 	distance: "500px",
 	duration: 2000,
-	delay: 1000,
+	//delay: 1000,
 	viewOffset: {
 		bottom: 250
 	},
@@ -135,7 +111,7 @@ sr.reveal(".service1b, #service2__item2, .service4b, .service4d", {
 	origin: "top",
 	distance: "500px",
 	duration: 2000,
-	delay: 1000,
+	//delay: 1000,
 	viewOffset: {
 		bottom: 250
 	},
@@ -146,76 +122,21 @@ sr.reveal(".service1c, #service2__item3, #service3__text2, .service4c, .wpcf7", 
 	origin: "right",
 	distance: "500px",
 	duration: 2000,
-	delay: 1000,
+	//delay: 1000,
 	viewOffset: {
 		bottom: 250
 	},
 	mobile: false
 });
 
-sr.reveal("#service7__item1", {
+sr.reveal("#service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6", {
 	origin: "top",
 	distance: "500px",
 	duration: 1000,
-	delay: 500,
 	viewOffset: {
 		bottom: 250
 	},
-	mobile: false
-});
-
-sr.reveal("#service7__item2", {
-	origin: "top",
-	distance: "500px",
-	duration: 1000,
-	delay: 750,
-	viewOffset: {
-		bottom: 250
-	},
-	mobile: false
-});
-
-sr.reveal("#service7__item3", {
-	origin: "top",
-	distance: "500px",
-	duration: 1000,
-	delay: 1000,
-	viewOffset: {
-		bottom: 250
-	},
-	mobile: false
-});
-
-sr.reveal("#service7__item4", {
-	origin: "top",
-	distance: "500px",
-	duration: 1000,
-	delay: 1250,
-	viewOffset: {
-		bottom: 250
-	},
-	mobile: false
-});
-
-sr.reveal("#service7__item5", {
-	origin: "top",
-	distance: "500px",
-	duration: 1000,
-	delay: 1500,
-	viewOffset: {
-		bottom: 250
-	},
-	mobile: false
-});
-
-sr.reveal("#service7__item6", {
-	origin: "top",
-	distance: "500px",
-	duration: 1000,
-	delay: 1750,
-	viewOffset: {
-		bottom: 250
-	},
+	interval: 250,
 	mobile: false
 });
 
@@ -341,3 +262,5 @@ sr.reveal(".footer__copyright", {
 	desktop: false
 });
 // ---- END OF MOBILE ----
+
+//ScrollReveal().clean(".header, .menu-item-104, .menu-item-105, .menu-item-279, .menu-item-106, #text_1, .introduction__logo-container, #text_2, .agency__title, .services__title, .work__title, .contact__title, .title__text, .title__image, .service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title, .service1a, #service2__item1, #service3__text1, .service4a, .contact__introduction, .service1b, #service2__item2, .service4b, .service4d, .service1c, #service2__item3, #service3__text2, .service4c, .wpcf7, #service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6, .footer, .footer__logo, .footer__address, .footer__contact, .footer__social, .footer__copyright");
