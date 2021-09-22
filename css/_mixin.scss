@@ -42,6 +42,18 @@
 	}
 }
 
+@mixin scroll-position {
+	scroll-margin-top: calc(3.125rem + 25px);
+
+    @media #{$mq_w450_up} {
+		scroll-margin-top: calc(3.75rem + 25px);
+	}
+
+	@media #{$mq_w800_up} {
+		scroll-margin-top: calc(4.688rem + 25px);
+	}
+}
+
 @mixin h2-titles {
 	@include container;
 	margin: {
