@@ -7,7 +7,6 @@
 	}
 	height: calc(100vh - 3.125rem);
 	display: flex;
-	overflow-x: hidden;
 
 	@media #{$mq_w450_up} {
 		height: calc(100vh - 3.75rem);
@@ -22,7 +21,6 @@
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100vw;
-		z-index: 1;
 
 		&__text { // <p>
 			margin: 0;

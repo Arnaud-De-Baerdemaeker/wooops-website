@@ -9,9 +9,9 @@ body {
 		size: 16px;
 	}
 	background-color: $black;
+	overflow-x: hidden;
 
 	main {
 		background-color: $black;
-		overflow-x: hidden;
 	}
 }

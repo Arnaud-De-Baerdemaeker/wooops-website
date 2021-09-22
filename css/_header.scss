@@ -3,7 +3,7 @@
 	background-color: $white;
 	position: sticky;
 	top: 0px;
-	z-index: 5;
+	z-index: 10;
 	box-shadow: 0rem 0.313rem 0.625rem $black_shadow;
 
 	@media #{$mq_w450_up} {
