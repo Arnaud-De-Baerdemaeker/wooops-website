@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="sr">
 	<head>
 		<?php wp_head(); ?>
 	</head>
