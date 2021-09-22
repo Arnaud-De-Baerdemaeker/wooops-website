@@ -1,0 +1,309 @@
+.hero { // <div>
+	background: {
+		repeat: no-repeat;
+		size: cover;
+		attachment: fixed;
+		color: $black;
+	}
+	height: calc(100vh - 3.125rem);
+	display: flex;
+
+	@media #{$mq_w450_up} {
+		height: calc(100vh - 3.75rem);
+	}
+
+	@media #{$mq_w800_up} {
+		height: calc(100vh - 4.688rem);
+	}
+
+	.introduction { // <section>
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100vw;
+
+		&__text { // <p>
+			margin: 0;
+			text-transform: uppercase;
+			color: $white;
+			font-weight: 100;
+			display: flex;
+			flex-direction: column;
+
+			@media #{$portrait} {
+				font-size: 1.375rem;
+
+				@media #{$mq_w400_up} {
+					font-size: 1.5rem;
+				}
+
+				@media #{$mq_w600_up} {
+					font-size: 2.125rem;
+				}
+
+				@media #{$mq_w700_up} {
+					font-size: 2.5rem;
+				}
+
+				@media #{$mq_w1300_up} {
+					font-size: 2.813rem;
+				}
+
+				@media #{$mq_w1400_up} {
+					font-size: 3.125rem;
+				}
+			}
+
+			@media #{$landscape} {
+				font-size: 1.125rem;
+
+				@media #{$mq_h400_up} {
+					font-size: 1.25rem;
+				}
+
+				@media #{$mq_h500_up} {
+					font-size: 1.5rem;
+				}
+
+				@media #{$mq_h600_up} {
+					font-size: 1.875rem;
+				}
+
+				@media #{$mq_h700_up} {
+					font-size: 2.188rem;
+				}
+
+				@media #{$mq_h800_up} {
+					font-size: 2.5rem;
+				}
+
+				@media #{$mq_h900_up} {
+					font-size: 3.125rem;
+				}
+
+				@media #{$mq_w1700_up} and #{$mq_h950_up} {
+					font-size: 4.063rem;
+				}
+			}
+
+			&:first-of-type {
+				align-self: flex-end;
+				text-align: end;
+
+				@media #{$portrait} {
+					margin: {
+						top: 1.875rem;
+						right: 1.25rem;
+					}
+
+					@media #{$mq_w500_up} {
+						margin-right: 1.875rem;
+					}
+
+					@media #{$mq_w700_up} {
+						margin: {
+							top: 2.5rem;
+							right: 2.5rem;
+						}
+					}
+
+					@media #{$mq_w1300_up} {
+						margin: {
+							top: 3.125rem;
+							right: 3.125rem;
+						}
+					}
+				}
+
+				@media #{$landscape} {
+					margin: {
+						top: 0.625rem;
+						right: 0.625rem;
+					}
+
+					@media #{$mq_h400_up} {
+						margin: {
+							top: 1.25rem;
+							right: 1.25rem;
+						}
+					}
+
+					@media #{$mq_h500_up} {
+						margin: {
+							top: 1.875rem;
+							right: 1.875rem;
+						}
+					}
+
+					@media #{$mq_h700_up} {
+						margin-right: 2.5rem;
+					}
+
+					@media #{$mq_h900_up} {
+						margin: {
+							top: 3.125rem;
+							right: 3.125rem;
+						}
+					}
+				}
+			}
+
+			&:last-of-type {
+				text-align: start;
+				align-self: flex-start;
+
+				@media #{$portrait} {
+					margin: {
+						bottom: 1.875rem;
+						left: 1.25rem;
+					}
+
+					@media #{$mq_w500_up} {
+						margin-left: 1.875rem;
+					}
+
+					@media #{$mq_w700_up} {
+						margin: {
+							bottom: 2.5rem;
+							left: 2.5rem;
+						}
+					}
+
+					@media #{$mq_w1300_up} {
+						margin: {
+							bottom: 3.125rem;
+							left: 3.125rem;
+						}
+					}
+				}
+
+				@media #{$landscape} {
+					margin: {
+						bottom: 0.625rem;
+						left: 0.625rem;
+					}
+
+					@media #{$mq_h400_up} {
+						margin: {
+							bottom: 1.25rem;
+							left: 1.25rem;
+						}
+					}
+
+					@media #{$mq_h500_up} {
+						margin: {
+							bottom: 1.875rem;
+							left: 1.875rem;
+						}
+					}
+
+					@media #{$mq_h700_up} {
+						margin-left: 2.5rem;
+					}
+
+					@media #{$mq_h900_up} {
+						margin: {
+							bottom: 3.125rem;
+							left: 3.125rem;
+						}
+					}
+				}
+			}
+		}
+
+		&__keyword { // <span>
+			font-weight: 700;
+			color: $white;
+			text-shadow: 0rem 0rem 0.625rem $white;
+		}
+
+		&__logo-container { // <h1>
+			background-color: $white;
+			margin: {
+				top: 0;
+				bottom: 0;
+			}
+			transform: rotate(45deg);
+			display: flex;
+			align-self: center;
+			align-items: center;
+			animation: {
+				name: pulse;
+				duration: 2s;
+				iteration-count: infinite;
+			}
+			z-index: 0;
+
+			@media #{$portrait} {
+				width: 9.375rem;
+				height: 9.375rem;
+
+				@media #{$mq_w400_up} {
+					width: 10.938rem;
+					height: 10.938rem;
+				}
+
+				@media #{$mq_w500_up} {
+					width: 12.5rem;
+					height: 12.5rem;
+				}
+
+				@media #{$mq_w600_up} {
+					width: 14.063rem;
+					height: 14.063rem;
+				}
+
+				@media #{$mq_w700_up} {
+					width: 15.625rem;
+					height: 15.625rem;
+				}
+
+				@media #{$mq_w1100_up} {
+					width: 17.188rem;
+					height: 17.188rem;
+				}
+
+				@media #{$mq_w1500_up} {
+					width: 18.75rem;
+					height: 18.75rem;
+				}
+			}
+
+			@media #{$landscape} {
+				width: 6.25rem;
+				height: 6.25rem;
+
+				@media #{$mq_h400_up} {
+					width: 7.813rem;
+					height: 7.813rem;
+				}
+
+				@media #{$mq_h500_up} {
+					width: 9.375rem;
+					height: 9.375rem;
+				}
+
+				@media #{$mq_h600_up} {
+					width: 12.5rem;
+					height: 12.5rem;
+				}
+
+				@media #{$mq_h700_up} {
+					width: 15.625rem;
+					height: 15.625rem;
+				}
+
+				@media #{$mq_h800_up} {
+					width: 18.75rem;
+					height: 18.75rem;
+				}
+			}
+		}
+
+		&__logo-image { // <img>
+			vertical-align: middle;
+			width: 100%;
+			transform: rotate(-45deg);
+		}
+	}
+}

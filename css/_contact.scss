@@ -1,46 +1,69 @@
 .contact {
-	@include container;
-	margin-top: 12.5rem;
-	padding-bottom: 12.5rem;
+	@include viewport-container;
+	@include padding-between-sections;
+	@include scroll-position;
 
 	&__title { // <h2>
 		@include h2-titles;
+
+		.title {
+			&__text { // <span>
+				@include h2-titles__text;
+			}
+
+			&__image-container { // <span>
+				@include h2-titles__image-container;
+			}
+
+			&__image { // <img>
+				@include h2-titles__image;
+			}
+		}
 	}
+
+	&__content-container { // <div>
+		@include container;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		row-gap: 1.25rem;
+		margin-top: 4.688rem;
+		column-gap: 1.25rem;
+
+		@media #{$mq_w1500_up} {
+			margin-top: 9.375rem;
+		}
+	}
+
+	// &__introduction { // <div>
+	// }
 
 	&__text { // <p>
 		@include services-text;
-		margin-top: 6.25rem;
-
-		@media #{$mq_w1500_up} {
-			width: 60%;
-			margin: {
-				right: auto;
-				left: auto;
-			}
-		}
+		@include card-dark;
+		text-align: justify;
 	}
 
 	.wpcf7 { // <div>
-		margin-top: 6.25rem;
-
-		@media #{$mq_w800_up} {
-			width: 80%;
-			margin: {
-				right: auto;
-				left: auto;
-			}
+		color: $white;
+		border: {
+			style: solid;
+			width: 0.063rem;
+			color: $white;
 		}
+		padding: 1.25rem;
+		width: 25rem;
 
-		@media #{$mq_w1100_up} {
-			width: unset;
+		@media #{$mq_w1400_up} {
+			width: 37.5rem;
 		}
 
 		@media #{$mq_w1500_up} {
-			width: 70%;
+			padding: 2.5rem;
 		}
 
-		.wpcf7-form.init { // <form>
-			@media #{$mq_w1100_up} {
+		.wpcf7-form.init, .submitting, .invalid { // <form>
+			@media #{$mq_w1400_up} {
 				display: flex;
 				flex-direction: column;
 				row-gap: 1.25rem;
@@ -52,10 +75,10 @@
 
 			input[type="text"], input[type="tel"], input[type="email"], textarea {
 				padding: {
-					top: 0;
-					right: 0;
-					bottom: 0.5rem;
-					left: 0;
+					top: 0.313rem;
+					right: 0.313rem;
+					bottom: 0.313rem;
+					left: 0.313rem;
 				}
 				outline: none;
 				border: {
@@ -64,48 +87,52 @@
 					bottom: {
 						style: solid;
 						width: 0.063rem;
+						color: $white;
 					}
 					left: none;
 				}
-				border-radius: 0.125rem;
 				font: {
 					family: inherit;
 					size: 1rem;
 				}
 				display: block;
 				width: 100%;
+				background-color: $black;
+				color: $white;
 			}
 
 			.form { // no tags
 				&__part-1, &__part-2 { // <div>
-					@media #{$mq_w1100_up} {
-						display: flex;
-						flex-direction: column;
-						row-gap: 1.25rem;
+					display: flex;
+					flex-direction: column;
+					row-gap: 1.25rem;
+
+					@media #{$mq_w1400_up} {
+						column-gap: 1.25rem;
 					}
 				}
 
 				&__top-part, &__bottom-part { // <div>
-					@media #{$mq_w1100_up} {
-						display: flex;
+					display: flex;
+					flex-direction: column;
+					row-gap: 1.25rem;
+
+					@media #{$mq_w1400_up} {
 						flex-direction: row;
-						column-gap: 2.5rem;
+						column-gap: 1.25rem;
 					}
 				}
 
 				&__name, &__company, &__phone, &__email {
-					margin-top: 2rem;
-
-					@media #{$mq_w1100_up} {
+					@media #{$mq_w1400_up} {
 						width: 50%;
-						margin-top: unset;
 					}
 				}
 
 				&__object, &__message {
 					margin-top: 2rem;
 
-					@media #{$mq_w1100_up} {
+					@media #{$mq_w1400_up} {
 						margin-top: unset;
 					}
 				}
@@ -124,31 +151,55 @@
 						}
 						padding: 0;
 						border: none;
-						border-radius: 0.188rem;
-						background-color: $wooops;
-						color: $white;
+						background-color: unset;
+						color: $wooops;
 						cursor: pointer;
 						text-transform: uppercase;
 						font: {
 							family: inherit;
-							weight: 500;
+							weight: 700;
 							size: 1rem;
 						}
+						letter-spacing: 1px;
+						outline: {
+							style: solid;
+							width: 1px;
+							color: $wooops;
+							offset: 0;
+						}
 						width: 50%;
+						transition-property: background-color color outline-width outline-offset;
+						transition-duration: 0.3s;
+
+						&:hover {
+							background-color: $wooops;
+							color: $white;
+							outline: {
+								width: 4px;
+								offset: 5px;
+							}
+						}
 					}
 
 					.ajax-loader { // <span>
 						position: absolute;
-						top: calc(3.125rem - (24px + 12px));
+						top: calc(3.125rem - (1.5rem + 0.75rem));
 						right: calc(50% + 1.25rem);
 						margin: 0;
 
-						@media #{$mq_w1100_up} {
-							top: calc((3.125rem + 2rem) - (24px + 12px));
+						@media #{$mq_w1400_up} {
+							top: calc((3.125rem + 2rem) - (1.5rem + 0.75rem));
 						}
 					}
 				}
 			}
+		}
+
+		.wpcf7-response-output { // <div>
+			border: unset;
+			color: $warning;
+			margin: unset;
+			padding: unset;
 		}
 	}
 }

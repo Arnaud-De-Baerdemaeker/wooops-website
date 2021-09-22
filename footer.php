@@ -1,12 +1,12 @@
 <footer id="footer" class="footer">
 	<?php $footer = get_field("footer"); ?>
-	<div class="footer__informations">
+	<div class="footer__container">
 		<div class="footer__logo">
 			<?php if ($footer["logo"]): ?>
 				<img src="<?php echo esc_url($footer["logo"]["url"]); ?>" alt="<?php echo esc_attr($footer["logo"]["alt"]); ?>" class="footer__image" />
 			<?php endif; ?>
 		</div>
-		<div class="footer__contact-infos">
+		<div class="footer__informations">
 			<section class="footer__address">
 				<h4 class="footer__title">Adresse</h4>
 				<?php if ($footer["address"]): ?>
@@ -27,5 +27,5 @@
 			</section>
 		</div>
 	</div>
-	<div class="footer__copyright">2019 - <?php echo date("Y"); ?> | <?php echo $footer["copyright"]; ?></div>
+	<p class="footer__copyright">2019 - <?php echo date("Y"); ?> | <?php echo $footer["copyright"]; ?></p>
 </footer>
