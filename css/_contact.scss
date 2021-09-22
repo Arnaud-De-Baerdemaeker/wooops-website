@@ -61,7 +61,7 @@
 			padding: 2.5rem;
 		}
 
-		.wpcf7-form.init { // <form>
+		.wpcf7-form.init, .submitting, .invalid { // <form>
 			@media #{$mq_w1400_up} {
 				display: flex;
 				flex-direction: column;
@@ -192,6 +192,13 @@
 					}
 				}
 			}
+		}
+
+		.wpcf7-response-output { // <div>
+			border: unset;
+			color: $warning;
+			margin: unset;
+			padding: unset;
 		}
 	}
 }
