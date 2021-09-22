@@ -49,11 +49,11 @@ body {
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   background-color: black;
+  overflow-x: hidden;
 }
 
 body main {
   background-color: black;
-  overflow-x: hidden;
 }
 
 .header {
@@ -62,7 +62,7 @@ body main {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 5;
+  z-index: 10;
   -webkit-box-shadow: 0rem 0.313rem 0.625rem rgba(0, 0, 0, 0.4);
           box-shadow: 0rem 0.313rem 0.625rem rgba(0, 0, 0, 0.4);
 }
@@ -156,7 +156,6 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: hidden;
 }
 
 @media (min-width: 28.125rem) {
@@ -183,7 +182,6 @@ body main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100vw;
-  z-index: 1;
 }
 
 .hero .introduction__text {
@@ -688,7 +686,6 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
-  z-index: 1;
 }
 
 .agency__title .title__image {
@@ -885,7 +882,6 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
-  z-index: 1;
 }
 
 .services__title .title__image {
@@ -1979,7 +1975,6 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
-  z-index: 1;
 }
 
 .work__title .title__image {
@@ -2176,7 +2171,6 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 50%;
-  z-index: 1;
 }
 
 .contact__title .title__image {
@@ -2324,7 +2318,7 @@ body main {
 }
 
 @media (min-width: 87.5rem) {
-  .contact .wpcf7 .wpcf7-form.init {
+  .contact .wpcf7 .wpcf7-form.init, .contact .wpcf7 .submitting, .contact .wpcf7 .invalid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2336,11 +2330,11 @@ body main {
   }
 }
 
-.contact .wpcf7 .wpcf7-form.init label, .contact .wpcf7 .wpcf7-form.init span {
+.contact .wpcf7 .wpcf7-form.init label, .contact .wpcf7 .wpcf7-form.init span, .contact .wpcf7 .submitting label, .contact .wpcf7 .submitting span, .contact .wpcf7 .invalid label, .contact .wpcf7 .invalid span {
   display: block;
 }
 
-.contact .wpcf7 .wpcf7-form.init input[type="text"], .contact .wpcf7 .wpcf7-form.init input[type="tel"], .contact .wpcf7 .wpcf7-form.init input[type="email"], .contact .wpcf7 .wpcf7-form.init textarea {
+.contact .wpcf7 .wpcf7-form.init input[type="text"], .contact .wpcf7 .wpcf7-form.init input[type="tel"], .contact .wpcf7 .wpcf7-form.init input[type="email"], .contact .wpcf7 .wpcf7-form.init textarea, .contact .wpcf7 .submitting input[type="text"], .contact .wpcf7 .submitting input[type="tel"], .contact .wpcf7 .submitting input[type="email"], .contact .wpcf7 .submitting textarea, .contact .wpcf7 .invalid input[type="text"], .contact .wpcf7 .invalid input[type="tel"], .contact .wpcf7 .invalid input[type="email"], .contact .wpcf7 .invalid textarea {
   padding-top: 0.313rem;
   padding-right: 0.313rem;
   padding-bottom: 0.313rem;
@@ -2360,7 +2354,7 @@ body main {
   color: white;
 }
 
-.contact .wpcf7 .wpcf7-form.init .form__part-1, .contact .wpcf7 .wpcf7-form.init .form__part-2 {
+.contact .wpcf7 .wpcf7-form.init .form__part-1, .contact .wpcf7 .wpcf7-form.init .form__part-2, .contact .wpcf7 .submitting .form__part-1, .contact .wpcf7 .submitting .form__part-2, .contact .wpcf7 .invalid .form__part-1, .contact .wpcf7 .invalid .form__part-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2372,13 +2366,13 @@ body main {
 }
 
 @media (min-width: 87.5rem) {
-  .contact .wpcf7 .wpcf7-form.init .form__part-1, .contact .wpcf7 .wpcf7-form.init .form__part-2 {
+  .contact .wpcf7 .wpcf7-form.init .form__part-1, .contact .wpcf7 .wpcf7-form.init .form__part-2, .contact .wpcf7 .submitting .form__part-1, .contact .wpcf7 .submitting .form__part-2, .contact .wpcf7 .invalid .form__part-1, .contact .wpcf7 .invalid .form__part-2 {
     -webkit-column-gap: 1.25rem;
             column-gap: 1.25rem;
   }
 }
 
-.contact .wpcf7 .wpcf7-form.init .form__top-part, .contact .wpcf7 .wpcf7-form.init .form__bottom-part {
+.contact .wpcf7 .wpcf7-form.init .form__top-part, .contact .wpcf7 .wpcf7-form.init .form__bottom-part, .contact .wpcf7 .submitting .form__top-part, .contact .wpcf7 .submitting .form__bottom-part, .contact .wpcf7 .invalid .form__top-part, .contact .wpcf7 .invalid .form__bottom-part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2390,7 +2384,7 @@ body main {
 }
 
 @media (min-width: 87.5rem) {
-  .contact .wpcf7 .wpcf7-form.init .form__top-part, .contact .wpcf7 .wpcf7-form.init .form__bottom-part {
+  .contact .wpcf7 .wpcf7-form.init .form__top-part, .contact .wpcf7 .wpcf7-form.init .form__bottom-part, .contact .wpcf7 .submitting .form__top-part, .contact .wpcf7 .submitting .form__bottom-part, .contact .wpcf7 .invalid .form__top-part, .contact .wpcf7 .invalid .form__bottom-part {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2401,26 +2395,26 @@ body main {
 }
 
 @media (min-width: 87.5rem) {
-  .contact .wpcf7 .wpcf7-form.init .form__name, .contact .wpcf7 .wpcf7-form.init .form__company, .contact .wpcf7 .wpcf7-form.init .form__phone, .contact .wpcf7 .wpcf7-form.init .form__email {
+  .contact .wpcf7 .wpcf7-form.init .form__name, .contact .wpcf7 .wpcf7-form.init .form__company, .contact .wpcf7 .wpcf7-form.init .form__phone, .contact .wpcf7 .wpcf7-form.init .form__email, .contact .wpcf7 .submitting .form__name, .contact .wpcf7 .submitting .form__company, .contact .wpcf7 .submitting .form__phone, .contact .wpcf7 .submitting .form__email, .contact .wpcf7 .invalid .form__name, .contact .wpcf7 .invalid .form__company, .contact .wpcf7 .invalid .form__phone, .contact .wpcf7 .invalid .form__email {
     width: 50%;
   }
 }
 
-.contact .wpcf7 .wpcf7-form.init .form__object, .contact .wpcf7 .wpcf7-form.init .form__message {
+.contact .wpcf7 .wpcf7-form.init .form__object, .contact .wpcf7 .wpcf7-form.init .form__message, .contact .wpcf7 .submitting .form__object, .contact .wpcf7 .submitting .form__message, .contact .wpcf7 .invalid .form__object, .contact .wpcf7 .invalid .form__message {
   margin-top: 2rem;
 }
 
 @media (min-width: 87.5rem) {
-  .contact .wpcf7 .wpcf7-form.init .form__object, .contact .wpcf7 .wpcf7-form.init .form__message {
+  .contact .wpcf7 .wpcf7-form.init .form__object, .contact .wpcf7 .wpcf7-form.init .form__message, .contact .wpcf7 .submitting .form__object, .contact .wpcf7 .submitting .form__message, .contact .wpcf7 .invalid .form__object, .contact .wpcf7 .invalid .form__message {
     margin-top: unset;
   }
 }
 
-.contact .wpcf7 .wpcf7-form.init .form__submit {
+.contact .wpcf7 .wpcf7-form.init .form__submit, .contact .wpcf7 .submitting .form__submit, .contact .wpcf7 .invalid .form__submit {
   position: relative;
 }
 
-.contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"] {
+.contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"], .contact .wpcf7 .submitting .form__submit input[type="submit"], .contact .wpcf7 .invalid .form__submit input[type="submit"] {
   height: 3.125rem;
   display: block;
   margin-top: 2rem;
@@ -2448,14 +2442,14 @@ body main {
           transition-duration: 0.3s;
 }
 
-.contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"]:hover {
+.contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"]:hover, .contact .wpcf7 .submitting .form__submit input[type="submit"]:hover, .contact .wpcf7 .invalid .form__submit input[type="submit"]:hover {
   background-color: #3e8c74;
   color: white;
   outline-width: 4px;
   outline-offset: 5px;
 }
 
-.contact .wpcf7 .wpcf7-form.init .form__submit .ajax-loader {
+.contact .wpcf7 .wpcf7-form.init .form__submit .ajax-loader, .contact .wpcf7 .submitting .form__submit .ajax-loader, .contact .wpcf7 .invalid .form__submit .ajax-loader {
   position: absolute;
   top: calc(3.125rem - (1.5rem + 0.75rem));
   right: calc(50% + 1.25rem);
@@ -2463,9 +2457,16 @@ body main {
 }
 
 @media (min-width: 87.5rem) {
-  .contact .wpcf7 .wpcf7-form.init .form__submit .ajax-loader {
+  .contact .wpcf7 .wpcf7-form.init .form__submit .ajax-loader, .contact .wpcf7 .submitting .form__submit .ajax-loader, .contact .wpcf7 .invalid .form__submit .ajax-loader {
     top: calc((3.125rem + 2rem) - (1.5rem + 0.75rem));
   }
+}
+
+.contact .wpcf7 .wpcf7-response-output {
+  border: unset;
+  color: #ffb900;
+  margin: unset;
+  padding: unset;
 }
 
 .footer {
