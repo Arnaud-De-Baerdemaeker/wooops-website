@@ -44,6 +44,16 @@ Tags: SCSS
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -54,6 +64,10 @@ body {
 
 body main {
   background-color: black;
+}
+
+html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279, .menu-item-106, .jarallax-img, #text_1, .introduction__logo-container, #text_2, .footer, .footer__logo, .agency__title, .services__title, .work__title, .contact__title, .title__text, .title__image, .service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title, .service1a, #service2__item1, #service3__text1, .service4a, .contact__introduction, .service1b, #service2__item2, .service4b, .service4d, .service1c, #service2__item3, #service3__text2, .service4c, .wpcf7, #service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6, .footer__address, .footer__contact, .footer__social, .footer__copyright {
+  visibility: hidden;
 }
 
 .header {
@@ -548,11 +562,24 @@ body main {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 9.375rem;
+  scroll-margin-top: calc(3.125rem + 25px);
 }
 
 @media (min-width: 93.75rem) {
   .agency {
     padding-bottom: 18.75rem;
+  }
+}
+
+@media (min-width: 28.125rem) {
+  .agency {
+    scroll-margin-top: calc(3.75rem + 25px);
+  }
+}
+
+@media (min-width: 50rem) {
+  .agency {
+    scroll-margin-top: calc(4.688rem + 25px);
   }
 }
 
@@ -744,11 +771,24 @@ body main {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 9.375rem;
+  scroll-margin-top: calc(3.125rem + 25px);
 }
 
 @media (min-width: 93.75rem) {
   .services {
     padding-bottom: 18.75rem;
+  }
+}
+
+@media (min-width: 28.125rem) {
+  .services {
+    scroll-margin-top: calc(3.75rem + 25px);
+  }
+}
+
+@media (min-width: 50rem) {
+  .services {
+    scroll-margin-top: calc(4.688rem + 25px);
   }
 }
 
@@ -1837,11 +1877,24 @@ body main {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 9.375rem;
+  scroll-margin-top: calc(3.125rem + 25px);
 }
 
 @media (min-width: 93.75rem) {
   .work {
     padding-bottom: 18.75rem;
+  }
+}
+
+@media (min-width: 28.125rem) {
+  .work {
+    scroll-margin-top: calc(3.75rem + 25px);
+  }
+}
+
+@media (min-width: 50rem) {
+  .work {
+    scroll-margin-top: calc(4.688rem + 25px);
   }
 }
 
@@ -2033,11 +2086,24 @@ body main {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 9.375rem;
+  scroll-margin-top: calc(3.125rem + 25px);
 }
 
 @media (min-width: 93.75rem) {
   .contact {
     padding-bottom: 18.75rem;
+  }
+}
+
+@media (min-width: 28.125rem) {
+  .contact {
+    scroll-margin-top: calc(3.75rem + 25px);
+  }
+}
+
+@media (min-width: 50rem) {
+  .contact {
+    scroll-margin-top: calc(4.688rem + 25px);
   }
 }
 
