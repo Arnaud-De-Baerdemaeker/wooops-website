@@ -62,7 +62,7 @@
 			padding: 2.5rem;
 		}
 
-		.wpcf7-form.init, .submitting, .invalid { // <form>
+		.wpcf7-form.init, .submitting, .invalid, .failed { // <form>
 			@media #{$mq_w1400_up} {
 				display: flex;
 				flex-direction: column;
