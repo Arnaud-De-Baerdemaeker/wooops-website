@@ -13,7 +13,7 @@ sr.reveal(".header", {
 	duration: 1000
 });
 
-sr.reveal(".menu-item-104, .menu-item-105, .menu-item-279, .menu-item-106", {
+sr.reveal(".menu-item-type-custom", {
 	origin: "top",
 	distance: "100%",
 	duration: 1000,
