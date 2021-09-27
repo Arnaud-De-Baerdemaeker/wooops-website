@@ -4,8 +4,8 @@
 ?>
 
 <?php if ($projects_header["title"]): ?>
-	<div id="work" class="work">
-		<h2 class="work__title">
+	<div id="projects" class="projects">
+		<h2 class="projects__title">
 			<span class="title__text"><?php echo $projects_header["title"]; ?></span>
 			<?php if ($projects_header["image"]): ?>
 				<span class="title__image-container"><img src="<?php echo $projects_header["image"]["url"]; ?>" alt="<?php echo $projects_header["image"]["alt"]; ?>" class="title__image" /></span>
@@ -38,7 +38,7 @@
 								<?php endif;
 								if ($projects["project_".$i]["link"]): ?>
 									<p>
-										<a href="<?php echo esc_url($projects["project_".$i]["link"]); ?>"><?php echo $projects["project_".$i]["link"]; ?></a>
+										<a href="<?php echo esc_url($projects["project_".$i]["link"]); ?>" target="_blank"><?php echo $projects["project_".$i]["link"]; ?></a>
 									</p>
 								<?php endif; ?>
 							</div>
