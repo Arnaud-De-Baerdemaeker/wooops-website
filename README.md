@@ -2,6 +2,10 @@
 
 ## Versions
 
+### 2.2.0
+
+* Add content in the "Projets" section
+
 ### 2.1.0
 
 * Inclusion of animations
