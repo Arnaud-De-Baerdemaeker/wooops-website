@@ -20,4 +20,35 @@
 			}
 		}
 	}
+
+	&__cards { // <div>
+	}
+
+	&__thumbnails { // <div>
+		.thumbnail {
+			&__desktop { // <p>
+			}
+
+			&__mobile { // <p>
+			}
+		}
+	}
+
+	&__informations { // <div>
+	}
+
+	&__client-names { // <p>
+	}
+
+	&__presentation { // <p>
+	}
+
+	&__specifications { // <p>
+	}
+
+	&__website { // <p>
+	}
+
+	&__link { // <a>
+	}
 }
