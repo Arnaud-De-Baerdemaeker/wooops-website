@@ -4,7 +4,7 @@
 			<?php
 				include("sections/agency.php");
 				include("sections/services.php");
-				include("sections/work.php");
+				include("sections/projects.php");
 				include("sections/contact.php");
 				get_footer();
 				wp_footer();
