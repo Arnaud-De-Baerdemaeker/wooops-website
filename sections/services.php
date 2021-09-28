@@ -31,17 +31,16 @@
 								<h4 class="service1a__title"><?php echo $service_1["service_1a"]["title"]; ?></h4>
 								<p class="service1a__text"><?php echo $service_1["service_1a"]["introduction"]; ?></p>
 							</div>
-							<div class="service1a__keywords">
-								<ul class="service1a__list">
-									<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_1"]; ?></li> &#8212;
-									<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_2"]; ?></li> &#8212;
-									<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_3"]; ?></li> &#8212;
-									<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_4"]; ?></li> &#8212;
-									<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_5"]; ?></li> &#8212;
-									<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_6"]; ?></li> &#8212;
-									<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_7"]; ?></li>
-								</ul>
-							</div>
+							<?php if ($service_1["service_1a"]["keywords"]): ?>
+								<div class="service1a__keywords">
+									<ul class="service1a__list">
+										<?php $service1a_list = count($service_1["service_1a"]["keywords"]);
+										for ($i = 1; $i <= $service1a_list; $i++): ?>
+											<li class="service1a__item"><?php echo $service_1["service_1a"]["keywords"]["keyword_".$i]; ?></li>
+										<?php endfor; ?>
+									</ul>
+								</div>
+							<?php endif; ?>
 						</div>
 					<?php endif; ?>
 
