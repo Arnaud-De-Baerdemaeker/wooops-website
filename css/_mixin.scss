@@ -34,6 +34,14 @@
 	}
 }
 
+@mixin margin-between-section-titles {
+	margin-top: 4.6875rem;
+
+	@media #{$mq_w1200_up} {
+		margin-top: 15.625rem;
+	}
+}
+
 @mixin padding-between-sections {
 	padding-bottom: 9.375rem;
 
