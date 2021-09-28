@@ -23,11 +23,7 @@
 
 	.service1 { // <div>
 		@include container;
-		margin-top: 4.688rem;
-
-		@media #{$mq_w1200_up} {
-			margin-top: 9.375rem;
-		}
+		@include margin-between-section-titles;
 
 		&__title { // <h3>
 			@include h3-titles;
