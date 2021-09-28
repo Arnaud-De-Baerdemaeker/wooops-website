@@ -22,22 +22,75 @@
 	}
 
 	&__cards { // <div>
+		@include container;
+		@include margin-between-section-titles;
+		display: flex;
+		column-gap: 6.25rem;
+
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+
+			.thumbnail__mobile {
+				right: unset;
+				left: 3.125rem;
+			}
+
+			.projects {
+				&__informations {
+					align-items: end;
+				}
+
+				&__client-name {
+					text-align: end;
+				}
+			}
+		}
 	}
 
 	&__thumbnails { // <div>
+		flex-basis: auto;
+		position: relative;
+
 		.thumbnail {
-			&__desktop { // <p>
+			&__desktop { // <img>
+				height: 31.25rem;
+				vertical-align: middle;
 			}
 
-			&__mobile { // <p>
+			&__mobile { // <img>
+				height: 31.25rem;
+				vertical-align: middle;
+				position: absolute;
+				top: 3.125rem;
+				right: 3.125rem;
+				box-shadow: 0 0 2.5rem 0.625rem $black_shadow;
 			}
 		}
 	}
 
 	&__informations { // <div>
+		flex-basis: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
-	&__client-names { // <p>
+	&__client-name { // <p>
+		width: 100%;
+		margin: 0;
+		padding-bottom: 1.875rem;
+		color: $white;
+		font: {
+			family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
+			size: 3.125rem;
+			weight: 700;
+		}
+		line-height: 3.75rem;
+		border-bottom: {
+			style: solid;
+			width: 0.0625rem;
+			color: $white;
+		};
 	}
 
 	&__presentation { // <p>
@@ -46,9 +99,39 @@
 	&__specifications { // <p>
 	}
 
-	&__website { // <p>
-	}
-
 	&__link { // <a>
+		display: block;
+		text-align: center;
+		line-height: 3.75rem;
+		height: 3.75rem;
+		outline: {
+			style: solid;
+			width: 0.0625rem;
+			color: $wooops;
+			offset: 0;
+		}
+		width: 9.375rem;
+		background-color: unset;
+		color: $wooops;
+		text: {
+			decoration: unset;
+			transform: uppercase;
+		}
+		font: {
+			size: 1.5625rem;
+			weight: 700;
+		}
+		letter-spacing: 0.125rem;
+		transition-property: outline background-color color;
+		transition-duration: 0.3s;
+
+		&:hover {
+			outline: {
+				width: 0.25rem;
+				offset: 0.3125rem;
+			}
+			background-color: $wooops;
+			color: $white;
+		}
 	}
 }
