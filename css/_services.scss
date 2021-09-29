@@ -185,7 +185,7 @@
 
 		&__text { // <p>
 			@include card-dark;
-			text-align: justify;
+			text-align: unset;
 			align-items: flex-start;
 
 			@media #{$mq_w1500_up} {
@@ -232,12 +232,15 @@
 
 			&__text { // <p>
 				@include services-text;
+
+				&:last-child {
+					margin-top: revert;
+				}
 			}
 		}
 
 		.service-4-2 { // <div>
 			@include card-container-light;
-			text-align: justify;
 
 			&__title { // <h4>
 				@include h4-titles;
@@ -257,6 +260,10 @@
 
 			&__text { // <p>
 				@include services-text;
+
+				&:last-child {
+					margin-top: revert;
+				}
 			}
 		}
 
