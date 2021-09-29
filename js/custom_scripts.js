@@ -73,7 +73,7 @@ if (mq_w999_max.matches) {
 	});
 
 	// H3 TITLES
-	sr.reveal(".service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title", {
+	sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__title, .service-5__title, .service-6__title, .service-7__title", {
 		origin: "top",
 		distance: "100%",
 		duration: 2000,
@@ -106,7 +106,7 @@ if (mq_w999_max.matches) {
 	});
 
 	// CONTENT BOXES
-	sr.reveal(".service1a, #service2__item1, #service3__text1, .service4a, .contact__introduction, .service1b, #service2__item2, .service4b, .service4d, .service1c, #service2__item3, #service3__text2, .service4c, .wpcf7, #service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6, .footer__address, .footer__contact, .footer__social", {
+	sr.reveal(".service-1-1, #service-2__item-1, #service-3__text-1, .service-4-1, .contact__introduction, .service-1-2, #service-2__item-2, .service-4-2, .service-4-4, .service-1-3, #service-2__item-3, #service-3__text-2, .service-4-3, .wpcf7, #service-7__item-1, #service-7__item-2, #service-7__item-3, #service-7__item-4, #service-7__item-5, #service-7__item-6, .footer__address, .footer__contact, .footer__social", {
 		origin: "top",
 		distance: "100%",
 		duration: 2000,
@@ -155,7 +155,7 @@ else if (mq_w1000_min.matches) {
 	});
 
 	// H3 TITLES
-	sr.reveal(".service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title", {
+	sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__title, .service-5__title, .service-6__title, .service-7__title", {
 		origin: "top",
 		distance: "100%",
 		duration: 2000,
@@ -165,7 +165,7 @@ else if (mq_w1000_min.matches) {
 	});
 
 	// CONTENT BOXES
-	sr.reveal(".service1a, #service2__item1, #service3__text1, .service4a, .contact__introduction", {
+	sr.reveal(".service-1-1, #service-2__item-1, #service-3__text-1, .service-4-1, .contact__introduction", {
 		origin: "left",
 		distance: "100%",
 		duration: 2000,
@@ -175,7 +175,7 @@ else if (mq_w1000_min.matches) {
 	});
 
 	if (mq_w1042_min.matches && mq_w1648_max.matches) {
-		sr.reveal(".service1b, #service2__item2, #service3__text2, .service4b, .service4d, .wpcf7", {
+		sr.reveal(".service-1-2, #service-2__item-2, #service-3__text-2, .service-4-2, .service-4-4, .wpcf7", {
 			origin: "right",
 			distance: "100%",
 			duration: 2000,
@@ -184,7 +184,7 @@ else if (mq_w1000_min.matches) {
 			}
 		});
 
-		sr.reveal(".service4c", {
+		sr.reveal(".service-4-3", {
 			origin: "left",
 			distance: "100%",
 			duration: 2000,
@@ -193,7 +193,7 @@ else if (mq_w1000_min.matches) {
 			}
 		});
 
-		sr.reveal(".service1c, #service2__item3", {
+		sr.reveal(".service-1-3, #service-2__item-3", {
 			origin: "bottom",
 			distance: "100%",
 			duration: 2000,
@@ -203,7 +203,7 @@ else if (mq_w1000_min.matches) {
 		});
 	}
 	else if (mq_w1649px_min.matches) {
-		sr.reveal(".service1b, #service2__item2, .service4b, .service4d", {
+		sr.reveal(".service-1-2, #service-2__item-2, .service-4-2, .service-4-4", {
 			origin: "top",
 			distance: "100%",
 			duration: 2000,
@@ -212,7 +212,7 @@ else if (mq_w1000_min.matches) {
 			}
 		});
 
-		sr.reveal(".service1c, #service2__item3, #service3__text2, .service4c, .wpcf7", {
+		sr.reveal(".service-1-3, #service-2__item-3, #service-3__text-2, .service-4-3, .wpcf7", {
 			origin: "right",
 			distance: "100%",
 			duration: 2000,
@@ -222,7 +222,7 @@ else if (mq_w1000_min.matches) {
 		});
 	}
 
-	sr.reveal("#service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6", {
+	sr.reveal("#service-7__item-1, #service-7__item-2, #service-7__item-3, #service-7__item-4, #service-7__item-5, #service-7__item-6", {
 		origin: "top",
 		distance: "100%",
 		duration: 1000,
