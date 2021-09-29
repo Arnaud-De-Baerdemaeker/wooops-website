@@ -244,7 +244,6 @@
 
 @mixin card-keywords {
 	padding: 1.25rem;
-	text-align: justify;
 
 	@media #{$mq_w1500_up} {
 		padding: 2.5rem;
@@ -259,7 +258,6 @@
 
 @mixin services-text {
 	margin: 0;
-	text-align: justify;
 }
 
 @mixin services-list {
@@ -272,6 +270,18 @@
 @mixin services-item {
 	display: inline;
 	font-weight: 500;
+
+	&:after {
+		content: "\25CF";
+		margin: {
+			right: 0.625rem;
+			left: 0.625rem;
+		}
+	}
+
+	&:last-child:after {
+		content: unset;
+	}
 }
 
 @mixin card-dark {
