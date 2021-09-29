@@ -114,7 +114,7 @@
 								<?php if ($service_4["list"]["service_4-1"]["paragraphs"]):
 									$service_4_1_paragraphs = count($service_4["list"]["service_4-1"]);
 									for ($i = 1; $i <= $service_4_1_paragraphs; $i++): ?>
-										<p class="service4-1__text"><?php echo $service_4["list"]["service_4-1"]["paragraphs"]["paragraph_".$i]; ?></p>
+										<p class="service-4-1__text"><?php echo $service_4["list"]["service_4-1"]["paragraphs"]["paragraph_".$i]; ?></p>
 									<?php endfor;
 								endif; ?>
 							</div>
@@ -139,9 +139,9 @@
 							</div>
 						<?php endif; ?>
 
-						<?php if ($service_4["service_4-4_title"]): ?>
+						<?php if ($service_4["list"]["service_4-4"]): ?>
 							<div class="service-4-4"><!-- Service 4-4 -->
-								<h4 class="service-4-4__title"><?php echo $service_4["list"]["service_4-4_title"]; ?></h4>
+								<h4 class="service-4-4__title"><?php echo $service_4["list"]["service_4-4"]["title"]; ?></h4>
 							</div>
 						<?php endif; ?>
 					</div>
