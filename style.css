@@ -66,7 +66,7 @@ body main {
   background-color: black;
 }
 
-html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279, .menu-item-106, .jarallax-img, #text_1, .introduction__logo-container, #text_2, .footer, .footer__logo, .agency__title, .services__title, .work__title, .contact__title, .title__text, .title__image, .service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title, .service1a, #service2__item1, #service3__text1, .service4a, .contact__introduction, .service1b, #service2__item2, .service4b, .service4d, .service1c, #service2__item3, #service3__text2, .service4c, .wpcf7, #service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6, .footer__address, .footer__contact, .footer__social, .footer__copyright {
+html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1, .introduction__logo-container, #text_2, .footer, .footer__logo, .agency__title, .services__title, .work__title, .contact__title, .title__text, .title__image, .service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title, .service-1-1, #service2__item1, #service3__text1, .service4a, .contact__introduction, .service1b, #service2__item2, .service4b, .service4d, .service1c, #service2__item3, #service3__text2, .service4c, .wpcf7, #service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6, .footer__address, .footer__contact, .footer__social, .footer__copyright {
   visibility: hidden;
 }
 
@@ -975,40 +975,40 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
   }
 }
 
-.services .service1 {
+.services .service-1 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.6875rem;
 }
 
 @media (min-width: 25rem) {
-  .services .service1 {
+  .services .service-1 {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .services .service1 {
+  .services .service-1 {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service1 {
+  .services .service-1 {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service1 {
+  .services .service-1 {
     margin-top: 15.625rem;
   }
 }
 
-.services .service1__title {
+.services .service-1__title {
   text-align: center;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
@@ -1018,24 +1018,24 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 43.75rem) {
-  .services .service1__title {
+  .services .service-1__title {
     font-size: 1.875rem;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service1__title {
+  .services .service-1__title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1__title {
+  .services .service-1__title {
     font-size: 3.125rem;
   }
 }
 
-.services .service1__services-container {
+.services .service-1__services-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1051,17 +1051,17 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 75rem) {
-  .services .service1__services-container {
+  .services .service-1__services-container {
     margin-top: 4.688rem;
   }
 }
 
-.services .service1 .service1a {
+.services .service-1 .service-1-1 {
   background-color: #3e8c74;
   max-width: 25rem;
 }
 
-.services .service1 .service1a__intro {
+.services .service-1 .service-1-1__intro {
   background-color: white;
   padding: 1.25rem;
   -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
@@ -1069,56 +1069,64 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1a__intro {
+  .services .service-1 .service-1-1__intro {
     padding: 2.5rem;
   }
 }
 
-.services .service1 .service1a__title {
+.services .service-1 .service-1-1__title {
   margin: 0;
   font-size: 1.10rem;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1a__title {
+  .services .service-1 .service-1-1__title {
     font-size: 1.875rem;
   }
 }
 
-.services .service1 .service1a__text {
+.services .service-1 .service-1-1__text {
   margin: 0;
-  text-align: justify;
 }
 
-.services .service1 .service1a__keywords {
+.services .service-1 .service-1-1__keywords {
   padding: 1.25rem;
-  text-align: justify;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1a__keywords {
+  .services .service-1 .service-1-1__keywords {
     padding: 2.5rem;
   }
 }
 
-.services .service1 .service1a__list {
+.services .service-1 .service-1-1__list {
   margin: 0;
   padding: 0;
   list-style: none;
   color: white;
 }
 
-.services .service1 .service1a__item {
+.services .service-1 .service-1-1__item {
   display: inline;
   font-weight: 500;
 }
 
-.services .service1 .service1b {
+.services .service-1 .service-1-1__item:after {
+  content: "\25CF";
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+}
+
+.services .service-1 .service-1-1__item:last-child:after {
+  content: unset;
+}
+
+.services .service-1 .service-1-2 {
   background-color: #3e8c74;
   max-width: 25rem;
 }
 
-.services .service1 .service1b__intro {
+.services .service-1 .service-1-2__intro {
   background-color: white;
   padding: 1.25rem;
   -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
@@ -1126,51 +1134,59 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1b__intro {
+  .services .service-1 .service-1-2__intro {
     padding: 2.5rem;
   }
 }
 
-.services .service1 .service1b__title {
+.services .service-1 .service-1-2__title {
   margin: 0;
   font-size: 1.10rem;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1b__title {
+  .services .service-1 .service-1-2__title {
     font-size: 1.875rem;
   }
 }
 
-.services .service1 .service1b__text {
+.services .service-1 .service-1-2__text {
   margin: 0;
-  text-align: justify;
 }
 
-.services .service1 .service1b__keywords {
+.services .service-1 .service-1-2__keywords {
   padding: 1.25rem;
-  text-align: justify;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1b__keywords {
+  .services .service-1 .service-1-2__keywords {
     padding: 2.5rem;
   }
 }
 
-.services .service1 .service1b__list {
+.services .service-1 .service-1-2__list {
   margin: 0;
   padding: 0;
   list-style: none;
   color: white;
 }
 
-.services .service1 .service1b__item {
+.services .service-1 .service-1-2__item {
   display: inline;
   font-weight: 500;
 }
 
-.services .service1 .service1c {
+.services .service-1 .service-1-2__item:after {
+  content: "\25CF";
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+}
+
+.services .service-1 .service-1-2__item:last-child:after {
+  content: unset;
+}
+
+.services .service-1 .service-1-3 {
   background-color: #3e8c74;
   max-width: 25rem;
   background-color: white;
@@ -1178,65 +1194,64 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1c {
+  .services .service-1 .service-1-3 {
     padding: 2.5rem;
   }
 }
 
-.services .service1 .service1c__title {
+.services .service-1 .service-1-3__title {
   margin: 0;
   font-size: 1.10rem;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service1 .service1c__title {
+  .services .service-1 .service-1-3__title {
     font-size: 1.875rem;
   }
 }
 
-.services .service1 .service1c__title:last-of-type {
+.services .service-1 .service-1-3__title:last-of-type {
   width: 100%;
 }
 
-.services .service1 .service1c__text {
+.services .service-1 .service-1-3__text {
   margin: 0;
-  text-align: justify;
 }
 
-.services .service2 {
+.services .service-2 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.688rem;
 }
 
 @media (min-width: 25rem) {
-  .services .service2 {
+  .services .service-2 {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .services .service2 {
+  .services .service-2 {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service2 {
+  .services .service-2 {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service2 {
+  .services .service-2 {
     margin-top: 9.375rem;
   }
 }
 
-.services .service2__title {
+.services .service-2__title {
   text-align: center;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
@@ -1246,24 +1261,24 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 43.75rem) {
-  .services .service2__title {
+  .services .service-2__title {
     font-size: 1.875rem;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service2__title {
+  .services .service-2__title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service2__title {
+  .services .service-2__title {
     font-size: 3.125rem;
   }
 }
 
-.services .service2__list {
+.services .service-2__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1282,12 +1297,12 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 75rem) {
-  .services .service2__list {
+  .services .service-2__list {
     margin-top: 4.688rem;
   }
 }
 
-.services .service2__item {
+.services .service-2__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1311,45 +1326,45 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service2__item {
+  .services .service-2__item {
     padding: 2.5rem;
   }
 }
 
-.services .service3 {
+.services .service-3 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.688rem;
 }
 
 @media (min-width: 25rem) {
-  .services .service3 {
+  .services .service-3 {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .services .service3 {
+  .services .service-3 {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service3 {
+  .services .service-3 {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service3 {
+  .services .service-3 {
     margin-top: 9.375rem;
   }
 }
 
-.services .service3__title {
+.services .service-3__title {
   text-align: center;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
@@ -1359,24 +1374,24 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 43.75rem) {
-  .services .service3__title {
+  .services .service-3__title {
     font-size: 1.875rem;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service3__title {
+  .services .service-3__title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service3__title {
+  .services .service-3__title {
     font-size: 3.125rem;
   }
 }
 
-.services .service3__text-container {
+.services .service-3__text-container {
   margin-top: 2.344rem;
   padding: 0;
   display: -webkit-box;
@@ -1393,12 +1408,12 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service3__text-container {
+  .services .service-3__text-container {
     margin-top: 4.688rem;
   }
 }
 
-.services .service3__text {
+.services .service-3__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1415,62 +1430,62 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
   border-style: solid;
   border-width: 0.063rem;
   border-color: white;
-  text-align: justify;
+  text-align: unset;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service3__text {
+  .services .service-3__text {
     padding: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service3__text {
+  .services .service-3__text {
     margin: 0;
   }
 }
 
-.services .service3__text:first-of-type, .services .service3__text:last-of-type {
+.services .service-3__text:first-of-type, .services .service-3__text:last-of-type {
   margin: 0;
 }
 
-.services .service4 {
+.services .service-4 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.688rem;
 }
 
 @media (min-width: 25rem) {
-  .services .service4 {
+  .services .service-4 {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .services .service4 {
+  .services .service-4 {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service4 {
+  .services .service-4 {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4 {
+  .services .service-4 {
     margin-top: 9.375rem;
   }
 }
 
-.services .service4__title {
+.services .service-4__title {
   text-align: center;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
@@ -1480,24 +1495,24 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 43.75rem) {
-  .services .service4__title {
+  .services .service-4__title {
     font-size: 1.875rem;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service4__title {
+  .services .service-4__title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4__title {
+  .services .service-4__title {
     font-size: 3.125rem;
   }
 }
 
-.services .service4__services-container {
+.services .service-4__services-container {
   margin-top: 2.344rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1513,12 +1528,12 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4__services-container {
+  .services .service-4__services-container {
     margin-top: 4.688rem;
   }
 }
 
-.services .service4 .service4a {
+.services .service-4 .service-4-1 {
   background-color: #3e8c74;
   max-width: 25rem;
   background-color: white;
@@ -1526,58 +1541,31 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4 .service4a {
+  .services .service-4 .service-4-1 {
     padding: 2.5rem;
   }
 }
 
-.services .service4 .service4a__title {
+.services .service-4 .service-4-1__title {
   margin: 0;
   font-size: 1.10rem;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4 .service4a__title {
+  .services .service-4 .service-4-1__title {
     font-size: 1.875rem;
   }
 }
 
-.services .service4 .service4a__text {
+.services .service-4 .service-4-1__text {
   margin: 0;
-  text-align: justify;
 }
 
-.services .service4 .service4b {
-  background-color: #3e8c74;
-  max-width: 25rem;
-  background-color: white;
-  padding: 1.25rem;
-  text-align: justify;
+.services .service-4 .service-4-1__text:last-child {
+  margin-top: revert;
 }
 
-@media (min-width: 93.75rem) {
-  .services .service4 .service4b {
-    padding: 2.5rem;
-  }
-}
-
-.services .service4 .service4b__title {
-  margin: 0;
-  font-size: 1.10rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service4 .service4b__title {
-    font-size: 1.875rem;
-  }
-}
-
-.services .service4 .service4b__text {
-  margin: 0;
-  text-align: justify;
-}
-
-.services .service4 .service4c {
+.services .service-4 .service-4-2 {
   background-color: #3e8c74;
   max-width: 25rem;
   background-color: white;
@@ -1585,28 +1573,59 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4 .service4c {
+  .services .service-4 .service-4-2 {
     padding: 2.5rem;
   }
 }
 
-.services .service4 .service4c__title {
+.services .service-4 .service-4-2__title {
   margin: 0;
   font-size: 1.10rem;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4 .service4c__title {
+  .services .service-4 .service-4-2__title {
     font-size: 1.875rem;
   }
 }
 
-.services .service4 .service4c__text {
+.services .service-4 .service-4-2__text {
   margin: 0;
-  text-align: justify;
 }
 
-.services .service4 .service4d {
+.services .service-4 .service-4-3 {
+  background-color: #3e8c74;
+  max-width: 25rem;
+  background-color: white;
+  padding: 1.25rem;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service-4 .service-4-3 {
+    padding: 2.5rem;
+  }
+}
+
+.services .service-4 .service-4-3__title {
+  margin: 0;
+  font-size: 1.10rem;
+}
+
+@media (min-width: 93.75rem) {
+  .services .service-4 .service-4-3__title {
+    font-size: 1.875rem;
+  }
+}
+
+.services .service-4 .service-4-3__text {
+  margin: 0;
+}
+
+.services .service-4 .service-4-3__text:last-child {
+  margin-top: revert;
+}
+
+.services .service-4 .service-4-4 {
   background-color: #3e8c74;
   max-width: 25rem;
   background-color: white;
@@ -1615,56 +1634,56 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4 .service4d {
+  .services .service-4 .service-4-4 {
     padding: 2.5rem;
   }
 }
 
-.services .service4 .service4d__title {
+.services .service-4 .service-4-4__title {
   margin: 0;
   font-size: 1.10rem;
 }
 
 @media (min-width: 93.75rem) {
-  .services .service4 .service4d__title {
+  .services .service-4 .service-4-4__title {
     font-size: 1.875rem;
   }
 }
 
-.services .service5 {
+.services .service-5 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.688rem;
 }
 
 @media (min-width: 25rem) {
-  .services .service5 {
+  .services .service-5 {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .services .service5 {
+  .services .service-5 {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service5 {
+  .services .service-5 {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service5 {
+  .services .service-5 {
     margin-top: 9.375rem;
   }
 }
 
-.services .service5__title {
+.services .service-5__title {
   text-align: center;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
@@ -1674,57 +1693,57 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 43.75rem) {
-  .services .service5__title {
+  .services .service-5__title {
     font-size: 1.875rem;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service5__title {
+  .services .service-5__title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service5__title {
+  .services .service-5__title {
     font-size: 3.125rem;
   }
 }
 
-.services .service6 {
+.services .service-6 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.688rem;
 }
 
 @media (min-width: 25rem) {
-  .services .service6 {
+  .services .service-6 {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .services .service6 {
+  .services .service-6 {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service6 {
+  .services .service-6 {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service6 {
+  .services .service-6 {
     margin-top: 9.375rem;
   }
 }
 
-.services .service6__title {
+.services .service-6__title {
   text-align: center;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
@@ -1734,57 +1753,57 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 43.75rem) {
-  .services .service6__title {
+  .services .service-6__title {
     font-size: 1.875rem;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service6__title {
+  .services .service-6__title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service6__title {
+  .services .service-6__title {
     font-size: 3.125rem;
   }
 }
 
-.services .service7 {
+.services .service-7 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.688rem;
 }
 
 @media (min-width: 25rem) {
-  .services .service7 {
+  .services .service-7 {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .services .service7 {
+  .services .service-7 {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service7 {
+  .services .service-7 {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service7 {
+  .services .service-7 {
     margin-top: 9.375rem;
   }
 }
 
-.services .service7__title {
+.services .service-7__title {
   text-align: center;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.563rem;
@@ -1794,24 +1813,24 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 43.75rem) {
-  .services .service7__title {
+  .services .service-7__title {
     font-size: 1.875rem;
   }
 }
 
 @media (min-width: 75rem) {
-  .services .service7__title {
+  .services .service-7__title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 93.75rem) {
-  .services .service7__title {
+  .services .service-7__title {
     font-size: 3.125rem;
   }
 }
 
-.services .service7__list {
+.services .service-7__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1833,12 +1852,12 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 }
 
 @media (min-width: 75rem) {
-  .services .service7__list {
+  .services .service-7__list {
     margin-top: 4.688rem;
   }
 }
 
-.services .service7__item {
+.services .service-7__item {
   display: inline;
   font-weight: 500;
   display: -webkit-box;
@@ -1866,10 +1885,24 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
   width: 12.5rem;
 }
 
+.services .service-7__item:after {
+  content: "\25CF";
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+}
+
+.services .service-7__item:last-child:after {
+  content: unset;
+}
+
 @media (min-width: 93.75rem) {
-  .services .service7__item {
+  .services .service-7__item {
     padding: 2.5rem;
   }
+}
+
+.services .service-7__item:after {
+  content: unset;
 }
 
 .projects {
@@ -2476,7 +2509,6 @@ html.sr .header, .agency__title, .menu-item-104, .menu-item-105, .menu-item-279,
 
 .contact__text {
   margin: 0;
-  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
