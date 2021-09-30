@@ -2114,142 +2114,212 @@ html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1,
   }
 }
 
-.projects__cards {
+.projects__all-tags-container {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 4.6875rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 6.25rem;
-          column-gap: 6.25rem;
 }
 
 @media (min-width: 25rem) {
-  .projects__cards {
+  .projects__all-tags-container {
     padding-right: 7%;
     padding-left: 7%;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .projects__cards {
+  .projects__all-tags-container {
     padding-right: 10%;
     padding-left: 10%;
   }
 }
 
 @media (min-width: 75rem) {
-  .projects__cards {
+  .projects__all-tags-container {
     padding-right: 12%;
     padding-left: 12%;
   }
 }
 
 @media (min-width: 75rem) {
-  .projects__cards {
+  .projects__all-tags-container {
     margin-top: 15.625rem;
   }
 }
 
-.projects__cards:nth-child(odd) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+.projects__all-tags-list {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
-.projects__cards:nth-child(odd) .thumbnail__mobile {
-  right: unset;
-  left: 3.125rem;
+.projects__all-tags {
+  display: inline-block;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 35px;
+  line-height: 35px;
+  color: #b4b4b4;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+  border-radius: 35px;
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: unset;
+  font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  -webkit-transition-property: background-color color;
+  transition-property: background-color color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
 }
 
-.projects__cards:nth-child(odd) .projects__informations {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+.projects__all-tags:hover {
+  color: black;
+  background-color: #b4b4b4;
 }
 
-.projects__cards:nth-child(odd) .projects__client-name {
-  text-align: end;
+.projects__cards-container {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 200px;
+}
+
+@media (min-width: 25rem) {
+  .projects__cards-container {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .projects__cards-container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 75rem) {
+  .projects__cards-container {
+    padding-right: 12%;
+    padding-left: 12%;
+  }
 }
 
 .projects__thumbnails {
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .projects__thumbnails .thumbnail__desktop {
-  height: 31.25rem;
+  height: 400px;
   vertical-align: middle;
 }
 
 .projects__thumbnails .thumbnail__mobile {
-  height: 31.25rem;
+  height: 400px;
   vertical-align: middle;
   position: absolute;
-  top: 3.125rem;
-  right: 3.125rem;
+  top: 25px;
+  right: 25px;
   -webkit-box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
 }
 
-.projects__informations {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+.projects__client-name {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1.875rem;
+  margin-left: 0;
+  color: white;
+  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+.projects__post-tags-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin-top: 50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.projects__client-name {
-  width: 100%;
-  margin: 0;
-  padding-bottom: 1.875rem;
-  color: white;
-  font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 3.125rem;
-  font-weight: 700;
-  line-height: 3.75rem;
-  border-bottom-style: solid;
-  border-bottom-width: 0.0625rem;
-  border-bottom-color: white;
+.projects__post-tags {
+  display: inline-block;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 35px;
+  line-height: 35px;
+  color: #b4b4b4;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+  border-radius: 35px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .projects__link {
   display: block;
-  text-align: center;
-  line-height: 3.75rem;
-  height: 3.75rem;
-  outline-style: solid;
-  outline-width: 0.0625rem;
-  outline-color: #3e8c74;
-  outline-offset: 0;
-  width: 9.375rem;
-  background-color: unset;
-  color: #3e8c74;
-  text-decoration: unset;
-  text-transform: uppercase;
-  font-size: 1.5625rem;
+  height: 50px;
+  font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.125rem;
-  -webkit-transition-property: outline background-color color;
-  transition-property: outline background-color color;
+  color: #3e8c74;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3e8c74;
+  letter-spacing: 1px;
+  background-color: unset;
+  -webkit-transition-property: background-color color;
+  transition-property: background-color color;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  margin-top: 50px;
+  text-align: center;
+  width: 150px;
+  line-height: 50px;
+  text-decoration: unset;
+  text-transform: uppercase;
 }
 
 .projects__link:hover {
-  outline-width: 0.25rem;
-  outline-offset: 0.3125rem;
   background-color: #3e8c74;
   color: white;
 }
@@ -2653,38 +2723,34 @@ html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1,
 }
 
 .contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"], .contact .wpcf7 .submitting .form__submit input[type="submit"], .contact .wpcf7 .invalid .form__submit input[type="submit"], .contact .wpcf7 .failed .form__submit input[type="submit"] {
-  height: 3.125rem;
   display: block;
+  height: 50px;
+  font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3e8c74;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3e8c74;
+  letter-spacing: 1px;
+  background-color: unset;
+  -webkit-transition-property: background-color color;
+  transition-property: background-color color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   margin-top: 2rem;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: auto;
   padding: 0;
-  border: none;
-  background-color: unset;
-  color: #3e8c74;
   cursor: pointer;
   text-transform: uppercase;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.0625rem;
-  outline-style: solid;
-  outline-width: 0.0625rem;
-  outline-color: #3e8c74;
-  outline-offset: 0;
   width: 50%;
-  -webkit-transition-property: background-color color outline-width outline-offset;
-  transition-property: background-color color outline-width outline-offset;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
 }
 
 .contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"]:hover, .contact .wpcf7 .submitting .form__submit input[type="submit"]:hover, .contact .wpcf7 .invalid .form__submit input[type="submit"]:hover, .contact .wpcf7 .failed .form__submit input[type="submit"]:hover {
   background-color: #3e8c74;
   color: white;
-  outline-width: 0.25rem;
-  outline-offset: 0.3125rem;
 }
 
 .contact .wpcf7 .wpcf7-form.init .form__submit .ajax-loader, .contact .wpcf7 .submitting .form__submit .ajax-loader, .contact .wpcf7 .invalid .form__submit .ajax-loader, .contact .wpcf7 .failed .form__submit .ajax-loader {
