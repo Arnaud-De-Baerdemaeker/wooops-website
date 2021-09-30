@@ -1,7 +1,7 @@
 <?php
 	$projects_header = get_field("projects_header");
 	$projects = get_field("projects");
-	$projects_quantity = count($projects);
+	$tags = get_the_tags();
 ?>
 
 <?php if ($projects_header["title"]): ?>
@@ -13,43 +13,56 @@
 			<?php endif; ?>
 		</h2>
 
+		<?php if ($tags): ?>
+			<div class="projects__all-tags-container">
+				<ul class="projects__all-tags-list">
+					<?php foreach ($tags as $tag): ?>
+						<li>
+							<button class="projects__all-tags"><?php echo $tag->name; ?></button>
+						</li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
+		<?php endif; ?>
+
 		<?php if ($projects): ?>
-			<?php for ($i = 0; $i < $projects_quantity; $i++):
-				if ($projects["project_".$i]): ?>
-					<div class="projects__cards">
-						<div class="projects__thumbnails">
-							<?php if ($projects["project_".$i]["desktop_image"]): ?>
-								<img src="<?php echo $projects["project_".$i]["desktop_image"]["url"]; ?>" alt="<?php echo $projects["project_".$i]["desktop_image"]["alt"]; ?>" class="thumbnail__desktop">
+			<div class="projects__cards-container">
+				<?php foreach ($projects as $project):
+					if ($project): ?>
+						<div class="projects__cards">
+							<?php if ($project["client_name"]): ?>
+								<p class="projects__client-name"><?php echo $project["client_name"]; ?></p>
 							<?php endif; ?>
-							<?php if ($projects["project_".$i]["mobile_image"]): ?>
-								<img src="<?php echo $projects["project_".$i]["mobile_image"]["url"]; ?>" alt="<?php echo $projects["project_".$i]["mobile_image"]["alt"]; ?>" class="thumbnail__mobile">
-							<?php endif; ?>
+							<div class="projects__thumbnails">
+								<?php if ($project["desktop_image"]): ?>
+									<img src="<?php echo $project["desktop_image"]["url"]; ?>" alt="<?php echo $project["desktop_image"]["alt"]; ?>" class="thumbnail__desktop">
+								<?php endif; ?>
+								<?php if ($project["mobile_image"]): ?>
+									<img src="<?php echo $project["mobile_image"]["url"]; ?>" alt="<?php echo $project["mobile_image"]["alt"]; ?>" class="thumbnail__mobile">
+								<?php endif; ?>
+							</div>
+							<div class="projects__informations">
+								<?php if ($project["presentation"]): ?>
+									<p class="projects__presentation"><?php echo $project["presentation"]; ?></p>
+								<?php endif;
+								// if ($project["specifications"]): ?>
+									<!-- <p class="projects__specifications"><?php //echo $project["specifications"]; ?></p> -->
+								<?php //endif;
+								if ($project["tags"]): ?>
+									<ul class="projects__post-tags-container">
+										<?php foreach ($project["tags"] as $tag): ?>
+											<li class="projects__post-tags"><?php echo $tag->name; ?></li>
+										<?php endforeach; ?>
+									</ul>
+								<?php endif;
+								if ($project["link"]): ?>
+									<a href="<?php echo $project["link"]; ?>" class="projects__link" target="_blank">Visiter</a>
+								<?php endif; ?>
+							</div>
 						</div>
-						<div class="projects__informations">
-							<?php if ($projects["project_".$i]["client_name"]): ?>
-								<p class="projects__client-name"><?php echo $projects["project_".$i]["client_name"]; ?></p>
-							<?php endif;
-							if ($projects["project_".$i]["presentation"]): ?>
-								<p class="projects__presentation"><?php echo $projects["project_".$i]["presentation"]; ?></p>
-							<?php endif;
-							if ($projects["project_".$i]["specifications"]): ?>
-								<p class="projects__specifications"><?php echo $projects["project_".$i]["specifications"]; ?></p>
-							<?php endif;
-							if ($projects["project_".$i]["tags"]): ?>
-								<ol>
-									<?php $tags_quantity = count($projects["project_".$i]["tags"]);
-									for ($j = 0; $j < $tags_quantity; $j++): ?>
-										<li><?php echo $projects["project_".$i]["tags"]["tag_".$j]; ?></li>
-									<?php endfor; ?>
-								</ol>
-							<?php endif;
-							if ($projects["project_".$i]["link"]): ?>
-								<a href="<?php echo $projects["project_".$i]["link"]; ?>" class="projects__link" target="_blank">Visiter</a>
-							<?php endif; ?>
-						</div>
-					</div>
-				<?php endif;
-			endfor;
-		endif; ?>
+					<?php endif;
+				endforeach; ?>
+			</div>
+		<?php endif; ?>
 	</div>
 <?php endif; ?>
