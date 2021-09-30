@@ -302,3 +302,46 @@
 		padding: 2.5rem;
 	}
 }
+
+@mixin link-submit-design {
+	display: block;
+	height: 50px;
+	font: {
+		family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		size: 1rem;
+		weight: 700;
+	}
+	color: $wooops;
+	border: {
+		style: solid;
+		width: 1px;
+		color: $wooops;
+	}
+	letter-spacing: 1px;
+	background-color: unset;
+	transition-property: background-color color;
+	transition-duration: 0.3s;
+
+	&:hover {
+		background-color: $wooops;
+		color: $white;
+	}
+}
+
+@mixin tags-design {
+	display: inline-block;
+	min-width: fit-content;
+	height: 35px;
+	line-height: 35px;
+	color: $neutral_180;
+	border: {
+		style: solid;
+		width: 1px;
+		color: $neutral_180;
+		radius: 35px;
+	}
+	padding: {
+		right: 16px;
+		left: 16px;
+	}
+}
