@@ -24,3 +24,10 @@ function register_menu() {
 	register_nav_menu("primary_menu", __("Menu principal"));
 }
 add_action("init", "register_menu");
+
+// FILTER FUNCTION
+// function register_jquery() {
+// 	wp_enqueue_script("ajax", get_template_directory_uri()."/js/ajax-query.js", array("jquery"), null, true);
+// 	wp_localize_script("ajax", "wp_ajax", array("ajax_url" => admin_url("admin-ajax.php")));
+// }
+// add_action("wp_enqueue_scripts", "register_jquery");
