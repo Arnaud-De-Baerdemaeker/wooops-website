@@ -38,7 +38,9 @@
 		width: 80%;
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
 		column-gap: 20px;
+		row-gap: 20px;
 	}
 
 	&__all-tags { // <button>
@@ -56,13 +58,18 @@
 			color: $black;
 			background-color: $neutral_180;
 		}
+
+		&.active {
+			background-color: $neutral_180;
+			color: $black;
+		}
 	}
 
 	&__cards-container { // <div>
 		@include container;
 		margin-top: 100px;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 50px;
 		row-gap: 200px;
 	}
@@ -100,16 +107,16 @@
 
 		.thumbnail {
 			&__desktop { // <img>
-				height: 400px;
+				height: 250px;
 				vertical-align: middle;
 			}
 
 			&__mobile { // <img>
-				height: 400px;
+				height: 250px;
 				vertical-align: middle;
 				position: absolute;
 				top: 25px;
-				right: 25px;
+				right: 29px;
 				box-shadow: 0 0 2.5rem 0.625rem $black_shadow;
 			}
 		}
@@ -132,7 +139,7 @@
 		color: $white;
 		font: {
 			family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
-			size: 35px;
+			size: 20px;
 			weight: 700;
 		}
 		line-height: 3.75rem;
@@ -171,5 +178,9 @@
 			decoration: unset;
 			transform: uppercase;
 		}
+	}
+
+	&__no-entry { // <span>
+		color: $white;
 	}
 }
