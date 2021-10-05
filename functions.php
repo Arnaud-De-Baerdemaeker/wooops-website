@@ -1,6 +1,6 @@
 <?php
 
-// Add custom tags in <head>
+// ADD CUSTOM TAGS IN HEAD
 function add_tags() { ?>
 	<meta charset="<?php bloginfo("charset"); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,15 +19,65 @@ function add_tags() { ?>
 }
 add_action("wp_head", "add_tags");
 
-// Register a primary menu to the theme
+
+// REGISTER A PRIMARY MENU TO THE THEME
 function register_menu() {
 	register_nav_menu("primary_menu", __("Menu principal"));
 }
 add_action("init", "register_menu");
 
-// FILTER FUNCTION
-// function register_jquery() {
-// 	wp_enqueue_script("ajax", get_template_directory_uri()."/js/ajax-query.js", array("jquery"), null, true);
-// 	wp_localize_script("ajax", "wp_ajax", array("ajax_url" => admin_url("admin-ajax.php")));
-// }
-// add_action("wp_enqueue_scripts", "register_jquery");
+
+// REGISTER FEATURED IMAGE
+function featured_image_support() {
+	add_theme_support("post-thumbnails");
+}
+add_action("after_setup_theme", "featured_image_support");
+
+
+// REGISTER JQUERY JAVASCRIPT FILE
+function register_jquery() {
+	wp_enqueue_script("ajax", get_template_directory_uri()."/js/ajax-query.js", array("jquery"), null, true);
+	wp_localize_script("ajax", "wp_ajax", array("ajax_url" => admin_url("admin-ajax.php")));
+}
+add_action("wp_enqueue_scripts", "register_jquery");
+
+
+// LIST OF PROJECTS
+function filter_projects() {
+	$tag = $_POST["tag"];
+
+	if ($tag !== "all") {
+		// Query to get projects based on tag
+		$query_projects = new WP_Query([
+			"post_type" => "projects",
+			"posts_per_page" => -1,
+			"orderby" => "menu_order",
+			"order" => "desc",
+			"tag" => $tag,
+		]);
+	} else {
+		// Query to get all projects
+		$query_projects = new WP_Query([
+			"post_type" => "projects",
+			"posts_per_page" => -1,
+			"orderby" => "menu_order",
+			"order" => "desc",
+		]);
+	}
+
+	$response = "";
+
+	if ($query_projects->have_posts()) {
+		while ($query_projects->have_posts()): $query_projects->the_post();
+			$response .= get_template_part("sections/content-projets");
+		endwhile; ?>
+	</div>
+	<?php } else { ?>
+		<span class="projects__no-entry">Aucun projet correspondant à ce mot-clef</span>
+	<?php }
+
+	echo $response;
+	exit;
+}
+add_action("wp_ajax_filter_projects", "filter_projects");
+add_action("wp_ajax_nopriv_filter_projects", "filter_projects");
