@@ -2161,8 +2161,11 @@ html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  row-gap: 20px;
 }
 
 .projects__all-tags {
@@ -2194,14 +2197,19 @@ html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1,
   background-color: #b4b4b4;
 }
 
+.projects__all-tags.active {
+  background-color: #b4b4b4;
+  color: black;
+}
+
 .projects__cards-container {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-top: 100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -webkit-column-gap: 50px;
           column-gap: 50px;
   row-gap: 200px;
@@ -2239,16 +2247,16 @@ html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1,
 }
 
 .projects__thumbnails .thumbnail__desktop {
-  height: 400px;
+  height: 250px;
   vertical-align: middle;
 }
 
 .projects__thumbnails .thumbnail__mobile {
-  height: 400px;
+  height: 250px;
   vertical-align: middle;
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 29px;
   -webkit-box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
 }
@@ -2260,7 +2268,7 @@ html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1,
   margin-left: 0;
   color: white;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 3.75rem;
 }
