@@ -50,7 +50,7 @@ function filter_projects() {
 		// Query to get projects based on tag
 		$query_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => 6,
+			"posts_per_page" => -1,
 			"orderby" => "menu_order",
 			"order" => "desc",
 			"tag" => $tag,
@@ -59,7 +59,7 @@ function filter_projects() {
 		// Query to get all projects
 		$query_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => 6,
+			"posts_per_page" => -1,
 			"orderby" => "menu_order",
 			"order" => "desc",
 		]);
@@ -81,3 +81,11 @@ function filter_projects() {
 }
 add_action("wp_ajax_filter_projects", "filter_projects");
 add_action("wp_ajax_nopriv_filter_projects", "filter_projects");
+
+
+// LOAD MORE FUNCTION
+function load_more_projects() {
+
+}
+add_action("wp_ajax_filter_projects", "load_more_projects");
+add_action("wp_ajax_nopriv_filter_projects", "load_more_projects");
