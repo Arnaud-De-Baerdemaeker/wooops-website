@@ -24,10 +24,12 @@
 					if (element_exists >= 1) {
 						$("#projects__cards-container").removeClass();
 						$("#projects__cards-container").addClass("projects__cards-container--no-results");
+						$(".projects__no-more").hide();
 					}
 					else {
 						$("#projects__cards-container").removeClass();
 						$("#projects__cards-container").addClass("projects__cards-container");
+						$(".projects__no-more").show();
 					}
 				},
 				error: function(error) {
@@ -41,7 +43,17 @@
 			event.preventDefault();
 
 			$.ajax({
-
+				type: "POST",
+				url: wp_ajax.ajax_url,
+				data: {
+					post_types: "projets",
+					action: "load_more_projects",
+					tag: $(this).attr("id"), // Get the tag slug from element clicked
+				},
+				success: function(result) {},
+				error: function(error) {
+					console.error("Something went wrong", error);
+				},
 			});
 		});
 	});
