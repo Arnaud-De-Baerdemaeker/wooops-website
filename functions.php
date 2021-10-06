@@ -13,7 +13,7 @@ function add_tags() { ?>
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<!-- Production link -->
 	<!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
-	<script src="<?php echo get_template_directory_uri().'/js/custom_scripts.js'; ?>" type="module"></script>
+	<script src="<?php echo get_template_directory_uri().'/js/scrollreveal_scripts.js'; ?>" type="module"></script>
 	<title><?php the_title(); ?></title>
 	<?php
 }
@@ -36,7 +36,7 @@ add_action("after_setup_theme", "featured_image_support");
 
 // REGISTER JQUERY JAVASCRIPT FILE
 function register_jquery() {
-	wp_enqueue_script("ajax", get_template_directory_uri()."/js/ajax-query.js", array("jquery"), null, true);
+	wp_enqueue_script("ajax", get_template_directory_uri()."/js/ajax_scripts.js", array("jquery"), null, true);
 	wp_localize_script("ajax", "wp_ajax", array("ajax_url" => admin_url("admin-ajax.php")));
 }
 add_action("wp_enqueue_scripts", "register_jquery");
@@ -44,13 +44,13 @@ add_action("wp_enqueue_scripts", "register_jquery");
 
 // LIST OF PROJECTS
 function filter_projects() {
-	$tag = $_POST["tag"];
+	$tag = $_POST["tag"]; // Recover tag clicked by user
 
 	if ($tag !== "all") {
 		// Query to get projects based on tag
 		$query_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => -1,
+			"posts_per_page" => 6,
 			"orderby" => "menu_order",
 			"order" => "desc",
 			"tag" => $tag,
@@ -59,7 +59,7 @@ function filter_projects() {
 		// Query to get all projects
 		$query_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => -1,
+			"posts_per_page" => 6,
 			"orderby" => "menu_order",
 			"order" => "desc",
 		]);
@@ -73,7 +73,7 @@ function filter_projects() {
 		endwhile; ?>
 	</div>
 	<?php } else { ?>
-		<span class="projects__no-entry">Aucun projet correspondant à ce mot-clef</span>
+		<div class="projects__no-entry">Aucun projet correspondant à ce mot-clef...</div>
 	<?php }
 
 	echo $response;
