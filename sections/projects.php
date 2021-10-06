@@ -31,11 +31,11 @@
 
 		<?php $get_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => 6,
+			"posts_per_page" => 6, // Show only the 6 posts corresponding the parameters
 			"orderby" => "menu_order",
 			"order" => "desc",
 		]);
-		
+
 		// LIST OF PROJECTS
 		if ($get_projects->have_posts()): ?>
 			<div id ="projects__cards-container" class="projects__cards-container">
@@ -44,8 +44,18 @@
 				endwhile;
 				wp_reset_postdata(); ?>
 			</div>
-			<button class="projects__load-more">Afficher plus de projets</button>
-		<?php endif; ?>
+			<?php
+			$queried_posts = $get_projects->posts; // Get the queried posts
+			$all_posts = $get_projects->found_posts; // Get the total of all posts registered
+			
+			// A CONTINUER !
+			if ($queried_posts > 6 && $queried_posts <= $all_posts) { ?>
+				<button class="projects__load-more">Afficher plus de projets</button>
+			<?php }
+			else if ($queried_posts == $all_posts) { ?>
+				<div class="projects__no-more">Plus d'autres projets à afficher</div>
+			<?php }
+		endif; ?>
 		<!-- /LIST OF PROJECTS -->
 	</div>
 <?php endif; ?>
