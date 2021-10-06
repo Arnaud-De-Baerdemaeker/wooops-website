@@ -31,19 +31,20 @@
 
 		<?php $get_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => -1,
+			"posts_per_page" => 6,
 			"orderby" => "menu_order",
 			"order" => "desc",
 		]);
 		
 		// LIST OF PROJECTS
-		if ($get_projects): ?>
-			<div class="projects__cards-container">
+		if ($get_projects->have_posts()): ?>
+			<div id ="projects__cards-container" class="projects__cards-container">
 				<?php while ($get_projects->have_posts()): $get_projects->the_post();
 					get_template_part("sections/content-projets");
 				endwhile;
 				wp_reset_postdata(); ?>
 			</div>
+			<button class="projects__load-more">Afficher plus de projets</button>
 		<?php endif; ?>
 		<!-- /LIST OF PROJECTS -->
 	</div>
