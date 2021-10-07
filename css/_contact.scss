@@ -137,7 +137,7 @@
 					position: relative;
 
 					input[type="submit"] {
-						@include link-submit-design;
+						@include link-submit-load;
 						margin: {
 							top: 2rem;
 							right: 0;
