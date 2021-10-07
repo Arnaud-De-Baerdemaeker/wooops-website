@@ -72,10 +72,12 @@
 	&__cards-container { // <div>
 		@include container;
 		margin-top: 100px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 50px;
-		row-gap: 200px;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		column-gap: 1.25rem;
+		row-gap: 100px;
+		position: relative;
 	}
 
 	&__cards-container--no-results {
@@ -83,8 +85,9 @@
 		margin-top: 100px;
 	}
 
-	// &__cards { // <div>
-	// }
+	&__cards { // <div>
+		max-width: 25rem;
+	}
 
 	&__thumbnails { // <div>
 		position: relative;
@@ -93,16 +96,16 @@
 
 		.thumbnail {
 			&__desktop { // <img>
-				height: 250px;
+				width: 100%;
 				vertical-align: middle;
 			}
 
 			&__mobile { // <img>
-				height: 250px;
+				width: 30%;
 				vertical-align: middle;
 				position: absolute;
-				top: 25px;
-				right: 29px;
+				top: 20px;
+				right: 0;
 				box-shadow: 0 0 2.5rem 0.625rem $black_shadow;
 			}
 		}
@@ -152,7 +155,7 @@
 	}
 
 	&__link { // <a>
-		@include link-submit-design;
+		@include link-submit-load;
 		margin-top: 50px;
 		text-align: center;
 		width: 150px;
@@ -170,17 +173,20 @@
 	}
 
 	&__load-more { // <div>
-		@include container;
-		color: $white;
-		background-color: unset;
-		margin: unset;
-		border: unset;
+		// @include link-submit-load;
+		// width: 300px;
+		// position: absolute;
+		// bottom: calc(-50px + -100px);
+		// left: calc(50% - 150px);
+		// cursor: pointer;
 	}
 
 	&__no-more { // <div>
-		@include container;
-		text-align: center;
-		color: $white;
-		margin-top: 100px;
+		// width: 300px;
+		// position: absolute;
+		// bottom: calc(-27px + -100px);
+		// left: calc(50% - 150px);
+		// text-align: center;
+		// color: $white;
 	}
 }
