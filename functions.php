@@ -1,7 +1,8 @@
 <?php
 
 // ADD CUSTOM TAGS IN HEAD
-function add_tags() { ?>
+function add_tags() {
+?>
 	<meta charset="<?php bloginfo("charset"); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="Shortcut Icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -15,7 +16,7 @@ function add_tags() { ?>
 	<!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
 	<script src="<?php echo get_template_directory_uri().'/js/scrollreveal_scripts.js'; ?>" type="module"></script>
 	<title><?php the_title(); ?></title>
-	<?php
+<?php
 }
 add_action("wp_head", "add_tags");
 
@@ -50,7 +51,7 @@ function filter_projects() {
 		// Query to get projects based on tag
 		$query_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => -1,
+			"posts_per_page" => 6,
 			"orderby" => "menu_order",
 			"order" => "desc",
 			"tag" => $tag,
@@ -59,22 +60,39 @@ function filter_projects() {
 		// Query to get all projects
 		$query_projects = new WP_Query([
 			"post_type" => "projects",
-			"posts_per_page" => -1,
+			"posts_per_page" => 6,
 			"orderby" => "menu_order",
 			"order" => "desc",
 		]);
 	}
 
-	$response = "";
-
 	if ($query_projects->have_posts()) {
-		while ($query_projects->have_posts()): $query_projects->the_post();
-			$response .= get_template_part("sections/content-projets");
-		endwhile; ?>
-	</div>
-	<?php } else { ?>
-		<div class="projects__no-entry">Aucun projet correspondant à ce mot-clef...</div>
-	<?php }
+	?>
+		<div id="clone-cards-container" class="projects__cards-container">
+			<?php
+			while ($query_projects->have_posts()): $query_projects->the_post();
+				get_template_part("sections/content-projets");
+			endwhile;
+			?>
+		</div>
+		
+		<?php
+		if ($query_projects->max_num_pages > 1) {
+		?>
+			<button id="clone-load-more" class="projects__load-more">Afficher plus de projets</button>
+		<?php
+		}
+		else {
+		?>
+			<div id="clone-no-more" class="projects__no-more">Plus d'autres projets à afficher</div>
+		<?php
+		}
+	}
+	else {
+	?>
+		<div id="clone-no-entry" class="projects__no-entry">Aucun projet correspondant à ce mot-clef...</div>
+	<?php
+	}
 
 	echo $response;
 	exit;
