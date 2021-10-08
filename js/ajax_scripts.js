@@ -17,19 +17,32 @@
 					tag: $(this).attr("id"), // Get the tag slug from element clicked
 				},
 				success: function(result) {
-					$("#projects__cards-container").html(result);
-					
-					const element_exists = $(".projects__no-entry").length; // Checks if element exists
+					if ($("#clone-cards-container").length > 0) {
+						$("#clone-cards-container").replaceWith(result);
 
-					if (element_exists >= 1) {
-						$("#projects__cards-container").removeClass();
-						$("#projects__cards-container").addClass("projects__cards-container--no-results");
-						$(".projects__no-more").hide();
+						if ($("#original-cards-container").length > 0) {
+							$("#original-cards-container").remove();
+						}
+						else {
+							$("#original-cards-container").show();
+						}
+
+						if ($("#clone-no-more").length > 0) {
+							$("#clone-no-more").remove();
+						}
+
+						if ($("#clone-no-entry").length > 0) {
+							$("#clone-no-entry").remove();
+						}
+
+						if ($("#clone-load-more").length > 0) {
+							$("#clone-load-more").remove();
+						}
 					}
 					else {
-						$("#projects__cards-container").removeClass();
-						$("#projects__cards-container").addClass("projects__cards-container");
-						$(".projects__no-more").show();
+						$(".projects__all-tags-container").after(result);
+						$("#original-cards-container").remove();
+						$("#original-load-more").remove();
 					}
 				},
 				error: function(error) {
@@ -56,5 +69,28 @@
 				},
 			});
 		});
+
+		// Control keywords dropdown menu on click
+		const screen_width = $(window).width();
+
+		if (screen_width < 1000) {
+			$(".projects__all-tags-list").addClass("hide");
+
+			$(".projects__select-tag").on("click touchstart", function() {
+				if ($(".projects__all-tags-list").hasClass("hide")) {
+					$(".projects__all-tags-list").removeClass("hide");
+
+					$(".projects__all-tags").on("click touchstart", function() {
+						$(".projects__all-tags-list").addClass("hide");
+					})
+				}
+				else {
+					$(".projects__all-tags-list").addClass("hide");
+				}
+			});
+		}
+		else {
+			$(".projects__select-tag").hide();
+		}
 	});
 })(jQuery);
