@@ -12,7 +12,7 @@ if ($headers["title"]):
 			<?php
 			if ($headers["image"]):
 			?>
-				<span class="title__image-container"><img src="<?php echo $headers["image"]["url"]; ?>" alt="<?php echo $headers["image"]["alt"]; ?>" class="title__image" /></span>
+				<div class="title__image-container"><img src="<?php echo $headers["image"]["url"]; ?>" alt="<?php echo $headers["image"]["alt"]; ?>" class="title__image" /></div>
 			<?php
 			endif;
 			?>

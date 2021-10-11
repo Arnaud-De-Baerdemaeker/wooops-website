@@ -14,7 +14,7 @@
 		<h2 class="services__title">
 			<span class="title__text"><?php echo $services_header["title"]; ?></span>
 			<?php if ($services_header["image"]): ?>
-				<span class="title__image-container"><img src="<?php echo $services_header["image"]["url"]; ?>" alt="<?php echo $services_header["image"]["alt"]; ?>" class="title__image" /></span>
+				<div class="title__image-container"><img src="<?php echo $services_header["image"]["url"]; ?>" alt="<?php echo $services_header["image"]["alt"]; ?>" class="title__image" /></div>
 			<?php endif; ?>
 		</h2>
 
