@@ -44,42 +44,44 @@ if ($headers["title"]):
 		?>
 		<!-- /FILTER PROJECTS -->
 
+		<!-- LIST OF PROJECTS -->
 		<?php
 		$get_projects = new WP_Query([
 			"post_type" => "projects",
 			"posts_per_page" => 6, // Show only the 6 posts corresponding the parameters
 			"orderby" => "menu_order",
 			"order" => "desc",
+			"paged" => 1
 		]);
-
-		// LIST OF PROJECTS
-		if ($get_projects->have_posts()) {
 		?>
-			<div id="original-cards-container" class="projects__cards-container">
-				<?php
+
+		<div class="projects__cards-container">
+			<?php
+			if ($get_projects->have_posts()) {
 				while ($get_projects->have_posts()): $get_projects->the_post();
 					get_template_part("sections/content-projets");
 				endwhile;
-				?>
-			</div>
-			<?php
-			if ($get_projects->max_num_pages > 1) {
-			?>
-				<button id="original-load-more" class="projects__load-more">Afficher plus de projets</button>
-			<?php
 			}
-			else {
 			?>
-				<div id="original-no-more" class="projects__no-more">Plus d'autres projets à afficher</div>
-			<?php
-			}
-			wp_reset_postdata();
+		</div>
+
+		<?php
+		if ($get_projects->max_num_pages > 1) {
+		?>
+			<button class="projects__message">Afficher plus de projets</button>
+		<?php
+		}
+		else if ($get_projects->max_num_pages == 0) {
+		?>
+			<div class="projects__message">Plus d'autres projets à afficher</div>
+		<?php
 		}
 		else {
 		?>
-			<div id="original-no-entry" class="projects__no-entry">Aucun projet correspondant à ce mot-clef...</div>
+			<div class="projects__message">Aucun projet correspondant à ce mot-clef...</div>
 		<?php
 		}
+		wp_reset_postdata();
 		?>
 		<!-- /LIST OF PROJECTS -->
 	</div>
