@@ -17,32 +17,22 @@
 					tag: $(this).attr("id"), // Get the tag slug from element clicked
 				},
 				success: function(result) {
-					if ($("#clone-cards-container").length > 0) {
-						$("#clone-cards-container").replaceWith(result);
-
-						if ($("#original-cards-container").length > 0) {
-							$("#original-cards-container").remove();
+					if ($(".projects__cards-container").length > 0) { // Check if the container exists
+						if ($(".projects__cards-container").html().length > 0) { // Check if the container has content
+							$(".projects__cards-container").empty().append(result); // If yes, then replace its content with the new one
 						}
-						else {
-							$("#original-cards-container").show();
-						}
-
-						if ($("#clone-no-more").length > 0) {
-							$("#clone-no-more").remove();
-						}
-
-						if ($("#clone-no-entry").length > 0) {
-							$("#clone-no-entry").remove();
-						}
-
-						if ($("#clone-load-more").length > 0) {
-							$("#clone-load-more").remove();
+						else { // If no, put the content in it
+							$(".projects__cards-container").append(result);
 						}
 					}
 					else {
-						$(".projects__all-tags-container").after(result);
-						$("#original-cards-container").remove();
-						$("#original-load-more").remove();
+						return;
+					}
+
+					if ($(".projects__message").length > 0) { // Check if the message button already exists
+						$(".projects__message").empty(); // If yes, empty the element
+						$(".projects__message").text($(".projects__new-message").text()); // Add the text from the new element in the first one
+						$(".projects__new-message").remove(); // Remove the new element
 					}
 				},
 				error: function(error) {
@@ -52,18 +42,30 @@
 		});
 
 		// Load more posts after click
-		$(".projects__load-more").on("click touchstart", function(event) {
+		let page = 3;
+		$("button:contains('Afficher plus de projets')").on("click touchstart", function(event) {
 			event.preventDefault();
 
 			$.ajax({
 				type: "POST",
 				url: wp_ajax.ajax_url,
 				data: {
-					post_types: "projets",
+					post_type: "projects",
 					action: "load_more_projects",
 					tag: $(this).attr("id"), // Get the tag slug from element clicked
+					page: page
 				},
-				success: function(result) {},
+				success: function(result) {
+					console.log(page);
+					$(".projects__cards-container").append(result);
+					page++;
+
+					if ($(".projects__message").length > 0) { // Check if the message button already exists
+						$(".projects__message").empty(); // If yes, empty the element
+						$(".projects__message").text($(".projects__new-message").text()); // Add the text from the new element in the first one
+						$(".projects__new-message").remove(); // Remove the new element
+					}
+				},
 				error: function(error) {
 					console.error("Something went wrong", error);
 				},
