@@ -48,8 +48,7 @@ function filter_projects() {
 	$tag = $_POST["tag"]; // Recover tag clicked by user
 
 	if ($tag !== "all") {
-		// Query to get projects based on tag
-		$query_projects = new WP_Query([
+		$query_projects = new WP_Query([ // Query to get projects based on tag
 			"post_type" => "projects",
 			"posts_per_page" => 6,
 			"orderby" => "menu_order",
@@ -57,8 +56,7 @@ function filter_projects() {
 			"tag" => $tag,
 		]);
 	} else {
-		// Query to get all projects
-		$query_projects = new WP_Query([
+		$query_projects = new WP_Query([ // Query to get all projects
 			"post_type" => "projects",
 			"posts_per_page" => 6,
 			"orderby" => "menu_order",
@@ -67,34 +65,27 @@ function filter_projects() {
 	}
 
 	if ($query_projects->have_posts()) {
-	?>
-		<div id="clone-cards-container" class="projects__cards-container">
-			<?php
-			while ($query_projects->have_posts()): $query_projects->the_post();
-				get_template_part("sections/content-projets");
-			endwhile;
-			?>
-		</div>
-		
-		<?php
-		if ($query_projects->max_num_pages > 1) {
+		while ($query_projects->have_posts()): $query_projects->the_post();
+			get_template_part("sections/content-projets");
+		endwhile;
+	}
+
+	if ($query_projects->max_num_pages > 1) {
 		?>
-			<button id="clone-load-more" class="projects__load-more">Afficher plus de projets</button>
+			<button class="projects__new-message">Afficher plus de projets</button>
+		<?php
+		}
+		else if ($query_projects->max_num_pages == 1) {
+		?>
+			<div class="projects__new-message">Plus d'autres projets à afficher</div>
 		<?php
 		}
 		else {
 		?>
-			<div id="clone-no-more" class="projects__no-more">Plus d'autres projets à afficher</div>
+			<div class="projects__new-message">Aucun projet correspondant à ce mot-clef...</div>
 		<?php
 		}
-	}
-	else {
-	?>
-		<div id="clone-no-entry" class="projects__no-entry">Aucun projet correspondant à ce mot-clef...</div>
-	<?php
-	}
-
-	echo $response;
+		wp_reset_postdata();
 	exit;
 }
 add_action("wp_ajax_filter_projects", "filter_projects");
@@ -103,7 +94,39 @@ add_action("wp_ajax_nopriv_filter_projects", "filter_projects");
 
 // LOAD MORE FUNCTION
 function load_more_projects() {
+	$page = $_POST["page"];
 
+	$load_more_posts = new WP_Query([
+		"post_type" => "projects",
+		"posts_per_page" => 3,
+		"orderby" => "menu_order",
+		"order" => "desc",
+		"paged" => $page
+	]);
+
+	if ($load_more_posts->have_posts()) {
+		while ($load_more_posts->have_posts()): $load_more_posts->the_post();
+			get_template_part("sections/content-projets");
+		endwhile;
+	}
+
+	if ($load_more_posts->max_num_pages > 1 && $page < $load_more_posts->max_num_pages) {
+		?>
+			<button class="projects__new-message">Afficher plus de projets</button>
+		<?php
+		}
+		else if ($load_more_posts->max_num_pages == $page) {
+		?>
+			<div class="projects__new-message">Plus d'autres projets à afficher</div>
+		<?php
+		}
+		else {
+		?>
+			<div class="projects__new-message">Aucun projet correspondant à ce mot-clef...</div>
+		<?php
+		}
+		wp_reset_postdata();
+	wp_die();
 }
-add_action("wp_ajax_filter_projects", "load_more_projects");
-add_action("wp_ajax_nopriv_filter_projects", "load_more_projects");
+add_action("wp_ajax_load_more_projects", "load_more_projects");
+add_action("wp_ajax_nopriv_load_more_projects", "load_more_projects");
