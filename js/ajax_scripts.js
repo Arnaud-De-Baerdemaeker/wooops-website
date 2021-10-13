@@ -1,6 +1,19 @@
 // AJAX
 (function($) {
 	$(document).ready(function() {
+		if ($("#more").length > 0) {
+			$(".projects__cards-container").after("<button class='projects__load-more'>" + $("#more").attr("value") + "</button>")
+			$("#more").remove();
+		}
+		else if ($("#end").length > 0) {
+			$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
+			$("#end").remove();
+		}
+		else if ($("#empty").length > 0) {
+			$(".projects__cards-container").after("<div class='projects__empty'>" + $("#empty").attr("value") + "</div>");
+			$("#empty").remove();
+		}
+
 		// Filter posts per selected tag
 		$(".projects__all-tags").on("click touchstart", function(event) {
 			event.preventDefault();
@@ -29,10 +42,44 @@
 						return;
 					}
 
-					if ($(".projects__message").length > 0) { // Check if the message button already exists
-						$(".projects__message").empty(); // If yes, empty the element
-						$(".projects__message").text($(".projects__new-message").text()); // Add the text from the new element in the first one
-						$(".projects__new-message").remove(); // Remove the new element
+					if ($("#more").length > 0) {
+						$(".projects__cards-container").after("<button class='projects__load-more'>" + $("#more").attr("value") + "</button>")
+						$("#more").remove();
+
+						if ($(".projects__load-more").length > 1) { 
+							$(".projects__load-more:not(:first)").remove();
+						}
+
+						if ($(".projects__end").length > 0) {
+							$(".projects__end").remove();
+						}
+						else if ($(".projects__empty").length > 0) {
+							$(".projects__empty").remove();
+						}
+					}
+					else if ($("#end").length > 0) {
+						$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
+						$("#end").remove();
+						$(".projects__end:not(:last)").remove();
+
+						if ($(".projects__load-more").length > 0) {
+							$(".projects__load-more").remove();
+						}
+						else if ($(".projects__empty").length > 0) {
+							$(".projects__empty").remove();
+						}
+					}
+					else if ($("#empty").length > 0) {
+						$(".projects__cards-container").after("<div class='projects__empty'>" + $("#empty").attr("value") + "</div>");
+						$("#empty").remove();
+						$(".projects__empty:not(:last)").remove();
+
+						if ($(".projects__load-more").length > 0) {
+							$(".projects__load-more").remove();
+						}
+						else if ($(".projects__end").length > 0) {
+							$(".projects__end").remove();
+						}
 					}
 				},
 				error: function(error) {
@@ -43,7 +90,7 @@
 
 		// Load more posts after click
 		let page = 3;
-		$("button:contains('Afficher plus de projets')").on("click touchstart", function(event) {
+		$(".projects__load-more").on("click touchstart", function(event) {
 			event.preventDefault();
 
 			$.ajax({
@@ -56,14 +103,42 @@
 					page: page
 				},
 				success: function(result) {
-					console.log(page);
 					$(".projects__cards-container").append(result);
 					page++;
 
-					if ($(".projects__message").length > 0) { // Check if the message button already exists
-						$(".projects__message").empty(); // If yes, empty the element
-						$(".projects__message").text($(".projects__new-message").text()); // Add the text from the new element in the first one
-						$(".projects__new-message").remove(); // Remove the new element
+					if ($("#more").length > 0) {
+						$(".projects__cards-container").after("<button class='projects__load-more'>" + $("#more").attr("value") + "</button>")
+						$("#more").remove();
+						$(".projects__load-more:not(:last)").remove();
+
+						if ($(".projects__end").length > 0) {
+							$(".projects__end").remove();
+						}
+						else if ($(".projects__empty").length > 0) {
+							$(".projects__empty").remove();
+						}
+					}
+					else if ($("#end").length > 0) {
+						$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
+						$("#end").remove();
+
+						if ($(".projects__load-more").length > 0) {
+							$(".projects__load-more").remove();
+						}
+						else if ($(".projects__empty").length > 0) {
+							$(".projects__empty").remove();
+						}
+					}
+					else if ($("#empty").length > 0) {
+						$(".projects__cards-container").after("<div class='projects__empty'>" + $("#empty").attr("value") + "</div>");
+						$("#empty").remove();
+
+						if ($(".projects__load-more").length > 0) {
+							$(".projects__load-more").remove();
+						}
+						else if ($(".projects__end").length > 0) {
+							$(".projects__end").remove();
+						}
 					}
 				},
 				error: function(error) {
