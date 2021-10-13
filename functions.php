@@ -43,7 +43,7 @@ function register_jquery() {
 add_action("wp_enqueue_scripts", "register_jquery");
 
 
-// LIST OF PROJECTS
+// FILTER PROJECTS
 function filter_projects() {
 	$tag = $_POST["tag"]; // Recover tag clicked by user
 
@@ -72,17 +72,17 @@ function filter_projects() {
 
 	if ($query_projects->max_num_pages > 1) {
 		?>
-			<button class="projects__new-message">Afficher plus de projets</button>
+			<span id="more" value="Afficher plus de projets" hidden></span>
 		<?php
 		}
 		else if ($query_projects->max_num_pages == 1) {
 		?>
-			<div class="projects__new-message">Plus d'autres projets à afficher</div>
+			<span id="end" value="Plus d'autres projets à afficher" hidden></span>
 		<?php
 		}
 		else {
 		?>
-			<div class="projects__new-message">Aucun projet correspondant à ce mot-clef...</div>
+			<span id="empty" value="Aucun projet correspondant à ce mot-clef..." hidden></span>
 		<?php
 		}
 		wp_reset_postdata();
@@ -112,21 +112,21 @@ function load_more_projects() {
 
 	if ($load_more_posts->max_num_pages > 1 && $page < $load_more_posts->max_num_pages) {
 		?>
-			<button class="projects__new-message">Afficher plus de projets</button>
+			<span id="more" value="Afficher plus de projets" hidden></span>
 		<?php
 		}
 		else if ($load_more_posts->max_num_pages == $page) {
 		?>
-			<div class="projects__new-message">Plus d'autres projets à afficher</div>
+			<span id="end" value="Plus d'autres projets à afficher" hidden></span>
 		<?php
 		}
 		else {
 		?>
-			<div class="projects__new-message">Aucun projet correspondant à ce mot-clef...</div>
+			<span id="empty" value="Aucun projet correspondant à ce mot-clef..." hidden></span>
 		<?php
 		}
 		wp_reset_postdata();
-	wp_die();
+	exit;
 }
 add_action("wp_ajax_load_more_projects", "load_more_projects");
 add_action("wp_ajax_nopriv_load_more_projects", "load_more_projects");

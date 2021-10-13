@@ -68,17 +68,17 @@ if ($headers["title"]):
 		<?php
 		if ($get_projects->max_num_pages > 1) {
 		?>
-			<button class="projects__message">Afficher plus de projets</button>
+			<span id="more" value="Afficher plus de projets" hidden></span>
 		<?php
 		}
 		else if ($get_projects->max_num_pages == 0) {
 		?>
-			<div class="projects__message">Plus d'autres projets à afficher</div>
+			<span id="end" value="Plus d'autres projets à afficher" hidden></span>
 		<?php
 		}
 		else {
 		?>
-			<div class="projects__message">Aucun projet correspondant à ce mot-clef...</div>
+			<span id="empty" value="Aucun projet correspondant à ce mot-clef..." hidden></span>
 		<?php
 		}
 		wp_reset_postdata();
