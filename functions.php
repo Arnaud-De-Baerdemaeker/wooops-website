@@ -48,19 +48,20 @@ function filter_projects() {
 	$tag = $_POST["tag"]; // Recover tag clicked by user
 
 	if ($tag !== "all") {
-		$query_projects = new WP_Query([ // Query to get projects based on tag
+		$query_projects = new WP_Query([ // Query the projects that have the clicked tag
 			"post_type" => "projects",
 			"posts_per_page" => 6,
 			"orderby" => "menu_order",
 			"order" => "desc",
 			"tag" => $tag,
+			"paged" => 1
 		]);
 	} else {
-		$query_projects = new WP_Query([ // Query to get all projects
+		$query_projects = new WP_Query([ // Query all projects
 			"post_type" => "projects",
 			"posts_per_page" => 6,
 			"orderby" => "menu_order",
-			"order" => "desc",
+			"order" => "desc"
 		]);
 	}
 
@@ -115,7 +116,7 @@ function load_more_projects() {
 			<span id="more" value="Afficher plus de projets" hidden></span>
 		<?php
 		}
-		else if ($load_more_posts->max_num_pages == $page) {
+		else if ($page == $load_more_posts->max_num_pages) {
 		?>
 			<span id="end" value="Plus d'autres projets à afficher" hidden></span>
 		<?php
