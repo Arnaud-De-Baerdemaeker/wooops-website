@@ -38,14 +38,14 @@
 		background-color: unset;
 		font: {
 			family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
-			size: 16px;
+			size: 1rem;
 		}
 		transition-property: background-color color;
 		transition-duration: 0.3s;
 		cursor: pointer;
 		color: $wooops;
 		border-color: $wooops;
-		width: 200px;
+		width: 12.5rem;
 
 		&:hover {
 			color: $white;
@@ -57,9 +57,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		row-gap: 10px;
+		row-gap: 0.625rem;
 		margin: {
-			top: 10px;
+			top: 0.625rem;
 			bottom: 0;
 		}
 		padding: 0;
@@ -71,17 +71,13 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: revert;
-			column-gap: 20px;
-			row-gap: 20px;
+			column-gap: 1.25rem;
+			row-gap: 1.25rem;
 			margin-top: unset;
 		}
 
-		&.hide {
-			display: none;
-		}
-
 		li {
-			width: 150px;
+			width: 9.375rem;
 
 			@media #{$mq_w1000_up} {
 				width: revert;
@@ -94,7 +90,7 @@
 		background-color: unset;
 		font: {
 			family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
-			size: 16px;
+			size: 1rem;
 		}
 		transition-property: background-color color;
 		transition-duration: 0.3s;
@@ -114,9 +110,9 @@
 			@media #{$mq_w1000_up} {
 				outline: {
 					style: solid;
-					width: 1px;
+					width: 0.0625rem;
 					color: $wooops;
-					offset: 5px;
+					offset: 0.3125rem;
 				}
 			}
 		}
@@ -124,12 +120,12 @@
 
 	&__cards-container { // <div>
 		@include container;
-		margin-top: 100px;
+		margin-top: 6.25rem;
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		column-gap: 1.25rem;
-		row-gap: 100px;
+		row-gap: 6.25rem;
 		position: relative;
 	}
 
@@ -152,7 +148,7 @@
 				width: 30%;
 				vertical-align: middle;
 				position: absolute;
-				top: 20px;
+				top: 1.25rem;
 				right: 0;
 				box-shadow: 0 0 2.5rem 0.625rem $black_shadow;
 			}
@@ -172,10 +168,9 @@
 		color: $white;
 		font: {
 			family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
-			size: 20px;
+			size: 1.25rem;
 			weight: 700;
 		}
-		line-height: 3.75rem;
 	}
 
 	// &__presentation { // <p>
@@ -187,9 +182,9 @@
 	&__post-tags-container { // <ul>
 		position: relative;
 		display: flex;
-		column-gap: 20px;
+		column-gap: 1.25rem;
 		margin: {
-			top: 50px;
+			top: 3.125rem;
 			right: 0;
 			bottom: 0;
 			left: 0;
@@ -204,10 +199,10 @@
 
 	&__link { // <a>
 		@include link-submit-load;
-		margin-top: 50px;
+		margin-top: 1.875rem;
 		text-align: center;
-		width: 150px;
-		line-height: 50px;
+		height: 2.1875rem;
+		line-height: 2.1875rem;
 		text: {
 			decoration: unset;
 			transform: uppercase;
@@ -217,11 +212,11 @@
 	&__more { // <button>
 		@include link-submit-load;
 		padding: {
-			right: 20px;
-			left: 20px;
+			right: 1.25rem;
+			left: 1.25rem;
 		}
 		margin: {
-			top: 100px;
+			top: 6.25rem;
 			right: auto;
 			left: auto;
 		}
@@ -231,7 +226,7 @@
 		@include container;
 		text-align: center;
 		color: $white;
-		margin-top: 100px;
+		margin-top: 6.25rem;
 	}
 
 	&__empty { // <div>

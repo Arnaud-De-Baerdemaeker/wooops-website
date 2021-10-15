@@ -51,14 +51,14 @@
 }
 
 @mixin scroll-position {
-	scroll-margin-top: calc(3.125rem + 25px);
+	scroll-margin-top: calc(3.125rem + 1.5625rem);
 
     @media #{$mq_w450_up} {
-		scroll-margin-top: calc(3.75rem + 25px);
+		scroll-margin-top: calc(3.75rem + 1.5625rem);
 	}
 
 	@media #{$mq_w800_up} {
-		scroll-margin-top: calc(4.688rem + 25px);
+		scroll-margin-top: calc(4.688rem + 1.5625rem);
 	}
 }
 
@@ -314,11 +314,11 @@
 	color: $wooops;
 	border: {
 		style: solid;
-		width: 1px;
+		width: 0.0625rem;
 		color: $wooops;
 	}
 	cursor: pointer;
-	letter-spacing: 1px;
+	letter-spacing: 0.0625rem;
 	background-color: unset;
 	transition-property: background-color color;
 	transition-duration: 0.3s;
@@ -332,17 +332,17 @@
 @mixin tags-design {
 	display: inline-block;
 	min-width: fit-content;
-	height: 35px;
-	line-height: 35px;
+	height: 2.1875rem;
+	line-height: 2.1875rem;
 	color: $neutral_180;
 	border: {
 		style: solid;
-		width: 1px;
+		width: 0.0625rem;
 		color: $neutral_180;
-		radius: 35px;
+		radius: 2.1875rem;
 	}
 	padding: {
-		right: 16px;
-		left: 16px;
+		right: 1rem;
+		left: 1rem;
 	}
 }
