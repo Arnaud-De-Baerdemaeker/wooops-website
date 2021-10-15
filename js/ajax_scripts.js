@@ -16,7 +16,7 @@
 			$("#empty").remove();
 		}
 
-		// Filter posts per selected tag
+		// FILTER POSTS PER SELECTED TAG
 		$(".projects__all-tags").on("click", function(event) {
 			event.preventDefault();
 
@@ -29,16 +29,16 @@
 				data: {
 					post_type: "projects",
 					action: "filter_projects",
-					tag: $(this).attr("id"), // Get the tag slug from element clicked
+					tag: $(this).attr("id")
 				},
 				success: function(result) {
 					page = 3;
 
-					if ($(".projects__cards-container").length > 0) { // Check if the container exists
-						if ($(".projects__cards-container").html().length > 0) { // Check if the container has content
-							$(".projects__cards-container").empty().append(result); // If yes, then replace its content with the new one
+					if ($(".projects__cards-container").length > 0) {
+						if ($(".projects__cards-container").html().length > 0) {
+							$(".projects__cards-container").empty().append(result);
 						}
-						else { // If no, put the content in it
+						else {
 							$(".projects__cards-container").append(result);
 						}
 					}
@@ -47,7 +47,7 @@
 					}
 
 					if ($("#more").length > 0) {
-						$(".projects__cards-container").after("<button class='projects__more'>" + $("#more").attr("value") + "</button>")
+						$(".projects__cards-container").after("<button class='projects__more'>" + $("#more").attr("value") + "</button>");
 						$("#more").hide();
 
 						if ($(".projects__more").length > 1) {
@@ -104,7 +104,7 @@
 			});
 		});
 
-		// Load more posts after click
+		// LOAD MORE POSTS AFTER CLICK
 		$(".projects__more").on("click", function(event) {
 			event.preventDefault();
 
@@ -146,22 +146,22 @@
 			});
 		});
 
-		// Control keywords dropdown menu on click
+		// CONTROL KEYWORDS' DROPDOWN MENU ON CLICK
 		const screen_width = $(window).width();
 
-		if (screen_width < 1000) { // If the screen size is less than 1000px...
-			$(".projects__all-tags-list").hide(); // ...Hide the list of keywords
+		if (screen_width < 1000) {
+			$(".projects__all-tags-list").hide();
 
-			$(".projects__select-tag").on("click", function() { // On click on the select keyword button...
-				$(".projects__all-tags-list").toggle(300); // ...Open or close the dropdown keywords' menu
+			$(".projects__select-tag").on("click", function() {
+				$(".projects__all-tags-list").toggle(300);
 			});
 
-			$(".projects__all-tags").on("click", function() { // On click on a keyword of the list...
-				$(".projects__all-tags-list").toggle(300); // ...Hide the list of keywords
+			$(".projects__all-tags").on("click", function() {
+				$(".projects__all-tags-list").toggle(300);
 			});
 		}
-		else { // If not...
-			$(".projects__select-tag").hide(); // Hide the button to display all the keywords
+		else {
+			$(".projects__select-tag").hide();
 		}
 	});
 })(jQuery);

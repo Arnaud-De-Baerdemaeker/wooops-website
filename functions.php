@@ -45,10 +45,10 @@ add_action("wp_enqueue_scripts", "register_jquery");
 
 // FILTER PROJECTS
 function filter_projects() {
-	$tag = $_POST["tag"]; // Recover tag clicked by user
+	$tag = $_POST["tag"];
 
 	if ($tag !== "all") {
-		$query_projects = new WP_Query([ // Query the projects that have the clicked tag
+		$query_projects = new WP_Query([
 			"post_type" => "projects",
 			"posts_per_page" => 6,
 			"orderby" => "menu_order",
@@ -57,7 +57,7 @@ function filter_projects() {
 			"paged" => 1
 		]);
 	} else {
-		$query_projects = new WP_Query([ // Query all projects
+		$query_projects = new WP_Query([
 			"post_type" => "projects",
 			"posts_per_page" => 6,
 			"orderby" => "menu_order",
