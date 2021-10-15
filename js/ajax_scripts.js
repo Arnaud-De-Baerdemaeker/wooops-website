@@ -149,24 +149,19 @@
 		// Control keywords dropdown menu on click
 		const screen_width = $(window).width();
 
-		if (screen_width < 1000) {
-			$(".projects__all-tags-list").addClass("hide");
+		if (screen_width < 1000) { // If the screen size is less than 1000px...
+			$(".projects__all-tags-list").hide(); // ...Hide the list of keywords
 
-			$(".projects__select-tag").on("click", function() {
-				if ($(".projects__all-tags-list").hasClass("hide")) {
-					$(".projects__all-tags-list").removeClass("hide");
+			$(".projects__select-tag").on("click", function() { // On click on the select keyword button...
+				$(".projects__all-tags-list").toggle(300); // ...Open or close the dropdown keywords' menu
+			});
 
-					$(".projects__all-tags").on("click touchstart", function() {
-						$(".projects__all-tags-list").addClass("hide");
-					})
-				}
-				else {
-					$(".projects__all-tags-list").addClass("hide");
-				}
+			$(".projects__all-tags").on("click", function() { // On click on a keyword of the list...
+				$(".projects__all-tags-list").toggle(300); // ...Hide the list of keywords
 			});
 		}
-		else {
-			$(".projects__select-tag").hide();
+		else { // If not...
+			$(".projects__select-tag").hide(); // Hide the button to display all the keywords
 		}
 	});
 })(jQuery);
