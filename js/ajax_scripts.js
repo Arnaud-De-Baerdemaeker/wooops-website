@@ -17,7 +17,7 @@
 		}
 
 		// Filter posts per selected tag
-		$(".projects__all-tags").on("click touchstart", function(event) {
+		$(".projects__all-tags").on("click", function(event) {
 			event.preventDefault();
 
 			$(".projects__all-tags").removeClass("active");
@@ -105,7 +105,7 @@
 		});
 
 		// Load more posts after click
-		$(".projects__more").on("click touchstart", function(event) {
+		$(".projects__more").on("click", function(event) {
 			event.preventDefault();
 
 			$.ajax({
@@ -152,7 +152,7 @@
 		if (screen_width < 1000) {
 			$(".projects__all-tags-list").addClass("hide");
 
-			$(".projects__select-tag").on("click touchstart", function() {
+			$(".projects__select-tag").on("click", function() {
 				if ($(".projects__all-tags-list").hasClass("hide")) {
 					$(".projects__all-tags-list").removeClass("hide");
 
