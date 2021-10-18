@@ -5,6 +5,7 @@
 ### 2.2.0
 
 * Add content in the "Projets" section
+* Include a function to filter projects
 
 ### 2.1.0
 
