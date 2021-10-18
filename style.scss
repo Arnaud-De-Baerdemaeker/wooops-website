@@ -3,8 +3,8 @@ Theme Name: Wooops Agency
 Theme URI: 
 Author: Wooops Agency
 Author URI: 
-Description: Wooops Agency's first theme
-Version: 1.0.0
+Description: Wooops Agency's theme
+Version: 2.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wooopsagency
@@ -14,11 +14,13 @@ Tags: SCSS
 @import
 	"css/variables",
 	"css/mixin",
+	"css/keyframes",
 	"css/general",
 	"css/header",
+	"css/hero",
 	"css/agency",
 	"css/services",
+	"css/projects",
 	"css/contact",
-	"css/footer",
-	"css/communication"
+	"css/footer"
 ;

@@ -2,27 +2,28 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+
+	@media (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
+}
+
 body {
 	margin: 0;
 	font: {
 		family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
 		size: 16px;
 	}
+	background-color: $black;
+	overflow-x: hidden;
+
+	main {
+		background-color: $black;
+	}
 }
 
-.half-part { // <section>
-	width: 50%;
-
-	&__title { // <h3>
-		text-transform: uppercase;
-		font-size: 1.875rem;
-		margin: 0;
-	}
-
-	&__text { // <p>
-		margin: {
-			top: revert;
-			bottom: 0;
-		}
-	}
+html.sr .header, .agency__title, .menu-item-type-custom, .jarallax-img, #text_1, .introduction__logo-container, #text_2, .footer, .footer__logo, .agency__title, .services__title, .work__title, .contact__title, .title__text, .title__image, .service1__title, .service2__title, .service3__title, .service4__title, .service5__title, .service6__title, .service7__title, .service-1-1, #service2__item1, #service3__text1, .service4a, .contact__introduction, .service1b, #service2__item2, .service4b, .service4d, .service1c, #service2__item3, #service3__text2, .service4c, .wpcf7, #service7__item1, #service7__item2, #service7__item3, #service7__item4, #service7__item5, #service7__item6, .footer__address, .footer__contact, .footer__social, .footer__copyright {
+	visibility: hidden;
 }

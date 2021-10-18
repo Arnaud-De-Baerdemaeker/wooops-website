@@ -1,96 +1,75 @@
 .footer { // <footer>
-	background-color: $dark_gray;
+	background-color: $neutral_50;
 	color: $white;
-	position: relative;
-	padding: {
-		top: 3.125rem;
-		right: 1rem;
-		left: 1rem;
-	}
-	
-	&__informations { // <div>
-		height: inherit;
-		text-align: center;
 
-		@media #{$mq_w450_up} {
-			text-align: start;
-		}
-
-		@media #{$mq_w1200_up} {
-			display: flex;
+	&__container { // <div>
+		@include container;
+		display: flex;
+		justify-content: space-evenly;
+		row-gap: 3.125rem;
+		flex-wrap: wrap;
+		padding: {
+			top: 3.125rem;
+			bottom: 3.125rem;
 		}
 	}
 
 	&__logo { // <div>
+		flex-basis: 100%;
+		width: 12.5rem;
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		width: 10.938rem;
-		margin: {
-			right: auto;
-			left: auto;
-		}
 	}
 
 	&__image { // <img>
-		width: 80%;
+		width: 12.5rem;
 		vertical-align: middle;
-
-		@media #{$mq_w875_up} {
-			width: 100%;
-		}
 	}
+	
+	&__informations { // <div>
+		display: flex;
+		row-gap: 3.125rem;
+		column-gap: 1.25rem;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		text-align: center;
 
-	&__contact-infos { // <div>
-		margin-top: 3.125rem;
-
-		@media #{$mq_w450_up} {
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			flex-wrap: wrap;
-			column-gap: 4rem;
-			row-gap: 2rem;
+		@media #{$mq_w800_up} {
+			flex-direction: row;
 		}
 
 		@media #{$mq_w1200_up} {
-			width: 70%;
-			margin-top: unset;
-			align-content: center;
+			width: 100%;
+			height: 7.875rem;
+			justify-content: space-evenly;
 		}
 	}
 
 	&__address, &__contact, &__social { // <section>
-		margin-top: 2rem;
-
-		&:first-of-type {
-			margin-top: 0;
-		}
-
-		@media #{$mq_w450_up} {
-			margin-top: unset;
-			align-self: start;
-		}
-
-		@media #{$mq_w1200_up} {
-			display: flex;
-			flex-direction: column;
-			height: 7.5rem;
-		}
+		width: 15.625rem;
 	}
 
 	&__title { // <h4>
 		margin: 0;
-		font-size: 1.25rem;
-		justify-self: flex-start;
+		font-size: 0.875rem;
+		color: $neutral_180;
 	}
 
 	&__entry { // <p>
 		margin: 0;
+		font-size: 1rem;
 	}
 
 	&__copyright { // <div>
+		@include container;
+		height: 3.125rem;
 		text-align: center;
-		margin-top: 3.125rem;
+		background-color: $neutral_55;
+		color: $neutral_180;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: unset;
+		font-size: 0.875rem;
 	}
 }
