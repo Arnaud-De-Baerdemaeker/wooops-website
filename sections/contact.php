@@ -8,7 +8,7 @@
 		<h2 class="contact__title">
 			<span class="title__text"><?php echo $contact_header["title"]; ?></span>
 			<?php if($contact_header["image"]): ?>
-				<span class="title__image-container"><img src="<?php echo $contact_header["image"]["url"]; ?>" alt="<?php echo $contact_header["image"]["alt"]; ?>" class="title__image" /></span>
+				<div class="title__image-container"><img src="<?php echo $contact_header["image"]["url"]; ?>" alt="<?php echo $contact_header["image"]["alt"]; ?>" class="title__image" /></div>
 			<?php endif; ?>
 		</h2>
 

@@ -34,6 +34,14 @@
 	}
 }
 
+@mixin margin-between-section-titles {
+	margin-top: 4.6875rem;
+
+	@media #{$mq_w1200_up} {
+		margin-top: 15.625rem;
+	}
+}
+
 @mixin padding-between-sections {
 	padding-bottom: 9.375rem;
 
@@ -43,14 +51,14 @@
 }
 
 @mixin scroll-position {
-	scroll-margin-top: calc(3.125rem + 25px);
+	scroll-margin-top: calc(3.125rem + 1.5625rem);
 
     @media #{$mq_w450_up} {
-		scroll-margin-top: calc(3.75rem + 25px);
+		scroll-margin-top: calc(3.75rem + 1.5625rem);
 	}
 
 	@media #{$mq_w800_up} {
-		scroll-margin-top: calc(4.688rem + 25px);
+		scroll-margin-top: calc(4.688rem + 1.5625rem);
 	}
 }
 
@@ -236,7 +244,6 @@
 
 @mixin card-keywords {
 	padding: 1.25rem;
-	text-align: justify;
 
 	@media #{$mq_w1500_up} {
 		padding: 2.5rem;
@@ -251,7 +258,6 @@
 
 @mixin services-text {
 	margin: 0;
-	text-align: justify;
 }
 
 @mixin services-list {
@@ -264,6 +270,18 @@
 @mixin services-item {
 	display: inline;
 	font-weight: 500;
+
+	&:after {
+		content: "\25CF";
+		margin: {
+			right: 0.625rem;
+			left: 0.625rem;
+		}
+	}
+
+	&:last-child:after {
+		content: unset;
+	}
 }
 
 @mixin card-dark {
@@ -282,5 +300,49 @@
 
 	@media #{$mq_w1500_up} {
 		padding: 2.5rem;
+	}
+}
+
+@mixin link-submit-load {
+	display: block;
+	height: 50px;
+	font: {
+		family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		size: 1rem;
+		weight: 700;
+	}
+	color: $wooops;
+	border: {
+		style: solid;
+		width: 0.0625rem;
+		color: $wooops;
+	}
+	cursor: pointer;
+	letter-spacing: 0.0625rem;
+	background-color: unset;
+	transition-property: background-color color;
+	transition-duration: 0.3s;
+
+	&:hover {
+		background-color: $wooops;
+		color: $white;
+	}
+}
+
+@mixin tags-design {
+	display: inline-block;
+	min-width: fit-content;
+	height: 2.1875rem;
+	line-height: 2.1875rem;
+	color: $neutral_180;
+	border: {
+		style: solid;
+		width: 0.0625rem;
+		color: $neutral_180;
+		radius: 2.1875rem;
+	}
+	padding: {
+		right: 1rem;
+		left: 1rem;
 	}
 }

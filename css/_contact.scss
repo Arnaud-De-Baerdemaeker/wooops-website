@@ -11,7 +11,7 @@
 				@include h2-titles__text;
 			}
 
-			&__image-container { // <span>
+			&__image-container { // <div>
 				@include h2-titles__image-container;
 			}
 
@@ -23,16 +23,12 @@
 
 	&__content-container { // <div>
 		@include container;
+		@include margin-between-section-titles;
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		row-gap: 1.25rem;
-		margin-top: 4.688rem;
 		column-gap: 1.25rem;
-
-		@media #{$mq_w1500_up} {
-			margin-top: 9.375rem;
-		}
 	}
 
 	// &__introduction { // <div>
@@ -48,7 +44,7 @@
 		color: $white;
 		border: {
 			style: solid;
-			width: 0.063rem;
+			width: 0.0625rem;
 			color: $white;
 		}
 		padding: 1.25rem;
@@ -75,10 +71,10 @@
 
 			input[type="text"], input[type="tel"], input[type="email"], textarea {
 				padding: {
-					top: 0.313rem;
-					right: 0.313rem;
-					bottom: 0.313rem;
-					left: 0.313rem;
+					top: 0.3125rem;
+					right: 0.3125rem;
+					bottom: 0.3125rem;
+					left: 0.3125rem;
 				}
 				outline: none;
 				border: {
@@ -86,7 +82,7 @@
 					right: none;
 					bottom: {
 						style: solid;
-						width: 0.063rem;
+						width: 0.0625rem;
 						color: $white;
 					}
 					left: none;
@@ -123,13 +119,13 @@
 					}
 				}
 
-				&__name, &__company, &__phone, &__email {
+				&__name, &__company, &__phone, &__email { // <div>
 					@media #{$mq_w1400_up} {
 						width: 50%;
 					}
 				}
 
-				&__object, &__message {
+				&__object, &__message { // <div>
 					margin-top: 2rem;
 
 					@media #{$mq_w1400_up} {
@@ -137,12 +133,11 @@
 					}
 				}
 
-				&__submit { // <input>
+				&__submit { // <div>
 					position: relative;
 
 					input[type="submit"] {
-						height: 3.125rem;
-						display: block;
+						@include link-submit-load;
 						margin: {
 							top: 2rem;
 							right: 0;
@@ -150,35 +145,9 @@
 							left: auto;
 						}
 						padding: 0;
-						border: none;
-						background-color: unset;
-						color: $wooops;
 						cursor: pointer;
 						text-transform: uppercase;
-						font: {
-							family: inherit;
-							weight: 700;
-							size: 1rem;
-						}
-						letter-spacing: 1px;
-						outline: {
-							style: solid;
-							width: 1px;
-							color: $wooops;
-							offset: 0;
-						}
 						width: 50%;
-						transition-property: background-color color outline-width outline-offset;
-						transition-duration: 0.3s;
-
-						&:hover {
-							background-color: $wooops;
-							color: $white;
-							outline: {
-								width: 4px;
-								offset: 5px;
-							}
-						}
 					}
 
 					.ajax-loader { // <span>

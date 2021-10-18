@@ -1,0 +1,237 @@
+.projects { // <div>
+	@include viewport-container;
+	@include padding-between-sections;
+	@include scroll-position;
+
+	&__title { // <h2>
+		@include h2-titles;
+
+		.title {
+			&__text { // <span>
+				@include h2-titles__text;
+			}
+
+			&__image-container { // <div>
+				@include h2-titles__image-container;
+			}
+
+			&__image { // <img>
+				@include h2-titles__image;
+			}
+		}
+	}
+
+	&__all-tags-container { // <div>
+		@include container;
+		@include margin-between-section-titles;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media #{$mq_w1000_up} {
+			display: revert;
+		}
+	}
+
+	&__select-tag { // <button>
+		@include tags-design;
+		background-color: unset;
+		font: {
+			family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+			size: 1rem;
+		}
+		transition-property: background-color color;
+		transition-duration: 0.3s;
+		cursor: pointer;
+		color: $wooops;
+		border-color: $wooops;
+		width: 12.5rem;
+
+		&:hover {
+			color: $white;
+			background-color: $wooops;
+		}
+	}
+
+	&__all-tags-list { // <ul>
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 0.625rem;
+		margin: {
+			top: 0.625rem;
+			bottom: 0;
+		}
+		padding: 0;
+		list-style: none;
+		width: 100%;
+
+		@media #{$mq_w1000_up} {
+			flex-direction: initial;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: revert;
+			column-gap: 1.25rem;
+			row-gap: 1.25rem;
+			margin-top: unset;
+		}
+
+		li {
+			width: 9.375rem;
+
+			@media #{$mq_w1000_up} {
+				width: revert;
+			}
+		}
+	}
+
+	&__all-tags { // <button>
+		@include tags-design;
+		background-color: unset;
+		font: {
+			family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+			size: 1rem;
+		}
+		transition-property: background-color color;
+		transition-duration: 0.3s;
+		cursor: pointer;
+		color: $wooops;
+		border-color: $wooops;
+		width: 100%;
+
+		&:hover {
+			color: $white;
+			background-color: $wooops;
+		}
+
+		&.active {
+			@extend .projects__all-tags:hover;
+
+			@media #{$mq_w1000_up} {
+				outline: {
+					style: solid;
+					width: 0.0625rem;
+					color: $wooops;
+					offset: 0.3125rem;
+				}
+			}
+		}
+	}
+
+	&__cards-container { // <div>
+		@include container;
+		margin-top: 6.25rem;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		column-gap: 1.25rem;
+		row-gap: 6.25rem;
+		position: relative;
+	}
+
+	&__cards { // <div>
+		max-width: 25rem;
+	}
+
+	&__thumbnails { // <div>
+		position: relative;
+		display: flex;
+		justify-content: space-evenly;
+
+		.thumbnail {
+			&__desktop { // <img>
+				width: 100%;
+				vertical-align: middle;
+			}
+
+			&__mobile { // <img>
+				width: 30%;
+				vertical-align: middle;
+				position: absolute;
+				top: 1.25rem;
+				right: 0;
+				box-shadow: 0 0 2.5rem 0.625rem $black_shadow;
+			}
+		}
+	}
+
+	// &__informations { // <div>
+	// }
+
+	&__client-name { // <p>
+		margin: {
+			top: 0;
+			right: 0;
+			bottom: 1.875rem;
+			left: 0;
+		}
+		color: $white;
+		font: {
+			family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
+			size: 1.25rem;
+			weight: 700;
+		}
+	}
+
+	// &__presentation { // <p>
+	// }
+
+	// &__specifications { // <p>
+	// }
+
+	&__post-tags-container { // <ul>
+		position: relative;
+		display: flex;
+		column-gap: 1.25rem;
+		margin: {
+			top: 3.125rem;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		padding: 0;
+		list-style: none;
+	}
+
+	&__post-tags { // <li>
+		@include tags-design;
+	}
+
+	&__link { // <a>
+		@include link-submit-load;
+		margin-top: 1.875rem;
+		text-align: center;
+		height: 2.1875rem;
+		line-height: 2.1875rem;
+		text: {
+			decoration: unset;
+			transform: uppercase;
+		}
+	}
+
+	&__more { // <button>
+		@include link-submit-load;
+		padding: {
+			right: 1.25rem;
+			left: 1.25rem;
+		}
+		margin: {
+			top: 6.25rem;
+			right: auto;
+			left: auto;
+		}
+	}
+
+	&__end { // <div>
+		@include container;
+		text-align: center;
+		color: $white;
+		margin-top: 6.25rem;
+	}
+
+	&__empty { // <div>
+		@include container;
+		text-align: center;
+		color: $white;
+	}
+}
