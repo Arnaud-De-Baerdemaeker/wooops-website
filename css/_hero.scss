@@ -29,6 +29,7 @@
 			font-weight: 100;
 			display: flex;
 			flex-direction: column;
+			z-index: 1;
 
 			@media #{$portrait} {
 				font-size: 1.375rem;
