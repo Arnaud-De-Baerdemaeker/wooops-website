@@ -335,17 +335,28 @@
 
 		&__item { // <li>
 			@include services-item;
-			@include card-dark;
 			display: flex;
+			align-items: center;
 			text-align: center;
-			align-content: center;
+			justify-content: center;
+			max-width: 25rem;
+			color: $black;
+			padding: 1.25rem;
+			border: {
+				style: solid;
+				width: 0.063rem;
+				color: $white;
+			}
 			font: {
 				size: 1.125rem;
 				weight: 600;
 			}
 			width: 12.5rem;
-			color: $black;
 			background-color: $white;
+
+			@media #{$mq_w1500_up} {
+				padding: 2.5rem;
+			}
 
 			&:after {
 				content: unset;
