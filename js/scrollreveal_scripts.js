@@ -6,6 +6,9 @@ const mq_w999_max = window.matchMedia("(max-width: 999px)");
 const mq_w1000_min = window.matchMedia("(min-width: 1000px)");
 const mq_w1100_min = window.matchMedia("(min-width: 1100px)");
 
+let screen_height = window.innerHeight;
+let screen_scroll = window.scrollY;
+
 // ---- ALL SCREEN SIZES ----
 // MENU BAR
 sr.reveal(".header", {
@@ -14,7 +17,7 @@ sr.reveal(".header", {
 	duration: 1000
 });
 
-sr.reveal(".menu-item-type-custom", {
+sr.reveal(".menu__agency, .menu__services, .menu__projects, .menu__contact", {
 	origin: "top",
 	distance: "100px",
 	duration: 1000,
@@ -44,11 +47,20 @@ sr.reveal("#text_2", {
 	delay: 3000
 });
 
-sr.reveal(".introduction__logo-container", {
-	scale: 0,
-	duration: 2000,
-	delay: 4000
-});
+if (screen_scroll >= screen_height / 2) {
+	sr.reveal(".menu__wooops", {
+		scale: 0,
+		duration: 2000,
+		delay: 1500
+	});
+}
+else {
+	sr.reveal(".introduction__logo-container", {
+		scale: 0,
+		duration: 2000,
+		delay: 4000
+	});
+}
 // /HERO
 
 // H2 TITLES
@@ -239,6 +251,15 @@ else if (mq_w1000_min.matches) {
 		interval: 250
 	});
 }
+
+sr.reveal(".projects__more", {
+	origin: "top",
+	distance: "100px",
+	duration: 2000,
+	viewOffset: {
+		bottom: 75
+	}
+})
 // /CONTENT
 
 // FOOTER
