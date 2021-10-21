@@ -30,7 +30,7 @@
 			align-items: center;
 			height: inherit;
 
-			.menu-item { // <li>
+			&-item { // <li>
 				a {
 					text: {
 						decoration: none;
@@ -40,41 +40,49 @@
 						weight: 500;
 						size: 0.625rem;
 					}
-					transition: {
-						property: font-size;
-						duration: 0.5s;
-					}
 					color: $black;
-
-					&:hover {
-						font-size: 1.25rem;
-					}
 
 					@media #{$mq_w475_up} {
 						font-size: 0.813rem;
-
-						&:hover {
-							font-size: 1.219rem;
-						}
 					}
 
 					@media #{$mq_w800_up} {
 						font-size: 1rem;
 						word-spacing: 0.25rem;
-
-						&:hover {
-							font-size: 1.5rem;
-						}
 					}
 
 					@media #{$mq_w1300_up} {
 						font-size: 1.25rem;
+					}
 
-						&:hover {
-							font-size: 1.875rem;
+					&:hover {
+						border-bottom: {
+							style: solid;
+							width: 2px;
+							color: $black;
 						}
 					}
 				}
+			}
+
+			&__wooops { // <li>
+				order: 3;
+			}
+
+			&__agency { // <li>
+				order: 1;
+			}
+
+			&__services { // <li>
+				order: 2;
+			}
+
+			&__projects { // <li>
+				order: 4;
+			}
+
+			&__contact { // <li>
+				order: 5;
 			}
 		}
 	}
