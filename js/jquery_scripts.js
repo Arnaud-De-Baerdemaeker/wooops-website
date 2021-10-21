@@ -23,10 +23,10 @@
 		let screen_height = window.innerHeight;
 		let screen_scroll = window.scrollY;
 
-		$(".menu__wooops").hide();
+		$(".menu__wooops > a").text("");
 
 		if (screen_scroll >= screen_height / 2) {
-			$(".menu__wooops>a").text("Wooops Agency").replaceWith($(".introduction__logo-container"));
+			$(".menu__wooops>a").append($(".introduction__logo-container"));
 			$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller");
 			$(".introduction__logo-image").removeClass().addClass("introduction__logo-image--smaller");
 			$(".menu__wooops").show();
@@ -42,7 +42,7 @@
 			let screen_scroll = window.scrollY;
 
 			if (screen_scroll >= screen_height / 2) {
-				$(".menu__wooops>a").text("Wooops Agency").replaceWith($(".introduction__logo-container"));
+				$(".menu__wooops > a").append($(".introduction__logo-container"));
 				$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller");
 				$(".introduction__logo-image").removeClass().addClass("introduction__logo-image--smaller");
 				$(".menu__wooops").show();
