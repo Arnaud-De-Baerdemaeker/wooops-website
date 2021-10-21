@@ -308,3 +308,39 @@
 		}
 	}
 }
+
+.introduction__logo-container--smaller { // <h1>
+	background-color: $white;
+	margin: {
+		top: 0;
+		bottom: 0;
+	}
+	transform: rotate(45deg);
+	display: flex;
+	align-self: center;
+	align-items: center;
+	box-shadow: 7px 7px 10px -4px $black_shadow;
+	z-index: 0;
+	position: relative;
+	top: 25px;
+	width: 90px;
+	height: 90px;
+
+	@media #{$mq_w450_up} {
+		width: 100px;
+		height: 100px;
+		top: 30px;
+	}
+
+	@media #{$mq_w800_up} {
+		width: 150px;
+		height: 150px;
+		top: 37px;
+	}
+}
+
+.introduction__logo-image--smaller { // <img>
+	vertical-align: middle;
+	width: 100%;
+	transform: rotate(-45deg);
+}
