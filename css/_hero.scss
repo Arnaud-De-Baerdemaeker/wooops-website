@@ -325,11 +325,14 @@
 	top: 25px;
 	width: 90px;
 	height: 90px;
+	top: 5px;
+	left: calc(100vw / 2 - (90px / 2));
 
 	@media #{$mq_w450_up} {
 		width: 100px;
 		height: 100px;
-		top: 30px;
+		top: 10px;
+		left: calc(100vw / 2 - (100px / 2));
 	}
 
 	@media #{$mq_w800_up} {
