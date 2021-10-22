@@ -11,19 +11,19 @@ let screen_scroll = window.scrollY;
 
 // ---- ALL SCREEN SIZES ----
 // MENU BAR
-sr.reveal(".header", {
-	origin: "top",
-	distance: "100px",
-	duration: 1000
-});
+// sr.reveal(".header", {
+// 	origin: "top",
+// 	distance: "100px",
+// 	duration: 1000
+// });
 
-sr.reveal(".menu__agency, .menu__services, .menu__projects, .menu__contact", {
-	origin: "top",
-	distance: "100px",
-	duration: 1000,
-	delay: 500,
-	interval: 200
-});
+// sr.reveal(".menu__agency, .menu__services, .menu__projects, .menu__contact", {
+// 	origin: "top",
+// 	distance: "100px",
+// 	duration: 1000,
+// 	delay: 500,
+// 	interval: 200
+// });
 // /MENU BAR 
 
 // HERO
