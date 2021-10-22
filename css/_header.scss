@@ -135,7 +135,7 @@
 	padding: 0;
 
 	@media #{$mq_w450_up} {
-		top: calc(60px / 2 - 12px);
+		top: calc(60px / 2 - (24px / 2));
 	}
 
 	img {
