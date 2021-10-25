@@ -232,7 +232,7 @@ body main {
 
 @media (min-width: 28.125rem) {
   .mobile-menu-toggle {
-    top: calc(60px / 2 - 12px);
+    top: calc(60px / 2 - (24px / 2));
   }
 }
 
@@ -660,7 +660,7 @@ body main {
   width: 90px;
   height: 90px;
   top: 5px;
-  left: calc(100vw / 2 - (90px / 2));
+  left: calc(100% / 2 - calc(90px / 2));
 }
 
 @media (min-width: 28.125rem) {
@@ -668,7 +668,7 @@ body main {
     width: 100px;
     height: 100px;
     top: 10px;
-    left: calc(100vw / 2 - (100px / 2));
+    left: calc(100% / 2 - calc(100px / 2));
   }
 }
 
@@ -677,6 +677,7 @@ body main {
     width: 150px;
     height: 150px;
     top: 37px;
+    left: calc(100% / 2 - calc(150px / 2));
   }
 }
 
