@@ -80,7 +80,7 @@
 					$(".menu__wooops > a").append($(".introduction__logo-container"));
 					$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller");
 					$(".introduction__logo-image").removeClass().addClass("introduction__logo-image--smaller");
-					$(".menu__wooops").show();
+					$(".menu__wooops").fadeIn();
 				}
 				else {
 					$(".menu__wooops").hide();
