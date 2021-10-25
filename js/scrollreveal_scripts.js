@@ -6,25 +6,28 @@ const mq_w999_max = window.matchMedia("(max-width: 999px)");
 const mq_w1000_min = window.matchMedia("(min-width: 1000px)");
 const mq_w1100_min = window.matchMedia("(min-width: 1100px)");
 
+let screen_width = window.innerWidth;
 let screen_height = window.innerHeight;
 let screen_scroll = window.scrollY;
 
 // ---- ALL SCREEN SIZES ----
 // MENU BAR
-// sr.reveal(".header", {
-// 	origin: "top",
-// 	distance: "100px",
-// 	duration: 1000
-// });
+sr.reveal(".header", {
+	origin: "top",
+	distance: "100px",
+	duration: 1000
+});
 
-// sr.reveal(".menu__agency, .menu__services, .menu__projects, .menu__contact", {
-// 	origin: "top",
-// 	distance: "100px",
-// 	duration: 1000,
-// 	delay: 500,
-// 	interval: 200
-// });
-// /MENU BAR 
+if (screen_width >= 800) {
+	sr.reveal(".menu__agency, .menu__services, .menu__projects, .menu__contact", {
+		origin: "top",
+		distance: "100px",
+		duration: 1000,
+		delay: 500,
+		interval: 200
+	});
+}
+
 
 // HERO
 sr.reveal(".jarallax-img", {
@@ -61,7 +64,7 @@ else {
 		delay: 4000
 	});
 }
-// /HERO
+
 
 // H2 TITLES
 if (mq_w499_max.matches) {
@@ -196,7 +199,7 @@ else if (mq_w1100_min.matches) {
 		}
 	});
 }
-// /H2 TITLES
+
 
 // H3 TITLES
 sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__title, .service-5__title, .service-6__title, .service-7__title", {
@@ -207,7 +210,7 @@ sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__
 		bottom: 75
 	}
 });
-// /H3 TITLES
+
 
 // CONTENT
 sr.reveal(".service-1-1, .service-1-2, .service-1-3, #service-2__item-1, #service-2__item-2, #service-2__item-3, #service-3__text-1, #service-3__text-2, .service-4-1, .service-4-2, .service-4-3, .service-4-4, .projects__cards, .projects__more, .projects__end, .projects__empty, .contact__introduction, .wpcf7, .footer__logo, .footer__address, .footer__contact, .footer__social", {
@@ -260,7 +263,7 @@ sr.reveal(".projects__more", {
 		bottom: 75
 	}
 })
-// /CONTENT
+
 
 // FOOTER
 sr.reveal(".footer", {
@@ -273,6 +276,6 @@ sr.reveal(".footer", {
 
 sr.reveal(".footer__copyright", {
 	opacity: 0,
-	duration: 2000
+	duration: 2000,
+	delay: 2000
 });
-// /FOOTER
