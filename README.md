@@ -2,6 +2,13 @@
 
 ## Versions
 
+### 2.3.0
+
+* Develop a menu for mobile screens
+* Keep the logo in header when scrolling down
+* Render the entire project's card clickable
+* Small adjustments on animations
+
 ### 2.2.0
 
 * Add content in the "Projets" section
