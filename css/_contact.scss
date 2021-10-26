@@ -36,12 +36,13 @@
 
 	&__text { // <p>
 		@include services-text;
-		@include card-dark;
+		@include card-container-light;
 		text-align: justify;
 	}
 
 	.wpcf7 { // <div>
-		color: $white;
+		color: $black;
+		background-color: $white;
 		border: {
 			style: solid;
 			width: 0.0625rem;
@@ -83,7 +84,7 @@
 					bottom: {
 						style: solid;
 						width: 0.0625rem;
-						color: $white;
+						color: $black;
 					}
 					left: none;
 				}
@@ -93,8 +94,8 @@
 				}
 				display: block;
 				width: 100%;
-				background-color: $black;
-				color: $white;
+				background-color: inherit;
+				color: inherit;
 			}
 
 			.form { // no tags
@@ -150,7 +151,7 @@
 						width: 50%;
 					}
 
-					.ajax-loader { // <span>
+					.wpcf7-spinner { // <span>
 						position: absolute;
 						top: calc(3.125rem - (1.5rem + 0.75rem));
 						right: calc(50% + 1.25rem);

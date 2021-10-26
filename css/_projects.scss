@@ -129,8 +129,34 @@
 		position: relative;
 	}
 
-	&__cards { // <div>
+	&__cards { // <article>
 		max-width: 25rem;
+		transition-property: transform;
+		transition-duration: 0.5s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__link { // <a>
+		display: block;
+		text-decoration: none;
+	}
+
+	&__client-name { // <p>
+		margin: {
+			top: 0;
+			right: 0;
+			bottom: 1.875rem;
+			left: 0;
+		}
+		color: $white;
+		font: {
+			family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
+			size: 1.25rem;
+			weight: 700;
+		}
 	}
 
 	&__thumbnails { // <div>
@@ -158,21 +184,6 @@
 	// &__informations { // <div>
 	// }
 
-	&__client-name { // <p>
-		margin: {
-			top: 0;
-			right: 0;
-			bottom: 1.875rem;
-			left: 0;
-		}
-		color: $white;
-		font: {
-			family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
-			size: 1.25rem;
-			weight: 700;
-		}
-	}
-
 	// &__presentation { // <p>
 	// }
 
@@ -195,18 +206,6 @@
 
 	&__post-tags { // <li>
 		@include tags-design;
-	}
-
-	&__link { // <a>
-		@include link-submit-load;
-		margin-top: 1.875rem;
-		text-align: center;
-		height: 2.1875rem;
-		line-height: 2.1875rem;
-		text: {
-			decoration: unset;
-			transform: uppercase;
-		}
 	}
 
 	&__more { // <button>
