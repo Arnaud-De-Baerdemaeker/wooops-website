@@ -147,6 +147,7 @@
 	vertical-align: middle;
 	border-radius: 7.813rem;
 	box-shadow: 0rem 0rem 2.5rem 0.625rem $black_shadow;
+	z-index: 1;
 
 	@media #{$mq_w400_up} {
 		width: 9.375rem;
@@ -281,25 +282,6 @@
 
 	&:last-child:after {
 		content: unset;
-	}
-}
-
-@mixin card-dark {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	max-width: 25rem;
-	color: $white;
-	padding: 1.25rem;
-	border: {
-		style: solid;
-		width: 0.063rem;
-		color: $white;
-	}
-
-	@media #{$mq_w1500_up} {
-		padding: 2.5rem;
 	}
 }
 

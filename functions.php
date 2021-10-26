@@ -11,9 +11,9 @@ function add_tags() {
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/style.css'; ?>">
 	<!-- Development link -->
-	<script src="https://unpkg.com/scrollreveal"></script>
+	<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 	<!-- Production link -->
-	<!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	<script src="<?php echo get_template_directory_uri().'/js/scrollreveal_scripts.js'; ?>" type="module"></script>
 	<title><?php the_title(); ?></title>
 <?php
@@ -36,11 +36,11 @@ add_action("after_setup_theme", "featured_image_support");
 
 
 // REGISTER JQUERY JAVASCRIPT FILE
-function register_jquery() {
+function register_ajax_scripts() {
 	wp_enqueue_script("ajax", get_template_directory_uri()."/js/ajax_scripts.js", array("jquery"), null, true);
 	wp_localize_script("ajax", "wp_ajax", array("ajax_url" => admin_url("admin-ajax.php")));
 }
-add_action("wp_enqueue_scripts", "register_jquery");
+add_action("wp_enqueue_scripts", "register_ajax_scripts");
 
 
 // FILTER PROJECTS
@@ -131,3 +131,10 @@ function load_more_projects() {
 }
 add_action("wp_ajax_load_more_projects", "load_more_projects");
 add_action("wp_ajax_nopriv_load_more_projects", "load_more_projects");
+
+
+// REGISTER CUSTOM JS SCRIPTS
+function register_jquery_scripts() {
+	wp_enqueue_script("jquery_scripts", get_template_directory_uri()."/js/jquery_scripts.js", array("jquery"), null, true);
+}
+add_action("wp_enqueue_scripts", "register_jquery_scripts");
