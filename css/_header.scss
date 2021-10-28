@@ -41,6 +41,13 @@
 						size: 0.625rem;
 					}
 					color: $black;
+					border-bottom: {
+						style: solid;
+						width: 2px;
+						color: transparent;
+					}
+					transition-property: border-bottom-color;
+					transition-duration: 0.5s;
 
 					@media #{$mq_w475_up} {
 						font-size: 0.813rem;
@@ -56,11 +63,7 @@
 					}
 
 					&:hover {
-						border-bottom: {
-							style: solid;
-							width: 2px;
-							color: $black;
-						}
+						border-bottom-color: $black;
 					}
 				}
 			}
@@ -135,7 +138,7 @@
 	padding: 0;
 
 	@media #{$mq_w450_up} {
-		top: calc(60px / 2 - (24px / 2));
+		top: calc(60px / 2 - 24px / 2);
 	}
 
 	img {
