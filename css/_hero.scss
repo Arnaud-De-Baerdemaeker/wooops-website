@@ -319,27 +319,27 @@
 	display: flex;
 	align-self: center;
 	align-items: center;
-	box-shadow: 7px 7px 10px -4px $black_shadow;
+	box-shadow: 0.4375rem 0.4375rem 0.625rem -0.25rem $black_shadow;
 	z-index: 0;
 	position: relative;
-	top: 25px;
-	width: 90px;
-	height: 90px;
-	top: 5px;
-	left: calc(100% / 2 - calc(90px / 2));
+	top: 1.5625rem;
+	width: 5.625rem;
+	height: 5.625rem;
+	top: 0.3125rem;
+	left: calc(100% / 2 - 5.625rem / 2);
 
 	@media #{$mq_w450_up} {
-		width: 100px;
-		height: 100px;
-		top: 10px;
-		left: calc(100% / 2 - calc(100px / 2));
+		width: 6.25rem;
+		height: 6.25rem;
+		top: 0.625rem;
+		left: calc(100% / 2 - 6.25rem / 2);
 	}
 
 	@media #{$mq_w800_up} {
-		width: 150px;
-		height: 150px;
-		top: 37px;
-		left: calc(100% / 2 - calc(150px / 2));
+		width: 9.375rem;
+		height: 9.375rem;
+		top: 2.3125rem;
+		left: calc(100% / 2 - 9.375rem / 2);
 	}
 }
 
