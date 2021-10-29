@@ -1,10 +1,4 @@
 const sr = ScrollReveal();
-const mq_w499_max = window.matchMedia("(max-width: 499px)");
-const mq_w500_min = window.matchMedia("(min-width: 500px)");
-const mq_w900_min = window.matchMedia("(min-width: 900px)");
-const mq_w999_max = window.matchMedia("(max-width: 999px)");
-const mq_w1000_min = window.matchMedia("(min-width: 1000px)");
-const mq_w1100_min = window.matchMedia("(min-width: 1100px)");
 
 let screen_width = window.innerWidth;
 let screen_height = window.innerHeight;
@@ -67,7 +61,7 @@ else {
 
 
 // H2 TITLES
-if (mq_w499_max.matches) {
+if (screen_width < 500) {
 	sr.reveal(".agency__title, .services__title, .projects__title, .contact__title", {
 		origin: "top",
 		distance: "100px",
@@ -100,7 +94,7 @@ if (mq_w499_max.matches) {
 		}
 	});
 }
-else if (mq_w500_min.matches) {
+else if (screen_width >= 500 && screen_width < 899) {
 	sr.reveal(".agency__title, .services__title, .projects__title, .contact__title", {
 		origin: "top",
 		distance: "100px",
@@ -133,7 +127,7 @@ else if (mq_w500_min.matches) {
 		}
 	});
 }
-else if (mq_w900_min.matches) {
+else if (screen_width >= 900 && screen_width < 1099) {
 	sr.reveal(".agency__title, .services__title, .projects__title, .contact__title", {
 		origin: "top",
 		distance: "100px",
@@ -166,7 +160,7 @@ else if (mq_w900_min.matches) {
 		}
 	});
 }
-else if (mq_w1100_min.matches) {
+else if (screen_width >= 1100) {
 	sr.reveal(".agency__title, .services__title, .projects__title, .contact__title", {
 		origin: "top",
 		distance: "100px",
@@ -213,7 +207,7 @@ sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__
 
 
 // CONTENT
-sr.reveal(".service-1-1, .service-1-2, .service-1-3, #service-2__item-1, #service-2__item-2, #service-2__item-3, #service-3__text-1, #service-3__text-2, .service-4-1, .service-4-2, .service-4-3, .service-4-4, .projects__cards, .projects__more, .projects__end, .projects__empty, .contact__introduction, .wpcf7, .footer__logo, .footer__address, .footer__contact, .footer__social", {
+sr.reveal(".service-1-1, .service-1-2, .service-1-3, #service-2__item-1, #service-2__item-2, #service-2__item-3, #service-3__text-1, #service-3__text-2, .service-4-1, .service-4-2, .service-4-3, .service-4-4, .projects__cards, .projects__more, .projects__end, .projects__empty, .contact__introduction, .wpcf7", {
 	origin: "top",
 	distance: "100px",
 	duration: 2000,
@@ -233,7 +227,7 @@ sr.reveal("#service-7__item-1, #service-7__item-2, #service-7__item-3, #service-
 	interval: 250
 });
 
-if (mq_w999_max.matches) {
+if (screen_width < 1000) {
 	sr.reveal(".projects__all-tags-container", {
 		origin: "top",
 		distance: "100px",
@@ -243,7 +237,7 @@ if (mq_w999_max.matches) {
 		}
 	});
 }
-else if (mq_w1000_min.matches) {
+else if (screen_width >= 1000) {
 	sr.reveal(".projects__all-tags", {
 		origin: "top",
 		distance: "100px",
@@ -272,6 +266,13 @@ sr.reveal(".footer", {
 	viewOffset: {
 		bottom: 75
 	}
+});
+
+sr.reveal(".footer__logo, .footer__address, .footer__contact, .footer__social", {
+	origin: "top",
+	distance: "100px",
+	duration: 2000,
+	interval: 500
 });
 
 sr.reveal(".footer__copyright", {

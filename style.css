@@ -4,7 +4,7 @@ Theme URI:
 Author: Wooops Agency
 Author URI: 
 Description: Wooops Agency's theme
-Version: 2.3.0
+Version: 2.4.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wooopsagency
@@ -67,7 +67,7 @@ body main {
 }
 
 .header {
-  height: 50px;
+  height: 3.125rem;
   background-color: white;
   position: -webkit-sticky;
   position: sticky;
@@ -79,13 +79,13 @@ body main {
 
 @media (min-width: 28.125rem) {
   .header {
-    height: 60px;
+    height: 3.75rem;
   }
 }
 
 @media (min-width: 50rem) {
   .header {
-    height: 75px;
+    height: 4.6875rem;
   }
 }
 
@@ -119,6 +119,13 @@ body main {
   font-weight: 500;
   font-size: 0.625rem;
   color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 0.125rem;
+  border-bottom-color: transparent;
+  -webkit-transition-property: border-bottom-color;
+  transition-property: border-bottom-color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 @media (min-width: 29.688rem) {
@@ -141,8 +148,6 @@ body main {
 }
 
 .header .menu-menu-principal-container .menu-item a:hover {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
   border-bottom-color: black;
 }
 
@@ -178,7 +183,7 @@ body main {
 
 .header .menu-menu-principal-container--mobile {
   position: absolute;
-  top: 50px;
+  top: 3.125rem;
   right: 0;
   left: 0;
   background-color: white;
@@ -186,13 +191,13 @@ body main {
 
 @media (min-width: 28.125rem) {
   .header .menu-menu-principal-container--mobile {
-    top: 60px;
+    top: 3.75rem;
   }
 }
 
 .header .menu-menu-principal-container--mobile .menu {
-  margin-top: 63px;
-  margin-bottom: 20px;
+  margin-top: 3.9375rem;
+  margin-bottom: 1.25rem;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -202,12 +207,12 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 20px;
+  row-gap: 1.25rem;
 }
 
 @media (min-width: 28.125rem) {
   .header .menu-menu-principal-container--mobile .menu {
-    margin-top: 70px;
+    margin-top: 4.375rem;
   }
 }
 
@@ -222,8 +227,8 @@ body main {
 
 .mobile-menu-toggle {
   position: absolute;
-  top: calc(50px / 2 - 12px);
-  left: 20px;
+  top: calc(3.125rem / 2 - 0.75rem);
+  left: 1.25rem;
   z-index: 2;
   border: none;
   background: none;
@@ -232,7 +237,7 @@ body main {
 
 @media (min-width: 28.125rem) {
   .mobile-menu-toggle {
-    top: calc(60px / 2 - (24px / 2));
+    top: calc(3.75rem / 2 - 1.5rem / 2);
   }
 }
 
@@ -652,32 +657,32 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 7px 7px 10px -4px rgba(0, 0, 0, 0.4);
-          box-shadow: 7px 7px 10px -4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem -0.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.4375rem 0.4375rem 0.625rem -0.25rem rgba(0, 0, 0, 0.4);
   z-index: 0;
   position: relative;
-  top: 25px;
-  width: 90px;
-  height: 90px;
-  top: 5px;
-  left: calc(100% / 2 - calc(90px / 2));
+  top: 1.5625rem;
+  width: 5.625rem;
+  height: 5.625rem;
+  top: 0.3125rem;
+  left: calc(100% / 2 - 5.625rem / 2);
 }
 
 @media (min-width: 28.125rem) {
   .introduction__logo-container--smaller {
-    width: 100px;
-    height: 100px;
-    top: 10px;
-    left: calc(100% / 2 - calc(100px / 2));
+    width: 6.25rem;
+    height: 6.25rem;
+    top: 0.625rem;
+    left: calc(100% / 2 - 6.25rem / 2);
   }
 }
 
 @media (min-width: 50rem) {
   .introduction__logo-container--smaller {
-    width: 150px;
-    height: 150px;
-    top: 37px;
-    left: calc(100% / 2 - calc(150px / 2));
+    width: 9.375rem;
+    height: 9.375rem;
+    top: 2.3125rem;
+    left: calc(100% / 2 - 9.375rem / 2);
   }
 }
 
@@ -710,7 +715,7 @@ body main {
 
 @media (min-width: 50rem) {
   .agency {
-    scroll-margin-top: calc(4.688rem + 1.5625rem);
+    scroll-margin-top: calc(4.6875rem + 1.5625rem);
   }
 }
 
@@ -920,7 +925,7 @@ body main {
 
 @media (min-width: 50rem) {
   .services {
-    scroll-margin-top: calc(4.688rem + 1.5625rem);
+    scroll-margin-top: calc(4.6875rem + 1.5625rem);
   }
 }
 
@@ -2033,7 +2038,7 @@ body main {
 
 @media (min-width: 50rem) {
   .projects {
-    scroll-margin-top: calc(4.688rem + 1.5625rem);
+    scroll-margin-top: calc(4.6875rem + 1.5625rem);
   }
 }
 
@@ -2521,7 +2526,7 @@ body main {
 
 .projects__more {
   display: block;
-  height: 50px;
+  height: 3.125rem;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -2627,7 +2632,7 @@ body main {
 
 @media (min-width: 50rem) {
   .contact {
-    scroll-margin-top: calc(4.688rem + 1.5625rem);
+    scroll-margin-top: calc(4.6875rem + 1.5625rem);
   }
 }
 
@@ -2995,7 +3000,7 @@ body main {
 
 .contact .wpcf7 .wpcf7-form.init .form__submit input[type="submit"], .contact .wpcf7 .submitting .form__submit input[type="submit"], .contact .wpcf7 .invalid .form__submit input[type="submit"], .contact .wpcf7 .failed .form__submit input[type="submit"] {
   display: block;
-  height: 50px;
+  height: 3.125rem;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
