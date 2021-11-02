@@ -2,6 +2,10 @@
 
 ## Versions
 
+### 2.4.1
+
+* Fix a value to allow the active section indicator to appear after a click on a menu link
+
 ### 2.4.0
 
 * Add an indicator in the menu that shows which section the user is currently browsing
