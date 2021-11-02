@@ -119,9 +119,6 @@ body main {
   font-weight: 500;
   font-size: 0.625rem;
   color: black;
-  border-top-style: solid;
-  border-top-width: 0.125rem;
-  border-top-color: transparent;
   border-bottom-style: solid;
   border-bottom-width: 0.125rem;
   border-bottom-color: transparent;
@@ -151,7 +148,7 @@ body main {
 }
 
 .header .menu-menu-principal-container .menu-item a:hover {
-  border-top-color: black;
+  border-bottom-color: black;
 }
 
 .header .menu-menu-principal-container .menu__wooops {

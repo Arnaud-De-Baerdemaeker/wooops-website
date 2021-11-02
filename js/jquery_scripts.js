@@ -3,63 +3,6 @@
 		let screen_width = $(window).width();
 		let screen_height = window.innerHeight;
 		let screen_scrollY = window.scrollY;
-		let agency = $("#agency").offset().top;
-		let services = $("#services").offset().top;
-		let projects = $("#projects").offset().top;
-		let contact = $("#contact").offset().top;
-
-
-		// SHOW ACTIVE ANCHOR ON SCROLL
-		if (screen_width < 450) {
-			agency = agency - 50 - 25;
-			services = services - 50 - 25;
-			projects = projects - 50 - 25;
-			contact = contact - 50 - 25;
-		}
-		else if (screen_width >= 450 && screen_width < 800) {
-			agency = agency - 60 - 25;
-			services = services - 60 - 25;
-			projects = projects - 60 - 25;
-			contact = contact - 60 - 25;
-		}
-		else {
-			agency = agency - 75 - 26;
-			services = services - 75 - 26;
-			projects = projects - 75 - 26;
-			contact = contact - 75 - 26;
-		}
-
-		$(window).on("scroll", function() {
-			let screen_scrollY = window.scrollY;
-
-			if (screen_scrollY >= agency && screen_scrollY < services) {
-				$(".menu__agency > a").css({"border-bottom-color": "rgb(0, 0, 0)"});
-				$(".menu__services > a").css({"border-bottom-color": "transparent"});
-				$(".menu__projects > a").css({"border-bottom-color": "transparent"});
-				$(".menu__contact > a").css({"border-bottom-color": "transparent"});
-			}
-			else if (screen_scrollY >= services && screen_scrollY < projects) {
-				$(".menu__agency > a").css({"border-bottom-color": "transparent"});
-				$(".menu__services > a").css({"border-bottom-color": "rgb(0, 0, 0)"});
-				$(".menu__projects > a").css({"border-bottom-color": "transparent"});
-				$(".menu__contact > a").css({"border-bottom-color": "transparent"});
-			}
-			else if (screen_scrollY >= projects && screen_scrollY < contact) {
-				$(".menu__agency > a").css({"border-bottom-color": "transparent"});
-				$(".menu__services > a").css({"border-bottom-color": "transparent"});
-				$(".menu__projects > a").css({"border-bottom-color": "rgb(0, 0, 0)"});
-				$(".menu__contact > a").css({"border-bottom-color": "transparent"});
-			}
-			else if (screen_scrollY >= contact) {
-				$(".menu__agency > a").css({"border-bottom-color": "transparent"});
-				$(".menu__services > a").css({"border-bottom-color": "transparent"});
-				$(".menu__projects > a").css({"border-bottom-color": "transparent"});
-				$(".menu__contact > a").css({"border-bottom-color": "rgb(0, 0, 0)"});
-			}
-			else {
-				$(".menu__agency > a, .menu__services > a, .menu__projects > a, .menu__contact > a").css({"border-bottom-color": "transparent"});
-			}
-		});
 
 
 		// CONTROL KEYWORDS' DROPDOWN MENU ON CLICK
