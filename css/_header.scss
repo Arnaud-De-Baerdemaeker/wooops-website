@@ -41,10 +41,17 @@
 						size: 0.625rem;
 					}
 					color: $black;
-					border-bottom: {
-						style: solid;
-						width: 0.125rem;
-						color: transparent;
+					border: {
+						top: {
+							style: solid;
+							width: 0.125rem;
+							color: transparent;
+						}
+						bottom: {
+							style: solid;
+							width: 0.125rem;
+							color: transparent;
+						}
 					}
 					transition-property: border-bottom-color;
 					transition-duration: 0.5s;
@@ -63,7 +70,7 @@
 					}
 
 					&:hover {
-						border-bottom-color: $black;
+						border-top-color: $black;
 					}
 				}
 			}
