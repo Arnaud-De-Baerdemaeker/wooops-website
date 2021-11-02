@@ -23,10 +23,10 @@
 			contact = contact - 60 - 25;
 		}
 		else {
-			agency = agency - 75 - 25;
-			services = services - 75 - 25;
-			projects = projects - 75 - 25;
-			contact = contact - 75 - 25;
+			agency = agency - 75 - 26;
+			services = services - 75 - 26;
+			projects = projects - 75 - 26;
+			contact = contact - 75 - 26;
 		}
 
 		$(window).on("scroll", function() {
