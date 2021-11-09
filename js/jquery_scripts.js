@@ -43,32 +43,33 @@
 			$(".header__mobile-menu").on("click", function() {
 				if ($(".menu-menu-principal-container--mobile").css("display") == "none") {
 					$(".menu-menu-principal-container--mobile").fadeIn();
-					$(".introduction__logo-container--smaller").css("box-shadow", "none");
+					$(".introduction__logo-container--smaller").removeClass("shadow").addClass("no-shadow");//css("box-shadow", "none");
 					$(".header__mobile-menu").fadeOut();
 					$(".header__close-menu").fadeIn();
 				}
 				else {
 					$(".menu-menu-principal-container--mobile").fadeOut();
-					$(".introduction__logo-container--smaller").css("box-shadow", "7px 7px 10px -4px rgba(0, 0, 0, 0.4)");
+					$(".introduction__logo-container--smaller").removeClass("no-shadow").addClass("shadow");//css("box-shadow", "7px 7px 10px -4px rgba(0, 0, 0, 0.4)");
 				}
 			});
 
 			$(".header__close-menu").on("click", function() {
 				$(".menu-menu-principal-container--mobile").fadeOut();
+				$(".introduction__logo-container--smaller").removeClass("no-shadow").addClass("shadow");
 				$(".header__close-menu").fadeOut();
 				$(".header__mobile-menu").fadeIn();
 			});
 
 			$(".menu-item").on("click", function() {
 				$(".menu-menu-principal-container--mobile").fadeOut();
-				$(".introduction__logo-container--smaller").css("box-shadow", "7px 7px 10px -4px rgba(0, 0, 0, 0.4)");
+				$(".introduction__logo-container--smaller").removeClass("no-shadow").addClass("shadow");//css("box-shadow", "7px 7px 10px -4px rgba(0, 0, 0, 0.4)");
 				$(".header__close-menu").fadeOut();
 				$(".header__mobile-menu").fadeIn();
 			});
 
 			$(window).on("scroll", function() {
 				$(".menu-menu-principal-container--mobile").fadeOut();
-				$(".introduction__logo-container--smaller").css("box-shadow", "7px 7px 10px -4px rgba(0, 0, 0, 0.4)");
+				$(".introduction__logo-container--smaller").removeClass("no-shadow").addClass("shadow");//css("box-shadow", "7px 7px 10px -4px rgba(0, 0, 0, 0.4)");
 				$(".header__close-menu").fadeOut();
 				$(".header__mobile-menu").fadeIn();
 			});
@@ -110,7 +111,7 @@
 		else {
 			if (screen_scrollY >= screen_height / 2) {
 				$(".header").append($(".introduction__logo-container"));
-				$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller");
+				$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller shadow");
 				$(".introduction__logo-image").removeClass().addClass("introduction__logo-image--smaller");
 				$(".menu__wooops").show();
 
