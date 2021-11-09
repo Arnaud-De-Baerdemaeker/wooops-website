@@ -4,6 +4,8 @@
 		let screen_height = window.innerHeight;
 		let screen_scrollY = window.scrollY;
 
+		$(".menu__wooops > a").text("");
+
 
 		// CONTROL KEYWORDS' DROPDOWN MENU ON CLICK
 		if (screen_width < 1000) {
@@ -24,24 +26,37 @@
 
 		// CHANGE THE DISPLAY OF THE MENU FOLLOWING SIZE SCREEN
 		if (screen_width >= 800) {
-			$(".mobile-menu-toggle").hide();
+			$(".mobile-menu").hide();
 			$(".menu-menu-principal-container--mobile").removeClass().addClass("menu-menu-principal-container");
 			$(".menu-menu-principal-container").show();
 		}
 		else {
-			$(".mobile-menu-toggle").show();
+			$(".mobile-menu").show();
+			$(".close").hide();
 			$(".menu-menu-principal-container").removeClass().addClass("menu-menu-principal-container--mobile");
 			$(".menu-menu-principal-container--mobile").hide();
+		}
 
-			$(".mobile-menu-toggle").on("click", function() {
+
+		// DISPLAY/HIDE MENU ON CLICK/SCROLL
+		if (screen_width < 800) {
+			$(".mobile-menu").on("click", function() {
 				if ($(".menu-menu-principal-container--mobile").css("display") == "none") {
 					$(".menu-menu-principal-container--mobile").fadeIn();
 					$(".introduction__logo-container--smaller").css("box-shadow", "none");
+					$(".mobile-menu").fadeOut();
+					$(".close").fadeIn();
 				}
 				else {
 					$(".menu-menu-principal-container--mobile").fadeOut();
 					$(".introduction__logo-container--smaller").css("box-shadow", "7px 7px 10px -4px rgba(0, 0, 0, 0.4)");
 				}
+			});
+
+			$(".close").on("click", function() {
+				$(".menu-menu-principal-container--mobile").fadeOut();
+				$(".close").fadeOut();
+				$(".mobile-menu").fadeIn();
 			});
 
 			$(".menu-item").on("click", function() {
@@ -57,11 +72,9 @@
 
 
 		// PUT THE LOGO IN THE HEADER WHEN SCROLLING
-		$(".menu__wooops > a").text("");
-
 		if (screen_width >= 800) {
 			if (screen_scrollY >= screen_height / 2) {
-				$(".menu__wooops>a").append($(".introduction__logo-container"));
+				$(".menu__wooops > a").append($(".introduction__logo-container"));
 				$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller");
 				$(".introduction__logo-image").removeClass().addClass("introduction__logo-image--smaller");
 				$(".menu__wooops").show();
