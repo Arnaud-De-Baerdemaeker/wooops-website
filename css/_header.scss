@@ -18,7 +18,7 @@
 		@include viewport-container;
 		height: inherit;
 
-		.menu { // <ul>
+		#menu-menu-principal { // <ul>
 			list-style: none;
 			display: flex;
 			padding: 0;
@@ -31,7 +31,7 @@
 			height: inherit;
 
 			&-item { // <li>
-				a {
+				a[href="#top"], a[href="#agency"], a[href="#services"], a[href="#projects"], a[href="#contact"] {
 					text: {
 						decoration: none;
 						transform: uppercase;
@@ -94,17 +94,18 @@
 			top: 3.125rem;
 			right: 0;
 			left: 0;
+			height: calc(100vh - 3.125rem);
 			background-color: $white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
 			@media #{$mq_w450_up} {
 				top: 3.75rem;
 			}
 
-			.menu {
-				margin: {
-					top: 3.9375rem;
-					bottom: 1.25rem;
-				}
+			#menu-menu-principal { // <ul>
+				margin: 0;
 				padding: 0;
 				list-style: none;
 				display: flex;
@@ -115,12 +116,19 @@
 					margin-top: 4.375rem;
 				}
 
-				&-item { // <li>
+				.menu-item { // <li>
 					text-align: center;
 
-					a {
+					a[href="#top"], a[href="#agency"], a[href="#services"], a[href="#projects"], a[href="#contact"] {
 						color: $black;
-						text-decoration: none;
+						text: {
+							decoration: none;
+							transform: uppercase;
+						}
+						font: {
+							size: 18px;
+							weight: 900;
+						}
 					}
 				}
 			}
@@ -128,7 +136,7 @@
 	}
 }
 
-.mobile-menu-toggle { // <button>
+.header__mobile-menu, .header__close-menu { // <button>
 	position: absolute;
 	top: calc(3.125rem / 2 - 0.75rem);
 	left: 1.25rem;
@@ -141,8 +149,14 @@
 		top: calc(3.75rem / 2 - 1.5rem / 2);
 	}
 
-	img {
+	&__icon {
 		width: 100%;
 		vertical-align: middle;
 	}
+}
+
+.header__contact-shortcut { // <div>
+	@extend .header__mobile-menu, .header__close-menu;
+	right: 1.25rem;
+	left: unset;
 }
