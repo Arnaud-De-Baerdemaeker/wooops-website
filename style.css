@@ -66,6 +66,16 @@ body main {
   background-color: black;
 }
 
+.shadow {
+  -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem -0.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.4375rem 0.4375rem 0.625rem -0.25rem rgba(0, 0, 0, 0.4);
+}
+
+.no-shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .header {
   height: 3.125rem;
   background-color: white;
@@ -96,7 +106,7 @@ body main {
   height: inherit;
 }
 
-.header .menu-menu-principal-container .menu {
+.header .menu-menu-principal-container #menu-menu-principal {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +123,7 @@ body main {
   height: inherit;
 }
 
-.header .menu-menu-principal-container .menu-item a {
+.header .menu-menu-principal-container #menu-menu-principal-item a[href="#top"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#agency"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#services"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#projects"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#contact"] {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -129,53 +139,53 @@ body main {
 }
 
 @media (min-width: 29.688rem) {
-  .header .menu-menu-principal-container .menu-item a {
+  .header .menu-menu-principal-container #menu-menu-principal-item a[href="#top"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#agency"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#services"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#projects"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#contact"] {
     font-size: 0.813rem;
   }
 }
 
 @media (min-width: 50rem) {
-  .header .menu-menu-principal-container .menu-item a {
+  .header .menu-menu-principal-container #menu-menu-principal-item a[href="#top"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#agency"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#services"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#projects"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#contact"] {
     font-size: 1rem;
     word-spacing: 0.25rem;
   }
 }
 
 @media (min-width: 81.25rem) {
-  .header .menu-menu-principal-container .menu-item a {
+  .header .menu-menu-principal-container #menu-menu-principal-item a[href="#top"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#agency"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#services"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#projects"], .header .menu-menu-principal-container #menu-menu-principal-item a[href="#contact"] {
     font-size: 1.25rem;
   }
 }
 
-.header .menu-menu-principal-container .menu-item a:hover {
+.header .menu-menu-principal-container #menu-menu-principal-item a[href="#top"]:hover, .header .menu-menu-principal-container #menu-menu-principal-item a[href="#agency"]:hover, .header .menu-menu-principal-container #menu-menu-principal-item a[href="#services"]:hover, .header .menu-menu-principal-container #menu-menu-principal-item a[href="#projects"]:hover, .header .menu-menu-principal-container #menu-menu-principal-item a[href="#contact"]:hover {
   border-bottom-color: black;
 }
 
-.header .menu-menu-principal-container .menu__wooops {
+.header .menu-menu-principal-container #menu-menu-principal__wooops {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
 }
 
-.header .menu-menu-principal-container .menu__agency {
+.header .menu-menu-principal-container #menu-menu-principal__agency {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
-.header .menu-menu-principal-container .menu__services {
+.header .menu-menu-principal-container #menu-menu-principal__services {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.header .menu-menu-principal-container .menu__projects {
+.header .menu-menu-principal-container #menu-menu-principal__projects {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
 }
 
-.header .menu-menu-principal-container .menu__contact {
+.header .menu-menu-principal-container #menu-menu-principal__contact {
   -webkit-box-ordinal-group: 6;
       -ms-flex-order: 5;
           order: 5;
@@ -186,7 +196,17 @@ body main {
   top: 3.125rem;
   right: 0;
   left: 0;
+  height: calc(100vh - 3.125rem);
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 28.125rem) {
@@ -195,9 +215,8 @@ body main {
   }
 }
 
-.header .menu-menu-principal-container--mobile .menu {
-  margin-top: 3.9375rem;
-  margin-bottom: 1.25rem;
+.header .menu-menu-principal-container--mobile #menu-menu-principal {
+  margin: 0;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -211,21 +230,24 @@ body main {
 }
 
 @media (min-width: 28.125rem) {
-  .header .menu-menu-principal-container--mobile .menu {
+  .header .menu-menu-principal-container--mobile #menu-menu-principal {
     margin-top: 4.375rem;
   }
 }
 
-.header .menu-menu-principal-container--mobile .menu-item {
+.header .menu-menu-principal-container--mobile #menu-menu-principal .menu-item {
   text-align: center;
 }
 
-.header .menu-menu-principal-container--mobile .menu-item a {
+.header .menu-menu-principal-container--mobile #menu-menu-principal .menu-item a[href="#top"], .header .menu-menu-principal-container--mobile #menu-menu-principal .menu-item a[href="#agency"], .header .menu-menu-principal-container--mobile #menu-menu-principal .menu-item a[href="#services"], .header .menu-menu-principal-container--mobile #menu-menu-principal .menu-item a[href="#projects"], .header .menu-menu-principal-container--mobile #menu-menu-principal .menu-item a[href="#contact"] {
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
 }
 
-.mobile-menu-toggle {
+.header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
   position: absolute;
   top: calc(3.125rem / 2 - 0.75rem);
   left: 1.25rem;
@@ -236,14 +258,19 @@ body main {
 }
 
 @media (min-width: 28.125rem) {
-  .mobile-menu-toggle {
+  .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
     top: calc(3.75rem / 2 - 1.5rem / 2);
   }
 }
 
-.mobile-menu-toggle img {
+.header__mobile-menu__icon, .header__close-menu__icon {
   width: 100%;
   vertical-align: middle;
+}
+
+.header__contact-shortcut {
+  right: 1.25rem;
+  left: unset;
 }
 
 .hero {
@@ -657,8 +684,6 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem -0.25rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0.4375rem 0.4375rem 0.625rem -0.25rem rgba(0, 0, 0, 0.4);
   z-index: 0;
   position: relative;
   top: 1.5625rem;
