@@ -20,9 +20,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		position: relative;
 		width: 100vw;
 
 		&__text { // <p>
+			position: absolute;
 			margin: 0;
 			text-transform: uppercase;
 			color: $white;
@@ -38,6 +40,10 @@
 					font-size: 1.5rem;
 				}
 
+				@media #{$mq_w500_up} {
+					font-size: 1.8125rem;
+				}
+
 				@media #{$mq_w600_up} {
 					font-size: 2.125rem;
 				}
@@ -46,11 +52,11 @@
 					font-size: 2.5rem;
 				}
 
-				@media #{$mq_w1300_up} {
-					font-size: 2.813rem;
+				@media #{$mq_w800_up} {
+					font-size: 2.8125rem;
 				}
 
-				@media #{$mq_w1400_up} {
+				@media #{$mq_w1000_up} {
 					font-size: 3.125rem;
 				}
 			}
@@ -59,11 +65,11 @@
 				font-size: 1.125rem;
 
 				@media #{$mq_h400_up} {
-					font-size: 1.25rem;
+					font-size: 1.375rem;
 				}
 
 				@media #{$mq_h500_up} {
-					font-size: 1.5rem;
+					font-size: 1.625rem;
 				}
 
 				@media #{$mq_h600_up} {
@@ -71,142 +77,90 @@
 				}
 
 				@media #{$mq_h700_up} {
-					font-size: 2.188rem;
+					font-size: 2.1875rem;
 				}
 
 				@media #{$mq_h800_up} {
 					font-size: 2.5rem;
 				}
 
-				@media #{$mq_h900_up} {
+				@media #{$mq_h1000_up} {
 					font-size: 3.125rem;
-				}
-
-				@media #{$mq_w1700_up} and #{$mq_h950_up} {
-					font-size: 4.063rem;
 				}
 			}
 
 			&:first-of-type {
-				align-self: flex-end;
 				text-align: end;
 
 				@media #{$portrait} {
-					margin: {
-						top: 1.875rem;
-						right: 1.25rem;
+					top: 5%;
+					right: 7%;
+
+					@media #{$mq_w400_up} {
+						top: 7%;
 					}
 
-					@media #{$mq_w500_up} {
-						margin-right: 1.875rem;
+					@media #{$mq_w800_up} {
+						top: 8%;
 					}
 
-					@media #{$mq_w700_up} {
-						margin: {
-							top: 2.5rem;
-							right: 2.5rem;
-						}
+					@media #{$mq_w900_up} {
+						top: 10%;
 					}
 
-					@media #{$mq_w1300_up} {
-						margin: {
-							top: 3.125rem;
-							right: 3.125rem;
-						}
+					@media #{$mq_w1000_up} {
+						top: 12%;
 					}
 				}
 
 				@media #{$landscape} {
-					margin: {
-						top: 0.625rem;
-						right: 0.625rem;
+					top: 11%;
+					right: 6%;
+
+					@media #{$mq_w1500_up} {
+						right: 7%;
 					}
 
-					@media #{$mq_h400_up} {
-						margin: {
-							top: 1.25rem;
-							right: 1.25rem;
-						}
-					}
-
-					@media #{$mq_h500_up} {
-						margin: {
-							top: 1.875rem;
-							right: 1.875rem;
-						}
-					}
-
-					@media #{$mq_h700_up} {
-						margin-right: 40px;
-					}
-
-					@media #{$mq_h900_up} {
-						margin: {
-							top: 3.125rem;
-							right: 100px;
-						}
+					@media #{$mq_w1700_up} {
+						right: 8%;
 					}
 				}
 			}
 
 			&:last-of-type {
 				text-align: end;
-				align-self: flex-end;
 
 				@media #{$portrait} {
-					margin: {
-						right: 1.25rem;
-						bottom: 1.875rem;
+					right: 7%;
+					bottom: 5%;
+
+					@media #{$mq_w400_up} {
+						bottom: 7%;
 					}
 
-					@media #{$mq_w500_up} {
-						margin-right: 1.875rem;
+					@media #{$mq_w800_up} {
+						bottom: 8%;
 					}
 
-					@media #{$mq_w700_up} {
-						margin: {
-							right: 2.5rem;
-							bottom: 2.5rem;
-						}
+					@media #{$mq_w900_up} {
+						bottom: 10%;
 					}
 
-					@media #{$mq_w1300_up} {
-						margin: {
-							right: 3.125rem;
-							bottom: 3.125rem;
-						}
+					@media #{$mq_w1000_up} {
+						bottom: 12%;
 					}
 				}
 
 				@media #{$landscape} {
-					margin: {
-						right: 0.625rem;
-						bottom: 0.625rem;
+					right: 6%;
+					bottom: 11%;
+
+					@media #{$mq_w1500_up} {
+						right: 7%;
 					}
 
-					@media #{$mq_h400_up} {
-						margin: {
-							right: 1.25rem;
-							bottom: 1.25rem;
-						}
-					}
-
-					@media #{$mq_h500_up} {
-						margin: {
-							right: 1.875rem;
-							bottom: 1.875rem;
-						}
-					}
-
-					@media #{$mq_h700_up} {
-						margin-right: 2.5rem;
-					}
-
-					@media #{$mq_h900_up} {
-						margin: {
-							right: 100px;
-							bottom: 3.125rem;
-						}
+					@media #{$mq_w1700_up} {
+						right: 8%;
 					}
 				}
 			}
@@ -303,8 +257,8 @@
 				}
 
 				@media #{$mq_h800_up} {
-					width: 18.75rem;
-					height: 18.75rem;
+					width: 300px;
+					height: 300px;
 				}
 			}
 		}
