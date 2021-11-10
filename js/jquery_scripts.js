@@ -79,32 +79,32 @@
 		// PUT THE LOGO IN THE HEADER WHEN SCROLLING
 		if (screen_width >= 800) {
 			if (screen_scrollY >= screen_height / 2) {
-				$(".menu__wooops > a").append($(".introduction__logo-container"));
-				$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller");
+				$(".menu__services").after($(".introduction__logo-link"));
+				$(".introduction__logo-link").removeClass().addClass("introduction__logo-link--smaller");
+				$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller shadow");
 				$(".introduction__logo-image").removeClass().addClass("introduction__logo-image--smaller");
-				$(".menu__wooops").show();
 			}
 			else {
-				$(".menu__wooops").hide();
+				$(".introduction__logo-link--smaller").removeClass().addClass("introduction__logo-link");
 				$(".introduction__logo-container--smaller").removeClass().addClass("introduction__logo-container");
 				$(".introduction__logo-image--smaller").removeClass().addClass("introduction__logo-image");
-				$(".introduction__logo-container").insertAfter("#text_1");
+				$(".introduction__logo-link").insertAfter("#text_1");
 			}
 
 			$(window).on("scroll", function() {
 				let screen_scrollY = window.scrollY;
 
 				if (screen_scrollY >= screen_height / 2) {
-					$(".menu__wooops > a").append($(".introduction__logo-container"));
-					$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller");
+					$(".menu__services").after($(".introduction__logo-link"));
+					$(".introduction__logo-link").removeClass().addClass("introduction__logo-link--smaller");
+					$(".introduction__logo-container").removeClass().addClass("introduction__logo-container--smaller shadow");
 					$(".introduction__logo-image").removeClass().addClass("introduction__logo-image--smaller");
-					$(".menu__wooops").fadeIn();
 				}
 				else {
-					$(".menu__wooops").hide();
+					$(".introduction__logo-link--smaller").removeClass().addClass("introduction__logo-link");
 					$(".introduction__logo-container--smaller").removeClass().addClass("introduction__logo-container");
 					$(".introduction__logo-image--smaller").removeClass().addClass("introduction__logo-image");
-					$(".introduction__logo-container").insertAfter("#text_1");
+					$(".introduction__logo-link").insertAfter("#text_1");
 				}
 			});
 		}
