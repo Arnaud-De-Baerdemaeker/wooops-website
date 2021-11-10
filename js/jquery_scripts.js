@@ -27,6 +27,8 @@
 		// CHANGE THE DISPLAY OF THE MENU FOLLOWING SIZE SCREEN
 		if (screen_width >= 800) {
 			$(".header__mobile-menu").hide();
+			$(".header__close-menu").hide();
+			$(".header__contact-shortcut").hide();
 			$(".menu-menu-principal-container--mobile").removeClass().addClass("menu-menu-principal-container");
 			$(".menu-menu-principal-container").show();
 		}
