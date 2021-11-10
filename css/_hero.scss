@@ -218,13 +218,21 @@
 			text-shadow: 0rem 0rem 0.625rem $white;
 		}
 
+		&__logo-link {
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			display: flex;
+			align-self: center;
+			align-items: center;
+			transform: rotate(45deg);
+		}
+
 		&__logo-container { // <h1>
 			background-color: $white;
 			margin: {
 				top: 0;
 				bottom: 0;
 			}
-			transform: rotate(45deg);
+			transform: rotate(0deg);
 			display: flex;
 			align-self: center;
 			align-items: center;
@@ -307,6 +315,10 @@
 			transform: rotate(-45deg);
 		}
 	}
+}
+
+.introduction__logo-link--smaller {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .introduction__logo-container--smaller { // <h1>
