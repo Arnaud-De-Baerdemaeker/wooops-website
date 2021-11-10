@@ -18,9 +18,11 @@
 		<?php endif; ?>
 
 		<?php if ($hero["logo"]): ?>
-			<h1 class="introduction__logo-container">
-				<img src="<?php echo $hero["logo"]["url"]; ?>" alt="Wooops Agency" class="introduction__logo-image" />
-			</h1>
+			<a href="#top" class="introduction__logo-link">
+				<h1 class="introduction__logo-container">
+					<img src="<?php echo $hero["logo"]["url"]; ?>" alt="Wooops Agency" class="introduction__logo-image" />
+				</h1>
+			</a>
 		<?php endif; ?>
 
 		<?php if ($hero["introduction"]["text_part_2"]): ?>
