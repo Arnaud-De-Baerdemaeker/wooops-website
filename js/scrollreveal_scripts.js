@@ -245,7 +245,7 @@ else if (screen_width >= 1000) {
 		viewOffset: {
 			bottom: 75
 		},
-		interval: 250
+		interval: 50
 	});
 }
 
