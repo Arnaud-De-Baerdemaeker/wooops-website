@@ -98,12 +98,9 @@
 		<?php if ($service_3): ?>
 			<div class="service-3"><!-- Service 3 -->
 				<h3 class="service-3__title"><?php echo $service_3["title"]; ?></h3>
-				<?php if ($service_3["paragraphs"]): ?>
+				<?php if ($service_3["text"]): ?>
 					<div class="service-3__text-container">
-						<?php $service_3_paragraphs = count($service_3["paragraphs"]);
-						for ($i = 1; $i <= $service_3_paragraphs; $i++): ?>
-							<p id="service-3__text-<?php echo $i; ?>" class="service-3__text"><?php echo $service_3["paragraphs"]["paragraph_".$i]; ?></p>
-						<?php endfor; ?>
+						<?php echo $service_3["text"]; ?>
 					</div>
 				<?php endif; ?>
 			</div>
