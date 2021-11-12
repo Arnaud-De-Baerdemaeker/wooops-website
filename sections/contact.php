@@ -6,10 +6,16 @@
 <?php if ($contact_header["title"]): ?>
 	<div id="contact" class="contact">
 		<h2 class="contact__title">
-			<span class="title__text"><?php echo $contact_header["title"]; ?></span>
-			<?php if($contact_header["image"]): ?>
+			<div class="title__text-container">
+				<span class="title__text"><?php echo $contact_header["title"]; ?></span>
+			</div>
+			<?php
+			if($contact_header["image"]):
+			?>
 				<div class="title__image-container"><img src="<?php echo $contact_header["image"]["url"]; ?>" alt="<?php echo $contact_header["image"]["alt"]; ?>" class="title__image" /></div>
-			<?php endif; ?>
+			<?php
+			endif;
+			?>
 		</h2>
 
 		<?php if ($contact_introduction): ?>

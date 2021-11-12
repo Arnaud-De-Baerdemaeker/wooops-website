@@ -12,10 +12,16 @@
 <?php if ($services_header["title"]): ?>
 	<div id="services" class="services">
 		<h2 class="services__title">
-			<span class="title__text"><?php echo $services_header["title"]; ?></span>
-			<?php if ($services_header["image"]): ?>
+			<div class="title__text-container">
+				<span class="title__text"><?php echo $services_header["title"]; ?></span>
+			</div>
+			<?php
+			if ($services_header["image"]):
+			?>
 				<div class="title__image-container"><img src="<?php echo $services_header["image"]["url"]; ?>" alt="<?php echo $services_header["image"]["alt"]; ?>" class="title__image" /></div>
-			<?php endif; ?>
+			<?php
+			endif;
+			?>
 		</h2>
 
 		<?php if ($service_1): ?>

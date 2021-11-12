@@ -8,7 +8,9 @@ if ($headers["title"]):
 ?>
 	<div id="projects" class="projects">
 		<h2 class="projects__title">
-			<span class="title__text"><?php echo $headers["title"]; ?></span>
+			<div class="title__text-container">
+				<span class="title__text"><?php echo $headers["title"]; ?></span>
+			</div>
 			<?php
 			if ($headers["image"]):
 			?>
