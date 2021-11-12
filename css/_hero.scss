@@ -198,37 +198,32 @@
 			z-index: 0;
 
 			@media #{$portrait} {
-				width: 9.375rem;
-				height: 9.375rem;
-
-				@media #{$mq_w400_up} {
-					width: 10.938rem;
-					height: 10.938rem;
-				}
+				width: 8.75rem;
+				height: 8.75rem;
 
 				@media #{$mq_w500_up} {
+					width: 10rem;
+					height: 10rem;
+				}
+
+				@media #{$mq_w600_up} {
 					width: 12.5rem;
 					height: 12.5rem;
 				}
 
-				@media #{$mq_w600_up} {
-					width: 14.063rem;
-					height: 14.063rem;
+				@media #{$mq_w800_up} {
+					width: 13.75rem;
+					height: 13.75rem;
 				}
 
-				@media #{$mq_w700_up} {
+				@media #{$mq_w900_up} {
 					width: 15.625rem;
 					height: 15.625rem;
 				}
 
-				@media #{$mq_w1100_up} {
-					width: 17.188rem;
-					height: 17.188rem;
-				}
-
-				@media #{$mq_w1500_up} {
-					width: 18.75rem;
-					height: 18.75rem;
+				@media #{$mq_w1000_up} {
+					width: 16.875rem;
+					height: 16.875rem;
 				}
 			}
 
@@ -237,8 +232,8 @@
 				height: 6.25rem;
 
 				@media #{$mq_h400_up} {
-					width: 7.813rem;
-					height: 7.813rem;
+					width: 7.5rem;
+					height: 7.5rem;
 				}
 
 				@media #{$mq_h500_up} {
@@ -247,18 +242,28 @@
 				}
 
 				@media #{$mq_h600_up} {
-					width: 12.5rem;
-					height: 12.5rem;
+					width: 10.625rem;
+					height: 10.625rem;
 				}
 
 				@media #{$mq_h700_up} {
-					width: 15.625rem;
-					height: 15.625rem;
+					width: 11.875rem;
+					height: 11.875rem;
 				}
 
 				@media #{$mq_h800_up} {
-					width: 300px;
-					height: 300px;
+					width: 13.75rem;
+					height: 13.75rem;
+				}
+
+				@media #{$mq_h900_up} {
+					width: 15rem;
+					height: 15rem;
+				}
+
+				@media #{$mq_h1000_up} {
+					width: 16.25rem;
+					height: 16.25rem;
 				}
 			}
 		}
