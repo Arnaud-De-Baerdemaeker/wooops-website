@@ -84,9 +84,6 @@ if (screen_width < 500) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
@@ -117,9 +114,6 @@ else if (screen_width >= 500 && screen_width < 899) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
@@ -150,9 +144,6 @@ else if (screen_width >= 900 && screen_width < 1099) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
@@ -183,9 +174,6 @@ else if (screen_width >= 1100) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
