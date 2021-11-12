@@ -1,20 +1,20 @@
 <?php
-$headers = get_field("projects");
+$header = get_field("projects");
 $tags = get_the_tags();
 ?>
 
 <?php
-if ($headers["title"]):
+if ($header["title"]):
 ?>
 	<div id="projects" class="projects">
 		<h2 class="projects__title">
 			<div class="title__text-container">
-				<span class="title__text"><?php echo $headers["title"]; ?></span>
+				<span class="title__text"><?php echo $header["title"]; ?></span>
 			</div>
 			<?php
-			if ($headers["image"]):
+			if ($header["image"]):
 			?>
-				<div class="title__image-container"><img src="<?php echo $headers["image"]["url"]; ?>" alt="<?php echo $headers["image"]["alt"]; ?>" class="title__image" /></div>
+				<div class="title__image-container"><img src="<?php echo $header["image"]["url"]; ?>" alt="<?php echo $header["image"]["alt"]; ?>" class="title__image" /></div>
 			<?php
 			endif;
 			?>
