@@ -174,7 +174,13 @@
 		}
 
 		&__text-container { // <div>
-			margin-top: 2.344rem;
+			@include card-container-light;
+			max-width: 70%;
+			margin: {
+				top: 2.344rem;
+				right: auto;
+				left: auto;
+			}
 			padding: 0;
 			display: flex;
 			justify-content: space-evenly;
@@ -185,19 +191,18 @@
 			@media #{$mq_w1500_up} {
 				margin-top: 4.688rem;
 			}
-		}
+			
+			p { // <p>
+				text-align: unset;
+				align-items: flex-start;
 
-		&__text { // <p>
-			@include card-container-light;
-			text-align: unset;
-			align-items: flex-start;
+				@media #{$mq_w1500_up} {
+					margin: 0;
+				}
 
-			@media #{$mq_w1500_up} {
-				margin: 0;
-			}
-
-			&:first-of-type, &:last-of-type {
-				margin: 0;
+				&:first-of-type, &:last-of-type {
+					margin: 0;
+				}
 			}
 		}
 	}
