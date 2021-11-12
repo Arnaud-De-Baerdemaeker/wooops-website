@@ -2,6 +2,15 @@
 
 ## Versions
 
+### 2.5.0
+
+* Display the main menu fullscreen on mobile displays
+* Reposition the text in the hero
+* Add a shortcut to the contact section in the header on mobile displays
+* Redesign the look of the sections' headers
+* Small visual adjustments
+* Animation speed adjustments
+
 ### 2.4.1
 
 * Fix a value to allow the active section indicator to appear after a click on a menu link
