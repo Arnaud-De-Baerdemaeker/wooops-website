@@ -68,7 +68,7 @@
 		bottom: 0;
 	}
 	background-color: $white;
-	height: 4.688rem;
+	height: 4.6875rem;
 	display: flex;
 	align-items: center;
 
@@ -167,7 +167,7 @@
 	text-align: center;
 	font: {
 		family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
-		size: 1.563rem;
+		size: 1.5625rem;
 		weight: 500;
 	}
 	margin: 0;
@@ -187,11 +187,25 @@
 }
 
 @mixin h4-titles {
-	margin: 0;
-	font-size: 1.10rem;
+	margin: {
+		top: 0;
+		bottom: 1.25rem;
+	}
+	font-size: 1.0625rem;
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
 
 	@media #{$mq_w1500_up} {
 		font-size: 1.875rem;
+	}
+}
+
+@mixin titles__icon {
+	width: 3.125rem;
+
+	@media #{$mq_w1500_up} {
+		width: 4.375rem;
 	}
 }
 
