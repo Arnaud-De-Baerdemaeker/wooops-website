@@ -175,18 +175,22 @@
 
 		&__text-container { // <div>
 			@include card-container-light;
-			max-width: 70%;
+			max-width: 25rem;
 			margin: {
 				top: 2.344rem;
 				right: auto;
 				left: auto;
 			}
-			padding: 0;
+			padding: 1.25rem;
 			display: flex;
 			justify-content: space-evenly;
 			flex-wrap: wrap;
 			row-gap: 1.25rem;
 			column-gap: 1.25rem;
+
+			@media #{$mq_w1025_up} {
+				max-width: 70%;
+			}
 
 			@media #{$mq_w1500_up} {
 				margin-top: 4.688rem;
