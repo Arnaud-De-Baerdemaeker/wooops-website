@@ -157,7 +157,14 @@
 				weight: 600;
 			}
 			width: 25rem;
-			text-align: center;
+			max-width: 25rem;
+			display: flex;
+			column-gap: 20px;
+			align-items: center;
+		}
+
+		&__icon { // <img>
+			@include titles__icon;
 		}
 	}
 
@@ -238,6 +245,10 @@
 
 		.service-4-1 { // <div>
 			@include card-container-light;
+
+			&__icon { // <img>
+				@include titles__icon;
+			}
 
 			&__title { // <h4>
 				@include h4-titles;
