@@ -51,7 +51,7 @@ if (!empty($services_header["title"])):
 										<?php
 										if (!empty($service_1["list"]["service_1-1"]["icon"])):
 										?>
-											<img src="<?php echo $service["list"]["service_1-1"]["icon"]["url"]; ?>" alt="<?php echo $service["list"]["service_1-1"]["icon"]["alt"]; ?>" class="service_1-1__icon" />
+											<img src="<?php echo $service_1["list"]["service_1-1"]["icon"]["url"]; ?>" alt="<?php echo $service["list"]["service_1-1"]["icon"]["alt"]; ?>" class="service-1-1__icon" />
 										<?php
 										endif;
 										echo $service_1["list"]["service_1-1"]["title"];
