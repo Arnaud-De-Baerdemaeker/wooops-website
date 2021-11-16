@@ -68,28 +68,59 @@
 		bottom: 0;
 	}
 	background-color: $white;
-	height: 4.6875rem;
 	display: flex;
 	align-items: center;
 
-	@media #{$mq_w400_up} {
-		height: 6.25rem;
+	@media #{$portrait} {
+		height: 100px;
+
+		@media #{$mq_w400_up} {
+			height: 120px;
+		}
+
+		@media #{$mq_w500_up} {
+			height: 140px;
+		}
+
+		@media #{$mq_w700_up} {
+			height: 160px;
+		}
+
+		@media #{$mq_w900_up} {
+			height: 180px;
+		}
+
+		@media #{$mq_w1000_up} {
+			height: 200px;
+		}
 	}
 
-	@media #{$mq_w500_up} {
-		height: 9.375rem;
-	}
+	@media #{$landscape} {
+		height: 80px;
 
-	@media #{$mq_w700_up} {
-		height: 12.5rem;
-	}
+		@media #{$mq_h400_up} {
+			height: 100px;
+		}
 
-	@media #{$mq_w900_up} {
-		height: 15.625rem;
-	}
-	
-	@media #{$mq_w1100_up} {
-		height: 18.75rem;
+		@media #{$mq_h500_up} {
+			height: 120px;
+		}
+
+		@media #{$mq_h600_up} {
+			height: 140px;
+		}
+
+		@media #{$mq_h700_up} {
+			height: 160px;
+		}
+
+		@media #{$mq_h800_up} {
+			height: 200px;
+		}
+
+		@media #{$mq_h900_up} {
+			height: 250px;
+		}
 	}
 }
 
@@ -114,38 +145,59 @@
 }
 
 @mixin h2-titles__text {
-	font: {
-		size: 1.25rem;
-		weight: 800;
-	}
+	font-weight: 800;
 	text-transform: uppercase;
 
-	@media #{$mq_w400_up} {
-		font-size: 1.875rem;
+	@media #{$portrait} {
+		font-size: 20px;
+
+		@media #{$mq_w400_up} {
+			font-size: 30px;
+		}
+
+		@media #{$mq_w500_up} {
+			font-size: 40px;
+		}
+
+		@media #{$mq_w700_up} {
+			font-size: 50px;
+		}
+
+		@media #{$mq_w900_up} {
+			font-size: 60px;
+		}
+
+		@media #{$mq_w1000_up} {
+			font-size: 70px;
+		}
 	}
 
-	@media #{$mq_w500_up} {
-		font-size: 2.5rem;
-	}
+	@media #{$landscape} {
+		font-size: 35px;
 
-	@media #{$mq_w700_up} {
-		font-size: 3.125rem;
-	}
+		@media #{$mq_h400_up} {
+			font-size: 40px;
+		}
 
-	@media #{$mq_w900_up} {
-		font-size: 3.75rem;
-	}
+		@media #{$mq_h500_up} {
+			font-size: 45px;
+		}
 
-	@media #{$mq_w1000_up} {
-		font-size: 4.375rem;
-	}
+		@media #{$mq_h600_up} {
+			font-size: 50px;
+		}
 
-	@media #{$mq_w1300_up} {
-		font-size: 5rem;
-	}
+		@media #{$mq_h700_up} {
+			font-size: 60px;
+		}
 
-	@media #{$mq_w1500_up} {
-		font-size: 6.25rem;
+		@media #{$mq_h800_up} {
+			font-size: 70px;
+		}
+
+		@media #{$mq_h900_up} {
+			font-size: 80px;
+		}
 	}
 }
 
