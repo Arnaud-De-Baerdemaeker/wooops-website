@@ -57,6 +57,10 @@
 				@include h4-titles;
 			}
 
+			&__icon { // <img>
+				@include titles__icon;
+			}
+
 			&__text { // <p>
 				@include services-text;
 			}
@@ -83,6 +87,10 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 
 			&__text { // <p>
@@ -114,6 +122,10 @@
 				&:last-of-type {
 					width: 100%;
 				}
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 
 			&__text { // <p>
@@ -270,6 +282,10 @@
 				@include h4-titles;
 			}
 
+			&__icon { // <img>
+				@include titles__icon;
+			}
+
 			&__text { // <p>
 				@include services-text;
 			}
@@ -280,6 +296,10 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 
 			&__text { // <p>
@@ -297,6 +317,11 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+				margin-bottom: 0;
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 		}
 	}
