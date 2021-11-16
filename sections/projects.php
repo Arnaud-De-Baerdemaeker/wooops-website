@@ -44,7 +44,6 @@ if ($header["title"]):
 		<?php
 		endif;
 		?>
-		<!-- /FILTER PROJECTS -->
 
 		<!-- LIST OF PROJECTS -->
 		<?php
@@ -85,7 +84,6 @@ if ($header["title"]):
 		}
 		wp_reset_postdata();
 		?>
-		<!-- /LIST OF PROJECTS -->
 	</div>
 <?php
 endif;
