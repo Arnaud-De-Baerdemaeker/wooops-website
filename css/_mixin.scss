@@ -195,9 +195,11 @@
 	display: flex;
 	column-gap: 20px;
 	align-items: center;
+	line-height: 1.0625rem;
 
 	@media #{$mq_w1500_up} {
 		font-size: 1.875rem;
+		line-height: 1.875rem;
 	}
 }
 
