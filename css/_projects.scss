@@ -134,6 +134,7 @@
 	}
 
 	&__cards { // <article>
+		width: 25rem;
 		max-width: 25rem;
 		transition-property: transform;
 		transition-duration: 0.5s;
@@ -148,7 +149,7 @@
 		text-decoration: none;
 	}
 
-	&__client-name { // <p>
+	&__client-name { // <h5>
 		margin: {
 			top: 0;
 			right: 0;
