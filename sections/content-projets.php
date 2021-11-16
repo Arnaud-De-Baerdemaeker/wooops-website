@@ -13,8 +13,8 @@ $link = get_field("link") ? get_field("link") : "#";
 	<a href="<?php echo $link; ?>" class="projects__link" target="_blank">
 		<h5 class="projects__client-name"><?php echo $title; ?></h5>
 		<div class="projects__thumbnails">
-			<img src="<?php echo $desktop_image["url"]; ?>" alt="<?php echo $desktop_image["alt"]; ?>" class="thumbnail__desktop">
-			<img src="<?php echo $mobile_image["url"]; ?>" alt="<?php echo $mobile_image["alt"]; ?>" class="thumbnail__mobile">
+			<img src="<?php echo $desktop_image["sizes"]["medium"]; ?>" alt="<?php echo $desktop_image["alt"]; ?>" class="thumbnail__desktop">
+			<img src="<?php echo $mobile_image["sizes"]["medium"]; ?>" alt="<?php echo $mobile_image["alt"]; ?>" class="thumbnail__mobile">
 		</div>
 		<div class="projects__informations">
 			<!-- <p class="projects__presentation"><?php //echo $presentation; ?></p> -->
