@@ -8,6 +8,7 @@
 * Reposition the text in the hero
 * Add a shortcut to the contact section in the header on mobile displays
 * Redesign the look of the sections' headers
+* Add icons in the list of services
 * Small visual adjustments
 * Animation speed adjustments
 
