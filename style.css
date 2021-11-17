@@ -88,43 +88,43 @@ body main {
 
 @media (orientation: portrait) {
   .header {
-    height: 50px;
+    height: 3.125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 37.5rem) {
   .header {
-    height: 60px;
+    height: 3.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 50rem) {
   .header {
-    height: 75px;
+    height: 4.6875rem;
   }
 }
 
 @media (orientation: landscape) {
   .header {
-    height: 40px;
+    height: 2.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .header {
-    height: 50px;
+    height: 3.125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .header {
-    height: 60px;
+    height: 3.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .header {
-    height: 75px;
+    height: 4.6875rem;
   }
 }
 
@@ -287,43 +287,43 @@ body main {
 
 @media (orientation: portrait) {
   .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
-    top: calc(50px / 2 - 24px / 2);
+    top: calc(3.125rem / 2 - 1.5rem / 2);
   }
 }
 
 @media (orientation: portrait) and (min-width: 37.5rem) {
   .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
-    top: calc(60px / 2 - 24px / 2);
+    top: calc(3.75rem / 2 - 1.5rem / 2);
   }
 }
 
 @media (orientation: portrait) and (min-width: 50rem) {
   .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
-    top: calc(75px / 2 - 24px / 2);
+    top: calc(4.6875rem / 2 - 1.5rem / 2);
   }
 }
 
 @media (orientation: landscape) {
   .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
-    top: calc(40px / 2 - 24px / 2);
+    top: calc(2.5rem / 2 - 1.5rem / 2);
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
-    top: calc(50px / 2 - 24px / 2);
+    top: calc(3.125rem / 2 - 1.5rem / 2);
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
-    top: calc(60px / 2 - 24px / 2);
+    top: calc(3.75rem / 2 - 1.5rem / 2);
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .header__mobile-menu, .header__contact-shortcut, .header__close-menu, .header__contact-shortcut {
-    top: calc(75px / 2 - 24px / 2);
+    top: calc(4.6875rem / 2 - 1.5rem / 2);
   }
 }
 
@@ -349,43 +349,43 @@ body main {
 
 @media (orientation: portrait) {
   .hero {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 3.125rem);
   }
 }
 
 @media (orientation: portrait) and (min-width: 37.5rem) {
   .hero {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 3.75rem);
   }
 }
 
 @media (orientation: portrait) and (min-width: 50rem) {
   .hero {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 4.6875rem);
   }
 }
 
 @media (orientation: landscape) {
   .hero {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 2.5rem);
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .hero {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 3.125rem);
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .hero {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 3.75rem);
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .hero {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 4.6875rem);
   }
 }
 
@@ -780,14 +780,18 @@ body main {
           align-items: center;
   z-index: 0;
   position: relative;
-  top: 1.5625rem;
-  width: 5.625rem;
-  height: 5.625rem;
-  top: 0.3125rem;
-  left: calc(100% / 2 - 5.625rem / 2);
 }
 
-@media (min-width: 28.125rem) {
+@media (orientation: portrait) {
+  .introduction__logo-container--smaller {
+    width: 5.625rem;
+    height: 5.625rem;
+    top: 0.3125rem;
+    left: calc(100% / 2 - 5.625rem / 2);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 37.5rem) {
   .introduction__logo-container--smaller {
     width: 6.25rem;
     height: 6.25rem;
@@ -796,12 +800,45 @@ body main {
   }
 }
 
-@media (min-width: 50rem) {
+@media (orientation: portrait) and (min-width: 50rem) {
   .introduction__logo-container--smaller {
-    width: 9.375rem;
-    height: 9.375rem;
+    width: 8.125rem;
+    height: 8.125rem;
     top: 2.3125rem;
-    left: calc(100% / 2 - 9.375rem / 2);
+    left: calc(100% / 2 - 8.125rem / 2);
+  }
+}
+
+@media (orientation: landscape) {
+  .introduction__logo-container--smaller {
+    width: 5.625rem;
+    height: 5.625rem;
+    top: -0.3125rem;
+    left: calc(100% / 2 - 5.625rem / 2);
+  }
+}
+
+@media (orientation: landscape) and (min-height: 25rem) {
+  .introduction__logo-container--smaller {
+    top: 0.3125rem;
+  }
+}
+
+@media (orientation: landscape) and (min-height: 37.5rem) {
+  .introduction__logo-container--smaller {
+    width: 6.875rem;
+    height: 6.875rem;
+    top: 1.875rem;
+    left: calc(100% / 2 - 6.875rem / 2);
+  }
+}
+
+@media (orientation: landscape) and (min-height: 56.25rem) {
+  .introduction__logo-container--smaller {
+    width: 8.125rem;
+    height: 8.125rem;
+    top: 2.3125rem;
+    left: calc(100% / 2 - 8.125rem / 2);
   }
 }
 
@@ -852,79 +889,79 @@ body main {
 
 @media (orientation: portrait) {
   .agency__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .agency__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .agency__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .agency__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .agency__title {
-    height: 180px;
+    height: 11.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .agency__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) {
   .agency__title {
-    height: 80px;
+    height: 5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .agency__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .agency__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .agency__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .agency__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .agency__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .agency__title {
-    height: 250px;
+    height: 15.625rem;
   }
 }
 
@@ -965,79 +1002,79 @@ body main {
 
 @media (orientation: portrait) {
   .agency__title .title__text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .agency__title .title__text {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .agency__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .agency__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .agency__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .agency__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) {
   .agency__title .title__text {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .agency__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .agency__title .title__text {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .agency__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .agency__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .agency__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .agency__title .title__text {
-    font-size: 80px;
+    font-size: 5rem;
   }
 }
 
@@ -1097,79 +1134,79 @@ body main {
 
 @media (orientation: portrait) {
   .services__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .services__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .services__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .services__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .services__title {
-    height: 180px;
+    height: 11.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .services__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) {
   .services__title {
-    height: 80px;
+    height: 5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .services__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .services__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .services__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .services__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .services__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .services__title {
-    height: 250px;
+    height: 15.625rem;
   }
 }
 
@@ -1210,79 +1247,79 @@ body main {
 
 @media (orientation: portrait) {
   .services__title .title__text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .services__title .title__text {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .services__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .services__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .services__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .services__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) {
   .services__title .title__text {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .services__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .services__title .title__text {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .services__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .services__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .services__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .services__title .title__text {
-    font-size: 80px;
+    font-size: 5rem;
   }
 }
 
@@ -1408,8 +1445,8 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1494,8 +1531,8 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1575,8 +1612,8 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1956,8 +1993,8 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1999,8 +2036,8 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2048,8 +2085,8 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2102,8 +2139,8 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2421,79 +2458,79 @@ body main {
 
 @media (orientation: portrait) {
   .projects__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .projects__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .projects__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .projects__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .projects__title {
-    height: 180px;
+    height: 11.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .projects__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) {
   .projects__title {
-    height: 80px;
+    height: 5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .projects__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .projects__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .projects__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .projects__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .projects__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .projects__title {
-    height: 250px;
+    height: 15.625rem;
   }
 }
 
@@ -2534,79 +2571,79 @@ body main {
 
 @media (orientation: portrait) {
   .projects__title .title__text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .projects__title .title__text {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .projects__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .projects__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .projects__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .projects__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) {
   .projects__title .title__text {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .projects__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .projects__title .title__text {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .projects__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .projects__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .projects__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .projects__title .title__text {
-    font-size: 80px;
+    font-size: 5rem;
   }
 }
 
@@ -3051,79 +3088,79 @@ body main {
 
 @media (orientation: portrait) {
   .contact__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .contact__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .contact__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .contact__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .contact__title {
-    height: 180px;
+    height: 11.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .contact__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) {
   .contact__title {
-    height: 80px;
+    height: 5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .contact__title {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .contact__title {
-    height: 120px;
+    height: 7.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .contact__title {
-    height: 140px;
+    height: 8.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .contact__title {
-    height: 160px;
+    height: 10rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .contact__title {
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .contact__title {
-    height: 250px;
+    height: 15.625rem;
   }
 }
 
@@ -3164,79 +3201,79 @@ body main {
 
 @media (orientation: portrait) {
   .contact__title .title__text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
   .contact__title .title__text {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
   .contact__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
   .contact__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
   .contact__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
   .contact__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) {
   .contact__title .title__text {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
   .contact__title .title__text {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
   .contact__title .title__text {
-    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
   .contact__title .title__text {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
   .contact__title .title__text {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
   .contact__title .title__text {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 56.25rem) {
   .contact__title .title__text {
-    font-size: 80px;
+    font-size: 5rem;
   }
 }
 
