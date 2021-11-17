@@ -72,54 +72,54 @@
 	align-items: center;
 
 	@media #{$portrait} {
-		height: 100px;
+		height: 6.25rem;
 
 		@media #{$mq_w400_up} {
-			height: 120px;
+			height: 7.5rem;
 		}
 
 		@media #{$mq_w500_up} {
-			height: 140px;
+			height: 8.75rem;
 		}
 
 		@media #{$mq_w700_up} {
-			height: 160px;
+			height: 10rem;
 		}
 
 		@media #{$mq_w900_up} {
-			height: 180px;
+			height: 11.25rem;
 		}
 
 		@media #{$mq_w1000_up} {
-			height: 200px;
+			height: 12.5rem;
 		}
 	}
 
 	@media #{$landscape} {
-		height: 80px;
+		height: 5rem;
 
 		@media #{$mq_h400_up} {
-			height: 100px;
+			height: 6.25rem;
 		}
 
 		@media #{$mq_h500_up} {
-			height: 120px;
+			height: 7.5rem;
 		}
 
 		@media #{$mq_h600_up} {
-			height: 140px;
+			height: 8.75rem;
 		}
 
 		@media #{$mq_h700_up} {
-			height: 160px;
+			height: 10rem;
 		}
 
 		@media #{$mq_h800_up} {
-			height: 200px;
+			height: 12.5rem;
 		}
 
 		@media #{$mq_h900_up} {
-			height: 250px;
+			height: 15.625rem;
 		}
 	}
 }
@@ -149,54 +149,54 @@
 	text-transform: uppercase;
 
 	@media #{$portrait} {
-		font-size: 20px;
+		font-size: 1.25rem;
 
 		@media #{$mq_w400_up} {
-			font-size: 30px;
+			font-size: 1.875rem;
 		}
 
 		@media #{$mq_w500_up} {
-			font-size: 40px;
+			font-size: 2.5rem;
 		}
 
 		@media #{$mq_w700_up} {
-			font-size: 50px;
+			font-size: 3.125rem;
 		}
 
 		@media #{$mq_w900_up} {
-			font-size: 60px;
+			font-size: 3.75rem;
 		}
 
 		@media #{$mq_w1000_up} {
-			font-size: 70px;
+			font-size: 4.375rem;
 		}
 	}
 
 	@media #{$landscape} {
-		font-size: 35px;
+		font-size: 2.1875rem;
 
 		@media #{$mq_h400_up} {
-			font-size: 40px;
+			font-size: 2.5rem;
 		}
 
 		@media #{$mq_h500_up} {
-			font-size: 45px;
+			font-size: 2.8125rem;
 		}
 
 		@media #{$mq_h600_up} {
-			font-size: 50px;
+			font-size: 3.125rem;
 		}
 
 		@media #{$mq_h700_up} {
-			font-size: 60px;
+			font-size: 3.75rem;
 		}
 
 		@media #{$mq_h800_up} {
-			font-size: 70px;
+			font-size: 4.375rem;
 		}
 
 		@media #{$mq_h900_up} {
-			font-size: 80px;
+			font-size: 5rem;
 		}
 	}
 }
@@ -245,7 +245,7 @@
 	}
 	font-size: 1.0625rem;
 	display: flex;
-	column-gap: 20px;
+	column-gap: 1.25rem;
 	align-items: center;
 	line-height: 1.0625rem;
 

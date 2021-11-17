@@ -6,30 +6,30 @@
 	box-shadow: 0rem 0.313rem 0.625rem $black_shadow;
 
 	@media #{$portrait} {
-		height: 50px;
+		height: 3.125rem;
 
 		@media #{$mq_w600_up} {
-			height: 60px;
+			height: 3.75rem;
 		}
 
 		@media #{$mq_w800_up} {
-			height: 75px;
+			height: 4.6875rem;
 		}
 	}
 
 	@media #{$landscape} {
-		height: 40px;
+		height: 2.5rem;
 
 		@media #{$mq_h400_up} {
-			height: 50px;
+			height: 3.125rem;
 		}
 
 		@media #{$mq_h600_up} {
-			height: 60px;
+			height: 3.75rem;
 		}
 
 		@media #{$mq_h900_up} {
-			height: 75px;
+			height: 4.6875rem;
 		}
 	}
 
@@ -164,30 +164,30 @@
 	padding: 0;
 
 	@media #{$portrait} {
-		top: calc(50px / 2 - 24px / 2);
+		top: calc(3.125rem / 2 - 1.5rem / 2);
 		
 		@media #{$mq_w600_up} {
-			top: calc(60px / 2 - 24px / 2);
+			top: calc(3.75rem / 2 - 1.5rem / 2);
 		}
 
 		@media #{$mq_w800_up} {
-			top: calc(75px / 2 - 24px / 2);
+			top: calc(4.6875rem / 2 - 1.5rem / 2);
 		}
 	}
 
 	@media #{$landscape} {
-		top: calc(40px / 2 - 24px / 2);
+		top: calc(2.5rem / 2 - 1.5rem / 2);
 
 		@media #{$mq_h400_up} {
-			top: calc(50px / 2 - 24px / 2);
+			top: calc(3.125rem / 2 - 1.5rem / 2);
 		}
 
 		@media #{$mq_h600_up} {
-			top: calc(60px / 2 - 24px / 2);
+			top: calc(3.75rem / 2 - 1.5rem / 2);
 		}
 
 		@media #{$mq_h900_up} {
-			top: calc(75px / 2 - 24px / 2);
+			top: calc(4.6875rem / 2 - 1.5rem / 2);
 		}
 	}
 
