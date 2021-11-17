@@ -5,15 +5,34 @@
 		attachment: fixed;
 		color: $black;
 	}
-	height: calc(100vh - 3.125rem);
 	display: flex;
 
-	@media #{$mq_w450_up} {
-		height: calc(100vh - 3.75rem);
+	@media #{$portrait} {
+		height: calc(100vh - 50px);
+
+		@media #{$mq_w600_up} {
+			height: calc(100vh - 60px);
+		}
+
+		@media #{$mq_w800_up} {
+			height: calc(100vh - 75px);
+		}
 	}
 
-	@media #{$mq_w800_up} {
-		height: calc(100vh - 4.688rem);
+	@media #{$landscape} {
+		height: calc(100vh - 40px);
+
+		@media #{$mq_h400_up} {
+			height: calc(100vh - 50px);
+		}
+
+		@media #{$mq_h600_up} {
+			height: calc(100vh - 60px);
+		}
+
+		@media #{$mq_h900_up} {
+			height: calc(100vh - 75px);
+		}
 	}
 
 	.introduction { // <section>
