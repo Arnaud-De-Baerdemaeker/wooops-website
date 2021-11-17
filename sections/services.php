@@ -386,7 +386,16 @@ if (!empty($services_header["title"])):
 						$service_7_keywords = count($service_7["keywords"]);
 						for ($i = 1; $i <= $service_7_keywords; $i++):
 						?>
-							<li id="service-7__item-<?php echo $i; ?>" class="service-7__item"><?php echo $service_7["keywords"]["keyword_".$i]; ?></li>
+							<li id="service-7__item-<?php echo $i; ?>" class="service-7__item">
+								<?php
+								if (!empty($service_7["keywords"]["keyword_".$i]["icon"])):
+								?>
+									<img src="<?php echo $service_7["keywords"]["keyword_".$i]["icon"]["url"]; ?>" alt="<?php echo $service_7["keywords"]["keyword_".$i]["icon"]["alt"]; ?>" class="service-7__icon" />
+								<?php
+								endif;
+								echo $service_7["keywords"]["keyword_".$i]["title"];
+								?>
+							</li>
 						<?php
 						endfor;
 						?>
