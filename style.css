@@ -760,6 +760,11 @@ body main {
           transform: rotate(-45deg);
 }
 
+.hero .gradient {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+}
+
 .introduction__logo-link--smaller {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
