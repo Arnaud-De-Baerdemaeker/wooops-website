@@ -1,5 +1,5 @@
 <?php
-	$contact_header = get_field("contact_header");
+	$contact_header = get_field("contact");
 	$contact_introduction = get_field("contact_introduction");
 ?>
 

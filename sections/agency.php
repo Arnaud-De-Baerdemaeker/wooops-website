@@ -1,4 +1,4 @@
-<?php $agency_header = get_field("agency_header"); ?>
+<?php $agency_header = get_field("agency"); ?>
 
 <?php if ($agency_header["title"]): ?>
 	<div id="agency" class="agency">
