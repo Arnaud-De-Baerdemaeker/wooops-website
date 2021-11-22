@@ -8,7 +8,7 @@
 	class="hero"
 >
 	<?php echo $hero["parallax"]; ?>
-	<section class="introduction">
+	<section class="introduction <?php if ($hero["gradient_effect"]) {echo "gradient";} ?>">
 		<?php if ($hero["introduction"]["text_part_1"]): ?>
 			<p id="text_1" class="introduction__text">
 				<?php echo $hero["introduction"]["text_part_1"]["normal_text"]; ?>
