@@ -293,6 +293,10 @@
 			transform: rotate(-45deg);
 		}
 	}
+
+	.gradient { // <section>
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+	}
 }
 
 .introduction__logo-link--smaller {
