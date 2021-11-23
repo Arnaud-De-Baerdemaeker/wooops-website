@@ -1,6 +1,8 @@
 <?php
 $header = get_field("projects");
-$tags = get_the_tags();
+$tags = get_tags([
+	"hide_empty" => false
+]);
 ?>
 
 <?php
