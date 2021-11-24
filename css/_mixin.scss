@@ -63,128 +63,163 @@
 }
 
 @mixin h2-titles {
-	@include container;
 	margin: {
 		top: 0;
 		bottom: 0;
 	}
 	background-color: $white;
-	height: 4.688rem;
 	display: flex;
-	justify-content: space-evenly;
 	align-items: center;
 
-	@media #{$mq_w400_up} {
+	@media #{$portrait} {
 		height: 6.25rem;
+
+		@media #{$mq_w400_up} {
+			height: 7.5rem;
+		}
+
+		@media #{$mq_w500_up} {
+			height: 8.75rem;
+		}
+
+		@media #{$mq_w700_up} {
+			height: 10rem;
+		}
+
+		@media #{$mq_w900_up} {
+			height: 11.25rem;
+		}
+
+		@media #{$mq_w1000_up} {
+			height: 12.5rem;
+		}
 	}
 
-	@media #{$mq_w500_up} {
-		height: 9.375rem;
+	@media #{$landscape} {
+		height: 5rem;
+
+		@media #{$mq_h400_up} {
+			height: 6.25rem;
+		}
+
+		@media #{$mq_h500_up} {
+			height: 7.5rem;
+		}
+
+		@media #{$mq_h600_up} {
+			height: 8.75rem;
+		}
+
+		@media #{$mq_h700_up} {
+			height: 10rem;
+		}
+
+		@media #{$mq_h800_up} {
+			height: 12.5rem;
+		}
+
+		@media #{$mq_h900_up} {
+			height: 15.625rem;
+		}
+	}
+}
+
+@mixin h2-titles__text-container {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 1.25rem;
+
+	@media #{$mq_w400_up} {
+		padding-left: 7%;
 	}
 
-	@media #{$mq_w700_up} {
-		height: 12.5rem;
+	@media #{$mq_w600_up} {
+		padding-left: 10%;
 	}
 
-	@media #{$mq_w900_up} {
-		height: 15.625rem;
-	}
-	
-	@media #{$mq_w1100_up} {
-		height: 18.75rem;
+	@media #{$mq_w1200_up} {
+		padding-left: 12%;
 	}
 }
 
 @mixin h2-titles__text {
-	display: block;
-	width: 50%;
-	font: {
-		size: 1.25rem;
-		weight: 800;
-	}
+	font-weight: 800;
 	text-transform: uppercase;
-	align-items: center;
 
-	@media #{$mq_w400_up} {
-		font-size: 1.875rem;
+	@media #{$portrait} {
+		font-size: 1.25rem;
+
+		@media #{$mq_w400_up} {
+			font-size: 1.875rem;
+		}
+
+		@media #{$mq_w500_up} {
+			font-size: 2.5rem;
+		}
+
+		@media #{$mq_w700_up} {
+			font-size: 3.125rem;
+		}
+
+		@media #{$mq_w900_up} {
+			font-size: 3.75rem;
+		}
+
+		@media #{$mq_w1000_up} {
+			font-size: 4.375rem;
+		}
 	}
 
-	@media #{$mq_w500_up} {
-		font-size: 2.5rem;
-	}
+	@media #{$landscape} {
+		font-size: 2.1875rem;
 
-	@media #{$mq_w700_up} {
-		font-size: 3.125rem;
-	}
+		@media #{$mq_h400_up} {
+			font-size: 2.5rem;
+		}
 
-	@media #{$mq_w900_up} {
-		font-size: 3.75rem;
-	}
+		@media #{$mq_h500_up} {
+			font-size: 2.8125rem;
+		}
 
-	@media #{$mq_w1000_up} {
-		font-size: 4.375rem;
-	}
+		@media #{$mq_h600_up} {
+			font-size: 3.125rem;
+		}
 
-	@media #{$mq_w1300_up} {
-		font-size: 5rem;
-	}
+		@media #{$mq_h700_up} {
+			font-size: 3.75rem;
+		}
 
-	@media #{$mq_w1500_up} {
-		font-size: 6.25rem;
+		@media #{$mq_h800_up} {
+			font-size: 4.375rem;
+		}
+
+		@media #{$mq_h900_up} {
+			font-size: 5rem;
+		}
 	}
 }
 
 @mixin h2-titles__image-container {
-	display: flex;
-	justify-content: flex-end;
 	width: 50%;
+	height: 100%;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 }
 
 @mixin h2-titles__image {
-	width: 7.813rem;
-	height: 7.813rem;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	vertical-align: middle;
-	border-radius: 7.813rem;
-	box-shadow: 0rem 0rem 2.5rem 0.625rem $black_shadow;
 	z-index: 1;
-
-	@media #{$mq_w400_up} {
-		width: 9.375rem;
-		height: 9.375rem;
-		border-radius: 9.375rem;
-	}
-
-	@media #{$mq_w500_up} {
-		width: 12.5rem;
-		height: 12.5rem;
-		border-radius: 12.5rem;
-	}
-
-	@media #{$mq_w700_up} {
-		width: 15.625rem;
-		height: 15.625rem;
-		border-radius: 15.625rem;
-	}
-
-	@media #{$mq_w900_up} {
-		width: 18.75rem;
-		height: 18.75rem;
-		border-radius: 18.75rem;
-	}
-
-	@media #{$mq_w1100_up} {
-		width: 21.875rem;
-		height: 21.875rem;
-		border-radius: 21.875rem;
-	}
 }
 
 @mixin h3-titles {
 	text-align: center;
 	font: {
 		family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
-		size: 1.563rem;
+		size: 1.5625rem;
 		weight: 500;
 	}
 	margin: 0;
@@ -204,11 +239,27 @@
 }
 
 @mixin h4-titles {
-	margin: 0;
-	font-size: 1.10rem;
+	margin: {
+		top: 0;
+		bottom: 1.25rem;
+	}
+	font-size: 1.0625rem;
+	display: flex;
+	column-gap: 1.25rem;
+	align-items: center;
+	line-height: 1.0625rem;
 
 	@media #{$mq_w1500_up} {
 		font-size: 1.875rem;
+		line-height: 1.875rem;
+	}
+}
+
+@mixin titles__icon {
+	width: 3.125rem;
+
+	@media #{$mq_w1500_up} {
+		width: 4.375rem;
 	}
 }
 

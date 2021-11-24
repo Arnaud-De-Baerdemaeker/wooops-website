@@ -8,7 +8,7 @@
 			$("#more").remove();
 		}
 		else if ($("#end").length > 0) {
-			$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
+			//$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
 			$("#end").remove();
 		}
 		else if ($("#empty").length > 0) {
@@ -64,7 +64,7 @@
 						}
 					}
 					else if ($("#end").length > 0) {
-						$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
+						//$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
 						$("#end").remove();
 
 						if ($(".projects__end").length > 1) {
@@ -121,7 +121,7 @@
 					page++;
 
 					if ($("#end").length > 0) {
-						$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
+						//$(".projects__cards-container").after("<div class='projects__end'>" + $("#end").attr("value") + "</div");
 						$(".projects__more").hide();
 						$("#end").remove();
 
