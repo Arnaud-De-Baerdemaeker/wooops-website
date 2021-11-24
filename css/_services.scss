@@ -7,6 +7,10 @@
 		@include h2-titles;
 
 		.title {
+			&__text-container { // <div>
+				@include h2-titles__text-container;
+			}
+
 			&__text { // <span>
 				@include h2-titles__text;
 			}
@@ -53,6 +57,10 @@
 				@include h4-titles;
 			}
 
+			&__icon { // <img>
+				@include titles__icon;
+			}
+
 			&__text { // <p>
 				@include services-text;
 			}
@@ -79,6 +87,10 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 
 			&__text { // <p>
@@ -110,6 +122,10 @@
 				&:last-of-type {
 					width: 100%;
 				}
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 
 			&__text { // <p>
@@ -153,7 +169,14 @@
 				weight: 600;
 			}
 			width: 25rem;
-			text-align: center;
+			max-width: 25rem;
+			display: flex;
+			column-gap: 1.25rem;
+			align-items: center;
+		}
+
+		&__icon { // <img>
+			@include titles__icon;
 		}
 	}
 
@@ -170,30 +193,39 @@
 		}
 
 		&__text-container { // <div>
-			margin-top: 2.344rem;
-			padding: 0;
+			@include card-container-light;
+			max-width: 25rem;
+			margin: {
+				top: 2.344rem;
+				right: auto;
+				left: auto;
+			}
+			padding: 1.25rem;
 			display: flex;
 			justify-content: space-evenly;
 			flex-wrap: wrap;
 			row-gap: 1.25rem;
 			column-gap: 1.25rem;
 
+			@media #{$mq_w1025_up} {
+				max-width: 70%;
+			}
+
 			@media #{$mq_w1500_up} {
 				margin-top: 4.688rem;
 			}
-		}
+			
+			p { // <p>
+				text-align: unset;
+				align-items: flex-start;
 
-		&__text { // <p>
-			@include card-container-light;
-			text-align: unset;
-			align-items: flex-start;
+				@media #{$mq_w1500_up} {
+					margin: 0;
+				}
 
-			@media #{$mq_w1500_up} {
-				margin: 0;
-			}
-
-			&:first-of-type, &:last-of-type {
-				margin: 0;
+				&:first-of-type, &:last-of-type {
+					margin: 0;
+				}
 			}
 		}
 	}
@@ -226,6 +258,10 @@
 		.service-4-1 { // <div>
 			@include card-container-light;
 
+			&__icon { // <img>
+				@include titles__icon;
+			}
+
 			&__title { // <h4>
 				@include h4-titles;
 			}
@@ -246,6 +282,10 @@
 				@include h4-titles;
 			}
 
+			&__icon { // <img>
+				@include titles__icon;
+			}
+
 			&__text { // <p>
 				@include services-text;
 			}
@@ -256,6 +296,10 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 
 			&__text { // <p>
@@ -273,6 +317,11 @@
 
 			&__title { // <h4>
 				@include h4-titles;
+				margin-bottom: 0;
+			}
+
+			&__icon { // <img>
+				@include titles__icon;
 			}
 		}
 	}
@@ -337,9 +386,7 @@
 			@include services-item;
 			display: flex;
 			align-items: center;
-			text-align: center;
-			justify-content: center;
-			max-width: 25rem;
+			column-gap: 1.25rem;
 			color: $black;
 			padding: 1.25rem;
 			border: {
@@ -351,15 +398,19 @@
 				size: 1.125rem;
 				weight: 600;
 			}
-			width: 12.5rem;
+			width: 14.0625rem;
 			background-color: $white;
-
-			@media #{$mq_w1500_up} {
-				padding: 2.5rem;
-			}
 
 			&:after {
 				content: unset;
+			}
+		}
+
+		&__icon { // <img>
+			width: 1.875rem;
+
+			@media #{$mq_w1500_up} {
+				width: 2.5rem;
 			}
 		}
 	}

@@ -7,6 +7,10 @@
 		@include h2-titles;
 
 		.title {
+			&__text-container { // <div>
+				@include h2-titles__text-container;
+			}
+
 			&__text { // <span>
 				@include h2-titles__text;
 			}
@@ -130,6 +134,7 @@
 	}
 
 	&__cards { // <article>
+		width: 25rem;
 		max-width: 25rem;
 		transition-property: transform;
 		transition-duration: 0.5s;
@@ -144,7 +149,7 @@
 		text-decoration: none;
 	}
 
-	&__client-name { // <p>
+	&__client-name { // <h5>
 		margin: {
 			top: 0;
 			right: 0;

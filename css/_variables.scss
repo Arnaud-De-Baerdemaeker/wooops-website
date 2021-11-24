@@ -11,15 +11,16 @@ $warning: rgba(255, 185, 0, 1);
 // Breakpoints
 $bp_400: 25rem; // 400px
 $bp_450: 28.125rem; // 450px
-$bp_475: 29.688rem; // 475px
+$bp_475: 29.6875rem; // 475px
 $bp_500: 31.25rem; // 500px
 $bp_600: 37.5rem; // 600px
 $bp_700: 43.75rem; // 700px
 $bp_800: 50rem; // 800px
-$bp_875: 54.688rem; // 875px
+$bp_875: 54.6875rem; // 875px
 $bp_900: 56.25rem; // 900px
 $bp_950: 59.375rem; // 950px
 $bp_1000: 62.5rem; // 1000px
+$bp_1025: 64.0625rem; // 1025px
 $bp_1100: 68.75rem; // 1100px
 $bp_1200: 75rem; // 1200px
 $bp_1300: 81.25rem; // 1300px
@@ -39,6 +40,7 @@ $mq_w800_up: "(min-width: #{$bp_800})";
 $mq_w875_up: "(min-width: #{$bp_875})";
 $mq_w900_up: "(min-width: #{$bp_900})";
 $mq_w1000_up: "(min-width: #{$bp_1000})";
+$mq_w1025_up: "(min-width: #{$bp_1025})";
 $mq_w1100_up: "(min-width: #{$bp_1100})";
 $mq_w1200_up: "(min-width: #{$bp_1200})";
 $mq_w1300_up: "(min-width: #{$bp_1300})";

@@ -84,9 +84,6 @@ if (screen_width < 500) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
@@ -117,9 +114,6 @@ else if (screen_width >= 500 && screen_width < 899) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
@@ -150,9 +144,6 @@ else if (screen_width >= 900 && screen_width < 1099) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
@@ -183,9 +174,6 @@ else if (screen_width >= 1100) {
 	sr.reveal(".title__image", {
 		origin: "top",
 		distance: "100px",
-		rotate: {
-			z: 180,
-		},
 		duration: 2000,
 		delay: 2000,
 		viewOffset: {
@@ -207,7 +195,7 @@ sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__
 
 
 // CONTENT
-sr.reveal(".service-1-1, .service-1-2, .service-1-3, #service-2__item-1, #service-2__item-2, #service-2__item-3, #service-3__text-1, #service-3__text-2, .service-4-1, .service-4-2, .service-4-3, .service-4-4, .projects__cards, .projects__more, .projects__end, .projects__empty, .contact__introduction, .wpcf7", {
+sr.reveal(".service-1-1, .service-1-2, .service-1-3, #service-2__item-1, #service-2__item-2, #service-2__item-3, .service-3__text-container, .service-4-1, .service-4-2, .service-4-3, .service-4-4, .projects__cards, .projects__more, .projects__end, .projects__empty, .contact__introduction, .wpcf7", {
 	origin: "top",
 	distance: "100px",
 	duration: 2000,
@@ -245,7 +233,7 @@ else if (screen_width >= 1000) {
 		viewOffset: {
 			bottom: 75
 		},
-		interval: 250
+		interval: 50
 	});
 }
 

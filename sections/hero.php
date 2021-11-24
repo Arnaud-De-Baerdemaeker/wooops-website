@@ -8,7 +8,7 @@
 	class="hero"
 >
 	<?php echo $hero["parallax"]; ?>
-	<section class="introduction">
+	<section class="introduction <?php if ($hero["gradient_effect"]) {echo "gradient";} ?>">
 		<?php if ($hero["introduction"]["text_part_1"]): ?>
 			<p id="text_1" class="introduction__text">
 				<?php echo $hero["introduction"]["text_part_1"]["normal_text"]; ?>
@@ -18,9 +18,11 @@
 		<?php endif; ?>
 
 		<?php if ($hero["logo"]): ?>
-			<h1 class="introduction__logo-container">
-				<img src="<?php echo $hero["logo"]["url"]; ?>" alt="Wooops Agency" class="introduction__logo-image" />
-			</h1>
+			<a href="#top" class="introduction__logo-link">
+				<h1 class="introduction__logo-container">
+					<img src="<?php echo $hero["logo"]["url"]; ?>" alt="Wooops Agency" class="introduction__logo-image" />
+				</h1>
+			</a>
 		<?php endif; ?>
 
 		<?php if ($hero["introduction"]["text_part_2"]): ?>
