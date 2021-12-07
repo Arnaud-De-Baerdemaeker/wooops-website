@@ -212,7 +212,8 @@
 			animation: {
 				name: pulse;
 				duration: 2s;
-				iteration-count: infinite;
+				iteration-count: 1;
+				delay: 5s;
 			}
 			z-index: 0;
 
