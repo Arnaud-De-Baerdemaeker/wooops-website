@@ -90,7 +90,7 @@
 				$(".introduction__logo-link--smaller").removeClass().addClass("introduction__logo-link");
 				$(".introduction__logo-container--smaller").removeClass().addClass("introduction__logo-container");
 				$(".introduction__logo-image--smaller").removeClass().addClass("introduction__logo-image");
-				$(".introduction__logo-link").insertAfter("#text_1");
+				$(".introduction__logo-link").insertAfter(".introduction > p:first-of-type");
 			}
 
 			$(window).on("scroll", function() {
@@ -106,7 +106,7 @@
 					$(".introduction__logo-link--smaller").removeClass().addClass("introduction__logo-link");
 					$(".introduction__logo-container--smaller").removeClass().addClass("introduction__logo-container");
 					$(".introduction__logo-image--smaller").removeClass().addClass("introduction__logo-image");
-					$(".introduction__logo-link").insertAfter("#text_1");
+					$(".introduction__logo-link").insertAfter(".introduction > p:first-of-type");
 				}
 			});
 		}
@@ -123,7 +123,7 @@
 				$(".introduction__logo-link--smaller").removeClass().addClass("introduction__logo-link");
 				$(".introduction__logo-container--smaller").removeClass().addClass("introduction__logo-container");
 				$(".introduction__logo-image--smaller").removeClass().addClass("introduction__logo-image");
-				$(".introduction__logo-link").insertAfter("#text_1");
+				$(".introduction__logo-link").insertAfter(".introduction > p:first-of-type");
 			}
 
 			$(window).on("scroll", function() {
@@ -141,7 +141,7 @@
 					$(".introduction__logo-link--smaller").removeClass().addClass("introduction__logo-link");
 					$(".introduction__logo-container--smaller").removeClass().addClass("introduction__logo-container");
 					$(".introduction__logo-image--smaller").removeClass().addClass("introduction__logo-image");
-					$(".introduction__logo-link").insertAfter("#text_1");
+					$(".introduction__logo-link").insertAfter(".introduction > p:first-of-type");
 				}
 			});
 		}
