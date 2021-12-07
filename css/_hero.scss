@@ -187,11 +187,6 @@
 			}
 		}
 
-		&__keyword { // <span>
-			font-weight: 900;
-			color: $white;
-		}
-
 		&__logo-link {
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 			display: flex;
@@ -214,7 +209,7 @@
 				name: pulse;
 				duration: 2s;
 				iteration-count: 1;
-				delay: 5s;
+				delay: 3.75s;
 			}
 			z-index: 0;
 
