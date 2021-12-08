@@ -26,8 +26,7 @@ if (screen_width >= 800) {
 // HERO
 sr.reveal(".jarallax-img", {
 	opacity: 0,
-	duration: 1000,
-	delay: 3500
+	duration: 1000
 });
 
 sr.reveal(".introduction > p:first-of-type", {
