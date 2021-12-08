@@ -404,218 +404,209 @@ body main {
   width: 100vw;
 }
 
-.hero .introduction__text {
+.hero .introduction > p {
   position: absolute;
   margin: 0;
   text-transform: uppercase;
   color: white;
   font-weight: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   z-index: 1;
 }
 
 @media (orientation: portrait) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 1.375rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 1.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 31.25rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 1.8125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 37.5rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 2.125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 43.75rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 2.5rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 50rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 2.8125rem;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 3.125rem;
   }
 }
 
 @media (orientation: landscape) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 1.125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 25rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 1.375rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 31.25rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 1.625rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 37.5rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 1.875rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 43.75rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 2.1875rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 50rem) {
-  .hero .introduction__text {
-    font-size: 2.5rem;
+  .hero .introduction > p {
+    font-size: 2.8125rem;
   }
 }
 
 @media (orientation: landscape) and (min-height: 62.5rem) {
-  .hero .introduction__text {
+  .hero .introduction > p {
     font-size: 3.125rem;
   }
 }
 
-.hero .introduction__text:first-of-type {
+.hero .introduction > p:first-of-type {
   text-align: end;
 }
 
 @media (orientation: portrait) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     top: 5%;
     right: 7%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     top: 7%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 50rem) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     top: 8%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     top: 10%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     top: 12%;
   }
 }
 
 @media (orientation: landscape) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     top: 11%;
     right: 6%;
   }
 }
 
 @media (orientation: landscape) and (min-width: 93.75rem) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     right: 7%;
   }
 }
 
 @media (orientation: landscape) and (min-width: 106.25rem) {
-  .hero .introduction__text:first-of-type {
+  .hero .introduction > p:first-of-type {
     right: 8%;
   }
 }
 
-.hero .introduction__text:last-of-type {
+.hero .introduction > p:last-of-type {
   text-align: end;
 }
 
 @media (orientation: portrait) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     right: 7%;
     bottom: 5%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 25rem) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     bottom: 7%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 50rem) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     bottom: 8%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 56.25rem) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     bottom: 10%;
   }
 }
 
 @media (orientation: portrait) and (min-width: 62.5rem) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     bottom: 12%;
   }
 }
 
 @media (orientation: landscape) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     right: 6%;
     bottom: 11%;
   }
 }
 
 @media (orientation: landscape) and (min-width: 93.75rem) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     right: 7%;
   }
 }
 
 @media (orientation: landscape) and (min-width: 106.25rem) {
-  .hero .introduction__text:last-of-type {
+  .hero .introduction > p:last-of-type {
     right: 8%;
   }
 }
 
-.hero .introduction__keyword {
-  font-weight: 700;
-  color: white;
-  text-shadow: 0rem 0rem 0.625rem white;
+.hero .introduction > p strong {
+  font-weight: 900;
 }
 
 .hero .introduction__logo-link {
@@ -650,8 +641,10 @@ body main {
           animation-name: pulse;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 3.75s;
+          animation-delay: 3.75s;
   z-index: 0;
 }
 
