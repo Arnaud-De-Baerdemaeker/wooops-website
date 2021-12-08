@@ -389,17 +389,13 @@
 			column-gap: 1.25rem;
 			color: $black;
 			padding: 1.25rem;
-			border: {
-				style: solid;
-				width: 0.063rem;
-				color: $white;
-			}
 			font: {
 				size: 1.125rem;
 				weight: 600;
 			}
 			width: 14.0625rem;
 			background-color: $white;
+			box-shadow: 0rem 0rem 1.25rem $black_shadow;
 
 			&:after {
 				content: unset;
