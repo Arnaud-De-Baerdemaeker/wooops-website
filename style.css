@@ -58,12 +58,12 @@ body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  background-color: black;
+  background-color: #dbdbdb;
   overflow-x: hidden;
 }
 
 body main {
-  background-color: black;
+  background-color: #dbdbdb;
 }
 
 .shadow {
@@ -341,7 +341,7 @@ body main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: black;
+  background-color: #dbdbdb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,7 +1376,7 @@ body main {
   font-size: 1.5625rem;
   font-weight: 500;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 43.75rem) {
@@ -1421,13 +1421,13 @@ body main {
 .services .service-1 .service-1-1 {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 .services .service-1 .service-1-1__intro {
   background-color: white;
   padding: 1.25rem;
-  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 93.75rem) {
@@ -1507,13 +1507,13 @@ body main {
 .services .service-1 .service-1-2 {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 .services .service-1 .service-1-2__intro {
   background-color: white;
   padding: 1.25rem;
-  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 93.75rem) {
@@ -1593,6 +1593,8 @@ body main {
 .services .service-1 .service-1-3 {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
 }
@@ -1682,7 +1684,7 @@ body main {
   font-size: 1.5625rem;
   font-weight: 500;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 43.75rem) {
@@ -1730,6 +1732,8 @@ body main {
 .services .service-2__item {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
   font-size: 1.125rem;
@@ -1801,7 +1805,7 @@ body main {
   font-size: 1.5625rem;
   font-weight: 500;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 43.75rem) {
@@ -1825,6 +1829,8 @@ body main {
 .services .service-3__text-container {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
   max-width: 25rem;
@@ -1919,7 +1925,7 @@ body main {
   font-size: 1.5625rem;
   font-weight: 500;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 43.75rem) {
@@ -1964,6 +1970,8 @@ body main {
 .services .service-4 .service-4-1 {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
 }
@@ -2017,6 +2025,8 @@ body main {
 .services .service-4 .service-4-2 {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
 }
@@ -2066,6 +2076,8 @@ body main {
 .services .service-4 .service-4-3 {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
 }
@@ -2119,6 +2131,8 @@ body main {
 .services .service-4 .service-4-4 {
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
   width: 100%;
@@ -2202,7 +2216,7 @@ body main {
   font-size: 1.5625rem;
   font-weight: 500;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 43.75rem) {
@@ -2262,7 +2276,7 @@ body main {
   font-size: 1.5625rem;
   font-weight: 500;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 43.75rem) {
@@ -2322,7 +2336,7 @@ body main {
   font-size: 1.5625rem;
   font-weight: 500;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 43.75rem) {
@@ -2383,13 +2397,12 @@ body main {
           column-gap: 1.25rem;
   color: black;
   padding: 1.25rem;
-  border-style: solid;
-  border-width: 0.063rem;
-  border-color: white;
   font-size: 1.125rem;
   font-weight: 600;
   width: 14.0625rem;
   background-color: white;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 .services .service-7__item:after {
@@ -2717,10 +2730,10 @@ body main {
   min-width: fit-content;
   height: 2.1875rem;
   line-height: 2.1875rem;
-  color: #b4b4b4;
+  color: black;
   border-style: solid;
   border-width: 0.0625rem;
-  border-color: #b4b4b4;
+  border-color: black;
   border-radius: 2.1875rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -2799,10 +2812,10 @@ body main {
   min-width: fit-content;
   height: 2.1875rem;
   line-height: 2.1875rem;
-  color: #b4b4b4;
+  color: black;
   border-style: solid;
   border-width: 0.0625rem;
-  border-color: #b4b4b4;
+  border-color: black;
   border-radius: 2.1875rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -2898,7 +2911,7 @@ body main {
   margin-right: 0;
   margin-bottom: 1.875rem;
   margin-left: 0;
-  color: white;
+  color: black;
   font-family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
@@ -2917,6 +2930,8 @@ body main {
 .projects__thumbnails .thumbnail__desktop {
   width: 100%;
   vertical-align: middle;
+  -webkit-box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
 }
 
 .projects__thumbnails .thumbnail__mobile {
@@ -2925,8 +2940,6 @@ body main {
   position: absolute;
   top: 1.25rem;
   right: 0;
-  -webkit-box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 2.5rem 0.625rem rgba(0, 0, 0, 0.4);
 }
 
 .projects__post-tags-container {
@@ -2951,10 +2964,10 @@ body main {
   min-width: fit-content;
   height: 2.1875rem;
   line-height: 2.1875rem;
-  color: #b4b4b4;
+  color: black;
   border-style: solid;
   border-width: 0.0625rem;
-  border-color: #b4b4b4;
+  border-color: black;
   border-radius: 2.1875rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -3339,6 +3352,8 @@ body main {
   margin: 0;
   background-color: #3e8c74;
   max-width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: white;
   padding: 1.25rem;
   text-align: justify;
@@ -3358,6 +3373,8 @@ body main {
   border-color: white;
   padding: 1.25rem;
   width: 25rem;
+  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 87.5rem) {
