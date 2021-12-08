@@ -54,6 +54,7 @@
 		}
 		padding: 1.25rem;
 		width: 25rem;
+		box-shadow: 0rem 0rem 1.25rem $black_shadow;
 
 		@media #{$mq_w1400_up} {
 			width: 37.5rem;
