@@ -281,7 +281,7 @@
 @mixin card-intro {
 	background-color: $white;
 	padding: 1.25rem;
-	box-shadow: 0rem 0rem 1.25rem $black_shadow;
+	//box-shadow: 0rem 0rem 1.25rem $black_shadow;
 
 	@media #{$mq_w1500_up} {
 		padding: 2.5rem;
