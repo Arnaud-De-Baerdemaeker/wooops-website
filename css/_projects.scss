@@ -156,7 +156,7 @@
 			bottom: 1.875rem;
 			left: 0;
 		}
-		color: $white;
+		color: $black;
 		font: {
 			family: Quicksand, Arial, "Helvetica Neue", Helvetica, sans-serif;
 			size: 1.25rem;
@@ -173,6 +173,7 @@
 			&__desktop { // <img>
 				width: 100%;
 				vertical-align: middle;
+				box-shadow: 0 0 2.5rem 0.625rem $black_shadow;
 			}
 
 			&__mobile { // <img>
@@ -181,7 +182,6 @@
 				position: absolute;
 				top: 1.25rem;
 				right: 0;
-				box-shadow: 0 0 2.5rem 0.625rem $black_shadow;
 			}
 		}
 	}
