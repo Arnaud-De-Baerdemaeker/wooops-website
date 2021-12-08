@@ -58,12 +58,12 @@ body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  background-color: black;
+  background-color: #202124;
   overflow-x: hidden;
 }
 
 body main {
-  background-color: black;
+  background-color: #202124;
 }
 
 .shadow {
@@ -341,7 +341,7 @@ body main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: black;
+  background-color: #202124;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1426,8 +1426,6 @@ body main {
 .services .service-1 .service-1-1__intro {
   background-color: white;
   padding: 1.25rem;
-  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 93.75rem) {
@@ -1512,8 +1510,6 @@ body main {
 .services .service-1 .service-1-2__intro {
   background-color: white;
   padding: 1.25rem;
-  -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 93.75rem) {
