@@ -223,7 +223,7 @@
 		weight: 500;
 	}
 	margin: 0;
-	color: $white;
+	color: $black;
 
 	@media #{$mq_w700_up} {
 		font-size: 1.875rem;
@@ -266,6 +266,7 @@
 @mixin card-container {
 	background-color: $wooops;
 	max-width: 25rem;
+	box-shadow: 0rem 0rem 1.25rem $black_shadow;
 }
 
 @mixin card-container-light {
@@ -281,7 +282,6 @@
 @mixin card-intro {
 	background-color: $white;
 	padding: 1.25rem;
-	box-shadow: 0rem 0rem 1.25rem $black_shadow;
 
 	@media #{$mq_w1500_up} {
 		padding: 2.5rem;
@@ -367,11 +367,11 @@
 	min-width: fit-content;
 	height: 2.1875rem;
 	line-height: 2.1875rem;
-	color: $neutral_180;
+	color: $black;
 	border: {
 		style: solid;
 		width: 0.0625rem;
-		color: $neutral_180;
+		color: $black;
 		radius: 2.1875rem;
 	}
 	padding: {
