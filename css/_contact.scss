@@ -47,11 +47,6 @@
 	.wpcf7 { // <div>
 		color: $black;
 		background-color: $white;
-		border: {
-			style: solid;
-			width: 0.0625rem;
-			color: $white;
-		}
 		padding: 1.25rem;
 		width: 25rem;
 		box-shadow: 0rem 0rem 1.25rem $black_shadow;
