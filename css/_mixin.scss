@@ -67,7 +67,7 @@
 		top: 0;
 		bottom: 0;
 	}
-	background-color: $white;
+	background-color: $neutral_55;
 	display: flex;
 	align-items: center;
 
@@ -147,6 +147,7 @@
 @mixin h2-titles__text {
 	font-weight: 800;
 	text-transform: uppercase;
+	color: $white;
 
 	@media #{$portrait} {
 		font-size: 1.25rem;
@@ -248,6 +249,7 @@
 	column-gap: 1.25rem;
 	align-items: center;
 	line-height: 1.0625rem;
+	color: $white;
 
 	@media #{$mq_w1500_up} {
 		font-size: 1.875rem;
@@ -256,11 +258,7 @@
 }
 
 @mixin titles__icon {
-	width: 3.125rem;
-
-	@media #{$mq_w1500_up} {
-		width: 4.375rem;
-	}
+	height: 50px;
 }
 
 @mixin card-container {
@@ -270,8 +268,9 @@
 
 @mixin card-container-light {
 	@include card-container;
-	background-color: $white;
+	background-color: $neutral_55;
 	padding: 1.25rem;
+	color: $white;
 
 	@media #{$mq_w1500_up} {
 		padding: 2.5rem;
@@ -279,7 +278,7 @@
 }
 
 @mixin card-intro {
-	background-color: $white;
+	background-color: $neutral_55;
 	padding: 1.25rem;
 	//box-shadow: 0rem 0rem 1.25rem $black_shadow;
 
@@ -310,6 +309,7 @@
 
 @mixin services-text {
 	margin: 0;
+	color: $white;
 }
 
 @mixin services-list {

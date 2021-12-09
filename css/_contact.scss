@@ -45,13 +45,8 @@
 	}
 
 	.wpcf7 { // <div>
-		color: $black;
-		background-color: $white;
-		border: {
-			style: solid;
-			width: 0.0625rem;
-			color: $white;
-		}
+		color: $white;
+		background-color: $neutral_55;
 		padding: 1.25rem;
 		width: 25rem;
 
@@ -88,7 +83,7 @@
 					bottom: {
 						style: solid;
 						width: 0.0625rem;
-						color: $black;
+						color: $white;
 					}
 					left: none;
 				}
