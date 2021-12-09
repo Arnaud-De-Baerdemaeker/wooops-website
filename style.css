@@ -1459,13 +1459,7 @@ body main {
 }
 
 .services .service-1 .service-1-1__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-1 .service-1-1__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-1 .service-1-1__text {
@@ -1545,13 +1539,7 @@ body main {
 }
 
 .services .service-1 .service-1-2__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-1 .service-1-2__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-1 .service-1-2__text {
@@ -1632,13 +1620,7 @@ body main {
 }
 
 .services .service-1 .service-1-3__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-1 .service-1-3__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-1 .service-1-3__text {
@@ -1757,13 +1739,7 @@ body main {
 }
 
 .services .service-2__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-2__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-3 {
@@ -1983,13 +1959,7 @@ body main {
 }
 
 .services .service-4 .service-4-1__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-4 .service-4-1__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-4 .service-4-1__title {
@@ -2060,13 +2030,7 @@ body main {
 }
 
 .services .service-4 .service-4-2__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-4 .service-4-2__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-4 .service-4-2__text {
@@ -2111,13 +2075,7 @@ body main {
 }
 
 .services .service-4 .service-4-3__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-4 .service-4-3__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-4 .service-4-3__text {
@@ -2168,13 +2126,7 @@ body main {
 }
 
 .services .service-4 .service-4-4__icon {
-  width: 3.125rem;
-}
-
-@media (min-width: 93.75rem) {
-  .services .service-4 .service-4-4__icon {
-    width: 4.375rem;
-  }
+  height: 3.125rem;
 }
 
 .services .service-5 {
@@ -3368,9 +3320,6 @@ body main {
 .contact .wpcf7 {
   color: black;
   background-color: white;
-  border-style: solid;
-  border-width: 0.0625rem;
-  border-color: white;
   padding: 1.25rem;
   width: 25rem;
   -webkit-box-shadow: 0rem 0rem 1.25rem rgba(0, 0, 0, 0.4);
