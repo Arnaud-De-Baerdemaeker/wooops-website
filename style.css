@@ -58,12 +58,12 @@ body {
   margin: 0;
   font-family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  background-color: #dbdbdb;
+  background-color: #f0f0f0;
   overflow-x: hidden;
 }
 
 body main {
-  background-color: #dbdbdb;
+  background-color: #f0f0f0;
 }
 
 .shadow {
@@ -341,7 +341,7 @@ body main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #dbdbdb;
+  background-color: #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
