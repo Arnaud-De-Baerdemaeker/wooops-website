@@ -1,10 +1,13 @@
-<?php $agency_header = get_field("agency"); ?>
+<?php
+$agency_header = get_field("agence");
+$presentation = get_field("presentation");
+?>
 
-<?php if ($agency_header["title"]): ?>
+<?php if ($agency_header["titre"]): ?>
 	<div id="agency" class="agency">
 		<h2 class="agency__title">
 			<div class="title__text-container">
-				<span class="title__text"><?php echo $agency_header["title"]; ?></span>
+				<span class="title__text"><?php echo $agency_header["titre"]; ?></span>
 			</div>
 			<?php
 			if ($agency_header["image"]):
@@ -14,5 +17,19 @@
 			endif;
 			?>
 		</h2>
+
+		<?php
+		if (!empty($presentation)):
+		?>
+			<div class="agency__presentation-container">
+				<div class="agency__presentation">
+					<?php
+					echo $presentation;
+					?>
+				</div>
+			</div>
+		<?php
+		endif;
+		?>
 	</div>
 <?php endif; ?>
