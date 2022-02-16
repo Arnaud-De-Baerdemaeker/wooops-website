@@ -1,12 +1,11 @@
 <?php
 $tags = get_the_tags();
 $title = get_the_title();
-$desktop_image = get_field("desktop_image");
-$mobile_image = get_field("mobile_image");
+$desktop_image = get_field("image_daffichage_de_bureau");
+$mobile_image = get_field("image_de_mobile");
 //$presentation = get_field("presentation");
-//$specifications = get_field("specifications");
 $tags = get_field("tags");
-$link = get_field("link") ? get_field("link") : "#";
+$link = get_field("lien") ? get_field("lien") : "#";
 ?>
 
 <article class="projects__cards">
@@ -18,7 +17,6 @@ $link = get_field("link") ? get_field("link") : "#";
 		</div>
 		<div class="projects__informations">
 			<!-- <p class="projects__presentation"><?php //echo $presentation; ?></p> -->
-			<!-- <p class="projects__specifications"><?php //echo $specifications; ?></p> -->
 			<?php
 			if (!empty($tags)):
 			?>

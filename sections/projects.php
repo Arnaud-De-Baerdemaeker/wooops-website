@@ -1,17 +1,17 @@
 <?php
-$header = get_field("projects");
+$header = get_field("projets");
 $tags = get_tags([
 	"hide_empty" => false
 ]);
 ?>
 
 <?php
-if ($header["title"]):
+if ($header["titre"]):
 ?>
 	<div id="projects" class="projects">
 		<h2 class="projects__title">
 			<div class="title__text-container">
-				<span class="title__text"><?php echo $header["title"]; ?></span>
+				<span class="title__text"><?php echo $header["titre"]; ?></span>
 			</div>
 			<?php
 			if ($header["image"]):
