@@ -174,7 +174,7 @@ else if (screen_width >= 1100) {
 
 
 // H3 TITLES
-sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__title, .service-5__title, .service-6__title, .service-7__title", {
+sr.reveal(".services__subtitle", {
 	origin: "top",
 	distance: "100px",
 	duration: 1000,
@@ -185,7 +185,7 @@ sr.reveal(".service-1__title, .service-2__title, .service-3__title, .service-4__
 
 
 // CONTENT
-sr.reveal(".service-1-1, .service-1-2, .service-1-3, #service-2__item-1, #service-2__item-2, #service-2__item-3, .service-3__text-container, .service-4-1, .service-4-2, .service-4-3, .service-4-4, .projects__cards, .projects__more, .projects__end, .projects__empty, .contact__introduction, .wpcf7", {
+sr.reveal(".agency__presentation, .services__card--description, .services__card, .services__card--icon-title, .services__card--bigger, .projects__cards, .projects__more, .projects__end, .projects__empty, .wpcf7", {
 	origin: "top",
 	distance: "100px",
 	duration: 1000,
@@ -193,16 +193,6 @@ sr.reveal(".service-1-1, .service-1-2, .service-1-3, #service-2__item-1, #servic
 		bottom: 75
 	},
 	interval: 250
-});
-
-sr.reveal("#service-7__item-1, #service-7__item-2, #service-7__item-3, #service-7__item-4, #service-7__item-5, #service-7__item-6", {
-	origin: "top",
-	distance: "100px",
-	duration: 1000,
-	viewOffset: {
-		bottom: 75
-	},
-	interval: 100
 });
 
 if (screen_width < 1000) {
