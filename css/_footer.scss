@@ -3,14 +3,36 @@
 	color: $white;
 
 	&__container { // <div>
-		@include container;
 		display: flex;
 		justify-content: space-evenly;
 		row-gap: 3.125rem;
 		flex-wrap: wrap;
 		padding: {
 			top: 3.125rem;
+			right: 1.25rem;
 			bottom: 3.125rem;
+			left: 1.25rem;
+		}
+
+		@media #{$mq_w400_up} {
+			padding: {
+				right: 7%;
+				left: 7%;
+			}
+		}
+
+		@media #{$mq_w600_up} {
+			padding: {
+				right: 10%;
+				left: 10%;
+			}
+		}
+
+		@media #{$mq_w1200_up} {
+			padding: {
+				right: 12%;
+				left: 12%;
+			}
 		}
 	}
 
@@ -25,7 +47,7 @@
 		width: 12.5rem;
 		vertical-align: middle;
 	}
-	
+
 	&__informations { // <div>
 		display: flex;
 		row-gap: 3.125rem;
@@ -61,7 +83,6 @@
 	}
 
 	&__copyright { // <div>
-		@include container;
 		height: 3.125rem;
 		text-align: center;
 		background-color: $neutral_55;
@@ -71,5 +92,30 @@
 		align-items: center;
 		margin: unset;
 		font-size: 0.875rem;
+		padding: {
+			right: 1.25rem;
+			left: 1.25rem;
+		}
+
+		@media #{$mq_w400_up} {
+			padding: {
+				right: 7%;
+				left: 7%;
+			}
+		}
+
+		@media #{$mq_w600_up} {
+			padding: {
+				right: 10%;
+				left: 10%;
+			}
+		}
+
+		@media #{$mq_w1200_up} {
+			padding: {
+				right: 12%;
+				left: 12%;
+			}
+		}
 	}
 }

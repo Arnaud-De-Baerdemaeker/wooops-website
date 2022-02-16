@@ -1,47 +1,207 @@
 .contact {
-	@include viewport-container;
-	@include padding-between-sections;
-	@include scroll-position;
+	max-width: 120rem;
+	margin: {
+		right: auto;
+		left: auto;
+	}
+	padding-bottom: 9.375rem;
+	scroll-margin-top: calc(3.125rem + 1.5625rem);
+
+	@media #{$mq_w450_up} {
+		scroll-margin-top: calc(3.75rem + 1.5625rem);
+	}
+
+	@media #{$mq_w800_up} {
+		scroll-margin-top: calc(4.6875rem + 1.5625rem);
+	}
 
 	&__title { // <h2>
-		@include h2-titles;
+		margin: {
+			top: 0;
+			bottom: 0;
+		}
+		background-color: $white;
+		display: flex;
+		align-items: center;
+
+		@media #{$portrait} {
+			height: 6.25rem;
+
+			@media #{$mq_w400_up} {
+				height: 7.5rem;
+			}
+
+			@media #{$mq_w500_up} {
+				height: 8.75rem;
+			}
+
+			@media #{$mq_w700_up} {
+				height: 10rem;
+			}
+
+			@media #{$mq_w900_up} {
+				height: 11.25rem;
+			}
+
+			@media #{$mq_w1000_up} {
+				height: 12.5rem;
+			}
+		}
+
+		@media #{$landscape} {
+			height: 5rem;
+
+			@media #{$mq_h400_up} {
+				height: 6.25rem;
+			}
+
+			@media #{$mq_h500_up} {
+				height: 7.5rem;
+			}
+
+			@media #{$mq_h600_up} {
+				height: 8.75rem;
+			}
+
+			@media #{$mq_h700_up} {
+				height: 10rem;
+			}
+
+			@media #{$mq_h800_up} {
+				height: 12.5rem;
+			}
+
+			@media #{$mq_h900_up} {
+				height: 15.625rem;
+			}
+		}
 
 		.title {
 			&__text-container { // <div>
-				@include h2-titles__text-container;
+				width: 50%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				padding-left: 1.25rem;
+
+				@media #{$mq_w400_up} {
+					padding-left: 7%;
+				}
+
+				@media #{$mq_w600_up} {
+					padding-left: 10%;
+				}
+
+				@media #{$mq_w1200_up} {
+					padding-left: 12%;
+				}
 			}
 
 			&__text { // <span>
-				@include h2-titles__text;
+				font-weight: 800;
+				text-transform: uppercase;
+
+				@media #{$portrait} {
+					font-size: 1.25rem;
+
+					@media #{$mq_w400_up} {
+						font-size: 1.875rem;
+					}
+
+					@media #{$mq_w500_up} {
+						font-size: 2.5rem;
+					}
+
+					@media #{$mq_w700_up} {
+						font-size: 3.125rem;
+					}
+
+					@media #{$mq_w900_up} {
+						font-size: 3.75rem;
+					}
+
+					@media #{$mq_w1000_up} {
+						font-size: 4.375rem;
+					}
+				}
+
+				@media #{$landscape} {
+					font-size: 2.1875rem;
+
+					@media #{$mq_h400_up} {
+						font-size: 2.5rem;
+					}
+
+					@media #{$mq_h500_up} {
+						font-size: 2.8125rem;
+					}
+
+					@media #{$mq_h600_up} {
+						font-size: 3.125rem;
+					}
+
+					@media #{$mq_h700_up} {
+						font-size: 3.75rem;
+					}
+
+					@media #{$mq_h800_up} {
+						font-size: 4.375rem;
+					}
+
+					@media #{$mq_h900_up} {
+						font-size: 5rem;
+					}
+				}
 			}
 
 			&__image-container { // <div>
-				@include h2-titles__image-container;
+				width: 50%;
+				height: 100%;
+				clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 			}
 
 			&__image { // <img>
-				@include h2-titles__image;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				vertical-align: middle;
+				z-index: 1;
 			}
 		}
 	}
 
-	&__content-container { // <div>
-		@include container;
-		@include margin-between-section-titles;
+	&__container { // <div>
 		display: flex;
-		justify-content: space-evenly;
+		row-gap: 6.25rem;
+		padding: {
+			right: 1.25rem;
+			left: 1.25rem;
+		}
+		margin-top: 4.6875rem;
+		justify-content: center;
 		flex-wrap: wrap;
-		row-gap: 1.25rem;
-		column-gap: 1.25rem;
-	}
 
-	// &__introduction { // <div>
-	// }
+		@media #{$mq_w400_up} {
+			padding: {
+				right: 7%;
+				left: 7%;
+			}
+		}
 
-	&__text { // <p>
-		@include services-text;
-		@include card-container-light;
-		text-align: justify;
+		@media #{$mq_w600_up} {
+			padding: {
+				right: 10%;
+				left: 10%;
+			}
+		}
+
+		@media #{$mq_w1200_up} {
+			margin-top: 9.375rem;
+			padding: {
+				right: 12%;
+				left: 12%;
+			}
+		}
 	}
 
 	.wpcf7 { // <div>
@@ -138,7 +298,24 @@
 					position: relative;
 
 					input[type="submit"] {
-						@include link-submit-load;
+						display: block;
+						height: 3.125rem;
+						font: {
+							family: "Catamaran", Arial, "Helvetica Neue", Helvetica, sans-serif;
+							size: 1rem;
+							weight: 700;
+						}
+						color: $wooops;
+						border: {
+							style: solid;
+							width: 0.0625rem;
+							color: $wooops;
+						}
+						cursor: pointer;
+						letter-spacing: 0.0625rem;
+						background-color: unset;
+						transition-property: background-color color;
+						transition-duration: 0.3s;
 						margin: {
 							top: 2rem;
 							right: 0;
@@ -146,9 +323,13 @@
 							left: auto;
 						}
 						padding: 0;
-						cursor: pointer;
 						text-transform: uppercase;
 						width: 50%;
+
+						&:hover {
+							background-color: $wooops;
+							color: $white;
+						}
 					}
 
 					.wpcf7-spinner { // <span>

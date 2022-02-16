@@ -3,7 +3,7 @@
 	position: sticky;
 	top: 0;
 	z-index: 10;
-	box-shadow: 0rem 0.313rem 0.625rem $black_shadow;
+	box-shadow: 0rem 0.3125rem 0.625rem $black_shadow;
 
 	@media #{$portrait} {
 		height: 3.125rem;
@@ -34,7 +34,11 @@
 	}
 
 	.menu-menu-principal-container { // <div>
-		@include viewport-container;
+		max-width: 120rem;
+		margin: {
+			right: auto;
+			left: auto;
+		}
 		height: inherit;
 
 		#menu-menu-principal { // <ul>
@@ -69,7 +73,7 @@
 					transition-duration: 0.5s;
 
 					@media #{$mq_w475_up} {
-						font-size: 0.813rem;
+						font-size: 0.8125rem;
 					}
 
 					@media #{$mq_w800_up} {
