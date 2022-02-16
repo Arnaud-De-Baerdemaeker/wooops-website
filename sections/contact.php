@@ -1,13 +1,15 @@
 <?php
-	$contact_header = get_field("contact");
-	$contact_introduction = get_field("contact_introduction");
+$contact_header = get_field("contact");
+$contact = get_field("contenu");
 ?>
 
-<?php if ($contact_header["title"]): ?>
+<?php
+if ($contact_header["titre"]):
+?>
 	<div id="contact" class="contact">
 		<h2 class="contact__title">
 			<div class="title__text-container">
-				<span class="title__text"><?php echo $contact_header["title"]; ?></span>
+				<span class="title__text"><?php echo $contact_header["titre"]; ?></span>
 			</div>
 			<?php
 			if($contact_header["image"]):
@@ -18,13 +20,18 @@
 			?>
 		</h2>
 
-		<?php if ($contact_introduction): ?>
-			<div class="contact__content-container">
-				<div class="contact__introduction">
-					<p class="contact__text"><?php echo $contact_introduction["text"]; ?></p>
-				</div>
-				<?php echo $contact_introduction["form"]; ?>
+		<?php
+		if (!empty($contact)):
+		?>
+			<div class="contact__container">
+				<?php
+				echo $contact;
+				?>
 			</div>
-		<?php endif;
-	endif; ?>
-</div>
+		<?php
+		endif;
+		?>
+	</div>
+<?php
+endif;
+?>

@@ -5,9 +5,9 @@ $hero = get_field("hero");
 <div
 	id="hero"
 	<?php
-	if ($hero["background"]):
+	if ($hero["arriere-plan"]):
 	?>
-		style="background-image: url('<?php echo $hero["background"]; ?>');"
+		style="background-image: url('<?php echo $hero["arriere-plan"]; ?>');"
 	<?php
 	endif;
 	?>
@@ -16,10 +16,10 @@ $hero = get_field("hero");
 	<?php
 	echo $hero["parallax"];
 	?>
-	<section class="introduction <?php if ($hero["gradient_effect"]) {echo "gradient";} ?>">
+	<section class="introduction <?php if ($hero["effet_degrade"]) {echo "gradient";} ?>">
 		<?php
-		if ($hero["introduction"]["text_part_1"]):
-			echo $hero["introduction"]["text_part_1"];
+		if ($hero["introduction"]):
+			echo $hero["introduction"];
 		endif;
 		?>
 
@@ -32,12 +32,6 @@ $hero = get_field("hero");
 				</h1>
 			</a>
 		<?php
-		endif;
-		?>
-
-		<?php
-		if ($hero["introduction"]["text_part_2"]):
-			echo $hero["introduction"]["text_part_2"];
 		endif;
 		?>
 	</section>
